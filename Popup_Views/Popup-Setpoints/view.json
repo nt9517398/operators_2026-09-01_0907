@@ -1,0 +1,1478 @@
+{
+  "custom": {
+    "tagDescription": null,
+    "tagName": null,
+    "tagNameSP01": null,
+    "tagNameSP01Description": null,
+    "tagNameSP01Range": null,
+    "tagNameSP01Value": null,
+    "tagNameSP02": null,
+    "tagNameSP02Description": null,
+    "tagNameSP02Range": null,
+    "tagNameSP02Value": null,
+    "tagNameSP03": null,
+    "tagNameSP03Description": null,
+    "tagNameSP03Range": null,
+    "tagNameSP03Value": null,
+    "tagNameSP04": null,
+    "tagNameSP04Description": null,
+    "tagNameSP04Range": null,
+    "tagNameSP04Value": null,
+    "tagNameSP05": null,
+    "tagNameSP05Description": null,
+    "tagNameSP05Range": null,
+    "tagNameSP05Value": null,
+    "tagNameSP06": null,
+    "tagNameSP06Description": null,
+    "tagNameSP06Range": null,
+    "tagNameSP06Value": null
+  },
+  "params": {
+    "tagPath": "value",
+    "tagType": "value"
+  },
+  "propConfig": {
+    "custom.tagDescription": {
+      "binding": {
+        "config": {
+          "fallbackDelay": 2.5,
+          "mode": "indirect",
+          "references": {
+            "tagPath": "{view.params.tagPath}",
+            "tagType": "{view.params.tagType}"
+          },
+          "tagPath": "[default]Concentrator_HMI/LCC_{tagPath}_{tagType}.Description"
+        },
+        "type": "tag"
+      },
+      "persistent": true
+    },
+    "custom.tagName": {
+      "binding": {
+        "config": {
+          "fallbackDelay": 2.5,
+          "mode": "indirect",
+          "references": {
+            "tagPath": "{view.params.tagPath}",
+            "tagType": "{view.params.tagType}"
+          },
+          "tagPath": "[default]Concentrator_HMI/LCC_{tagPath}_{tagType}.Name"
+        },
+        "type": "tag"
+      },
+      "persistent": true
+    },
+    "custom.tagNameSP01": {
+      "binding": {
+        "config": {
+          "fallbackDelay": 2.5,
+          "mode": "indirect",
+          "references": {
+            "tagPath": "{view.params.tagPath}"
+          },
+          "tagPath": "[default]Concentrator_HMI/LCC_{tagPath}_SP01.Name"
+        },
+        "type": "tag"
+      },
+      "persistent": true
+    },
+    "custom.tagNameSP01Description": {
+      "binding": {
+        "config": {
+          "fallbackDelay": 2.5,
+          "mode": "indirect",
+          "references": {
+            "tagPath": "{view.params.tagPath}"
+          },
+          "tagPath": "[default]Concentrator_HMI/LCC_{tagPath}_SP01.Description"
+        },
+        "type": "tag"
+      },
+      "persistent": true
+    },
+    "custom.tagNameSP01Range": {
+      "binding": {
+        "config": {
+          "fallbackDelay": 2.5,
+          "mode": "indirect",
+          "references": {
+            "tagPath": "{view.params.tagPath}"
+          },
+          "tagPath": "[default]Concentrator_HMI/LCC_{tagPath}_SP01.Range"
+        },
+        "type": "tag"
+      },
+      "persistent": true
+    },
+    "custom.tagNameSP01Value": {
+      "binding": {
+        "config": {
+          "fallbackDelay": 2.5,
+          "mode": "indirect",
+          "references": {
+            "tagPath": "{view.params.tagPath}"
+          },
+          "tagPath": "[default]Concentrator_HMI/LCC_{tagPath}_SP01.Value"
+        },
+        "type": "tag"
+      },
+      "persistent": true
+    },
+    "custom.tagNameSP02": {
+      "binding": {
+        "config": {
+          "fallbackDelay": 2.5,
+          "mode": "indirect",
+          "references": {
+            "tagPath": "{view.params.tagPath}"
+          },
+          "tagPath": "[default]Concentrator_HMI/LCC_{tagPath}_SP02.Name"
+        },
+        "type": "tag"
+      },
+      "persistent": true
+    },
+    "custom.tagNameSP02Description": {
+      "binding": {
+        "config": {
+          "fallbackDelay": 2.5,
+          "mode": "indirect",
+          "references": {
+            "tagPath": "{view.params.tagPath}"
+          },
+          "tagPath": "[default]Concentrator_HMI/LCC_{tagPath}_SP02.Description"
+        },
+        "type": "tag"
+      },
+      "persistent": true
+    },
+    "custom.tagNameSP02Range": {
+      "binding": {
+        "config": {
+          "fallbackDelay": 2.5,
+          "mode": "indirect",
+          "references": {
+            "tagPath": "{view.params.tagPath}"
+          },
+          "tagPath": "[default]Concentrator_HMI/LCC_{tagPath}_SP02.Range"
+        },
+        "type": "tag"
+      },
+      "persistent": true
+    },
+    "custom.tagNameSP02Value": {
+      "binding": {
+        "config": {
+          "fallbackDelay": 2.5,
+          "mode": "indirect",
+          "references": {
+            "tagPath": "{view.params.tagPath}"
+          },
+          "tagPath": "[default]Concentrator_HMI/LCC_{tagPath}_SP02.Value"
+        },
+        "type": "tag"
+      },
+      "persistent": true
+    },
+    "custom.tagNameSP03": {
+      "binding": {
+        "config": {
+          "fallbackDelay": 2.5,
+          "mode": "indirect",
+          "references": {
+            "tagPath": "{view.params.tagPath}"
+          },
+          "tagPath": "[default]Concentrator_HMI/LCC_{tagPath}_SP03.Name"
+        },
+        "type": "tag"
+      },
+      "persistent": true
+    },
+    "custom.tagNameSP03Description": {
+      "binding": {
+        "config": {
+          "fallbackDelay": 2.5,
+          "mode": "indirect",
+          "references": {
+            "tagPath": "{view.params.tagPath}"
+          },
+          "tagPath": "[default]Concentrator_HMI/LCC_{tagPath}_SP03.Description"
+        },
+        "type": "tag"
+      },
+      "persistent": true
+    },
+    "custom.tagNameSP03Range": {
+      "binding": {
+        "config": {
+          "fallbackDelay": 2.5,
+          "mode": "indirect",
+          "references": {
+            "tagPath": "{view.params.tagPath}"
+          },
+          "tagPath": "[default]Concentrator_HMI/LCC_{tagPath}_SP03.Range"
+        },
+        "type": "tag"
+      },
+      "persistent": true
+    },
+    "custom.tagNameSP03Value": {
+      "binding": {
+        "config": {
+          "fallbackDelay": 2.5,
+          "mode": "indirect",
+          "references": {
+            "tagPath": "{view.params.tagPath}"
+          },
+          "tagPath": "[default]Concentrator_HMI/LCC_{tagPath}_SP03.Value"
+        },
+        "type": "tag"
+      },
+      "persistent": true
+    },
+    "custom.tagNameSP04": {
+      "binding": {
+        "config": {
+          "fallbackDelay": 2.5,
+          "mode": "indirect",
+          "references": {
+            "tagPath": "{view.params.tagPath}"
+          },
+          "tagPath": "[default]Concentrator_HMI/LCC_{tagPath}_SP04.Name"
+        },
+        "type": "tag"
+      },
+      "persistent": true
+    },
+    "custom.tagNameSP04Description": {
+      "binding": {
+        "config": {
+          "fallbackDelay": 2.5,
+          "mode": "indirect",
+          "references": {
+            "tagPath": "{view.params.tagPath}"
+          },
+          "tagPath": "[default]Concentrator_HMI/LCC_{tagPath}_SP04.Desciption"
+        },
+        "type": "tag"
+      },
+      "persistent": true
+    },
+    "custom.tagNameSP04Range": {
+      "binding": {
+        "config": {
+          "fallbackDelay": 2.5,
+          "mode": "indirect",
+          "references": {
+            "tagPath": "{view.params.tagPath}"
+          },
+          "tagPath": "[default]Concentrator_HMI/LCC_{tagPath}_SP04.Range"
+        },
+        "type": "tag"
+      },
+      "persistent": true
+    },
+    "custom.tagNameSP04Value": {
+      "binding": {
+        "config": {
+          "fallbackDelay": 2.5,
+          "mode": "indirect",
+          "references": {
+            "tagPath": "{view.params.tagPath}"
+          },
+          "tagPath": "[default]Concentrator_HMI/LCC_{tagPath}_SP04.Value"
+        },
+        "type": "tag"
+      },
+      "persistent": true
+    },
+    "custom.tagNameSP05": {
+      "binding": {
+        "config": {
+          "fallbackDelay": 2.5,
+          "mode": "indirect",
+          "references": {
+            "tagPath": "{view.params.tagPath}"
+          },
+          "tagPath": "[default]Concentrator_HMI/LCC_{tagPath}_SP05.Name"
+        },
+        "type": "tag"
+      },
+      "persistent": true
+    },
+    "custom.tagNameSP05Description": {
+      "binding": {
+        "config": {
+          "fallbackDelay": 2.5,
+          "mode": "indirect",
+          "references": {
+            "tagPath": "{view.params.tagPath}"
+          },
+          "tagPath": "[default]Concentrator_HMI/LCC_{tagPath}_SP05.Description"
+        },
+        "type": "tag"
+      },
+      "persistent": true
+    },
+    "custom.tagNameSP05Range": {
+      "binding": {
+        "config": {
+          "fallbackDelay": 2.5,
+          "mode": "indirect",
+          "references": {
+            "tagPath": "{view.params.tagPath}"
+          },
+          "tagPath": "[default]Concentrator_HMI/LCC_{tagPath}_SP05.Range "
+        },
+        "type": "tag"
+      },
+      "persistent": true
+    },
+    "custom.tagNameSP05Value": {
+      "binding": {
+        "config": {
+          "fallbackDelay": 2.5,
+          "mode": "indirect",
+          "references": {
+            "tagPath": "{view.params.tagPath}"
+          },
+          "tagPath": "[default]Concentrator_HMI/LCC_{tagPath}_SP05.Value"
+        },
+        "type": "tag"
+      },
+      "persistent": true
+    },
+    "custom.tagNameSP06": {
+      "binding": {
+        "config": {
+          "fallbackDelay": 2.5,
+          "mode": "indirect",
+          "references": {
+            "tagPath": "{view.params.tagPath}"
+          },
+          "tagPath": "[default]Concentrator_HMI/LCC_{tagPath}_SP06.Name"
+        },
+        "type": "tag"
+      },
+      "persistent": true
+    },
+    "custom.tagNameSP06Description": {
+      "binding": {
+        "config": {
+          "fallbackDelay": 2.5,
+          "mode": "indirect",
+          "references": {
+            "tagPath": "{view.params.tagPath}"
+          },
+          "tagPath": "[default]Concentrator_HMI/LCC_{tagPath}_SP06.Description"
+        },
+        "type": "tag"
+      },
+      "persistent": true
+    },
+    "custom.tagNameSP06Range": {
+      "binding": {
+        "config": {
+          "fallbackDelay": 2.5,
+          "mode": "indirect",
+          "references": {
+            "tagPath": "{view.params.tagPath}"
+          },
+          "tagPath": "[default]Concentrator_HMI/LCC_{tagPath}_SP06.Range"
+        },
+        "type": "tag"
+      },
+      "persistent": true
+    },
+    "custom.tagNameSP06Value": {
+      "binding": {
+        "config": {
+          "fallbackDelay": 2.5,
+          "mode": "indirect",
+          "references": {
+            "tagPath": "{view.params.tagPath}"
+          },
+          "tagPath": "[default]Concentrator_HMI/LCC_{tagPath}_SP06.Value"
+        },
+        "type": "tag"
+      },
+      "persistent": true
+    },
+    "params.Open": {
+      "access": "PUBLIC"
+    },
+    "params.name\u0026description": {
+      "binding": {
+        "config": {
+          "fallbackDelay": 2.5,
+          "mode": "direct",
+          "tagPath": "[default]Concentrator_HMI/LCC_PCV05A_CV.Name"
+        },
+        "type": "tag"
+      }
+    },
+    "params.tagPath": {
+      "paramDirection": "input",
+      "persistent": true
+    },
+    "params.tagType": {
+      "paramDirection": "input",
+      "persistent": true
+    }
+  },
+  "props": {
+    "defaultSize": {
+      "height": 299,
+      "width": 700
+    }
+  },
+  "root": {
+    "children": [
+      {
+        "meta": {
+          "name": "Label_1"
+        },
+        "position": {
+          "height": 32,
+          "width": 325,
+          "x": -0.5,
+          "y": -9
+        },
+        "props": {
+          "text": "Popup - Setpoints",
+          "textStyle": {
+            "fontFamily": "Noto Sans",
+            "fontWeight": "bold",
+            "textTransform": "capitalize",
+            "whiteSpace": "pre-line"
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "Label_2"
+        },
+        "position": {
+          "height": 24,
+          "width": 143,
+          "x": 450.3,
+          "y": 84.94271850585938
+        },
+        "propConfig": {
+          "meta.visible": {
+            "binding": {
+              "config": {
+                "path": "view.custom.tagNameSP01"
+              },
+              "transforms": [
+                {
+                  "fallback": true,
+                  "inputType": "scalar",
+                  "mappings": [
+                    {
+                      "input": null,
+                      "output": false
+                    }
+                  ],
+                  "outputType": "scalar",
+                  "type": "map"
+                }
+              ],
+              "type": "property"
+            }
+          },
+          "props.text": {
+            "binding": {
+              "config": {
+                "path": "view.custom.tagNameSP01Range"
+              },
+              "type": "property"
+            }
+          }
+        },
+        "props": {
+          "style": {
+            "backgroundColor": "#555555",
+            "textAlign": "center"
+          },
+          "textStyle": {
+            "fontSize": 15
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "Label_3"
+        },
+        "position": {
+          "height": 24,
+          "width": 73,
+          "x": 609.3,
+          "y": 84.9705
+        },
+        "propConfig": {
+          "meta.visible": {
+            "binding": {
+              "config": {
+                "path": "view.custom.tagNameSP01"
+              },
+              "transforms": [
+                {
+                  "fallback": true,
+                  "inputType": "scalar",
+                  "mappings": [
+                    {
+                      "input": null,
+                      "output": false
+                    }
+                  ],
+                  "outputType": "scalar",
+                  "type": "map"
+                }
+              ],
+              "type": "property"
+            }
+          },
+          "props.text": {
+            "binding": {
+              "config": {
+                "path": "view.custom.tagNameSP01Value"
+              },
+              "type": "property"
+            }
+          }
+        },
+        "props": {
+          "style": {
+            "backgroundColor": "#555555",
+            "textAlign": "center"
+          },
+          "textStyle": {
+            "fontSize": 15
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "Label_0"
+        },
+        "position": {
+          "height": 24,
+          "width": 420,
+          "x": 11.7,
+          "y": 85
+        },
+        "propConfig": {
+          "meta.visible": {
+            "binding": {
+              "config": {
+                "path": "view.custom.tagNameSP01"
+              },
+              "transforms": [
+                {
+                  "fallback": true,
+                  "inputType": "scalar",
+                  "mappings": [
+                    {
+                      "input": null,
+                      "output": false
+                    }
+                  ],
+                  "outputType": "scalar",
+                  "type": "map"
+                }
+              ],
+              "type": "property"
+            }
+          },
+          "props.text": {
+            "binding": {
+              "config": {
+                "path": "view.custom.tagNameSP01"
+              },
+              "transforms": [
+                {
+                  "expression": "{value} + \"   -   \" +  {view.custom.tagNameSP01Description}",
+                  "type": "expression"
+                }
+              ],
+              "type": "property"
+            }
+          }
+        },
+        "props": {
+          "style": {
+            "backgroundColor": "#555555"
+          },
+          "textStyle": {
+            "fontSize": 15
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "Label_4"
+        },
+        "position": {
+          "height": 24,
+          "width": 420,
+          "x": 10.65,
+          "y": 45
+        },
+        "propConfig": {
+          "props.text": {
+            "binding": {
+              "config": {
+                "path": "view.custom.tagName"
+              },
+              "transforms": [
+                {
+                  "expression": "{value} + \"   -   \" +  {view.custom.tagDescription}",
+                  "type": "expression"
+                }
+              ],
+              "type": "property"
+            }
+          }
+        },
+        "props": {
+          "style": {
+            "backgroundColor": "#555555"
+          },
+          "textStyle": {
+            "fontSize": 15
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "Label_5"
+        },
+        "position": {
+          "height": 24,
+          "width": 420,
+          "x": 11.7,
+          "y": 122
+        },
+        "propConfig": {
+          "meta.visible": {
+            "binding": {
+              "config": {
+                "path": "view.custom.tagNameSP02"
+              },
+              "transforms": [
+                {
+                  "fallback": true,
+                  "inputType": "scalar",
+                  "mappings": [
+                    {
+                      "input": null,
+                      "output": false
+                    }
+                  ],
+                  "outputType": "scalar",
+                  "type": "map"
+                }
+              ],
+              "type": "property"
+            }
+          },
+          "props.text": {
+            "binding": {
+              "config": {
+                "path": "view.custom.tagNameSP02"
+              },
+              "transforms": [
+                {
+                  "expression": "{value} + \"   -   \" +  {view.custom.tagNameSP02Description}",
+                  "type": "expression"
+                }
+              ],
+              "type": "property"
+            }
+          }
+        },
+        "props": {
+          "style": {
+            "backgroundColor": "#555555"
+          },
+          "textStyle": {
+            "fontSize": 15
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "Label_6"
+        },
+        "position": {
+          "height": 24,
+          "width": 73,
+          "x": 609.3,
+          "y": 121.97
+        },
+        "propConfig": {
+          "meta.visible": {
+            "binding": {
+              "config": {
+                "path": "view.custom.tagNameSP02"
+              },
+              "transforms": [
+                {
+                  "fallback": true,
+                  "inputType": "scalar",
+                  "mappings": [
+                    {
+                      "input": null,
+                      "output": false
+                    }
+                  ],
+                  "outputType": "scalar",
+                  "type": "map"
+                }
+              ],
+              "type": "property"
+            }
+          },
+          "props.text": {
+            "binding": {
+              "config": {
+                "path": "view.custom.tagNameSP02Value"
+              },
+              "type": "property"
+            }
+          }
+        },
+        "props": {
+          "style": {
+            "backgroundColor": "#555555",
+            "textAlign": "center"
+          },
+          "textStyle": {
+            "fontSize": 15
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "Label_7"
+        },
+        "position": {
+          "height": 24,
+          "width": 143,
+          "x": 450.3,
+          "y": 121.943
+        },
+        "propConfig": {
+          "meta.visible": {
+            "binding": {
+              "config": {
+                "path": "view.custom.tagNameSP02"
+              },
+              "transforms": [
+                {
+                  "fallback": true,
+                  "inputType": "scalar",
+                  "mappings": [
+                    {
+                      "input": null,
+                      "output": false
+                    }
+                  ],
+                  "outputType": "scalar",
+                  "type": "map"
+                }
+              ],
+              "type": "property"
+            }
+          },
+          "props.text": {
+            "binding": {
+              "config": {
+                "path": "view.custom.tagNameSP02Range"
+              },
+              "type": "property"
+            }
+          }
+        },
+        "props": {
+          "style": {
+            "backgroundColor": "#555555",
+            "textAlign": "center"
+          },
+          "textStyle": {
+            "fontSize": 15
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "Label_8"
+        },
+        "position": {
+          "height": 24,
+          "width": 420,
+          "x": 11.7,
+          "y": 158
+        },
+        "propConfig": {
+          "meta.visible": {
+            "binding": {
+              "config": {
+                "path": "view.custom.tagNameSP03"
+              },
+              "transforms": [
+                {
+                  "fallback": true,
+                  "inputType": "scalar",
+                  "mappings": [
+                    {
+                      "input": null,
+                      "output": false
+                    }
+                  ],
+                  "outputType": "scalar",
+                  "type": "map"
+                }
+              ],
+              "type": "property"
+            }
+          },
+          "props.text": {
+            "binding": {
+              "config": {
+                "path": "view.custom.tagNameSP03"
+              },
+              "transforms": [
+                {
+                  "expression": "{value} + \"   -   \" +  {view.custom.tagNameSP03Description}",
+                  "type": "expression"
+                }
+              ],
+              "type": "property"
+            }
+          }
+        },
+        "props": {
+          "style": {
+            "backgroundColor": "#555555"
+          },
+          "textStyle": {
+            "fontSize": 15
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "Label_9"
+        },
+        "position": {
+          "height": 24,
+          "width": 143,
+          "x": 450.3,
+          "y": 157.943
+        },
+        "propConfig": {
+          "meta.visible": {
+            "binding": {
+              "config": {
+                "path": "view.custom.tagNameSP03"
+              },
+              "transforms": [
+                {
+                  "fallback": true,
+                  "inputType": "scalar",
+                  "mappings": [
+                    {
+                      "input": null,
+                      "output": false
+                    }
+                  ],
+                  "outputType": "scalar",
+                  "type": "map"
+                }
+              ],
+              "type": "property"
+            }
+          },
+          "props.text": {
+            "binding": {
+              "config": {
+                "path": "view.custom.tagNameSP03Range"
+              },
+              "type": "property"
+            }
+          }
+        },
+        "props": {
+          "style": {
+            "backgroundColor": "#555555",
+            "textAlign": "center"
+          },
+          "textStyle": {
+            "fontSize": 15
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "Label_10"
+        },
+        "position": {
+          "height": 24,
+          "width": 73,
+          "x": 609.3,
+          "y": 157.97
+        },
+        "propConfig": {
+          "meta.visible": {
+            "binding": {
+              "config": {
+                "path": "view.custom.tagNameSP03"
+              },
+              "transforms": [
+                {
+                  "fallback": true,
+                  "inputType": "scalar",
+                  "mappings": [
+                    {
+                      "input": null,
+                      "output": false
+                    }
+                  ],
+                  "outputType": "scalar",
+                  "type": "map"
+                }
+              ],
+              "type": "property"
+            }
+          },
+          "props.text": {
+            "binding": {
+              "config": {
+                "path": "view.custom.tagNameSP03Value"
+              },
+              "type": "property"
+            }
+          }
+        },
+        "props": {
+          "style": {
+            "backgroundColor": "#555555",
+            "textAlign": "center"
+          },
+          "textStyle": {
+            "fontSize": 15
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "Label_11"
+        },
+        "position": {
+          "height": 24,
+          "width": 420,
+          "x": 11.7,
+          "y": 194
+        },
+        "propConfig": {
+          "meta.visible": {
+            "binding": {
+              "config": {
+                "path": "view.custom.tagNameSP04"
+              },
+              "transforms": [
+                {
+                  "fallback": true,
+                  "inputType": "scalar",
+                  "mappings": [
+                    {
+                      "input": null,
+                      "output": false
+                    }
+                  ],
+                  "outputType": "scalar",
+                  "type": "map"
+                }
+              ],
+              "type": "property"
+            }
+          },
+          "props.text": {
+            "binding": {
+              "config": {
+                "path": "view.custom.tagNameSP04"
+              },
+              "transforms": [
+                {
+                  "expression": "{value} + \"   -   \" +  {view.custom.tagNameSP04Description}",
+                  "type": "expression"
+                }
+              ],
+              "type": "property"
+            }
+          }
+        },
+        "props": {
+          "style": {
+            "backgroundColor": "#555555"
+          },
+          "textStyle": {
+            "fontSize": 15
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "Label_12"
+        },
+        "position": {
+          "height": 24,
+          "width": 143,
+          "x": 450.3,
+          "y": 193.943
+        },
+        "propConfig": {
+          "meta.visible": {
+            "binding": {
+              "config": {
+                "path": "view.custom.tagNameSP04"
+              },
+              "transforms": [
+                {
+                  "fallback": true,
+                  "inputType": "scalar",
+                  "mappings": [
+                    {
+                      "input": null,
+                      "output": false
+                    }
+                  ],
+                  "outputType": "scalar",
+                  "type": "map"
+                }
+              ],
+              "type": "property"
+            }
+          },
+          "props.text": {
+            "binding": {
+              "config": {
+                "path": "view.custom.tagNameSP04Range"
+              },
+              "type": "property"
+            }
+          }
+        },
+        "props": {
+          "style": {
+            "backgroundColor": "#555555",
+            "textAlign": "center"
+          },
+          "textStyle": {
+            "fontSize": 15
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "Label_13"
+        },
+        "position": {
+          "height": 24,
+          "width": 73,
+          "x": 609.3,
+          "y": 193.97
+        },
+        "propConfig": {
+          "meta.visible": {
+            "binding": {
+              "config": {
+                "path": "view.custom.tagNameSP04"
+              },
+              "transforms": [
+                {
+                  "fallback": true,
+                  "inputType": "scalar",
+                  "mappings": [
+                    {
+                      "input": null,
+                      "output": false
+                    }
+                  ],
+                  "outputType": "scalar",
+                  "type": "map"
+                }
+              ],
+              "type": "property"
+            }
+          },
+          "props.text": {
+            "binding": {
+              "config": {
+                "path": "view.custom.tagNameSP04Value"
+              },
+              "type": "property"
+            }
+          }
+        },
+        "props": {
+          "style": {
+            "backgroundColor": "#555555",
+            "textAlign": "center"
+          },
+          "textStyle": {
+            "fontSize": 15
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "Label_14"
+        },
+        "position": {
+          "height": 24,
+          "width": 420,
+          "x": 11.7,
+          "y": 230
+        },
+        "propConfig": {
+          "meta.visible": {
+            "binding": {
+              "config": {
+                "path": "view.custom.tagNameSP05"
+              },
+              "transforms": [
+                {
+                  "fallback": true,
+                  "inputType": "scalar",
+                  "mappings": [
+                    {
+                      "input": null,
+                      "output": false
+                    }
+                  ],
+                  "outputType": "scalar",
+                  "type": "map"
+                }
+              ],
+              "type": "property"
+            }
+          },
+          "props.text": {
+            "binding": {
+              "config": {
+                "path": "view.custom.tagNameSP05"
+              },
+              "transforms": [
+                {
+                  "expression": "{value} + \"   -   \" +  {view.custom.tagNameSP05Description}",
+                  "type": "expression"
+                }
+              ],
+              "type": "property"
+            }
+          }
+        },
+        "props": {
+          "style": {
+            "backgroundColor": "#555555"
+          },
+          "textStyle": {
+            "fontSize": 15
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "Label_15"
+        },
+        "position": {
+          "height": 24,
+          "width": 143,
+          "x": 450.3,
+          "y": 229.943
+        },
+        "propConfig": {
+          "meta.visible": {
+            "binding": {
+              "config": {
+                "path": "view.custom.tagNameSP05"
+              },
+              "transforms": [
+                {
+                  "fallback": true,
+                  "inputType": "scalar",
+                  "mappings": [
+                    {
+                      "input": null,
+                      "output": false
+                    }
+                  ],
+                  "outputType": "scalar",
+                  "type": "map"
+                }
+              ],
+              "type": "property"
+            }
+          },
+          "props.text": {
+            "binding": {
+              "config": {
+                "path": "view.custom.tagNameSP05Range"
+              },
+              "type": "property"
+            }
+          }
+        },
+        "props": {
+          "style": {
+            "backgroundColor": "#555555",
+            "textAlign": "center"
+          },
+          "textStyle": {
+            "fontSize": 15
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "Label_16"
+        },
+        "position": {
+          "height": 24,
+          "width": 73,
+          "x": 609.3,
+          "y": 229.97
+        },
+        "propConfig": {
+          "meta.visible": {
+            "binding": {
+              "config": {
+                "path": "view.custom.tagNameSP05"
+              },
+              "transforms": [
+                {
+                  "fallback": true,
+                  "inputType": "scalar",
+                  "mappings": [
+                    {
+                      "input": null,
+                      "output": false
+                    }
+                  ],
+                  "outputType": "scalar",
+                  "type": "map"
+                }
+              ],
+              "type": "property"
+            }
+          },
+          "props.text": {
+            "binding": {
+              "config": {
+                "path": "view.custom.tagNameSP05Value"
+              },
+              "type": "property"
+            }
+          }
+        },
+        "props": {
+          "style": {
+            "backgroundColor": "#555555",
+            "textAlign": "center"
+          },
+          "textStyle": {
+            "fontSize": 15
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "Label_17"
+        },
+        "position": {
+          "height": 24,
+          "width": 420,
+          "x": 11.7,
+          "y": 264
+        },
+        "propConfig": {
+          "meta.visible": {
+            "binding": {
+              "config": {
+                "path": "view.custom.tagNameSP06"
+              },
+              "transforms": [
+                {
+                  "fallback": true,
+                  "inputType": "scalar",
+                  "mappings": [
+                    {
+                      "input": null,
+                      "output": false
+                    }
+                  ],
+                  "outputType": "scalar",
+                  "type": "map"
+                }
+              ],
+              "type": "property"
+            }
+          },
+          "props.text": {
+            "binding": {
+              "config": {
+                "path": "view.custom.tagNameSP06"
+              },
+              "transforms": [
+                {
+                  "expression": "{value} + \"   -   \" +  {view.custom.tagNameSP06Description}",
+                  "type": "expression"
+                }
+              ],
+              "type": "property"
+            }
+          }
+        },
+        "props": {
+          "style": {
+            "backgroundColor": "#555555"
+          },
+          "textStyle": {
+            "fontSize": 15
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "Label_18"
+        },
+        "position": {
+          "height": 24,
+          "width": 143,
+          "x": 450.3,
+          "y": 263.943
+        },
+        "propConfig": {
+          "meta.visible": {
+            "binding": {
+              "config": {
+                "path": "view.custom.tagNameSP06"
+              },
+              "transforms": [
+                {
+                  "fallback": true,
+                  "inputType": "scalar",
+                  "mappings": [
+                    {
+                      "input": null,
+                      "output": false
+                    }
+                  ],
+                  "outputType": "scalar",
+                  "type": "map"
+                }
+              ],
+              "type": "property"
+            }
+          },
+          "props.text": {
+            "binding": {
+              "config": {
+                "path": "view.custom.tagNameSP06Range"
+              },
+              "type": "property"
+            }
+          }
+        },
+        "props": {
+          "style": {
+            "backgroundColor": "#555555",
+            "textAlign": "center"
+          },
+          "textStyle": {
+            "fontSize": 15
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "Label_19"
+        },
+        "position": {
+          "height": 24,
+          "width": 73,
+          "x": 609.3,
+          "y": 263.97
+        },
+        "propConfig": {
+          "meta.visible": {
+            "binding": {
+              "config": {
+                "path": "view.custom.tagNameSP06"
+              },
+              "transforms": [
+                {
+                  "fallback": true,
+                  "inputType": "scalar",
+                  "mappings": [
+                    {
+                      "input": null,
+                      "output": false
+                    }
+                  ],
+                  "outputType": "scalar",
+                  "type": "map"
+                }
+              ],
+              "type": "property"
+            }
+          },
+          "props.text": {
+            "binding": {
+              "config": {
+                "path": "view.custom.tagNameSP06Value"
+              },
+              "type": "property"
+            }
+          }
+        },
+        "props": {
+          "style": {
+            "backgroundColor": "#555555",
+            "textAlign": "center"
+          },
+          "textStyle": {
+            "fontSize": 15
+          }
+        },
+        "type": "ia.display.label"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "type": "ia.container.coord"
+  }
+}

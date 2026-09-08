@@ -1,0 +1,108 @@
+{
+  "custom": {},
+  "params": {
+    "Info": 1
+  },
+  "propConfig": {
+    "params.Info": {
+      "access": "PUBLIC",
+      "paramDirection": "inout",
+      "persistent": true
+    },
+    "params.name\u0026description": {
+      "binding": {
+        "config": {
+          "fallbackDelay": 2.5,
+          "mode": "direct",
+          "tagPath": "[default]Concentrator_HMI/LCC_PCV05A_CV.Name"
+        },
+        "type": "tag"
+      }
+    }
+  },
+  "props": {
+    "defaultSize": {
+      "height": 201,
+      "width": 500
+    }
+  },
+  "root": {
+    "children": [
+      {
+        "events": {
+          "dom": {
+            "onClick": {
+              "config": {
+                "script": "\tif self.view.params.Auto \u003d\u003d 0:\n\t\tself.view.params.Auto \u003d self.view.params.Auto + 1\n\telif self.view.params.Auto \u003d\u003d 1 :\n\t\tself.view.params.Auto \u003d self.view.params.Auto - 1"
+              },
+              "scope": "G",
+              "type": "script"
+            }
+          }
+        },
+        "meta": {
+          "name": "Button"
+        },
+        "position": {
+          "height": 34,
+          "width": 211,
+          "x": 135,
+          "y": 142
+        },
+        "propConfig": {
+          "props.style.backgroundColor": {
+            "binding": {
+              "config": {
+                "path": "view.params.Auto"
+              },
+              "transforms": [
+                {
+                  "fallback": "#D5D5D5",
+                  "inputType": "scalar",
+                  "mappings": [
+                    {
+                      "input": 0,
+                      "output": "#00D900"
+                    }
+                  ],
+                  "outputType": "color",
+                  "type": "map"
+                }
+              ],
+              "type": "property"
+            }
+          }
+        },
+        "props": {
+          "text": "Acknowledge"
+        },
+        "type": "ia.input.button"
+      },
+      {
+        "meta": {
+          "name": "Label_1"
+        },
+        "position": {
+          "height": 32,
+          "width": 347,
+          "x": -0.5,
+          "y": -9
+        },
+        "props": {
+          "text": "Popup - Infomation",
+          "textStyle": {
+            "fontFamily": "Noto Sans",
+            "fontWeight": "bold",
+            "textTransform": "capitalize",
+            "whiteSpace": "pre-line"
+          }
+        },
+        "type": "ia.display.label"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "type": "ia.container.coord"
+  }
+}

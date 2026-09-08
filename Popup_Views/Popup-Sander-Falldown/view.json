@@ -1,0 +1,889 @@
+{
+  "custom": {},
+  "params": {},
+  "propConfig": {
+    "params.Auto": {
+      "access": "PUBLIC"
+    },
+    "params.name\u0026description": {
+      "binding": {
+        "config": {
+          "fallbackDelay": 2.5,
+          "mode": "direct",
+          "tagPath": "[default]Concentrator_HMI/LCC_PCV05A_CV.Name"
+        },
+        "type": "tag"
+      }
+    }
+  },
+  "props": {
+    "defaultSize": {
+      "height": 387,
+      "width": 877
+    }
+  },
+  "root": {
+    "children": [
+      {
+        "meta": {
+          "name": "FACE"
+        },
+        "position": {
+          "height": 39,
+          "width": 119,
+          "x": 713.3,
+          "y": 255.101
+        },
+        "propConfig": {
+          "props.value": {
+            "binding": {
+              "config": {
+                "bidirectional": true,
+                "fallbackDelay": 2.5,
+                "mode": "indirect",
+                "references": {},
+                "tagPath": "[default]site_sander/falldown/product/face"
+              },
+              "type": "tag"
+            }
+          }
+        },
+        "props": {
+          "dropdownOptionStyle": {
+            "fontSize": 20
+          },
+          "options": [
+            {
+              "label": 1.5,
+              "value": 1.5
+            },
+            {
+              "label": 2.4,
+              "value": 2.4
+            },
+            {
+              "label": 3,
+              "value": 3
+            },
+            {
+              "label": 4,
+              "value": 4
+            }
+          ]
+        },
+        "type": "ia.input.dropdown"
+      },
+      {
+        "meta": {
+          "name": "Label_8"
+        },
+        "position": {
+          "height": 39.15,
+          "width": 80,
+          "x": 396.7,
+          "y": 112.3
+        },
+        "props": {
+          "text": "PRODUCT"
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "PRODUCT"
+        },
+        "position": {
+          "height": 39,
+          "width": 119,
+          "x": 375.1,
+          "y": 151
+        },
+        "propConfig": {
+          "props.value": {
+            "binding": {
+              "config": {
+                "bidirectional": true,
+                "fallbackDelay": 2.5,
+                "mode": "indirect",
+                "references": {},
+                "tagPath": "[default]site_sander/falldown/product/product"
+              },
+              "type": "tag"
+            }
+          }
+        },
+        "props": {
+          "dropdownOptionStyle": {
+            "fontSize": 20
+          },
+          "options": [
+            {
+              "label": "EcoPly",
+              "value": "EcoPly"
+            },
+            {
+              "label": "PlyFloor",
+              "value": "PlyFloor"
+            },
+            {
+              "label": "Plybrace",
+              "value": "PlyBrace"
+            },
+            {
+              "label": "PlyRoof",
+              "value": "PlyRoof"
+            },
+            {
+              "label": "Non Struct",
+              "value": "Non Struct"
+            },
+            {
+              "label": "CCFO",
+              "value": "CCFO"
+            },
+            {
+              "label": "Trial",
+              "value": "Trial"
+            }
+          ]
+        },
+        "type": "ia.input.dropdown"
+      },
+      {
+        "meta": {
+          "name": "SHIFT"
+        },
+        "position": {
+          "height": 40,
+          "width": 218,
+          "x": 347.511,
+          "y": 47.161
+        },
+        "propConfig": {
+          "props.value": {
+            "binding": {
+              "config": {
+                "bidirectional": true,
+                "fallbackDelay": 2.5,
+                "mode": "indirect",
+                "references": {},
+                "tagPath": "[default]site_sander/falldown/product/shift"
+              },
+              "type": "tag"
+            }
+          }
+        },
+        "props": {
+          "dropdownOptionStyle": {
+            "fontSize": 20
+          },
+          "options": [
+            {
+              "label": "MORNING",
+              "value": "MORNING"
+            },
+            {
+              "label": "AFTERNOON",
+              "value": "AFTERNOON"
+            },
+            {
+              "label": "NIGHT",
+              "value": "NIGHT"
+            }
+          ]
+        },
+        "type": "ia.input.dropdown"
+      },
+      {
+        "meta": {
+          "name": "Label_1"
+        },
+        "position": {
+          "height": 39.15,
+          "width": 68,
+          "x": 438.2,
+          "y": 7.8408
+        },
+        "props": {
+          "text": "SHIFT"
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "GRADER"
+        },
+        "position": {
+          "height": 40,
+          "width": 218,
+          "x": 630.07,
+          "y": 47.161
+        },
+        "propConfig": {
+          "props.value": {
+            "binding": {
+              "config": {
+                "bidirectional": true,
+                "fallbackDelay": 2.5,
+                "mode": "indirect",
+                "references": {},
+                "tagPath": "[default]site_sander/falldown/product/grader"
+              },
+              "type": "tag"
+            }
+          }
+        },
+        "props": {
+          "dropdownOptionStyle": {
+            "fontSize": 30
+          },
+          "options": [
+            {
+              "label": "GC",
+              "value": "GC"
+            },
+            {
+              "label": "DF",
+              "value": "DF"
+            },
+            {
+              "label": "HC",
+              "value": "HC"
+            },
+            {
+              "label": "RM",
+              "value": "RM"
+            },
+            {
+              "label": "JH",
+              "value": "JH"
+            },
+            {
+              "label": "PL",
+              "value": "PL"
+            },
+            {
+              "label": "AC",
+              "value": "AC"
+            },
+            {
+              "label": "BF",
+              "value": "BF"
+            },
+            {
+              "label": "VL",
+              "value": "VL"
+            }
+          ]
+        },
+        "type": "ia.input.dropdown"
+      },
+      {
+        "meta": {
+          "name": "Label_0"
+        },
+        "position": {
+          "height": 39.15,
+          "width": 88,
+          "x": 699.40625,
+          "y": 8.0804
+        },
+        "props": {
+          "text": "GRADER"
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "Label_2"
+        },
+        "position": {
+          "height": 39.150000000000006,
+          "width": 60,
+          "x": 753.666,
+          "y": 215.966
+        },
+        "props": {
+          "text": "FACE"
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "DateTimeInput"
+        },
+        "position": {
+          "height": 39.16,
+          "width": 268.73,
+          "x": 28.4437,
+          "y": 47
+        },
+        "propConfig": {
+          "props.value": {
+            "binding": {
+              "config": {
+                "expression": "now(60000)"
+              },
+              "type": "expr"
+            }
+          }
+        },
+        "props": {
+          "formattedValue": "Sep 15, 2025 5:39 PM",
+          "inputProps": {
+            "style": {
+              "backgroundColor": "#555555",
+              "fontSize": 20
+            }
+          },
+          "style": {
+            "fontSize": ""
+          }
+        },
+        "type": "ia.input.date-time-input"
+      },
+      {
+        "meta": {
+          "name": "Label"
+        },
+        "position": {
+          "height": 39.15,
+          "width": 268.73,
+          "x": 117.624,
+          "y": 12.85
+        },
+        "props": {
+          "text": "DATE / TIME"
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "LENGTH"
+        },
+        "position": {
+          "height": 39,
+          "width": 119,
+          "x": 374.7,
+          "y": 255.106
+        },
+        "propConfig": {
+          "props.value": {
+            "binding": {
+              "config": {
+                "bidirectional": true,
+                "fallbackDelay": 2.5,
+                "mode": "indirect",
+                "references": {},
+                "tagPath": "[default]site_sander/falldown/product/length"
+              },
+              "type": "tag"
+            }
+          }
+        },
+        "props": {
+          "dropdownOptionStyle": {
+            "fontSize": 20
+          },
+          "options": [
+            {
+              "label": 2250,
+              "value": 2250
+            },
+            {
+              "label": 2400,
+              "value": 2400
+            },
+            {
+              "label": 2420,
+              "value": 2420
+            },
+            {
+              "label": 2440,
+              "value": 2440
+            },
+            {
+              "label": 2470,
+              "value": 2470
+            }
+          ]
+        },
+        "type": "ia.input.dropdown"
+      },
+      {
+        "meta": {
+          "name": "Label_9"
+        },
+        "position": {
+          "height": 39.15,
+          "width": 72,
+          "x": 402.866,
+          "y": 215.835
+        },
+        "props": {
+          "text": "LENGTH"
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "Label_3"
+        },
+        "position": {
+          "height": 39.150000000000006,
+          "width": 60,
+          "x": 575.166,
+          "y": 215.841
+        },
+        "props": {
+          "text": "WIDTH"
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "FACE_0"
+        },
+        "position": {
+          "height": 39,
+          "width": 119,
+          "x": 544.1,
+          "y": 255.099
+        },
+        "propConfig": {
+          "props.value": {
+            "binding": {
+              "config": {
+                "bidirectional": true,
+                "fallbackDelay": 2.5,
+                "mode": "indirect",
+                "references": {},
+                "tagPath": "[default]site_sander/falldown/product/width"
+              },
+              "type": "tag"
+            }
+          }
+        },
+        "props": {
+          "dropdownOptionStyle": {
+            "fontSize": 20
+          },
+          "options": [
+            {
+              "label": 1200,
+              "value": 1200
+            },
+            {
+              "label": 1220,
+              "value": 1220
+            },
+            {
+              "label": 1250,
+              "value": 1250
+            }
+          ]
+        },
+        "type": "ia.input.dropdown"
+      },
+      {
+        "meta": {
+          "name": "Label_4"
+        },
+        "position": {
+          "height": 39.150000000000006,
+          "width": 85,
+          "x": 58.69,
+          "y": 112.25
+        },
+        "props": {
+          "text": "THICKNESS"
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "THICKNESS"
+        },
+        "position": {
+          "height": 39,
+          "width": 119,
+          "x": 37.0675,
+          "y": 150.993
+        },
+        "propConfig": {
+          "props.value": {
+            "binding": {
+              "config": {
+                "bidirectional": true,
+                "fallbackDelay": 2.5,
+                "mode": "indirect",
+                "references": {},
+                "tagPath": "[default]site_sander/falldown/product/thickness"
+              },
+              "type": "tag"
+            }
+          }
+        },
+        "props": {
+          "dropdownOptionStyle": {
+            "fontSize": 15
+          },
+          "options": [
+            {
+              "label": 7,
+              "value": 7
+            },
+            {
+              "label": 9,
+              "value": 9
+            },
+            {
+              "label": 12,
+              "value": 12
+            },
+            {
+              "label": 13,
+              "value": 13
+            },
+            {
+              "label": 15,
+              "value": 15
+            },
+            {
+              "label": 17,
+              "value": 17
+            },
+            {
+              "label": 19,
+              "value": 19
+            },
+            {
+              "label": 21,
+              "value": 21
+            },
+            {
+              "label": 25,
+              "value": 25
+            },
+            {
+              "label": 27,
+              "value": 27
+            },
+            {
+              "label": 28,
+              "value": 28
+            },
+            {
+              "label": 29,
+              "value": 29
+            },
+            {
+              "label": 30,
+              "value": 30
+            },
+            {
+              "label": 32,
+              "value": 32
+            },
+            {
+              "label": 33,
+              "value": 33
+            },
+            {
+              "label": 35,
+              "value": 35
+            },
+            {
+              "label": 38,
+              "value": 38
+            },
+            {
+              "label": 39,
+              "value": 39
+            },
+            {
+              "label": 42,
+              "value": 42
+            },
+            {
+              "label": 50,
+              "value": 50
+            }
+          ]
+        },
+        "type": "ia.input.dropdown"
+      },
+      {
+        "meta": {
+          "name": "Label_5"
+        },
+        "position": {
+          "height": 39.000000000000014,
+          "width": 55.00000000000003,
+          "x": 241.7,
+          "y": 112.2
+        },
+        "props": {
+          "text": "GRADE"
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "GRADE"
+        },
+        "position": {
+          "height": 39,
+          "width": 119,
+          "x": 206.1,
+          "y": 151
+        },
+        "propConfig": {
+          "props.value": {
+            "binding": {
+              "config": {
+                "bidirectional": true,
+                "fallbackDelay": 2.5,
+                "mode": "indirect",
+                "references": {},
+                "tagPath": "[default]site_sander/falldown/product/grade"
+              },
+              "type": "tag"
+            }
+          }
+        },
+        "props": {
+          "dropdownOptionStyle": {
+            "fontSize": 20
+          },
+          "options": [
+            {
+              "label": "CD",
+              "value": "CD"
+            },
+            {
+              "label": "CC",
+              "value": "CC"
+            },
+            {
+              "label": "NS",
+              "value": "NS"
+            },
+            {
+              "label": "DD",
+              "value": "DD"
+            },
+            {
+              "label": "G2S",
+              "value": "G2S"
+            }
+          ]
+        },
+        "type": "ia.input.dropdown"
+      },
+      {
+        "events": {
+          "dom": {
+            "onClick": [
+              {
+                "config": {
+                  "draggable": true,
+                  "id": "zNyej1Q0",
+                  "modal": true,
+                  "overlayDismiss": true,
+                  "resizable": true,
+                  "showCloseIcon": true,
+                  "type": "close",
+                  "viewPath": "Popup_Views/Popup-Sander-Falldown",
+                  "viewportBound": false
+                },
+                "scope": "C",
+                "type": "popup"
+              },
+              {
+                "config": {
+                  "script": "\ttagValue \u003d system.tag.read(\u0027[default]site_sander/falldown/harvester mark/NS_face\u0027).value+1\n\tsystem.tag.write(\u0027[default]site_sander/falldown/harvester mark/NS_face\u0027,tagValue)"
+                },
+                "enabled": false,
+                "scope": "G",
+                "type": "script"
+              }
+            ]
+          }
+        },
+        "meta": {
+          "name": "Button"
+        },
+        "position": {
+          "height": 83.99999999999997,
+          "width": 270,
+          "x": 28.44,
+          "y": 210.27
+        },
+        "props": {
+          "style": {
+            "backgroundColor": "#00D9D9"
+          },
+          "text": "ENTER"
+        },
+        "type": "ia.input.button"
+      },
+      {
+        "meta": {
+          "name": "PRODUCT_0"
+        },
+        "position": {
+          "height": 39,
+          "width": 119,
+          "x": 544.1,
+          "y": 151
+        },
+        "propConfig": {
+          "props.value": {
+            "binding": {
+              "config": {
+                "bidirectional": true,
+                "fallbackDelay": 2.5,
+                "mode": "indirect",
+                "references": {},
+                "tagPath": "[default]site_sander/falldown/product/rating"
+              },
+              "type": "tag"
+            }
+          }
+        },
+        "props": {
+          "dropdownOptionStyle": {
+            "fontSize": 20
+          },
+          "options": [
+            {
+              "label": "F0",
+              "value": "F0"
+            },
+            {
+              "label": "F8",
+              "value": "F8"
+            },
+            {
+              "label": "F11",
+              "value": "F11"
+            },
+            {
+              "label": "F14",
+              "value": "F14"
+            },
+            {
+              "label": "F17",
+              "value": "F17"
+            }
+          ]
+        },
+        "type": "ia.input.dropdown"
+      },
+      {
+        "meta": {
+          "name": "Label_10"
+        },
+        "position": {
+          "height": 38.999999999999986,
+          "width": 64,
+          "x": 572.7,
+          "y": 112.3
+        },
+        "props": {
+          "text": "RATING"
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "PRODUCT_1"
+        },
+        "position": {
+          "height": 39,
+          "width": 119,
+          "x": 713.1,
+          "y": 151
+        },
+        "propConfig": {
+          "props.value": {
+            "binding": {
+              "config": {
+                "bidirectional": true,
+                "fallbackDelay": 2.5,
+                "mode": "indirect",
+                "references": {},
+                "tagPath": "[default]site_sander/falldown/product/construction"
+              },
+              "type": "tag"
+            }
+          }
+        },
+        "props": {
+          "dropdownOptionStyle": {
+            "fontSize": 20
+          },
+          "options": [
+            {
+              "label": "3 PLY",
+              "value": 3
+            },
+            {
+              "label": "4 PLY",
+              "value": 4
+            },
+            {
+              "label": "5 PLY",
+              "value": 5
+            },
+            {
+              "label": "7 PLY",
+              "value": 7
+            },
+            {
+              "label": "9 PLY",
+              "value": 9
+            },
+            {
+              "label": "11 PLY",
+              "value": 11
+            },
+            {
+              "label": "13 PLY",
+              "value": 13
+            },
+            {
+              "label": "17 PLY",
+              "value": 17
+            },
+            {
+              "label": "21 ply",
+              "value": 21
+            }
+          ]
+        },
+        "type": "ia.input.dropdown"
+      },
+      {
+        "meta": {
+          "name": "Label_11"
+        },
+        "position": {
+          "height": 39.000000000000014,
+          "width": 125,
+          "x": 710.7,
+          "y": 112.3
+        },
+        "props": {
+          "text": "CONSTRUCTION"
+        },
+        "type": "ia.display.label"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "type": "ia.container.coord"
+  }
+}

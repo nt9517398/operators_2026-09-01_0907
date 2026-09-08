@@ -1,0 +1,1183 @@
+{
+  "custom": {
+    "HMI_SG_EN": false
+  },
+  "params": {},
+  "propConfig": {
+    "custom.HMI_SG_EN": {
+      "binding": {
+        "config": {
+          "bidirectional": true,
+          "fallbackDelay": 2.5,
+          "mode": "indirect",
+          "references": {},
+          "tagPath": "[default]formply_trimline/hmi/HMI_SG_EN"
+        },
+        "type": "tag"
+      },
+      "persistent": true
+    }
+  },
+  "props": {
+    "defaultSize": {
+      "height": 488,
+      "width": 1405
+    }
+  },
+  "root": {
+    "children": [
+      {
+        "meta": {
+          "name": "Label_1"
+        },
+        "position": {
+          "height": 22,
+          "width": 767,
+          "x": 43.76,
+          "y": 258.27
+        },
+        "props": {
+          "style": {
+            "backgroundColor": "#004B3A"
+          },
+          "text": "PRODUCT SETUP",
+          "textStyle": {
+            "fontFamily": "Noto Sans",
+            "fontWeight": "bold",
+            "textTransform": "capitalize",
+            "whiteSpace": "pre-line"
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "Label"
+        },
+        "position": {
+          "height": 32,
+          "width": 150,
+          "x": 59.885297987365725,
+          "y": 309.2683506317139
+        },
+        "props": {
+          "text": "BOARD THICKNESS:"
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "TextField"
+        },
+        "position": {
+          "height": 32,
+          "width": 57,
+          "x": 215.38489798736572,
+          "y": 309.2683506317139
+        },
+        "propConfig": {
+          "props.text": {
+            "binding": {
+              "config": {
+                "bidirectional": true,
+                "fallbackDelay": 2.5,
+                "mode": "direct",
+                "tagPath": "[default]formply_trimline/hmi/HMI_Board_thickness"
+              },
+              "type": "tag"
+            }
+          }
+        },
+        "props": {
+          "style": {
+            "backgroundColor": "#004B3A",
+            "textAlign": "center"
+          }
+        },
+        "type": "ia.input.text-field"
+      },
+      {
+        "meta": {
+          "name": "Label_0"
+        },
+        "position": {
+          "height": 32,
+          "width": 110,
+          "x": 59.385297987365725,
+          "y": 347.2683506317139
+        },
+        "props": {
+          "text": "BOARD/PACK:"
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "Label_2"
+        },
+        "position": {
+          "height": 32,
+          "width": 116,
+          "x": 59.885297987365725,
+          "y": 391.2683506317139
+        },
+        "props": {
+          "text": "BOARD WIDTH:"
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "Label_3"
+        },
+        "position": {
+          "height": 32,
+          "width": 196,
+          "x": 331.1348979873657,
+          "y": 309.7563506317139
+        },
+        "props": {
+          "text": "MEASURED THICKNESS:"
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "TextField_2"
+        },
+        "position": {
+          "height": 32,
+          "width": 109,
+          "x": 541.2228979873657,
+          "y": 309.7563506317139
+        },
+        "propConfig": {
+          "props.text": {
+            "binding": {
+              "config": {
+                "fallbackDelay": 2.5,
+                "mode": "direct",
+                "tagPath": "[default]formply_trimline/hmi/Board_Thickness_Measured"
+              },
+              "type": "tag"
+            }
+          }
+        },
+        "props": {
+          "enabled": false,
+          "style": {
+            "backgroundColor": "#004B3A",
+            "textAlign": "center"
+          }
+        },
+        "type": "ia.input.text-field"
+      },
+      {
+        "meta": {
+          "name": "TextField_0"
+        },
+        "position": {
+          "height": 32,
+          "width": 57,
+          "x": 215.38489798736572,
+          "y": 347.2683506317139
+        },
+        "propConfig": {
+          "props.text": {
+            "binding": {
+              "config": {
+                "bidirectional": true,
+                "fallbackDelay": 2.5,
+                "mode": "direct",
+                "tagPath": "[default]formply_trimline/hmi/HMI_boards_per_pack"
+              },
+              "type": "tag"
+            }
+          }
+        },
+        "props": {
+          "style": {
+            "backgroundColor": "#004B3A",
+            "textAlign": "center"
+          }
+        },
+        "type": "ia.input.text-field"
+      },
+      {
+        "meta": {
+          "name": "TextField_1"
+        },
+        "position": {
+          "height": 32,
+          "width": 57,
+          "x": 215.38489798736572,
+          "y": 391.2683506317139
+        },
+        "propConfig": {
+          "props.text": {
+            "binding": {
+              "config": {
+                "fallbackDelay": 2.5,
+                "mode": "direct",
+                "tagPath": "[default]formply_trimline/MIS_Recipe/Width"
+              },
+              "type": "tag"
+            }
+          }
+        },
+        "props": {
+          "enabled": false,
+          "style": {
+            "backgroundColor": "#004B3A",
+            "textAlign": "center"
+          }
+        },
+        "type": "ia.input.text-field"
+      },
+      {
+        "events": {
+          "dom": {
+            "onClick": {
+              "config": {
+                "script": "\tself.view.custom.HMI_SG_EN \u003d not self.view.custom.HMI_SG_EN"
+              },
+              "scope": "G",
+              "type": "script"
+            }
+          }
+        },
+        "meta": {
+          "name": "Button"
+        },
+        "position": {
+          "height": 34,
+          "width": 195,
+          "x": 422.9388435058594,
+          "y": 389.27943701171876
+        },
+        "propConfig": {
+          "props.style.backgroundColor": {
+            "binding": {
+              "config": {
+                "path": "view.custom.HMI_SG_EN"
+              },
+              "transforms": [
+                {
+                  "fallback": "#D5D5D5",
+                  "inputType": "scalar",
+                  "mappings": [
+                    {
+                      "input": true,
+                      "output": "#00D900"
+                    }
+                  ],
+                  "outputType": "color",
+                  "type": "map"
+                }
+              ],
+              "type": "property"
+            }
+          },
+          "props.text": {
+            "binding": {
+              "config": {
+                "path": "view.custom.HMI_SG_EN"
+              },
+              "transforms": [
+                {
+                  "fallback": "STRESS GRADER DISABLED",
+                  "inputType": "scalar",
+                  "mappings": [
+                    {
+                      "input": true,
+                      "output": "STRESS GRADER ENABLED"
+                    }
+                  ],
+                  "outputType": "scalar",
+                  "type": "map"
+                }
+              ],
+              "type": "property"
+            }
+          }
+        },
+        "type": "ia.input.button"
+      },
+      {
+        "meta": {
+          "name": "Label_4"
+        },
+        "position": {
+          "height": 21.999999999999986,
+          "width": 343,
+          "x": 44.26,
+          "y": 154.27
+        },
+        "props": {
+          "style": {
+            "backgroundColor": "#004B3A"
+          },
+          "text": "SG OUTFEED TIMER",
+          "textStyle": {
+            "fontFamily": "Noto Sans",
+            "fontWeight": "bold",
+            "textTransform": "capitalize",
+            "whiteSpace": "pre-line"
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "Label_5"
+        },
+        "position": {
+          "height": 32,
+          "width": 178,
+          "x": 56.25274798736572,
+          "y": 194.73735063171387
+        },
+        "props": {
+          "text": "OUTFEED ROLLER LOWER DELAY (msec)"
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "TextField_3"
+        },
+        "position": {
+          "height": 32,
+          "width": 109,
+          "x": 240.26189798736573,
+          "y": 194.73735063171387
+        },
+        "propConfig": {
+          "props.text": {
+            "binding": {
+              "config": {
+                "bidirectional": true,
+                "fallbackDelay": 2.5,
+                "mode": "direct",
+                "tagPath": "[default]formply_trimline/hmi/SG_Timers/SG_Timers_6_/PRE"
+              },
+              "type": "tag"
+            }
+          }
+        },
+        "props": {
+          "style": {
+            "backgroundColor": "#004B3A",
+            "textAlign": "center"
+          }
+        },
+        "type": "ia.input.text-field"
+      },
+      {
+        "meta": {
+          "name": "Label_6"
+        },
+        "position": {
+          "height": 31.999999999999993,
+          "width": 149,
+          "x": 56.251747987365725,
+          "y": 93.75135063171388
+        },
+        "props": {
+          "text": "INFEED ROLLER LIFT DELAY (msec)"
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "TextField_4"
+        },
+        "position": {
+          "height": 32,
+          "width": 109,
+          "x": 240.26189798736573,
+          "y": 93.74775063171387
+        },
+        "propConfig": {
+          "props.text": {
+            "binding": {
+              "config": {
+                "bidirectional": true,
+                "fallbackDelay": 2.5,
+                "mode": "direct",
+                "tagPath": "[default]formply_trimline/hmi/SG_Timers/SG_Timers_7_/PRE"
+              },
+              "type": "tag"
+            }
+          }
+        },
+        "props": {
+          "style": {
+            "backgroundColor": "#004B3A",
+            "textAlign": "center"
+          }
+        },
+        "type": "ia.input.text-field"
+      },
+      {
+        "meta": {
+          "name": "Label_7"
+        },
+        "position": {
+          "height": 22.000000000000004,
+          "width": 343,
+          "x": 43.88,
+          "y": 28.77
+        },
+        "props": {
+          "style": {
+            "backgroundColor": "#004B3A"
+          },
+          "text": "SG INFEED TIMERS",
+          "textStyle": {
+            "fontFamily": "Noto Sans",
+            "fontWeight": "bold",
+            "textTransform": "capitalize",
+            "whiteSpace": "pre-line"
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "Label_8"
+        },
+        "position": {
+          "height": 21.999999999999996,
+          "width": 418,
+          "x": 395.15,
+          "y": 28.48
+        },
+        "props": {
+          "style": {
+            "backgroundColor": "#004B3A"
+          },
+          "text": "STACKER SELECTION",
+          "textStyle": {
+            "fontFamily": "Noto Sans",
+            "fontWeight": "bold",
+            "textTransform": "capitalize",
+            "whiteSpace": "pre-line"
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "Label_9"
+        },
+        "position": {
+          "height": 31.999999999999993,
+          "width": 59,
+          "x": 439.23015625,
+          "y": 133.2635625
+        },
+        "props": {
+          "text": "REJECT"
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "TextField_5"
+        },
+        "position": {
+          "height": 32,
+          "width": 57,
+          "x": 567.75015625,
+          "y": 133.2675625
+        },
+        "propConfig": {
+          "props.text": {
+            "binding": {
+              "config": {
+                "bidirectional": true,
+                "fallbackDelay": 2.5,
+                "mode": "direct",
+                "tagPath": "[default]formply_trimline/hmi/StackerGrades/StackerGrades_0_"
+              },
+              "type": "tag"
+            }
+          }
+        },
+        "props": {
+          "style": {
+            "backgroundColor": "#004B3A",
+            "textAlign": "center"
+          }
+        },
+        "type": "ia.input.text-field"
+      },
+      {
+        "meta": {
+          "name": "Label_10"
+        },
+        "position": {
+          "height": 31.999999999999993,
+          "width": 176,
+          "x": 487.87515625,
+          "y": 86.2035625
+        },
+        "props": {
+          "text": "STACKER ALLOCATION",
+          "textStyle": {
+            "textDecoration": "underline"
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "Label_11"
+        },
+        "position": {
+          "height": 31.999999999999993,
+          "width": 141,
+          "x": 438.8128979873657,
+          "y": 165.31935063171386
+        },
+        "props": {
+          "text": "GOOD TOP"
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "TextField_6"
+        },
+        "position": {
+          "height": 32,
+          "width": 57,
+          "x": 567.3308979873657,
+          "y": 165.32135063171387
+        },
+        "propConfig": {
+          "props.text": {
+            "binding": {
+              "config": {
+                "bidirectional": true,
+                "fallbackDelay": 2.5,
+                "mode": "direct",
+                "tagPath": "[default]formply_trimline/hmi/StackerGrades/StackerGrades_1_"
+              },
+              "type": "tag"
+            }
+          }
+        },
+        "props": {
+          "style": {
+            "backgroundColor": "#004B3A",
+            "textAlign": "center"
+          }
+        },
+        "type": "ia.input.text-field"
+      },
+      {
+        "meta": {
+          "name": "Label_12"
+        },
+        "position": {
+          "height": 31.999999999999993,
+          "width": 134.17000000000002,
+          "x": 438.8128979873657,
+          "y": 210.28935063171386
+        },
+        "props": {
+          "text": "GOOD BOTTOM"
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "TextField_7"
+        },
+        "position": {
+          "height": 32,
+          "width": 57,
+          "x": 567.3308979873657,
+          "y": 210.29135063171387
+        },
+        "propConfig": {
+          "props.text": {
+            "binding": {
+              "config": {
+                "bidirectional": true,
+                "fallbackDelay": 2.5,
+                "mode": "direct",
+                "tagPath": "[default]formply_trimline/hmi/StackerGrades/StackerGrades_2_"
+              },
+              "type": "tag"
+            }
+          }
+        },
+        "props": {
+          "style": {
+            "backgroundColor": "#004B3A",
+            "textAlign": "center"
+          }
+        },
+        "type": "ia.input.text-field"
+      },
+      {
+        "meta": {
+          "name": "Label_13"
+        },
+        "position": {
+          "height": 31.999999999999993,
+          "width": 17.450000000000045,
+          "x": 687.1928979873658,
+          "y": 122.28915063171387
+        },
+        "props": {
+          "text": "F14"
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "TextField_8"
+        },
+        "position": {
+          "height": 32,
+          "width": 57,
+          "x": 734.7098979873657,
+          "y": 122.29085063171387
+        },
+        "propConfig": {
+          "props.text": {
+            "binding": {
+              "config": {
+                "bidirectional": true,
+                "fallbackDelay": 2.5,
+                "mode": "direct",
+                "tagPath": "[default]formply_trimline/hmi/StackerGrades/StackerGrades_3_"
+              },
+              "type": "tag"
+            }
+          }
+        },
+        "props": {
+          "style": {
+            "backgroundColor": "#004B3A",
+            "textAlign": "center"
+          }
+        },
+        "type": "ia.input.text-field"
+      },
+      {
+        "meta": {
+          "name": "Label_14"
+        },
+        "position": {
+          "height": 31.999999999999993,
+          "width": 41,
+          "x": 687.1928979873658,
+          "y": 165.31935063171386
+        },
+        "props": {
+          "text": "F17"
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "TextField_9"
+        },
+        "position": {
+          "height": 32,
+          "width": 57,
+          "x": 734.7008979873657,
+          "y": 165.32135063171387
+        },
+        "propConfig": {
+          "props.text": {
+            "binding": {
+              "config": {
+                "bidirectional": true,
+                "fallbackDelay": 2.5,
+                "mode": "direct",
+                "tagPath": "[default]formply_trimline/hmi/StackerGrades/StackerGrades_4_"
+              },
+              "type": "tag"
+            }
+          }
+        },
+        "props": {
+          "style": {
+            "backgroundColor": "#004B3A",
+            "textAlign": "center"
+          }
+        },
+        "type": "ia.input.text-field"
+      },
+      {
+        "meta": {
+          "name": "Label_15"
+        },
+        "position": {
+          "height": 31.999999999999993,
+          "width": 38.97000000000003,
+          "x": 687.1928979873658,
+          "y": 210.28935063171386
+        },
+        "props": {
+          "text": "F22"
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "TextField_10"
+        },
+        "position": {
+          "height": 32,
+          "width": 57,
+          "x": 734.7008979873657,
+          "y": 210.29135063171387
+        },
+        "propConfig": {
+          "props.text": {
+            "binding": {
+              "config": {
+                "bidirectional": true,
+                "fallbackDelay": 2.5,
+                "mode": "direct",
+                "tagPath": "[default]formply_trimline/hmi/StackerGrades/StackerGrades_5_"
+              },
+              "type": "tag"
+            }
+          }
+        },
+        "props": {
+          "style": {
+            "backgroundColor": "#004B3A",
+            "textAlign": "center"
+          }
+        },
+        "type": "ia.input.text-field"
+      },
+      {
+        "meta": {
+          "name": "Label_16"
+        },
+        "position": {
+          "height": 21.999999999999996,
+          "width": 497,
+          "x": 820.76,
+          "y": 28.48
+        },
+        "props": {
+          "style": {
+            "backgroundColor": "#004B3A"
+          },
+          "text": "MAINTENANCE",
+          "textStyle": {
+            "fontFamily": "Noto Sans",
+            "fontWeight": "bold",
+            "textTransform": "capitalize",
+            "whiteSpace": "pre-line"
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "Label_18"
+        },
+        "position": {
+          "height": 31.999999999999993,
+          "width": 249,
+          "x": 870.97,
+          "y": 92.724375
+        },
+        "props": {
+          "text": "BOARD THICKNESS TOLERANCE"
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "TextField_11"
+        },
+        "position": {
+          "height": 32,
+          "width": 57,
+          "x": 1149.75,
+          "y": 94.002375
+        },
+        "propConfig": {
+          "props.text": {
+            "binding": {
+              "config": {
+                "bidirectional": true,
+                "fallbackDelay": 2.5,
+                "mode": "direct",
+                "tagPath": "[default]formply_trimline/hmi/Board_Thickness_Tolerance"
+              },
+              "type": "tag"
+            }
+          }
+        },
+        "props": {
+          "style": {
+            "backgroundColor": "#004B3A",
+            "textAlign": "center"
+          }
+        },
+        "type": "ia.input.text-field"
+      },
+      {
+        "meta": {
+          "name": "Label_19"
+        },
+        "position": {
+          "height": 31.999999999999993,
+          "width": 249,
+          "x": 870.90359375,
+          "y": 142.9665875
+        },
+        "props": {
+          "text": "THICKNESS CALIBRATION (%)"
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "TextField_12"
+        },
+        "position": {
+          "height": 32,
+          "width": 57,
+          "x": 1150.48046875,
+          "y": 143.2445875
+        },
+        "propConfig": {
+          "props.text": {
+            "binding": {
+              "config": {
+                "bidirectional": true,
+                "fallbackDelay": 2.5,
+                "mode": "direct",
+                "tagPath": "[default]formply_trimline/hmi/Board_Thickness_Calibration"
+              },
+              "type": "tag"
+            }
+          }
+        },
+        "props": {
+          "style": {
+            "backgroundColor": "#004B3A",
+            "textAlign": "center"
+          }
+        },
+        "type": "ia.input.text-field"
+      },
+      {
+        "events": {
+          "dom": {
+            "onClick": {
+              "config": {
+                "script": "\tself.view.custom.HMI_SG_EN \u003d not self.view.custom.HMI_SG_EN"
+              },
+              "scope": "G",
+              "type": "script"
+            }
+          }
+        },
+        "meta": {
+          "name": "Button_0"
+        },
+        "position": {
+          "height": 34,
+          "width": 195,
+          "x": 859.71828125,
+          "y": 326.00509375
+        },
+        "props": {
+          "style": {
+            "backgroundColor": "#D5D5D5"
+          },
+          "text": "INFEED FOLLER RAISE"
+        },
+        "type": "ia.input.button"
+      },
+      {
+        "events": {
+          "dom": {
+            "onClick": {
+              "config": {
+                "script": "\tself.view.custom.HMI_SG_EN \u003d not self.view.custom.HMI_SG_EN"
+              },
+              "scope": "G",
+              "type": "script"
+            }
+          }
+        },
+        "meta": {
+          "name": "Button_1"
+        },
+        "position": {
+          "height": 34,
+          "width": 195,
+          "x": 1080.4523749999998,
+          "y": 324.2471875
+        },
+        "props": {
+          "style": {
+            "backgroundColor": "#D5D5D5"
+          },
+          "text": "OUTFEED ROLLER RAISE"
+        },
+        "type": "ia.input.button"
+      },
+      {
+        "meta": {
+          "name": "Label_17"
+        },
+        "position": {
+          "height": 21.999999999999993,
+          "width": 498,
+          "x": 820.49,
+          "y": 258.22033184814455
+        },
+        "props": {
+          "style": {
+            "backgroundColor": "#004B3A"
+          },
+          "text": "STRESS GRADER MANUAL",
+          "textStyle": {
+            "fontFamily": "Noto Sans",
+            "fontWeight": "bold",
+            "textTransform": "capitalize",
+            "whiteSpace": "pre-line"
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "events": {
+          "dom": {
+            "onClick": {
+              "config": {
+                "script": "\t\tsystem.tag.write(\"[default]formply_trimline/hmi/HMI_2400_Board_Cut_Req\", 1)\n\t\tsystem.tag.write(\"[default]formply_trimline/hmi/HMI_1800_Board_Cut_Req\", 0)"
+              },
+              "scope": "G",
+              "type": "script"
+            }
+          }
+        },
+        "meta": {
+          "name": "Button_2"
+        },
+        "position": {
+          "height": 33,
+          "width": 170,
+          "x": 331.75,
+          "y": 346.52
+        },
+        "propConfig": {
+          "props.style.backgroundColor": {
+            "binding": {
+              "config": {
+                "fallbackDelay": 2.5,
+                "mode": "direct",
+                "tagPath": "[default]formply_trimline/hmi/HMI_2400_Board_Cut_Req"
+              },
+              "transforms": [
+                {
+                  "fallback": "#AAAAAA",
+                  "inputType": "scalar",
+                  "mappings": [
+                    {
+                      "input": true,
+                      "output": "#47FF47"
+                    }
+                  ],
+                  "outputType": "color",
+                  "type": "map"
+                }
+              ],
+              "type": "tag"
+            }
+          }
+        },
+        "props": {
+          "image": {
+            "style": {
+              "backgroundColor": "#808080"
+            }
+          },
+          "style": {
+            "color": "#000000"
+          },
+          "text": "Request for 2400 mm"
+        },
+        "type": "ia.input.button"
+      },
+      {
+        "events": {
+          "dom": {
+            "onClick": {
+              "config": {
+                "script": "\t\t system.tag.write(\"[default]formply_trimline/hmi/HMI_2400_Board_Cut_Req\", 0)\n\t\t system.tag.write(\"[default]formply_trimline/hmi/HMI_1800_Board_Cut_Req\", 1)"
+              },
+              "scope": "G",
+              "type": "script"
+            }
+          }
+        },
+        "meta": {
+          "name": "Button_3"
+        },
+        "position": {
+          "height": 33,
+          "width": 171,
+          "x": 524.15,
+          "y": 347.30043701171877
+        },
+        "propConfig": {
+          "props.style.backgroundColor": {
+            "binding": {
+              "config": {
+                "fallbackDelay": 2.5,
+                "mode": "direct",
+                "tagPath": "[default]formply_trimline/hmi/HMI_1800_Board_Cut_Req"
+              },
+              "transforms": [
+                {
+                  "fallback": "#AAAAAA",
+                  "inputType": "scalar",
+                  "mappings": [
+                    {
+                      "input": true,
+                      "output": "#47FF47"
+                    }
+                  ],
+                  "outputType": "color",
+                  "type": "map"
+                }
+              ],
+              "type": "tag"
+            }
+          }
+        },
+        "props": {
+          "image": {
+            "style": {
+              "backgroundColor": "#808080"
+            }
+          },
+          "style": {
+            "color": "#000000"
+          },
+          "text": "Request for 1800 mm"
+        },
+        "type": "ia.input.button"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "props": {
+      "pipes": [
+        {
+          "appearance": "auto",
+          "end": "none",
+          "fill": "",
+          "flanges": true,
+          "lineVariant": "solid",
+          "name": "pipe",
+          "origin": {
+            "connections": [
+              {
+                "connections": [
+                  {
+                    "connections": [
+                      {
+                        "connections": [
+                          {
+                            "x": 438.82,
+                            "y": 445
+                          },
+                          {
+                            "x": 1300.45,
+                            "y": 445
+                          }
+                        ],
+                        "x": 816,
+                        "y": 445
+                      },
+                      {
+                        "connections": [
+                          {
+                            "connections": [
+                              {
+                                "x": 1275.45,
+                                "y": 445
+                              }
+                            ],
+                            "x": 1321.45,
+                            "y": 445
+                          }
+                        ],
+                        "x": 1321.45,
+                        "y": 24.77
+                      }
+                    ],
+                    "x": 816,
+                    "y": 24.77
+                  },
+                  {
+                    "connections": [
+                      {
+                        "x": 40,
+                        "y": 252.77
+                      },
+                      {
+                        "connections": [
+                          {
+                            "x": 1321.45,
+                            "y": 252.77
+                          }
+                        ],
+                        "x": 810.76,
+                        "y": 252.77
+                      }
+                    ],
+                    "x": 391,
+                    "y": 252.77
+                  }
+                ],
+                "x": 391,
+                "y": 24.77
+              },
+              {
+                "connections": [
+                  {
+                    "connections": [],
+                    "x": 438.82,
+                    "y": 445
+                  }
+                ],
+                "x": 40,
+                "y": 445
+              }
+            ],
+            "x": 40,
+            "y": 24.77
+          },
+          "start": "none",
+          "stroke": "",
+          "visible": true,
+          "width": 5
+        }
+      ]
+    },
+    "type": "ia.container.coord"
+  }
+}
