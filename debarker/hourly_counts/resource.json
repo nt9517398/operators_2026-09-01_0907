@@ -1,0 +1,45 @@
+{
+  "scope": "DG",
+  "version": 2,
+  "restricted": false,
+  "overridable": true,
+  "files": [
+    "query.sql"
+  ],
+  "attributes": {
+    "useMaxReturnSize": false,
+    "autoBatchEnabled": false,
+    "fallbackValue": "",
+    "maxReturnSize": 100,
+    "cacheUnit": "SEC",
+    "type": "Query",
+    "enabled": true,
+    "cacheAmount": 1,
+    "cacheEnabled": false,
+    "database": "site_debarker",
+    "fallbackEnabled": false,
+    "lastModificationSignature": "96142735c8325da7431a55aff02c5a42f9e3c6b75b0bec0179f4a555b6e96d48",
+    "permissions": [
+      {
+        "zone": "",
+        "role": ""
+      }
+    ],
+    "lastModification": {
+      "actor": "Administrator",
+      "timestamp": "2025-11-10T22:31:59Z"
+    },
+    "parameters": [
+      {
+        "type": "Parameter",
+        "identifier": "startTime",
+        "sqlType": 8
+      },
+      {
+        "type": "Parameter",
+        "identifier": "endTime",
+        "sqlType": 8
+      }
+    ]
+  }
+}

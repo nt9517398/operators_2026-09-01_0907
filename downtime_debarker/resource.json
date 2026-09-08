@@ -1,0 +1,76 @@
+{
+  "scope": "DG",
+  "version": 2,
+  "restricted": false,
+  "overridable": true,
+  "files": [
+    "query.sql"
+  ],
+  "attributes": {
+    "useMaxReturnSize": false,
+    "autoBatchEnabled": false,
+    "fallbackValue": "",
+    "maxReturnSize": 100,
+    "cacheUnit": "SEC",
+    "type": "Query",
+    "enabled": true,
+    "cacheAmount": 1,
+    "cacheEnabled": false,
+    "database": "downtime_data",
+    "fallbackEnabled": false,
+    "lastModificationSignature": "bb6d2811b4b2f19e55af17252e1aeda8d68b10f465471c1420b2cb170679e9fb",
+    "permissions": [
+      {
+        "zone": "",
+        "role": ""
+      }
+    ],
+    "lastModification": {
+      "actor": "external",
+      "timestamp": "2026-08-23T14:29:00Z"
+    },
+    "syntaxProvider": "class com.adbs.syntax.MySQLSyntaxProvider",
+    "parameters": [
+      {
+        "type": "Parameter",
+        "identifier": "sub_area",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "responsibility",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "equipment",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "action",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "area",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "start_time",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "end_time",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "duration",
+        "sqlType": 7
+      }
+    ]
+  }
+}
