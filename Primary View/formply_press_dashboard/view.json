@@ -1,0 +1,3772 @@
+{
+  "custom": {},
+  "params": {},
+  "props": {
+    "defaultSize": {
+      "height": 1160,
+      "width": 2200
+    }
+  },
+  "root": {
+    "children": [
+      {
+        "children": [
+          {
+            "meta": {
+              "name": "spacing1"
+            },
+            "position": {
+              "basis": "52px"
+            },
+            "type": "ia.container.flex"
+          },
+          {
+            "meta": {
+              "name": "Label"
+            },
+            "position": {
+              "basis": "267px"
+            },
+            "props": {
+              "text": "HOT PRESS",
+              "textStyle": {
+                "borderStyle": "none",
+                "color": "#E8E8E8",
+                "fill": "#FFFDFD",
+                "fontFamily": "monospace",
+                "fontSize": 40,
+                "fontWeight": "bolder",
+                "outlineWidth": "10",
+                "textAlign": "center",
+                "textOverflow": "clip",
+                "textTransform": "uppercase",
+                "whiteSpace": "normal",
+                "wordWrap": "break-word"
+              }
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "meta": {
+              "name": "spacing"
+            },
+            "position": {
+              "basis": "20px"
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "children": [
+              {
+                "meta": {
+                  "name": "Label"
+                },
+                "position": {
+                  "basis": "120px"
+                },
+                "props": {
+                  "text": "STATUS",
+                  "textStyle": {
+                    "fontSize": 25
+                  }
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "children": [
+                  {
+                    "meta": {
+                      "name": "Green pilot light 2"
+                    },
+                    "position": {
+                      "basis": "30px"
+                    },
+                    "propConfig": {
+                      "meta.visible": {
+                        "binding": {
+                          "config": {
+                            "fallbackDelay": 2.5,
+                            "mode": "direct",
+                            "tagPath": "[default]formply_press/MIS_Press_Production_On"
+                          },
+                          "transforms": [
+                            {
+                              "fallback": false,
+                              "inputType": "scalar",
+                              "mappings": [
+                                {
+                                  "input": true,
+                                  "output": true
+                                }
+                              ],
+                              "outputType": "scalar",
+                              "type": "map"
+                            }
+                          ],
+                          "type": "tag"
+                        }
+                      }
+                    },
+                    "props": {
+                      "elements": [
+                        {
+                          "cx": "499",
+                          "cy": "499",
+                          "fill": {
+                            "paint": "#000"
+                          },
+                          "name": "circle",
+                          "r": "499",
+                          "style": {},
+                          "type": "circle"
+                        },
+                        {
+                          "d": "M21,499 l34,-180 102,-162 162,-104 180,-34 180,34 162,104 104,162 34,180 -34,180 -104,162 -162,102 -180,34 -180,-34 -162,-102 -102,-162 -34,-180z",
+                          "fill": {
+                            "paint": "#0f0"
+                          },
+                          "name": "path",
+                          "style": {},
+                          "type": "path"
+                        },
+                        {
+                          "cx": "406",
+                          "cy": "405",
+                          "fill": {
+                            "paint": "#6bff6b"
+                          },
+                          "name": "circle",
+                          "r": "291",
+                          "style": {},
+                          "type": "circle"
+                        },
+                        {
+                          "cx": "359",
+                          "cy": "357",
+                          "fill": {
+                            "paint": "#a3ffa3"
+                          },
+                          "name": "circle",
+                          "r": "198",
+                          "style": {},
+                          "type": "circle"
+                        },
+                        {
+                          "cx": "311",
+                          "cy": "311",
+                          "fill": {
+                            "paint": "#d9ffd9"
+                          },
+                          "name": "circle",
+                          "r": "104",
+                          "style": {},
+                          "type": "circle"
+                        }
+                      ],
+                      "viewBox": "0 0 999 999"
+                    },
+                    "type": "ia.shapes.svg"
+                  },
+                  {
+                    "meta": {
+                      "name": "Red pilot light 2"
+                    },
+                    "position": {
+                      "basis": "30px"
+                    },
+                    "propConfig": {
+                      "meta.visible": {
+                        "binding": {
+                          "config": {
+                            "fallbackDelay": 2.5,
+                            "mode": "direct",
+                            "tagPath": "[default]formply_press/MIS_Press_Production_On"
+                          },
+                          "transforms": [
+                            {
+                              "fallback": true,
+                              "inputType": "scalar",
+                              "mappings": [
+                                {
+                                  "input": true,
+                                  "output": false
+                                }
+                              ],
+                              "outputType": "scalar",
+                              "type": "map"
+                            }
+                          ],
+                          "type": "tag"
+                        }
+                      }
+                    },
+                    "props": {
+                      "elements": [
+                        {
+                          "cx": "499",
+                          "cy": "499",
+                          "fill": {
+                            "paint": "#000"
+                          },
+                          "name": "circle",
+                          "r": "499",
+                          "style": {},
+                          "type": "circle"
+                        },
+                        {
+                          "d": "M22,497 l34,-178 104,-159 162,-107 175,-34 182,34 159,107 107,159 34,178 -34,179 -107,162 -159,104 -182,34 -175,-34 -162,-104 -104,-162 -34,-179z",
+                          "fill": {
+                            "paint": "#f00"
+                          },
+                          "name": "path",
+                          "stroke": {
+                            "paint": "#4c4c4c",
+                            "width": "2"
+                          },
+                          "style": {},
+                          "type": "path"
+                        },
+                        {
+                          "cx": "406",
+                          "cy": "405",
+                          "fill": {
+                            "paint": "#ff6b6b"
+                          },
+                          "name": "circle",
+                          "r": "291",
+                          "style": {},
+                          "type": "circle"
+                        },
+                        {
+                          "d": "M161,357 l15,-74 41,-66 68,-44 74,-13 74,13 66,44 44,66 14,74 -14,74 -44,68 -66,42 -74,14 -74,-14 -68,-42 -41,-68 -15,-74z",
+                          "fill": {
+                            "paint": "#ffa3a3"
+                          },
+                          "name": "path",
+                          "style": {},
+                          "type": "path"
+                        },
+                        {
+                          "d": "M208,311 l7,-39 22,-35 37,-22 37,-7 40,7 36,22 22,35 6,39 -6,40 -22,34 -36,22 -40,8 -37,-8 -37,-22 -22,-34 -7,-40z",
+                          "fill": {
+                            "paint": "#ffd9d9"
+                          },
+                          "name": "path",
+                          "style": {},
+                          "type": "path"
+                        }
+                      ],
+                      "viewBox": "0 0 999 999"
+                    },
+                    "type": "ia.shapes.svg"
+                  },
+                  {
+                    "meta": {
+                      "name": "Icon",
+                      "visible": false
+                    },
+                    "position": {
+                      "basis": "30px"
+                    },
+                    "propConfig": {
+                      "props.color": {
+                        "binding": {
+                          "config": {
+                            "fallbackDelay": 2.5,
+                            "mode": "direct",
+                            "tagPath": "[default]site_composer2/Alarms/HMI_AlarmActive"
+                          },
+                          "transforms": [
+                            {
+                              "fallback": "#FF0000",
+                              "inputType": "scalar",
+                              "mappings": [
+                                {
+                                  "input": false,
+                                  "output": "#808080"
+                                }
+                              ],
+                              "outputType": "color",
+                              "type": "map"
+                            }
+                          ],
+                          "type": "tag"
+                        }
+                      }
+                    },
+                    "props": {
+                      "path": "material/warning",
+                      "style": {
+                        "classes": ""
+                      }
+                    },
+                    "type": "ia.display.icon"
+                  }
+                ],
+                "meta": {
+                  "name": "FlexContainer"
+                },
+                "position": {
+                  "basis": "180px"
+                },
+                "type": "ia.container.flex"
+              }
+            ],
+            "meta": {
+              "name": "status"
+            },
+            "position": {
+              "basis": "300px"
+            },
+            "type": "ia.container.flex"
+          },
+          {
+            "meta": {
+              "name": "spacing2"
+            },
+            "position": {
+              "basis": "52px"
+            },
+            "type": "ia.container.flex"
+          },
+          {
+            "meta": {
+              "name": "Label_0"
+            },
+            "position": {
+              "basis": "267px"
+            },
+            "props": {
+              "text": "LAY UP",
+              "textStyle": {
+                "borderStyle": "none",
+                "color": "#E8E8E8",
+                "fill": "#FFFDFD",
+                "fontFamily": "monospace",
+                "fontSize": 40,
+                "fontWeight": "bolder",
+                "outlineWidth": "10",
+                "textAlign": "center",
+                "textOverflow": "clip",
+                "textTransform": "uppercase",
+                "whiteSpace": "normal",
+                "wordWrap": "break-word"
+              }
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "meta": {
+              "name": "spacing_0"
+            },
+            "position": {
+              "basis": "20px"
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "children": [
+              {
+                "meta": {
+                  "name": "Label"
+                },
+                "position": {
+                  "basis": "120px"
+                },
+                "props": {
+                  "text": "STATUS",
+                  "textStyle": {
+                    "fontSize": 25
+                  }
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "children": [
+                  {
+                    "meta": {
+                      "name": "Green pilot light 2"
+                    },
+                    "position": {
+                      "basis": "30px"
+                    },
+                    "propConfig": {
+                      "meta.visible": {
+                        "binding": {
+                          "config": {
+                            "fallbackDelay": 2.5,
+                            "mode": "direct",
+                            "tagPath": "[default]formply_press/MIS_Layup_Production_On"
+                          },
+                          "transforms": [
+                            {
+                              "fallback": false,
+                              "inputType": "scalar",
+                              "mappings": [
+                                {
+                                  "input": true,
+                                  "output": true
+                                }
+                              ],
+                              "outputType": "scalar",
+                              "type": "map"
+                            }
+                          ],
+                          "type": "tag"
+                        }
+                      }
+                    },
+                    "props": {
+                      "elements": [
+                        {
+                          "cx": "499",
+                          "cy": "499",
+                          "fill": {
+                            "paint": "#000"
+                          },
+                          "name": "circle",
+                          "r": "499",
+                          "style": {},
+                          "type": "circle"
+                        },
+                        {
+                          "d": "M21,499 l34,-180 102,-162 162,-104 180,-34 180,34 162,104 104,162 34,180 -34,180 -104,162 -162,102 -180,34 -180,-34 -162,-102 -102,-162 -34,-180z",
+                          "fill": {
+                            "paint": "#0f0"
+                          },
+                          "name": "path",
+                          "style": {},
+                          "type": "path"
+                        },
+                        {
+                          "cx": "406",
+                          "cy": "405",
+                          "fill": {
+                            "paint": "#6bff6b"
+                          },
+                          "name": "circle",
+                          "r": "291",
+                          "style": {},
+                          "type": "circle"
+                        },
+                        {
+                          "cx": "359",
+                          "cy": "357",
+                          "fill": {
+                            "paint": "#a3ffa3"
+                          },
+                          "name": "circle",
+                          "r": "198",
+                          "style": {},
+                          "type": "circle"
+                        },
+                        {
+                          "cx": "311",
+                          "cy": "311",
+                          "fill": {
+                            "paint": "#d9ffd9"
+                          },
+                          "name": "circle",
+                          "r": "104",
+                          "style": {},
+                          "type": "circle"
+                        }
+                      ],
+                      "viewBox": "0 0 999 999"
+                    },
+                    "type": "ia.shapes.svg"
+                  },
+                  {
+                    "meta": {
+                      "name": "Red pilot light 2"
+                    },
+                    "position": {
+                      "basis": "30px"
+                    },
+                    "propConfig": {
+                      "meta.visible": {
+                        "binding": {
+                          "config": {
+                            "fallbackDelay": 2.5,
+                            "mode": "direct",
+                            "tagPath": "[default]formply_press/MIS_Layup_Production_On"
+                          },
+                          "transforms": [
+                            {
+                              "fallback": true,
+                              "inputType": "scalar",
+                              "mappings": [
+                                {
+                                  "input": true,
+                                  "output": false
+                                }
+                              ],
+                              "outputType": "scalar",
+                              "type": "map"
+                            }
+                          ],
+                          "type": "tag"
+                        }
+                      }
+                    },
+                    "props": {
+                      "elements": [
+                        {
+                          "cx": "499",
+                          "cy": "499",
+                          "fill": {
+                            "paint": "#000"
+                          },
+                          "name": "circle",
+                          "r": "499",
+                          "style": {},
+                          "type": "circle"
+                        },
+                        {
+                          "d": "M22,497 l34,-178 104,-159 162,-107 175,-34 182,34 159,107 107,159 34,178 -34,179 -107,162 -159,104 -182,34 -175,-34 -162,-104 -104,-162 -34,-179z",
+                          "fill": {
+                            "paint": "#f00"
+                          },
+                          "name": "path",
+                          "stroke": {
+                            "paint": "#4c4c4c",
+                            "width": "2"
+                          },
+                          "style": {},
+                          "type": "path"
+                        },
+                        {
+                          "cx": "406",
+                          "cy": "405",
+                          "fill": {
+                            "paint": "#ff6b6b"
+                          },
+                          "name": "circle",
+                          "r": "291",
+                          "style": {},
+                          "type": "circle"
+                        },
+                        {
+                          "d": "M161,357 l15,-74 41,-66 68,-44 74,-13 74,13 66,44 44,66 14,74 -14,74 -44,68 -66,42 -74,14 -74,-14 -68,-42 -41,-68 -15,-74z",
+                          "fill": {
+                            "paint": "#ffa3a3"
+                          },
+                          "name": "path",
+                          "style": {},
+                          "type": "path"
+                        },
+                        {
+                          "d": "M208,311 l7,-39 22,-35 37,-22 37,-7 40,7 36,22 22,35 6,39 -6,40 -22,34 -36,22 -40,8 -37,-8 -37,-22 -22,-34 -7,-40z",
+                          "fill": {
+                            "paint": "#ffd9d9"
+                          },
+                          "name": "path",
+                          "style": {},
+                          "type": "path"
+                        }
+                      ],
+                      "viewBox": "0 0 999 999"
+                    },
+                    "type": "ia.shapes.svg"
+                  },
+                  {
+                    "meta": {
+                      "name": "Icon",
+                      "visible": false
+                    },
+                    "position": {
+                      "basis": "30px"
+                    },
+                    "propConfig": {
+                      "props.color": {
+                        "binding": {
+                          "config": {
+                            "fallbackDelay": 2.5,
+                            "mode": "direct",
+                            "tagPath": "[default]site_composer2/Alarms/HMI_AlarmActive"
+                          },
+                          "transforms": [
+                            {
+                              "fallback": "#FF0000",
+                              "inputType": "scalar",
+                              "mappings": [
+                                {
+                                  "input": false,
+                                  "output": "#808080"
+                                }
+                              ],
+                              "outputType": "color",
+                              "type": "map"
+                            }
+                          ],
+                          "type": "tag"
+                        }
+                      }
+                    },
+                    "props": {
+                      "path": "material/warning",
+                      "style": {
+                        "classes": ""
+                      }
+                    },
+                    "type": "ia.display.icon"
+                  }
+                ],
+                "meta": {
+                  "name": "FlexContainer"
+                },
+                "position": {
+                  "basis": "180px"
+                },
+                "type": "ia.container.flex"
+              }
+            ],
+            "meta": {
+              "name": "status_0"
+            },
+            "position": {
+              "basis": "300px"
+            },
+            "type": "ia.container.flex"
+          }
+        ],
+        "meta": {
+          "name": "header"
+        },
+        "position": {
+          "basis": "70px",
+          "shrink": 0
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "children": [
+          {
+            "events": {
+              "dom": {
+                "onClick": {
+                  "config": {
+                    "draggable": false,
+                    "id": "Ruf91Bp1",
+                    "modal": true,
+                    "overlayDismiss": true,
+                    "resizable": false,
+                    "showCloseIcon": false,
+                    "type": "open",
+                    "viewPath": "Primary/Downtime_Formply_Press",
+                    "viewportBound": false
+                  },
+                  "scope": "C",
+                  "type": "popup"
+                }
+              }
+            },
+            "meta": {
+              "name": "Button",
+              "visible": false
+            },
+            "position": {
+              "basis": "80px"
+            },
+            "scripts": {
+              "customMethods": [],
+              "extensionFunctions": null,
+              "messageHandlers": [
+                {
+                  "messageType": "downtimepopup_formply_press",
+                  "pageScope": true,
+                  "script": "\tsystem.perspective.openPopup(\u0027Ruf91Bp1\u0027, \u0027Primary/Downtime_Formply_Press\u0027, showCloseIcon \u003d False, draggable \u003d False,resizable \u003d False,  modal \u003d True)",
+                  "sessionScope": true,
+                  "viewScope": true
+                }
+              ]
+            },
+            "type": "ia.input.button"
+          }
+        ],
+        "meta": {
+          "name": "FlexContainer_1"
+        },
+        "position": {
+          "basis": "38px",
+          "display": false
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "children": [
+          {
+            "children": [
+              {
+                "meta": {
+                  "name": "Label"
+                },
+                "position": {
+                  "basis": "325px",
+                  "grow": 1
+                },
+                "props": {
+                  "text": "TOTAL BOARDS",
+                  "textStyle": {
+                    "classes": "Font/Description"
+                  }
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "Label_0"
+                },
+                "position": {
+                  "basis": "325px",
+                  "grow": 1
+                },
+                "props": {
+                  "text": "LENGTH",
+                  "textStyle": {
+                    "classes": "Font/Description"
+                  }
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "Label_1"
+                },
+                "position": {
+                  "basis": "325px",
+                  "grow": 1
+                },
+                "props": {
+                  "text": "WIDTH",
+                  "textStyle": {
+                    "classes": "Font/Description"
+                  }
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "Label_2"
+                },
+                "position": {
+                  "basis": "325px",
+                  "grow": 1
+                },
+                "props": {
+                  "style": {
+                    "classes": "Font/Description"
+                  },
+                  "text": "THICKNESS"
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "Label_3"
+                },
+                "position": {
+                  "basis": "325px",
+                  "grow": 1
+                },
+                "props": {
+                  "text": "RECIPE ACTIVE",
+                  "textStyle": {
+                    "classes": "Font/Description"
+                  }
+                },
+                "type": "ia.display.label"
+              }
+            ],
+            "meta": {
+              "name": "header"
+            },
+            "position": {
+              "basis": "82px"
+            },
+            "type": "ia.container.flex"
+          },
+          {
+            "children": [
+              {
+                "meta": {
+                  "name": "Label"
+                },
+                "position": {
+                  "basis": "325px",
+                  "grow": 1
+                },
+                "propConfig": {
+                  "props.text": {
+                    "binding": {
+                      "config": {
+                        "parameters": {
+                          "date_from": "{..../FlexContainer_0/DateFrom.props.value}",
+                          "date_to": "{..../FlexContainer_0/DateTo.props.value}"
+                        },
+                        "polling": {
+                          "enabled": true,
+                          "rate": "0.5"
+                        },
+                        "queryPath": "formply_hotpress/totalboards",
+                        "returnFormat": "scalar"
+                      },
+                      "type": "query"
+                    }
+                  }
+                },
+                "props": {
+                  "style": {
+                    "textAlign": "center"
+                  },
+                  "textStyle": {
+                    "textAlign": "center"
+                  }
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "Label_0"
+                },
+                "position": {
+                  "basis": "325px",
+                  "grow": 1
+                },
+                "propConfig": {
+                  "props.text": {
+                    "binding": {
+                      "config": {
+                        "fallbackDelay": 2.5,
+                        "mode": "direct",
+                        "tagPath": "[default]formply_press/Current/Length"
+                      },
+                      "transforms": [
+                        {
+                          "formatType": "numeric",
+                          "formatValue": "#,###,###",
+                          "type": "format"
+                        }
+                      ],
+                      "type": "tag"
+                    }
+                  }
+                },
+                "props": {
+                  "style": {
+                    "textAlign": "center"
+                  },
+                  "textStyle": {
+                    "textAlign": "center"
+                  }
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "Label_1"
+                },
+                "position": {
+                  "basis": "325px",
+                  "grow": 1
+                },
+                "propConfig": {
+                  "props.text": {
+                    "binding": {
+                      "config": {
+                        "fallbackDelay": 2.5,
+                        "mode": "direct",
+                        "tagPath": "[default]formply_press/Current/Width"
+                      },
+                      "transforms": [
+                        {
+                          "formatType": "numeric",
+                          "formatValue": "#,###,###",
+                          "type": "format"
+                        }
+                      ],
+                      "type": "tag"
+                    }
+                  }
+                },
+                "props": {
+                  "style": {
+                    "textAlign": "center"
+                  },
+                  "textStyle": {
+                    "textAlign": "center"
+                  }
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "Label_2"
+                },
+                "position": {
+                  "basis": "325px",
+                  "grow": 1
+                },
+                "propConfig": {
+                  "props.text": {
+                    "binding": {
+                      "config": {
+                        "fallbackDelay": 2.5,
+                        "mode": "direct",
+                        "tagPath": "[default]formply_press/Current/Thickness"
+                      },
+                      "transforms": [
+                        {
+                          "formatType": "numeric",
+                          "formatValue": "#,###,###",
+                          "type": "format"
+                        }
+                      ],
+                      "type": "tag"
+                    }
+                  }
+                },
+                "props": {
+                  "style": {
+                    "textAlign": "center"
+                  },
+                  "textStyle": {
+                    "textAlign": "center"
+                  }
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "Label_3"
+                },
+                "position": {
+                  "basis": "325px",
+                  "grow": 1
+                },
+                "propConfig": {
+                  "props.text": {
+                    "binding": {
+                      "config": {
+                        "fallbackDelay": 2.5,
+                        "mode": "direct",
+                        "tagPath": "[default]formply_press/Current/Description/STRING"
+                      },
+                      "type": "tag"
+                    }
+                  }
+                },
+                "props": {
+                  "style": {
+                    "textAlign": "center"
+                  },
+                  "textStyle": {
+                    "textAlign": "center"
+                  }
+                },
+                "type": "ia.display.label"
+              }
+            ],
+            "meta": {
+              "name": "data"
+            },
+            "position": {
+              "basis": "82px"
+            },
+            "type": "ia.container.flex"
+          }
+        ],
+        "meta": {
+          "name": "current_data"
+        },
+        "position": {
+          "basis": "70px"
+        },
+        "props": {
+          "alignContent": "space-around",
+          "direction": "column",
+          "justify": "space-evenly",
+          "style": {
+            "classes": "ContainerCard"
+          }
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "children": [
+          {
+            "meta": {
+              "name": "DateFrom"
+            },
+            "position": {
+              "basis": "169px"
+            },
+            "propConfig": {
+              "props.value": {
+                "binding": {
+                  "config": {
+                    "polling": {
+                      "enabled": true,
+                      "rate": "1"
+                    },
+                    "queryPath": "formply_hotpress/newest_log_today",
+                    "returnFormat": "scalar"
+                  },
+                  "transforms": [
+                    {
+                      "expression": "tolong({value}) - 900000",
+                      "type": "expression"
+                    }
+                  ],
+                  "type": "query"
+                }
+              }
+            },
+            "props": {
+              "formattedValue": "Mar 5, 2026 5:40 AM",
+              "inputProps": {
+                "style": {
+                  "backgroundColor": "#C51A45",
+                  "borderStyle": "double"
+                }
+              },
+              "style": {
+                "borderStyle": "double"
+              }
+            },
+            "type": "ia.input.date-time-input"
+          },
+          {
+            "meta": {
+              "name": "Label_1"
+            },
+            "position": {
+              "basis": "20px"
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "meta": {
+              "name": "DateTo"
+            },
+            "position": {
+              "basis": "191px"
+            },
+            "propConfig": {
+              "props.value": {
+                "binding": {
+                  "config": {
+                    "expression": "toLong(now(100))"
+                  },
+                  "type": "expr"
+                }
+              }
+            },
+            "props": {
+              "enabled": false,
+              "formattedValue": "Mar 5, 2026 7:47 AM",
+              "inputProps": {
+                "style": {
+                  "backgroundColor": "#C51A45",
+                  "borderStyle": "double"
+                }
+              },
+              "style": {
+                "borderStyle": "double"
+              }
+            },
+            "type": "ia.input.date-time-input"
+          },
+          {
+            "meta": {
+              "name": "Label"
+            },
+            "position": {
+              "basis": "280px"
+            },
+            "props": {
+              "text": "DAILY TARGET (m³):",
+              "textStyle": {
+                "textAlign": "end"
+              }
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "meta": {
+              "name": "TextField"
+            },
+            "position": {
+              "basis": "210px"
+            },
+            "propConfig": {
+              "props.text": {
+                "binding": {
+                  "config": {
+                    "fallbackDelay": 2.5,
+                    "mode": "direct",
+                    "tagPath": "[default]formply_press/target/target_volume_today"
+                  },
+                  "transforms": [
+                    {
+                      "formatType": "numeric",
+                      "formatValue": "#.#",
+                      "type": "format"
+                    }
+                  ],
+                  "type": "tag"
+                }
+              }
+            },
+            "props": {
+              "placeholder": "Input The Number...",
+              "style": {
+                "fontSize": 20
+              }
+            },
+            "type": "ia.input.text-field"
+          },
+          {
+            "meta": {
+              "name": "Label_0"
+            },
+            "position": {
+              "basis": "273px"
+            },
+            "props": {
+              "text": "PRODUCTION TIME (MINUTES):",
+              "textStyle": {
+                "textAlign": "end"
+              }
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "meta": {
+              "name": "TextField_0"
+            },
+            "position": {
+              "basis": "210px"
+            },
+            "props": {
+              "placeholder": "Input The Number...",
+              "style": {
+                "fontSize": 20
+              },
+              "text": "570"
+            },
+            "type": "ia.input.text-field"
+          },
+          {
+            "meta": {
+              "name": "Label_2"
+            },
+            "position": {
+              "basis": "50px",
+              "grow": 1
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "children": [
+              {
+                "meta": {
+                  "name": "Label"
+                },
+                "props": {
+                  "text": "Chart Mode",
+                  "textStyle": {
+                    "fontWeight": "bold",
+                    "textAlign": "center"
+                  }
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "ToggleSwitch"
+                },
+                "props": {
+                  "selected": true,
+                  "style": {
+                    "alignSelf": "center"
+                  }
+                },
+                "type": "ia.input.toggle-switch"
+              },
+              {
+                "meta": {
+                  "name": "Label_0"
+                },
+                "position": {
+                  "basis": "100px"
+                },
+                "propConfig": {
+                  "props.text": {
+                    "binding": {
+                      "config": {
+                        "path": "../ToggleSwitch.props.selected"
+                      },
+                      "transforms": [
+                        {
+                          "fallback": null,
+                          "inputType": "scalar",
+                          "mappings": [
+                            {
+                              "input": true,
+                              "output": "Volume"
+                            },
+                            {
+                              "input": false,
+                              "output": "Board Count"
+                            }
+                          ],
+                          "outputType": "scalar",
+                          "type": "map"
+                        }
+                      ],
+                      "type": "property"
+                    }
+                  }
+                },
+                "props": {
+                  "textStyle": {
+                    "textAlign": "start"
+                  }
+                },
+                "type": "ia.display.label"
+              }
+            ],
+            "meta": {
+              "contextMenu": {
+                "enabled": true
+              },
+              "name": "Middle"
+            },
+            "position": {
+              "basis": "367px"
+            },
+            "props": {
+              "justify": "center",
+              "style": {
+                "backgroundColor": "#C51A4580",
+                "classes": "ContainerCard",
+                "overflow": "hidden"
+              }
+            },
+            "type": "ia.container.flex"
+          },
+          {
+            "meta": {
+              "name": "Label_3"
+            },
+            "position": {
+              "basis": "50px",
+              "grow": 1
+            },
+            "type": "ia.display.label"
+          }
+        ],
+        "meta": {
+          "name": "FlexContainer_0"
+        },
+        "position": {
+          "basis": "38px"
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "children": [
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "children": [
+                          {
+                            "meta": {
+                              "name": "Label_1"
+                            },
+                            "position": {
+                              "height": 202,
+                              "width": 180,
+                              "x": 13.94,
+                              "y": 7.86
+                            },
+                            "props": {
+                              "style": {
+                                "backgroundColor": "#80808062"
+                              }
+                            },
+                            "type": "ia.display.label"
+                          },
+                          {
+                            "meta": {
+                              "name": "Label"
+                            },
+                            "position": {
+                              "height": 32,
+                              "width": 173,
+                              "x": 15.5,
+                              "y": 9.16
+                            },
+                            "props": {
+                              "style": {
+                                "fontFamily": "monospace",
+                                "textAlign": "center"
+                              },
+                              "text": "TOTAL VOLUME ",
+                              "textStyle": {
+                                "fontFamily": "Merriweather",
+                                "fontWeight": "900",
+                                "textOverflow": "clip",
+                                "textTransform": "uppercase"
+                              }
+                            },
+                            "type": "ia.display.label"
+                          },
+                          {
+                            "meta": {
+                              "name": "Label_0"
+                            },
+                            "position": {
+                              "height": 36,
+                              "width": 174,
+                              "x": 15.99,
+                              "y": 172.46
+                            },
+                            "propConfig": {
+                              "props.text": {
+                                "binding": {
+                                  "config": {
+                                    "parameters": {
+                                      "date_from": "{......./FlexContainer_0/DateFrom.props.value}",
+                                      "date_to": "{......./FlexContainer_0/DateTo.props.value}"
+                                    },
+                                    "polling": {
+                                      "enabled": true,
+                                      "rate": "1"
+                                    },
+                                    "queryPath": "formply_hotpress/totalvolume",
+                                    "returnFormat": "scalar"
+                                  },
+                                  "transforms": [
+                                    {
+                                      "formatType": "numeric",
+                                      "formatValue": "#.#",
+                                      "type": "format"
+                                    },
+                                    {
+                                      "expression": "{value} ",
+                                      "type": "expression"
+                                    }
+                                  ],
+                                  "type": "query"
+                                }
+                              }
+                            },
+                            "props": {
+                              "style": {
+                                "textAlign": "center"
+                              },
+                              "textStyle": {
+                                "fontFamily": "Merriweather",
+                                "fontSize": 30,
+                                "fontWeight": "900"
+                              }
+                            },
+                            "type": "ia.display.label"
+                          },
+                          {
+                            "meta": {
+                              "name": "SimpleGauge"
+                            },
+                            "position": {
+                              "height": 174,
+                              "width": 172,
+                              "x": 16.67188149414062,
+                              "y": 21.45995824707029
+                            },
+                            "propConfig": {
+                              "props.maxValue": {
+                                "binding": {
+                                  "config": {
+                                    "expression": "{......./FlexContainer_0/TextField.props.text}"
+                                  },
+                                  "type": "expr"
+                                }
+                              },
+                              "props.value": {
+                                "binding": {
+                                  "config": {
+                                    "expression": "{../Label_0.props.text}"
+                                  },
+                                  "type": "expr"
+                                }
+                              }
+                            },
+                            "props": {
+                              "animate": true,
+                              "arc": {
+                                "color": "#00FFFF",
+                                "key": "value"
+                              },
+                              "arcBackground": {
+                                "color": "#FFFFFF"
+                              },
+                              "endAngle": 450,
+                              "label": {
+                                "visible": false
+                              },
+                              "startAngle": 90,
+                              "style": {
+                                "classes": []
+                              }
+                            },
+                            "type": "ia.chart.simple-gauge"
+                          }
+                        ],
+                        "meta": {
+                          "name": "CoordinateContainer_5"
+                        },
+                        "position": {
+                          "basis": "195.9px"
+                        },
+                        "type": "ia.container.coord"
+                      },
+                      {
+                        "children": [
+                          {
+                            "meta": {
+                              "name": "Label_1"
+                            },
+                            "position": {
+                              "height": 202,
+                              "width": 180,
+                              "x": 13.94,
+                              "y": 7.86
+                            },
+                            "props": {
+                              "style": {
+                                "backgroundColor": "#80808062"
+                              }
+                            },
+                            "type": "ia.display.label"
+                          },
+                          {
+                            "meta": {
+                              "name": "Label"
+                            },
+                            "position": {
+                              "height": 32,
+                              "width": 140,
+                              "x": 33.96429443359375,
+                              "y": 8.13769165039065
+                            },
+                            "props": {
+                              "style": {
+                                "fontFamily": "monospace",
+                                "textAlign": "center"
+                              },
+                              "text": "DOWNTIME EVENTS",
+                              "textStyle": {
+                                "fontFamily": "Merriweather",
+                                "fontWeight": "900",
+                                "textOverflow": "clip",
+                                "textTransform": "uppercase"
+                              }
+                            },
+                            "type": "ia.display.label"
+                          },
+                          {
+                            "meta": {
+                              "name": "Label_0"
+                            },
+                            "position": {
+                              "height": 36,
+                              "width": 91,
+                              "x": 64.99000000000001,
+                              "y": 172.46415649414064
+                            },
+                            "propConfig": {
+                              "props.text": {
+                                "binding": {
+                                  "config": {
+                                    "expression": "{../SimpleGauge.props.value}"
+                                  },
+                                  "type": "expr"
+                                }
+                              }
+                            },
+                            "props": {
+                              "style": {
+                                "textAlign": "center"
+                              },
+                              "textStyle": {
+                                "fontFamily": "Merriweather",
+                                "fontSize": 30,
+                                "fontWeight": "900"
+                              }
+                            },
+                            "type": "ia.display.label"
+                          },
+                          {
+                            "meta": {
+                              "name": "SimpleGauge"
+                            },
+                            "position": {
+                              "height": 174,
+                              "width": 172,
+                              "x": 16.67188149414062,
+                              "y": 21.45995824707029
+                            },
+                            "propConfig": {
+                              "props.value": {
+                                "binding": {
+                                  "config": {
+                                    "parameters": {
+                                      "date_from": "{......./FlexContainer_0/DateFrom.props.value}",
+                                      "date_to": "{......./FlexContainer_0/DateTo.props.value}"
+                                    },
+                                    "polling": {
+                                      "enabled": true,
+                                      "rate": "1"
+                                    },
+                                    "queryPath": "formply_hotpress/downtime_event",
+                                    "returnFormat": "scalar"
+                                  },
+                                  "type": "query"
+                                }
+                              }
+                            },
+                            "props": {
+                              "animate": true,
+                              "arc": {
+                                "color": "#00FFFF",
+                                "key": "value"
+                              },
+                              "arcBackground": {
+                                "color": "#FFFFFF"
+                              },
+                              "endAngle": 450,
+                              "label": {
+                                "visible": false
+                              },
+                              "maxValue": 50,
+                              "startAngle": 90,
+                              "style": {
+                                "classes": []
+                              }
+                            },
+                            "type": "ia.chart.simple-gauge"
+                          }
+                        ],
+                        "meta": {
+                          "name": "CoordinateContainer_6"
+                        },
+                        "position": {
+                          "basis": "195.9px"
+                        },
+                        "type": "ia.container.coord"
+                      },
+                      {
+                        "children": [
+                          {
+                            "meta": {
+                              "name": "Label_1"
+                            },
+                            "position": {
+                              "height": 202,
+                              "width": 180,
+                              "x": 13.94,
+                              "y": 7.86
+                            },
+                            "props": {
+                              "style": {
+                                "backgroundColor": "#80808062"
+                              }
+                            },
+                            "type": "ia.display.label"
+                          },
+                          {
+                            "meta": {
+                              "name": "Label"
+                            },
+                            "position": {
+                              "height": 32,
+                              "width": 173,
+                              "x": 15.5,
+                              "y": 9.16
+                            },
+                            "props": {
+                              "style": {
+                                "fontFamily": "monospace",
+                                "textAlign": "center"
+                              },
+                              "text": "TOTAL DOWNTIME",
+                              "textStyle": {
+                                "fontFamily": "Merriweather",
+                                "fontWeight": "900",
+                                "textOverflow": "clip",
+                                "textTransform": "uppercase"
+                              }
+                            },
+                            "type": "ia.display.label"
+                          },
+                          {
+                            "meta": {
+                              "name": "Label_0"
+                            },
+                            "position": {
+                              "height": 36,
+                              "width": 176,
+                              "x": 14.4,
+                              "y": 175.3
+                            },
+                            "propConfig": {
+                              "props.text": {
+                                "binding": {
+                                  "config": {
+                                    "parameters": {
+                                      "date_from": "{......./FlexContainer_0/DateFrom.props.value}",
+                                      "date_to": "{......./FlexContainer_0/DateTo.props.value}"
+                                    },
+                                    "polling": {
+                                      "enabled": true,
+                                      "rate": "1"
+                                    },
+                                    "queryPath": "formply_hotpress/downtime_sum",
+                                    "returnFormat": "scalar"
+                                  },
+                                  "transforms": [
+                                    {
+                                      "expression": "{value} + \" mins\"",
+                                      "type": "expression"
+                                    }
+                                  ],
+                                  "type": "query"
+                                }
+                              }
+                            },
+                            "props": {
+                              "style": {
+                                "textAlign": "center"
+                              },
+                              "textStyle": {
+                                "fontFamily": "Merriweather",
+                                "fontSize": 25,
+                                "fontWeight": "900"
+                              }
+                            },
+                            "type": "ia.display.label"
+                          },
+                          {
+                            "meta": {
+                              "name": "SimpleGauge"
+                            },
+                            "position": {
+                              "height": 174,
+                              "width": 172,
+                              "x": 16.67188149414062,
+                              "y": 21.45995824707029
+                            },
+                            "propConfig": {
+                              "props.maxValue": {
+                                "binding": {
+                                  "config": {
+                                    "expression": "{......./FlexContainer_0/TextField_0.props.text}"
+                                  },
+                                  "type": "expr"
+                                }
+                              },
+                              "props.value": {
+                                "binding": {
+                                  "config": {
+                                    "expression": "{../Label_0.props.text}"
+                                  },
+                                  "type": "expr"
+                                }
+                              }
+                            },
+                            "props": {
+                              "animate": true,
+                              "arc": {
+                                "color": "#00FFFF",
+                                "key": "value"
+                              },
+                              "arcBackground": {
+                                "color": "#FFFFFF"
+                              },
+                              "endAngle": 450,
+                              "label": {
+                                "visible": false
+                              },
+                              "startAngle": 90,
+                              "style": {
+                                "classes": []
+                              }
+                            },
+                            "type": "ia.chart.simple-gauge"
+                          }
+                        ],
+                        "meta": {
+                          "name": "CoordinateContainer_7"
+                        },
+                        "position": {
+                          "basis": "195.9px"
+                        },
+                        "type": "ia.container.coord"
+                      }
+                    ],
+                    "meta": {
+                      "name": "FlexContainer_0"
+                    },
+                    "position": {
+                      "basis": "214px"
+                    },
+                    "props": {
+                      "alignItems": "center",
+                      "justify": "space-between"
+                    },
+                    "type": "ia.container.flex"
+                  },
+                  {
+                    "children": [
+                      {
+                        "children": [
+                          {
+                            "meta": {
+                              "name": "Label_1"
+                            },
+                            "position": {
+                              "height": 202,
+                              "width": 180,
+                              "x": 13.94,
+                              "y": 7.86
+                            },
+                            "props": {
+                              "style": {
+                                "backgroundColor": "#80808062"
+                              }
+                            },
+                            "type": "ia.display.label"
+                          },
+                          {
+                            "meta": {
+                              "name": "Label"
+                            },
+                            "position": {
+                              "height": 32,
+                              "width": 173,
+                              "x": 15.5,
+                              "y": 9.16
+                            },
+                            "props": {
+                              "style": {
+                                "fontFamily": "monospace",
+                                "textAlign": "center"
+                              },
+                              "text": "ACTUAL RUN TIME",
+                              "textStyle": {
+                                "fontFamily": "Merriweather",
+                                "fontWeight": "900",
+                                "textOverflow": "clip",
+                                "textTransform": "uppercase"
+                              }
+                            },
+                            "type": "ia.display.label"
+                          },
+                          {
+                            "meta": {
+                              "name": "Label_0"
+                            },
+                            "position": {
+                              "height": 36,
+                              "width": 179,
+                              "x": 12.99,
+                              "y": 172.46
+                            },
+                            "propConfig": {
+                              "props.text": {
+                                "binding": {
+                                  "config": {
+                                    "expression": "\r\ndateDiff(toDate({......./FlexContainer_0/DateFrom.props.value}), toDate({......./FlexContainer_0/DateTo.props.value}),\"hour\")"
+                                  },
+                                  "transforms": [
+                                    {
+                                      "formatType": "numeric",
+                                      "formatValue": "#.#",
+                                      "type": "format"
+                                    },
+                                    {
+                                      "expression": "{value} + \" hours\"",
+                                      "type": "expression"
+                                    }
+                                  ],
+                                  "type": "expr"
+                                }
+                              }
+                            },
+                            "props": {
+                              "style": {
+                                "textAlign": "center"
+                              },
+                              "textStyle": {
+                                "fontFamily": "Merriweather",
+                                "fontSize": 30,
+                                "fontWeight": "900"
+                              }
+                            },
+                            "type": "ia.display.label"
+                          },
+                          {
+                            "meta": {
+                              "name": "SimpleGauge"
+                            },
+                            "position": {
+                              "height": 174,
+                              "width": 172,
+                              "x": 16.67188149414062,
+                              "y": 21.45995824707029
+                            },
+                            "propConfig": {
+                              "props.maxValue": {
+                                "binding": {
+                                  "config": {
+                                    "expression": "{......./FlexContainer_0/TextField_0.props.text}/60"
+                                  },
+                                  "type": "expr"
+                                }
+                              },
+                              "props.value": {
+                                "binding": {
+                                  "config": {
+                                    "expression": "{../Label_0.props.text}"
+                                  },
+                                  "type": "expr"
+                                }
+                              }
+                            },
+                            "props": {
+                              "animate": true,
+                              "arc": {
+                                "color": "#00FFFF",
+                                "key": "value"
+                              },
+                              "arcBackground": {
+                                "color": "#FFFFFF"
+                              },
+                              "endAngle": 450,
+                              "label": {
+                                "visible": false
+                              },
+                              "startAngle": 90,
+                              "style": {
+                                "classes": []
+                              }
+                            },
+                            "type": "ia.chart.simple-gauge"
+                          }
+                        ],
+                        "meta": {
+                          "name": "CoordinateContainer_5"
+                        },
+                        "position": {
+                          "basis": "195.9px"
+                        },
+                        "type": "ia.container.coord"
+                      },
+                      {
+                        "children": [
+                          {
+                            "meta": {
+                              "name": "Label_1"
+                            },
+                            "position": {
+                              "height": 202,
+                              "width": 180,
+                              "x": 13.94,
+                              "y": 7.86
+                            },
+                            "props": {
+                              "style": {
+                                "backgroundColor": "#80808062"
+                              }
+                            },
+                            "type": "ia.display.label"
+                          },
+                          {
+                            "meta": {
+                              "name": "Label"
+                            },
+                            "position": {
+                              "height": 32,
+                              "width": 169,
+                              "x": 23.982147216796875,
+                              "y": 9.405544433593747
+                            },
+                            "props": {
+                              "style": {
+                                "fontFamily": "monospace",
+                                "textAlign": "center"
+                              },
+                              "text": "EFFECTIVE RUNTIME",
+                              "textStyle": {
+                                "fontFamily": "Merriweather",
+                                "fontWeight": "900",
+                                "textOverflow": "clip",
+                                "textTransform": "uppercase"
+                              }
+                            },
+                            "type": "ia.display.label"
+                          },
+                          {
+                            "meta": {
+                              "name": "Label_0"
+                            },
+                            "position": {
+                              "height": 36,
+                              "width": 91,
+                              "x": 64.99000000000001,
+                              "y": 172.46415649414064
+                            },
+                            "propConfig": {
+                              "props.text": {
+                                "binding": {
+                                  "config": {
+                                    "expression": "try(({.../CoordinateContainer_5/Label_0.props.text} - {..../FlexContainer_0/CoordinateContainer_7/Label_0.props.text}/60)/{.../CoordinateContainer_5/Label_0.props.text}*100, 0)"
+                                  },
+                                  "transforms": [
+                                    {
+                                      "formatType": "numeric",
+                                      "formatValue": "#.#",
+                                      "type": "format"
+                                    },
+                                    {
+                                      "expression": "{value} + \" %\"",
+                                      "type": "expression"
+                                    }
+                                  ],
+                                  "type": "expr"
+                                }
+                              }
+                            },
+                            "props": {
+                              "style": {
+                                "textAlign": "center"
+                              },
+                              "textStyle": {
+                                "fontFamily": "Merriweather",
+                                "fontSize": 30,
+                                "fontWeight": "900"
+                              }
+                            },
+                            "type": "ia.display.label"
+                          },
+                          {
+                            "meta": {
+                              "name": "SimpleGauge"
+                            },
+                            "position": {
+                              "height": 174,
+                              "width": 172,
+                              "x": 16.67188149414062,
+                              "y": 21.45995824707029
+                            },
+                            "propConfig": {
+                              "props.value": {
+                                "binding": {
+                                  "config": {
+                                    "expression": "{../Label_0.props.text}"
+                                  },
+                                  "type": "expr"
+                                }
+                              }
+                            },
+                            "props": {
+                              "animate": true,
+                              "arc": {
+                                "color": "#00FFFF",
+                                "key": "value"
+                              },
+                              "arcBackground": {
+                                "color": "#FFFFFF"
+                              },
+                              "endAngle": 450,
+                              "label": {
+                                "visible": false
+                              },
+                              "startAngle": 90,
+                              "style": {
+                                "classes": []
+                              }
+                            },
+                            "type": "ia.chart.simple-gauge"
+                          }
+                        ],
+                        "meta": {
+                          "name": "CoordinateContainer_6"
+                        },
+                        "position": {
+                          "basis": "195.9px"
+                        },
+                        "type": "ia.container.coord"
+                      },
+                      {
+                        "children": [
+                          {
+                            "meta": {
+                              "name": "Label_1"
+                            },
+                            "position": {
+                              "height": 202,
+                              "width": 180,
+                              "x": 13.94,
+                              "y": 7.86
+                            },
+                            "props": {
+                              "style": {
+                                "backgroundColor": "#80808062"
+                              }
+                            },
+                            "type": "ia.display.label"
+                          },
+                          {
+                            "meta": {
+                              "name": "Label"
+                            },
+                            "position": {
+                              "height": 32,
+                              "width": 173,
+                              "x": 15.5,
+                              "y": 9.16
+                            },
+                            "props": {
+                              "style": {
+                                "fontFamily": "monospace",
+                                "textAlign": "center"
+                              },
+                              "text": "RUN RATE",
+                              "textStyle": {
+                                "fontFamily": "Merriweather",
+                                "fontWeight": "900",
+                                "textOverflow": "clip",
+                                "textTransform": "uppercase"
+                              }
+                            },
+                            "type": "ia.display.label"
+                          },
+                          {
+                            "meta": {
+                              "name": "Label_0"
+                            },
+                            "position": {
+                              "height": 36,
+                              "width": 155,
+                              "x": 27.99,
+                              "y": 173.22
+                            },
+                            "propConfig": {
+                              "props.text": {
+                                "binding": {
+                                  "config": {
+                                    "expression": "{..../FlexContainer_0/CoordinateContainer_5/Label_0.props.text}/{.../CoordinateContainer_5/Label_0.props.text}"
+                                  },
+                                  "transforms": [
+                                    {
+                                      "formatType": "numeric",
+                                      "formatValue": "#.#",
+                                      "type": "format"
+                                    },
+                                    {
+                                      "expression": "{value} + \" m³/h\"",
+                                      "type": "expression"
+                                    }
+                                  ],
+                                  "type": "expr"
+                                }
+                              }
+                            },
+                            "props": {
+                              "style": {
+                                "textAlign": "center"
+                              },
+                              "textStyle": {
+                                "fontFamily": "Merriweather",
+                                "fontSize": 30,
+                                "fontWeight": "900"
+                              }
+                            },
+                            "type": "ia.display.label"
+                          },
+                          {
+                            "meta": {
+                              "name": "SimpleGauge"
+                            },
+                            "position": {
+                              "height": 174,
+                              "width": 172,
+                              "x": 16.67188149414062,
+                              "y": 21.45995824707029
+                            },
+                            "propConfig": {
+                              "props.maxValue": {
+                                "binding": {
+                                  "config": {
+                                    "expression": "{......./FlexContainer_0/TextField.props.text} / ({......./FlexContainer_0/TextField_0.props.text}/60)"
+                                  },
+                                  "type": "expr"
+                                }
+                              },
+                              "props.value": {
+                                "binding": {
+                                  "config": {
+                                    "expression": "{../Label_0.props.text}"
+                                  },
+                                  "type": "expr"
+                                }
+                              }
+                            },
+                            "props": {
+                              "animate": true,
+                              "arc": {
+                                "color": "#00FFFF",
+                                "key": "value"
+                              },
+                              "arcBackground": {
+                                "color": "#FFFFFF"
+                              },
+                              "endAngle": 450,
+                              "label": {
+                                "visible": false
+                              },
+                              "startAngle": 90,
+                              "style": {
+                                "classes": []
+                              }
+                            },
+                            "type": "ia.chart.simple-gauge"
+                          }
+                        ],
+                        "meta": {
+                          "name": "CoordinateContainer_7"
+                        },
+                        "position": {
+                          "basis": "195.9px"
+                        },
+                        "type": "ia.container.coord"
+                      }
+                    ],
+                    "meta": {
+                      "name": "FlexContainer"
+                    },
+                    "position": {
+                      "basis": "212px"
+                    },
+                    "props": {
+                      "alignItems": "center",
+                      "justify": "space-between"
+                    },
+                    "type": "ia.container.flex"
+                  }
+                ],
+                "meta": {
+                  "name": "FlexContainer_2"
+                },
+                "position": {
+                  "basis": "471px"
+                },
+                "props": {
+                  "alignItems": "center",
+                  "direction": "column",
+                  "justify": "space-around",
+                  "wrap": "wrap"
+                },
+                "type": "ia.container.flex"
+              }
+            ],
+            "meta": {
+              "name": "Right"
+            },
+            "position": {
+              "basis": "685px"
+            },
+            "props": {
+              "alignItems": "center",
+              "direction": "column",
+              "justify": "space-evenly",
+              "style": {
+                "classes": "ContainerCard"
+              },
+              "wrap": "wrap"
+            },
+            "type": "ia.container.flex"
+          },
+          {
+            "children": [
+              {
+                "meta": {
+                  "name": "Label_0"
+                },
+                "props": {
+                  "text": "CONFORMANCE",
+                  "textStyle": {
+                    "classes": "Font/Description",
+                    "fontSize": 48
+                  }
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "SimpleGauge"
+                },
+                "position": {
+                  "basis": "379px"
+                },
+                "propConfig": {
+                  "props.arc.color": {
+                    "binding": {
+                      "config": {
+                        "expression": "({this.props.value}/{this.props.maxValue})*100"
+                      },
+                      "transforms": [
+                        {
+                          "fallback": "#00FFFF",
+                          "inputType": "range",
+                          "mappings": [
+                            {
+                              "input": {
+                                "exclusiveMax": true,
+                                "min": 99
+                              },
+                              "output": "#00FFFF"
+                            },
+                            {
+                              "input": {
+                                "exclusiveMax": true,
+                                "max": 99,
+                                "min": 80
+                              },
+                              "output": "#FFFF5D"
+                            },
+                            {
+                              "input": {
+                                "exclusiveMin": true,
+                                "max": 80
+                              },
+                              "output": "#FF444D"
+                            }
+                          ],
+                          "outputType": "color",
+                          "type": "map"
+                        }
+                      ],
+                      "type": "expr"
+                    }
+                  },
+                  "props.value": {
+                    "binding": {
+                      "config": {
+                        "parameters": {
+                          "date_from": "{..../FlexContainer_0/DateFrom.props.value}",
+                          "date_to": "{..../FlexContainer_0/DateTo.props.value}"
+                        },
+                        "queryPath": "formply_hotpress/totalvolume",
+                        "returnFormat": "scalar"
+                      },
+                      "transforms": [
+                        {
+                          "expression": "{value}/(dateDiff({..../FlexContainer_0/DateFrom.props.value},{..../FlexContainer_0/DateTo.props.value},\"minute\")/60*({.../Right/FlexContainer_2/FlexContainer/CoordinateContainer_7/SimpleGauge.props.maxValue}))*100",
+                          "type": "expression"
+                        }
+                      ],
+                      "type": "query"
+                    }
+                  }
+                },
+                "props": {
+                  "animate": true,
+                  "arc": {
+                    "width": 40
+                  },
+                  "arcBackground": {
+                    "color": "#FFFFFF"
+                  },
+                  "endAngle": 450,
+                  "label": {
+                    "maxDecimal": 1,
+                    "offsetY": 30,
+                    "size": 48,
+                    "units": "%"
+                  },
+                  "startAngle": 90
+                },
+                "type": "ia.chart.simple-gauge"
+              },
+              {
+                "meta": {
+                  "name": "Label_1"
+                },
+                "propConfig": {
+                  "props.text": {
+                    "binding": {
+                      "config": {
+                        "expression": "\u0027Actual: \u0027 + {.../Right/FlexContainer_2/FlexContainer_0/CoordinateContainer_5/Label_0.props.text} + \"m³\" + \u0027      / Target:  \u0027 + round((dateDiff({..../FlexContainer_0/DateFrom.props.value},{..../FlexContainer_0/DateTo.props.value},\"minute\")/60*({.../Right/FlexContainer_2/FlexContainer/CoordinateContainer_7/SimpleGauge.props.maxValue}))*10)/10+ \"m³\""
+                      },
+                      "type": "expr"
+                    }
+                  }
+                },
+                "props": {
+                  "style": {
+                    "textAlign": "center"
+                  },
+                  "textStyle": {
+                    "fontSize": 32
+                  }
+                },
+                "type": "ia.display.label"
+              }
+            ],
+            "meta": {
+              "name": "Middle"
+            },
+            "position": {
+              "basis": "685px"
+            },
+            "props": {
+              "direction": "column",
+              "justify": "space-around",
+              "style": {
+                "classes": "ContainerCard"
+              }
+            },
+            "type": "ia.container.flex"
+          },
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "meta": {
+                      "name": "ReportViewer"
+                    },
+                    "position": {
+                      "basis": "700px"
+                    },
+                    "propConfig": {
+                      "props.params.key": {
+                        "binding": {
+                          "config": {
+                            "designerUseLimit": false,
+                            "parameters": {
+                              "date_from": "\"\"",
+                              "date_to": "\"\""
+                            },
+                            "polling": {
+                              "enabled": true,
+                              "rate": "30"
+                            },
+                            "queryPath": "FormplyPressEachHour"
+                          },
+                          "type": "query"
+                        }
+                      }
+                    },
+                    "props": {
+                      "page": 1,
+                      "pageCount": 1,
+                      "source": "formply_press_onehour"
+                    },
+                    "type": "ia.reporting.report-viewer"
+                  }
+                ],
+                "meta": {
+                  "name": "Middle"
+                },
+                "position": {
+                  "basis": "487px",
+                  "display": false
+                },
+                "props": {
+                  "direction": "column",
+                  "style": {
+                    "borderStyle": "outset",
+                    "borderWidth": 0.5
+                  }
+                },
+                "type": "ia.container.flex"
+              },
+              {
+                "meta": {
+                  "name": "XYChart"
+                },
+                "position": {
+                  "basis": "435px",
+                  "grow": 1
+                },
+                "propConfig": {
+                  "props.dataSources.example": {
+                    "binding": {
+                      "config": {
+                        "path": "/root.custom.hotpressData"
+                      },
+                      "transforms": [
+                        {
+                          "code": "\n\timport system\n\n\tdata \u003d []\n\tif value is None:\n\t\treturn data\n\n\t# Toggle value on the view (defined at root.custom.chartMode)\n\tmode \u003d self.view.getChild(\"root\").custom.chartMode  # \"count\" or \"volume\"\n\n\t# Convert dataset to iterable\n\tpyData \u003d system.dataset.toPyDataSet(value)\n\n\t# Determine target based on mode\n\ttarget \u003d 120 if mode \u003d\u003d \"count\" else 6\n\n\tfor row in pyData:\n\t\thourBucket \u003d row[\u0027hour_bucket\u0027]\n\t\tpyDate \u003d system.date.fromMillis(hourBucket.getTime())\n\t\tformatted \u003d system.date.format(pyDate, \"yyyy-MM-dd HH:mm\")\n\n\t\t# Decide which value column to use\n\t\tchartValue \u003d row[\u0027entry_count\u0027] if mode \u003d\u003d \"count\" else row[\u0027total_volume\u0027]\n\n\t\t# Determine color\n\t\tif chartValue \u003e\u003d target:\n\t\t\tcolor \u003d \"#61BEDA\"  # blue\n\t\telse:\n\t\t\tcolor \u003d \"#FF8C00\"  # orange\n\n\t\t# Append to dataset\n\t\tdata.append({\n\t\t\t\"hour\": formatted,     # X-axis\n\t\t\t\"value\": chartValue,   # Y-axis (bar)\n\t\t\t\"target\": target,      # Second axis line\n\t\t\t\"color\": color,        # Bar color\n\t\t\t\"volume\": row[\u0027total_volume\u0027]\n\t\t})\n\n\treturn data",
+                          "type": "script"
+                        }
+                      ],
+                      "type": "property"
+                    }
+                  },
+                  "props.xAxes[0].appearance.grid.minDistance": {
+                    "binding": {
+                      "config": {
+                        "expression": "round(\r\n  max(\r\n    10,\r\n    min(10,\r\n      coalesce({this.meta.size.width}, 800) / max(1, len({this.props.dataSources.example}))\r\n    )\r\n  )\r\n)\r\n"
+                      },
+                      "type": "expr"
+                    }
+                  },
+                  "props.yAxes[0].label.text": {
+                    "binding": {
+                      "config": {
+                        "expression": "if({/root.custom.chartMode} \u003d \"count\", \"Board Count\", \"Volume (m³)\")"
+                      },
+                      "type": "expr"
+                    }
+                  }
+                },
+                "props": {
+                  "dataSources": {},
+                  "legend": {
+                    "enabled": false
+                  },
+                  "series": [
+                    {
+                      "candlestick": {
+                        "appearance": {
+                          "deriveFieldsFromData": {
+                            "fill": {
+                              "color": "",
+                              "opacity": ""
+                            },
+                            "stroke": {
+                              "color": "",
+                              "opacity": "",
+                              "width": ""
+                            }
+                          },
+                          "fill": {
+                            "color": "",
+                            "opacity": 1
+                          },
+                          "heatRules": {
+                            "dataField": "",
+                            "enabled": false,
+                            "max": "",
+                            "min": ""
+                          },
+                          "stacked": false,
+                          "stroke": {
+                            "color": "",
+                            "opacity": 1,
+                            "width": 1
+                          }
+                        },
+                        "high": {
+                          "x": "",
+                          "y": ""
+                        },
+                        "low": {
+                          "x": "",
+                          "y": ""
+                        },
+                        "open": {
+                          "x": "",
+                          "y": ""
+                        }
+                      },
+                      "column": {
+                        "appearance": {
+                          "deriveFieldsFromData": {
+                            "fill": {
+                              "color": "color",
+                              "opacity": ""
+                            },
+                            "stroke": {
+                              "color": "",
+                              "opacity": "",
+                              "width": ""
+                            }
+                          },
+                          "fill": {
+                            "color": "",
+                            "opacity": 1
+                          },
+                          "heatRules": {
+                            "dataField": "",
+                            "enabled": false,
+                            "max": "",
+                            "min": ""
+                          },
+                          "height": null,
+                          "stacked": false,
+                          "stroke": {
+                            "color": "",
+                            "opacity": 1,
+                            "width": 1
+                          },
+                          "width": null
+                        },
+                        "open": {
+                          "x": "",
+                          "y": ""
+                        }
+                      },
+                      "data": {
+                        "source": "example",
+                        "x": "hour",
+                        "y": "value"
+                      },
+                      "defaultState": {
+                        "visible": true
+                      },
+                      "hiddenInLegend": false,
+                      "label": {
+                        "text": "Count"
+                      },
+                      "line": {
+                        "appearance": {
+                          "bullets": [
+                            {
+                              "deriveFieldsFromData": {
+                                "fill": {
+                                  "color": "",
+                                  "opacity": ""
+                                },
+                                "rotation": "",
+                                "stroke": {
+                                  "color": "",
+                                  "opacity": "",
+                                  "width": ""
+                                }
+                              },
+                              "enabled": false,
+                              "fill": {
+                                "color": "",
+                                "opacity": 1
+                              },
+                              "heatRules": {
+                                "dataField": "",
+                                "enabled": false,
+                                "max": 100,
+                                "min": 2
+                              },
+                              "height": 10,
+                              "label": {
+                                "position": {
+                                  "dx": 0,
+                                  "dy": 0
+                                },
+                                "text": "{value}"
+                              },
+                              "render": "circle",
+                              "rotation": 0,
+                              "stroke": {
+                                "color": "",
+                                "opacity": 1,
+                                "width": 1
+                              },
+                              "tooltip": {
+                                "background": {
+                                  "color": "",
+                                  "opacity": 1
+                                },
+                                "cornerRadius": 3,
+                                "enabled": true,
+                                "pointerLength": 4,
+                                "text": "{name}: [bold]{valueY}[/]"
+                              },
+                              "width": 10
+                            }
+                          ],
+                          "connect": true,
+                          "fill": {
+                            "color": "",
+                            "opacity": 0
+                          },
+                          "minDistance": 0.5,
+                          "stroke": {
+                            "color": "",
+                            "dashArray": "",
+                            "opacity": 1,
+                            "width": 3
+                          },
+                          "tensionX": 1,
+                          "tensionY": 1
+                        },
+                        "open": {
+                          "x": "",
+                          "y": ""
+                        }
+                      },
+                      "name": "Count",
+                      "render": "column",
+                      "stepLine": {
+                        "appearance": {
+                          "bullets": [
+                            {
+                              "deriveFieldsFromData": {
+                                "fill": {
+                                  "color": "",
+                                  "opacity": ""
+                                },
+                                "rotation": "",
+                                "stroke": {
+                                  "color": "",
+                                  "opacity": "",
+                                  "width": ""
+                                }
+                              },
+                              "enabled": true,
+                              "fill": {
+                                "color": "",
+                                "opacity": 1
+                              },
+                              "heatRules": {
+                                "dataField": "",
+                                "enabled": false,
+                                "max": 100,
+                                "min": 2
+                              },
+                              "height": 10,
+                              "label": {
+                                "position": {
+                                  "dx": 0,
+                                  "dy": 0
+                                },
+                                "text": "{value}"
+                              },
+                              "render": "circle",
+                              "rotation": 0,
+                              "stroke": {
+                                "color": "",
+                                "opacity": 1,
+                                "width": 1
+                              },
+                              "tooltip": {
+                                "background": {
+                                  "color": "",
+                                  "opacity": 1
+                                },
+                                "cornerRadius": 3,
+                                "enabled": true,
+                                "pointerLength": 4,
+                                "text": "{name}: [bold]{valueY}[/]"
+                              },
+                              "width": 10
+                            }
+                          ],
+                          "connect": true,
+                          "fill": {
+                            "color": "",
+                            "opacity": 0
+                          },
+                          "minDistance": 0.5,
+                          "stroke": {
+                            "color": "",
+                            "dashArray": "",
+                            "opacity": 1,
+                            "width": 3
+                          },
+                          "tensionX": 1,
+                          "tensionY": 1
+                        },
+                        "open": {
+                          "x": "",
+                          "y": ""
+                        }
+                      },
+                      "tooltip": {
+                        "background": {
+                          "color": "",
+                          "opacity": 1
+                        },
+                        "cornerRadius": 3,
+                        "enabled": true,
+                        "pointerLength": 4,
+                        "text": "{name}: [bold]{valueY}[/]"
+                      },
+                      "visible": true,
+                      "xAxis": "time",
+                      "yAxis": "count",
+                      "zIndex": 0
+                    },
+                    {
+                      "candlestick": {
+                        "appearance": {
+                          "deriveFieldsFromData": {
+                            "fill": {
+                              "color": "",
+                              "opacity": ""
+                            },
+                            "stroke": {
+                              "color": "",
+                              "opacity": "",
+                              "width": ""
+                            }
+                          },
+                          "fill": {
+                            "color": "",
+                            "opacity": 1
+                          },
+                          "heatRules": {
+                            "dataField": "",
+                            "enabled": false,
+                            "max": "",
+                            "min": ""
+                          },
+                          "stacked": false,
+                          "stroke": {
+                            "color": "",
+                            "opacity": 1,
+                            "width": 1
+                          }
+                        },
+                        "high": {
+                          "x": "",
+                          "y": ""
+                        },
+                        "low": {
+                          "x": "",
+                          "y": ""
+                        },
+                        "open": {
+                          "x": "",
+                          "y": ""
+                        }
+                      },
+                      "column": {
+                        "appearance": {
+                          "deriveFieldsFromData": {
+                            "fill": {
+                              "color": "",
+                              "opacity": ""
+                            },
+                            "stroke": {
+                              "color": "",
+                              "opacity": "",
+                              "width": ""
+                            }
+                          },
+                          "fill": {
+                            "color": "",
+                            "opacity": 1
+                          },
+                          "heatRules": {
+                            "dataField": "",
+                            "enabled": false,
+                            "max": "",
+                            "min": ""
+                          },
+                          "height": null,
+                          "stacked": false,
+                          "stroke": {
+                            "color": "",
+                            "opacity": 1,
+                            "width": 1
+                          },
+                          "width": null
+                        },
+                        "open": {
+                          "x": "",
+                          "y": ""
+                        }
+                      },
+                      "data": {
+                        "source": "example",
+                        "x": "hour",
+                        "y": "target"
+                      },
+                      "defaultState": {
+                        "visible": true
+                      },
+                      "hiddenInLegend": false,
+                      "label": {
+                        "text": "Target"
+                      },
+                      "line": {
+                        "appearance": {
+                          "bullets": [
+                            {
+                              "deriveFieldsFromData": {
+                                "fill": {
+                                  "color": "",
+                                  "opacity": ""
+                                },
+                                "rotation": "",
+                                "stroke": {
+                                  "color": "",
+                                  "opacity": "",
+                                  "width": ""
+                                }
+                              },
+                              "enabled": true,
+                              "fill": {
+                                "color": "",
+                                "opacity": 1
+                              },
+                              "heatRules": {
+                                "dataField": "",
+                                "enabled": false,
+                                "max": 100,
+                                "min": 2
+                              },
+                              "height": 10,
+                              "label": {
+                                "position": {
+                                  "dx": 0,
+                                  "dy": 0
+                                },
+                                "text": "{value}"
+                              },
+                              "render": "circle",
+                              "rotation": 0,
+                              "stroke": {
+                                "color": "",
+                                "opacity": 1,
+                                "width": 1
+                              },
+                              "tooltip": {
+                                "background": {
+                                  "color": "",
+                                  "opacity": 1
+                                },
+                                "cornerRadius": 3,
+                                "enabled": true,
+                                "pointerLength": 4,
+                                "text": "{name}: [bold]{valueY}[/]"
+                              },
+                              "width": 10
+                            }
+                          ],
+                          "connect": true,
+                          "fill": {
+                            "color": "",
+                            "opacity": 0
+                          },
+                          "minDistance": 0.5,
+                          "stroke": {
+                            "color": "",
+                            "dashArray": "",
+                            "opacity": 1,
+                            "width": 3
+                          },
+                          "tensionX": 1,
+                          "tensionY": 1
+                        },
+                        "open": {
+                          "x": "",
+                          "y": ""
+                        }
+                      },
+                      "name": "Target",
+                      "render": "line",
+                      "stepLine": {
+                        "appearance": {
+                          "bullets": [
+                            {
+                              "deriveFieldsFromData": {
+                                "fill": {
+                                  "color": "",
+                                  "opacity": ""
+                                },
+                                "rotation": "",
+                                "stroke": {
+                                  "color": "",
+                                  "opacity": "",
+                                  "width": ""
+                                }
+                              },
+                              "enabled": true,
+                              "fill": {
+                                "color": "",
+                                "opacity": 1
+                              },
+                              "heatRules": {
+                                "dataField": "",
+                                "enabled": false,
+                                "max": 100,
+                                "min": 2
+                              },
+                              "height": 10,
+                              "label": {
+                                "position": {
+                                  "dx": 0,
+                                  "dy": 0
+                                },
+                                "text": "{value}"
+                              },
+                              "render": "circle",
+                              "rotation": 0,
+                              "stroke": {
+                                "color": "",
+                                "opacity": 1,
+                                "width": 1
+                              },
+                              "tooltip": {
+                                "background": {
+                                  "color": "",
+                                  "opacity": 1
+                                },
+                                "cornerRadius": 3,
+                                "enabled": true,
+                                "pointerLength": 4,
+                                "text": "{name}: [bold]{valueY}[/]"
+                              },
+                              "width": 10
+                            }
+                          ],
+                          "connect": true,
+                          "fill": {
+                            "color": "",
+                            "opacity": 0
+                          },
+                          "minDistance": 0.5,
+                          "stroke": {
+                            "color": "",
+                            "dashArray": "",
+                            "opacity": 1,
+                            "width": 3
+                          },
+                          "tensionX": 1,
+                          "tensionY": 1
+                        },
+                        "open": {
+                          "x": "",
+                          "y": ""
+                        }
+                      },
+                      "tooltip": {
+                        "background": {
+                          "color": "",
+                          "opacity": 1
+                        },
+                        "cornerRadius": 3,
+                        "enabled": true,
+                        "pointerLength": 4,
+                        "text": "{name}: [bold]{valueY}[/]"
+                      },
+                      "visible": true,
+                      "xAxis": "time",
+                      "yAxis": "count",
+                      "zIndex": 0
+                    }
+                  ],
+                  "xAxes": [
+                    {
+                      "appearance": {
+                        "font": {
+                          "size": 10,
+                          "weight": 500
+                        },
+                        "grid": {
+                          "color": "",
+                          "dashArray": "",
+                          "opacity": 1,
+                          "position": 0.5
+                        },
+                        "inside": false,
+                        "labels": {
+                          "color": "",
+                          "horizontalCenter": "middle",
+                          "opacity": 1,
+                          "rotation": 0,
+                          "verticalCenter": "middle"
+                        },
+                        "opposite": false
+                      },
+                      "category": {
+                        "break": {
+                          "enabled": false,
+                          "endCategory": "",
+                          "size": 0.05,
+                          "startCategory": ""
+                        }
+                      },
+                      "date": {
+                        "baseInterval": {
+                          "count": 1,
+                          "enabled": true,
+                          "skipEmptyPeriods": true,
+                          "timeUnit": "hour"
+                        },
+                        "break": {
+                          "enabled": false,
+                          "endDate": "",
+                          "size": 0.05,
+                          "startDate": ""
+                        },
+                        "format": "HH a",
+                        "inputFormat": "M/d/yyyy HH:mm:ss",
+                        "range": {
+                          "max": "",
+                          "min": "",
+                          "useStrict": false
+                        },
+                        "tick": {
+                          "count": 1
+                        }
+                      },
+                      "inversed": false,
+                      "label": {
+                        "color": "",
+                        "enabled": false,
+                        "text": "Time"
+                      },
+                      "name": "time",
+                      "render": "date",
+                      "tooltip": {
+                        "background": {
+                          "color": "",
+                          "opacity": 1
+                        },
+                        "cornerRadius": 3,
+                        "enabled": true,
+                        "pointerLength": 4,
+                        "text": ""
+                      },
+                      "value": {
+                        "break": {
+                          "enabled": false,
+                          "endValue": 100,
+                          "size": 0.05,
+                          "startValue": 0
+                        },
+                        "format": "#,###.##",
+                        "logarithmic": false,
+                        "range": {
+                          "max": "",
+                          "min": "",
+                          "useStrict": false
+                        }
+                      },
+                      "visible": true
+                    }
+                  ],
+                  "yAxes": [
+                    {
+                      "appearance": {
+                        "font": {
+                          "size": 10,
+                          "weight": 500
+                        },
+                        "grid": {
+                          "color": "",
+                          "dashArray": "",
+                          "minDistance": null,
+                          "opacity": 1,
+                          "position": 0.5
+                        },
+                        "inside": false,
+                        "labels": {
+                          "color": "",
+                          "horizontalCenter": "middle",
+                          "opacity": 1,
+                          "rotation": 0,
+                          "verticalCenter": "middle"
+                        },
+                        "opposite": false
+                      },
+                      "category": {
+                        "break": {
+                          "enabled": false,
+                          "endCategory": "",
+                          "size": 0.05,
+                          "startCategory": ""
+                        }
+                      },
+                      "date": {
+                        "baseInterval": {
+                          "count": 1,
+                          "enabled": false,
+                          "skipEmptyPeriods": false,
+                          "timeUnit": "hour"
+                        },
+                        "break": {
+                          "enabled": false,
+                          "endDate": "",
+                          "size": 0.05,
+                          "startDate": ""
+                        },
+                        "format": "M/d/yyyy HH:mm:ss",
+                        "inputFormat": "yyyy-MM-dd kk:mm:ss",
+                        "range": {
+                          "max": "",
+                          "min": "",
+                          "useStrict": false
+                        }
+                      },
+                      "inversed": false,
+                      "label": {
+                        "color": "",
+                        "enabled": true
+                      },
+                      "name": "count",
+                      "render": "value",
+                      "tooltip": {
+                        "background": {
+                          "color": "",
+                          "opacity": 1
+                        },
+                        "cornerRadius": 3,
+                        "enabled": true,
+                        "pointerLength": 4,
+                        "text": ""
+                      },
+                      "value": {
+                        "break": {
+                          "enabled": false,
+                          "endValue": 100,
+                          "size": 0.05,
+                          "startValue": 0
+                        },
+                        "format": "#,###.##",
+                        "logarithmic": false,
+                        "range": {
+                          "max": "",
+                          "min": "",
+                          "useStrict": false
+                        }
+                      },
+                      "visible": true
+                    },
+                    {
+                      "appearance": {
+                        "font": {
+                          "size": 10,
+                          "weight": 500
+                        },
+                        "grid": {
+                          "color": "",
+                          "dashArray": "4,4",
+                          "minDistance": null,
+                          "opacity": 1,
+                          "position": 0.5
+                        },
+                        "inside": false,
+                        "labels": {
+                          "color": "",
+                          "horizontalCenter": "middle",
+                          "opacity": 1,
+                          "rotation": 0,
+                          "verticalCenter": "middle"
+                        },
+                        "opposite": true
+                      },
+                      "category": {
+                        "break": {
+                          "enabled": false,
+                          "endCategory": "",
+                          "size": 0.05,
+                          "startCategory": ""
+                        }
+                      },
+                      "date": {
+                        "baseInterval": {
+                          "count": 1,
+                          "enabled": false,
+                          "skipEmptyPeriods": false,
+                          "timeUnit": "hour"
+                        },
+                        "break": {
+                          "enabled": false,
+                          "endDate": "",
+                          "size": 0.05,
+                          "startDate": ""
+                        },
+                        "format": "M/d/yyyy",
+                        "inputFormat": "yyyy-MM-dd kk:mm:ss",
+                        "range": {
+                          "max": "",
+                          "min": "",
+                          "useStrict": false
+                        }
+                      },
+                      "inversed": false,
+                      "label": {
+                        "color": "",
+                        "enabled": false,
+                        "text": "Target"
+                      },
+                      "name": "target",
+                      "render": "value",
+                      "tooltip": {
+                        "background": {
+                          "color": "",
+                          "opacity": 1
+                        },
+                        "cornerRadius": 3,
+                        "enabled": true,
+                        "pointerLength": 4,
+                        "text": ""
+                      },
+                      "value": {
+                        "break": {
+                          "enabled": false,
+                          "endValue": 100,
+                          "size": 0.05,
+                          "startValue": 0
+                        },
+                        "format": "#,###.##",
+                        "logarithmic": false,
+                        "range": {
+                          "max": "",
+                          "min": "",
+                          "useStrict": false
+                        }
+                      },
+                      "visible": true
+                    }
+                  ]
+                },
+                "type": "ia.chart.xy"
+              }
+            ],
+            "meta": {
+              "name": "Left"
+            },
+            "position": {
+              "basis": "685px"
+            },
+            "props": {
+              "direction": "column",
+              "justify": "space-around",
+              "style": {
+                "classes": "ContainerCard"
+              }
+            },
+            "type": "ia.container.flex"
+          }
+        ],
+        "meta": {
+          "name": "current_shift"
+        },
+        "position": {
+          "basis": "499px"
+        },
+        "props": {
+          "style": {
+            "outlineStyle": "none"
+          }
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "meta": {
+          "name": "Label"
+        },
+        "props": {
+          "style": {
+            "fontSize": 20,
+            "textAlign": "center"
+          },
+          "text": "DOWNTIME LIVE DATA TABLE",
+          "textStyle": {
+            "classes": "Font/Description"
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "Table"
+        },
+        "position": {
+          "basis": "225px",
+          "shrink": 0
+        },
+        "propConfig": {
+          "props.data": {
+            "binding": {
+              "config": {
+                "polling": {
+                  "enabled": true,
+                  "rate": "1"
+                },
+                "queryPath": "downtime_formply_press"
+              },
+              "type": "query"
+            }
+          }
+        },
+        "props": {
+          "columns": [
+            {
+              "align": "center",
+              "boolean": "checkbox",
+              "dateFormat": "MM/DD/YYYY",
+              "editable": false,
+              "field": "",
+              "footer": {
+                "align": "center",
+                "justify": "left",
+                "style": {
+                  "classes": ""
+                },
+                "title": ""
+              },
+              "header": {
+                "align": "center",
+                "justify": "left",
+                "style": {
+                  "classes": ""
+                },
+                "title": ""
+              },
+              "justify": "auto",
+              "number": "value",
+              "numberFormat": "0,0.##",
+              "progressBar": {
+                "bar": {
+                  "color": "",
+                  "style": {
+                    "classes": ""
+                  }
+                },
+                "max": 100,
+                "min": 0,
+                "track": {
+                  "color": "",
+                  "style": {
+                    "classes": ""
+                  }
+                },
+                "value": {
+                  "enabled": true,
+                  "format": "0,0.##",
+                  "justify": "center",
+                  "style": {
+                    "classes": ""
+                  }
+                }
+              },
+              "render": "auto",
+              "resizable": true,
+              "sort": "none",
+              "sortable": true,
+              "strictWidth": false,
+              "style": {
+                "classes": ""
+              },
+              "toggleSwitch": {
+                "color": {
+                  "selected": "",
+                  "unselected": ""
+                }
+              },
+              "viewParams": {},
+              "viewPath": "",
+              "visible": true,
+              "width": ""
+            },
+            {
+              "align": "center",
+              "boolean": "checkbox",
+              "dateFormat": "MM/DD/YYYY",
+              "editable": false,
+              "field": "",
+              "footer": {
+                "align": "center",
+                "justify": "left",
+                "style": {
+                  "classes": ""
+                },
+                "title": ""
+              },
+              "header": {
+                "align": "center",
+                "justify": "left",
+                "style": {
+                  "classes": ""
+                },
+                "title": "Start Time"
+              },
+              "justify": "auto",
+              "number": "value",
+              "numberFormat": "0,0.##",
+              "progressBar": {
+                "bar": {
+                  "color": "",
+                  "style": {
+                    "classes": ""
+                  }
+                },
+                "max": 100,
+                "min": 0,
+                "track": {
+                  "color": "",
+                  "style": {
+                    "classes": ""
+                  }
+                },
+                "value": {
+                  "enabled": true,
+                  "format": "0,0.##",
+                  "justify": "center",
+                  "style": {
+                    "classes": ""
+                  }
+                }
+              },
+              "render": "auto",
+              "resizable": true,
+              "sort": "none",
+              "sortable": true,
+              "strictWidth": false,
+              "style": {
+                "classes": ""
+              },
+              "toggleSwitch": {
+                "color": {
+                  "selected": "",
+                  "unselected": ""
+                }
+              },
+              "viewParams": {},
+              "viewPath": "",
+              "visible": true,
+              "width": ""
+            },
+            {
+              "align": "center",
+              "boolean": "checkbox",
+              "dateFormat": "MM/DD/YYYY",
+              "editable": false,
+              "field": "",
+              "footer": {
+                "align": "center",
+                "justify": "left",
+                "style": {
+                  "classes": ""
+                },
+                "title": ""
+              },
+              "header": {
+                "align": "center",
+                "justify": "left",
+                "style": {
+                  "classes": ""
+                },
+                "title": ""
+              },
+              "justify": "center",
+              "number": "value",
+              "numberFormat": "0,0.##",
+              "progressBar": {
+                "bar": {
+                  "color": "",
+                  "style": {
+                    "classes": ""
+                  }
+                },
+                "max": 100,
+                "min": 0,
+                "track": {
+                  "color": "",
+                  "style": {
+                    "classes": ""
+                  }
+                },
+                "value": {
+                  "enabled": true,
+                  "format": "0,0.##",
+                  "justify": "center",
+                  "style": {
+                    "classes": ""
+                  }
+                }
+              },
+              "render": "auto",
+              "resizable": true,
+              "sort": "none",
+              "sortable": true,
+              "strictWidth": false,
+              "style": {
+                "classes": "",
+                "textAlign": "center"
+              },
+              "toggleSwitch": {
+                "color": {
+                  "selected": "",
+                  "unselected": ""
+                }
+              },
+              "viewParams": {},
+              "viewPath": "",
+              "visible": true,
+              "width": ""
+            },
+            {
+              "align": "center",
+              "boolean": "checkbox",
+              "dateFormat": "MM/DD/YYYY",
+              "editable": false,
+              "field": "",
+              "footer": {
+                "align": "center",
+                "justify": "left",
+                "style": {
+                  "classes": ""
+                },
+                "title": ""
+              },
+              "header": {
+                "align": "center",
+                "justify": "left",
+                "style": {
+                  "classes": ""
+                },
+                "title": ""
+              },
+              "justify": "auto",
+              "number": "value",
+              "numberFormat": "0,0.##",
+              "progressBar": {
+                "bar": {
+                  "color": "",
+                  "style": {
+                    "classes": ""
+                  }
+                },
+                "max": 100,
+                "min": 0,
+                "track": {
+                  "color": "",
+                  "style": {
+                    "classes": ""
+                  }
+                },
+                "value": {
+                  "enabled": true,
+                  "format": "0,0.##",
+                  "justify": "center",
+                  "style": {
+                    "classes": ""
+                  }
+                }
+              },
+              "render": "auto",
+              "resizable": true,
+              "sort": "none",
+              "sortable": true,
+              "strictWidth": false,
+              "style": {
+                "classes": ""
+              },
+              "toggleSwitch": {
+                "color": {
+                  "selected": "",
+                  "unselected": ""
+                }
+              },
+              "viewParams": {},
+              "viewPath": "",
+              "visible": true,
+              "width": ""
+            },
+            {
+              "align": "center",
+              "boolean": "checkbox",
+              "dateFormat": "MM/DD/YYYY",
+              "editable": false,
+              "field": "Duration",
+              "footer": {
+                "align": "center",
+                "justify": "left",
+                "style": {
+                  "classes": ""
+                },
+                "title": ""
+              },
+              "header": {
+                "align": "center",
+                "justify": "left",
+                "style": {
+                  "classes": ""
+                },
+                "title": ""
+              },
+              "justify": "auto",
+              "number": "value",
+              "numberFormat": "0,0.##",
+              "progressBar": {
+                "bar": {
+                  "color": "",
+                  "style": {
+                    "classes": ""
+                  }
+                },
+                "max": 100,
+                "min": 0,
+                "track": {
+                  "color": "",
+                  "style": {
+                    "classes": ""
+                  }
+                },
+                "value": {
+                  "enabled": true,
+                  "format": "0,0.##",
+                  "justify": "center",
+                  "style": {
+                    "classes": ""
+                  }
+                }
+              },
+              "render": "auto",
+              "resizable": true,
+              "sort": "none",
+              "sortable": true,
+              "strictWidth": false,
+              "style": {
+                "classes": ""
+              },
+              "toggleSwitch": {
+                "color": {
+                  "selected": "",
+                  "unselected": ""
+                }
+              },
+              "viewParams": {},
+              "viewPath": "",
+              "visible": true,
+              "width": ""
+            }
+          ],
+          "enableHeader": false,
+          "enableHeaderGroups": true,
+          "headerGroupStyle": {
+            "backgroundColor": ""
+          },
+          "headerGroups": [
+            [
+              {
+                "align": "center",
+                "justify": "left",
+                "span": 1,
+                "style": {
+                  "classes": ""
+                },
+                "title": "START TIME\n"
+              },
+              {
+                "align": "center",
+                "justify": "left",
+                "span": 1,
+                "style": {
+                  "classes": ""
+                },
+                "title": "END TIME\n"
+              },
+              {
+                "align": "center",
+                "justify": "left",
+                "span": 1,
+                "style": {
+                  "classes": ""
+                },
+                "title": "SUB-AREA"
+              },
+              {
+                "align": "center",
+                "justify": "left",
+                "span": 1,
+                "style": {
+                  "classes": ""
+                },
+                "title": "FAULT"
+              },
+              {
+                "align": "center",
+                "justify": "left",
+                "span": 1,
+                "style": {
+                  "classes": ""
+                },
+                "title": "DURATION(Minutes)"
+              }
+            ]
+          ],
+          "pager": {
+            "activeOption": 5
+          },
+          "rows": {
+            "highlight": {
+              "color": "#00AC3A"
+            }
+          },
+          "selection": {
+            "enableRowSelection": false,
+            "style": {
+              "backgroundColor": "00683A"
+            }
+          }
+        },
+        "type": "ia.display.table"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "propConfig": {
+      "custom.chartMode": {
+        "binding": {
+          "config": {
+            "path": "./FlexContainer_0/Middle/ToggleSwitch.props.selected"
+          },
+          "transforms": [
+            {
+              "fallback": null,
+              "inputType": "scalar",
+              "mappings": [
+                {
+                  "input": true,
+                  "output": "volume"
+                },
+                {
+                  "input": false,
+                  "output": "count"
+                }
+              ],
+              "outputType": "scalar",
+              "type": "map"
+            }
+          ],
+          "type": "property"
+        }
+      },
+      "custom.hotpressData": {
+        "binding": {
+          "config": {
+            "parameters": {
+              "endTime": "{./FlexContainer_0/DateTo.props.value}",
+              "startTime": "{./FlexContainer_0/DateFrom.props.value}"
+            },
+            "queryPath": "formply_hotpress/hourly_counts",
+            "returnFormat": "dataset"
+          },
+          "type": "query"
+        }
+      }
+    },
+    "props": {
+      "direction": "column"
+    },
+    "type": "ia.container.flex"
+  }
+}

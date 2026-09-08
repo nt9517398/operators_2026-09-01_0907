@@ -1,0 +1,889 @@
+{
+  "custom": {},
+  "params": {},
+  "props": {
+    "defaultSize": {
+      "height": 1160,
+      "width": 2200
+    }
+  },
+  "root": {
+    "children": [
+      {
+        "children": [
+          {
+            "meta": {
+              "name": "spacing1"
+            },
+            "position": {
+              "basis": "52px"
+            },
+            "type": "ia.container.flex"
+          },
+          {
+            "meta": {
+              "name": "Label"
+            },
+            "position": {
+              "basis": "267px"
+            },
+            "props": {
+              "text": "COMPOSER 2",
+              "textStyle": {
+                "borderStyle": "none",
+                "color": "#E8E8E8",
+                "fill": "#FFFDFD",
+                "fontFamily": "monospace",
+                "fontSize": 40,
+                "fontWeight": "bolder",
+                "outlineWidth": "10",
+                "textAlign": "center",
+                "textOverflow": "clip",
+                "textTransform": "uppercase",
+                "whiteSpace": "normal",
+                "wordWrap": "break-word"
+              }
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "meta": {
+              "name": "spacing"
+            },
+            "position": {
+              "basis": "1293px"
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "children": [
+              {
+                "meta": {
+                  "name": "Label"
+                },
+                "position": {
+                  "basis": "120px"
+                },
+                "props": {
+                  "text": "STATUS",
+                  "textStyle": {
+                    "fontSize": 25
+                  }
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "children": [
+                  {
+                    "meta": {
+                      "name": "Green pilot light 2"
+                    },
+                    "position": {
+                      "basis": "30px"
+                    },
+                    "propConfig": {
+                      "meta.visible": {
+                        "binding": {
+                          "config": {
+                            "expression": "{[default]site_composer2/current/LineDownForMinutes} \u003d 0"
+                          },
+                          "type": "expr"
+                        }
+                      }
+                    },
+                    "props": {
+                      "elements": [
+                        {
+                          "cx": "499",
+                          "cy": "499",
+                          "fill": {
+                            "paint": "#000"
+                          },
+                          "name": "circle",
+                          "r": "499",
+                          "style": {},
+                          "type": "circle"
+                        },
+                        {
+                          "d": "M21,499 l34,-180 102,-162 162,-104 180,-34 180,34 162,104 104,162 34,180 -34,180 -104,162 -162,102 -180,34 -180,-34 -162,-102 -102,-162 -34,-180z",
+                          "fill": {
+                            "paint": "#0f0"
+                          },
+                          "name": "path",
+                          "style": {},
+                          "type": "path"
+                        },
+                        {
+                          "cx": "406",
+                          "cy": "405",
+                          "fill": {
+                            "paint": "#6bff6b"
+                          },
+                          "name": "circle",
+                          "r": "291",
+                          "style": {},
+                          "type": "circle"
+                        },
+                        {
+                          "cx": "359",
+                          "cy": "357",
+                          "fill": {
+                            "paint": "#a3ffa3"
+                          },
+                          "name": "circle",
+                          "r": "198",
+                          "style": {},
+                          "type": "circle"
+                        },
+                        {
+                          "cx": "311",
+                          "cy": "311",
+                          "fill": {
+                            "paint": "#d9ffd9"
+                          },
+                          "name": "circle",
+                          "r": "104",
+                          "style": {},
+                          "type": "circle"
+                        }
+                      ],
+                      "viewBox": "0 0 999 999"
+                    },
+                    "type": "ia.shapes.svg"
+                  },
+                  {
+                    "meta": {
+                      "name": "Red pilot light 2"
+                    },
+                    "position": {
+                      "basis": "30px"
+                    },
+                    "propConfig": {
+                      "meta.visible": {
+                        "binding": {
+                          "config": {
+                            "expression": "{[default]site_composer2/current/LineDownForMinutes} !\u003d 0"
+                          },
+                          "type": "expr"
+                        }
+                      }
+                    },
+                    "props": {
+                      "elements": [
+                        {
+                          "cx": "499",
+                          "cy": "499",
+                          "fill": {
+                            "paint": "#000"
+                          },
+                          "name": "circle",
+                          "r": "499",
+                          "style": {},
+                          "type": "circle"
+                        },
+                        {
+                          "d": "M22,497 l34,-178 104,-159 162,-107 175,-34 182,34 159,107 107,159 34,178 -34,179 -107,162 -159,104 -182,34 -175,-34 -162,-104 -104,-162 -34,-179z",
+                          "fill": {
+                            "paint": "#f00"
+                          },
+                          "name": "path",
+                          "stroke": {
+                            "paint": "#4c4c4c",
+                            "width": "2"
+                          },
+                          "style": {},
+                          "type": "path"
+                        },
+                        {
+                          "cx": "406",
+                          "cy": "405",
+                          "fill": {
+                            "paint": "#ff6b6b"
+                          },
+                          "name": "circle",
+                          "r": "291",
+                          "style": {},
+                          "type": "circle"
+                        },
+                        {
+                          "d": "M161,357 l15,-74 41,-66 68,-44 74,-13 74,13 66,44 44,66 14,74 -14,74 -44,68 -66,42 -74,14 -74,-14 -68,-42 -41,-68 -15,-74z",
+                          "fill": {
+                            "paint": "#ffa3a3"
+                          },
+                          "name": "path",
+                          "style": {},
+                          "type": "path"
+                        },
+                        {
+                          "d": "M208,311 l7,-39 22,-35 37,-22 37,-7 40,7 36,22 22,35 6,39 -6,40 -22,34 -36,22 -40,8 -37,-8 -37,-22 -22,-34 -7,-40z",
+                          "fill": {
+                            "paint": "#ffd9d9"
+                          },
+                          "name": "path",
+                          "style": {},
+                          "type": "path"
+                        }
+                      ],
+                      "viewBox": "0 0 999 999"
+                    },
+                    "type": "ia.shapes.svg"
+                  },
+                  {
+                    "meta": {
+                      "name": "Yellow pilot light 2",
+                      "visible": false
+                    },
+                    "position": {
+                      "basis": "30px"
+                    },
+                    "props": {
+                      "elements": [
+                        {
+                          "cx": "499",
+                          "cy": "499",
+                          "fill": {
+                            "paint": "#000"
+                          },
+                          "name": "circle",
+                          "r": "499",
+                          "stroke": {
+                            "paint": "#4c4c4c",
+                            "width": "2"
+                          },
+                          "style": {},
+                          "type": "circle"
+                        },
+                        {
+                          "d": "M21,499 l34,-180 103,-162 162,-102 180,-35 179,35 162,102 102,162 35,180 -35,179 -102,162 -162,103 -179,34 -180,-34 -162,-103 -103,-162 -34,-179z",
+                          "fill": {
+                            "paint": "#fc0"
+                          },
+                          "name": "path",
+                          "style": {},
+                          "type": "path"
+                        },
+                        {
+                          "d": "M115,404 l20,-108 63,-98 99,-64 108,-21 110,21 98,64 63,98 21,108 -21,110 -63,98 -98,63 -110,21 -108,-21 -99,-63 -63,-98 -20,-110z",
+                          "fill": {
+                            "paint": "#ffe06b"
+                          },
+                          "name": "path",
+                          "style": {},
+                          "type": "path"
+                        },
+                        {
+                          "cx": "359",
+                          "cy": "357",
+                          "fill": {
+                            "paint": "#ffeda3"
+                          },
+                          "name": "circle",
+                          "r": "198",
+                          "style": {},
+                          "type": "circle"
+                        },
+                        {
+                          "cx": "311",
+                          "cy": "311",
+                          "fill": {
+                            "paint": "#fffad9"
+                          },
+                          "name": "circle",
+                          "r": "104",
+                          "style": {},
+                          "type": "circle"
+                        }
+                      ],
+                      "viewBox": "0 0 999 999"
+                    },
+                    "type": "ia.shapes.svg"
+                  }
+                ],
+                "meta": {
+                  "name": "FlexContainer"
+                },
+                "position": {
+                  "basis": "180px"
+                },
+                "type": "ia.container.flex"
+              }
+            ],
+            "meta": {
+              "name": "status"
+            },
+            "position": {
+              "basis": "300px"
+            },
+            "type": "ia.container.flex"
+          }
+        ],
+        "meta": {
+          "name": "header"
+        },
+        "position": {
+          "basis": "50px",
+          "shrink": 0
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "children": [
+          {
+            "meta": {
+              "name": "EmbeddedView"
+            },
+            "position": {
+              "basis": "320px",
+              "grow": 1
+            },
+            "props": {
+              "path": "Navigation/composer2_topmenu"
+            },
+            "type": "ia.display.view"
+          }
+        ],
+        "meta": {
+          "name": "FlexContainer_0"
+        },
+        "position": {
+          "basis": "38px",
+          "shrink": 0
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "children": [
+          {
+            "meta": {
+              "name": "settings"
+            },
+            "position": {
+              "height": 306,
+              "width": 778,
+              "x": 541.51,
+              "y": 186.51
+            },
+            "props": {
+              "fit": {
+                "mode": "fill"
+              },
+              "source": "/system/images/RYAN/Setting.jpg"
+            },
+            "type": "ia.display.image"
+          },
+          {
+            "meta": {
+              "name": "Label_8"
+            },
+            "position": {
+              "height": 26,
+              "rotate": {
+                "anchor": "25% 90%"
+              },
+              "width": 257,
+              "x": 699.686,
+              "y": 154.5
+            },
+            "props": {
+              "style": {
+                "backgroundColor": "#D5D5D5"
+              },
+              "text": "Distance From Scanner To Knife",
+              "textStyle": {
+                "color": "#000000",
+                "fontWeight": "bold"
+              }
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "meta": {
+              "name": "Label_9"
+            },
+            "position": {
+              "height": 26,
+              "rotate": {
+                "anchor": "25% 90%"
+              },
+              "width": 292.0000000000001,
+              "x": 834.89,
+              "y": 219.5
+            },
+            "props": {
+              "style": {
+                "backgroundColor": "#D5D5D5"
+              },
+              "text": "Distance Thickness Wheels To Knife",
+              "textStyle": {
+                "color": "#000000",
+                "fontWeight": "bold"
+              }
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "meta": {
+              "name": "TextField"
+            },
+            "position": {
+              "height": 26,
+              "width": 55,
+              "x": 960,
+              "y": 153.5
+            },
+            "propConfig": {
+              "props.text": {
+                "binding": {
+                  "config": {
+                    "bidirectional": true,
+                    "fallbackDelay": 2.5,
+                    "mode": "indirect",
+                    "references": {},
+                    "tagPath": "[default]site_composer2/settings/HMI_DistanceFromScannerToDefectKnife_mm"
+                  },
+                  "type": "tag"
+                }
+              }
+            },
+            "type": "ia.input.text-field"
+          },
+          {
+            "meta": {
+              "name": "TextField_0"
+            },
+            "position": {
+              "height": 29,
+              "width": 55,
+              "x": 1133.6,
+              "y": 218.45
+            },
+            "propConfig": {
+              "props.text": {
+                "binding": {
+                  "config": {
+                    "bidirectional": true,
+                    "fallbackDelay": 2.5,
+                    "mode": "indirect",
+                    "references": {},
+                    "tagPath": "[default]site_composer2/settings/HMI_DistanceFromWheelsToDefectKnife_mm"
+                  },
+                  "type": "tag"
+                }
+              }
+            },
+            "type": "ia.input.text-field"
+          },
+          {
+            "meta": {
+              "name": "Label_10"
+            },
+            "position": {
+              "height": 26,
+              "rotate": {
+                "anchor": "25% 90%"
+              },
+              "width": 134.37,
+              "x": 541.19,
+              "y": 204.49199999999996
+            },
+            "props": {
+              "style": {
+                "backgroundColor": "#D5D5D5"
+              },
+              "text": "Scanner Length",
+              "textStyle": {
+                "color": "#000000",
+                "fontWeight": "bold"
+              }
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "meta": {
+              "name": "TextField_1"
+            },
+            "position": {
+              "height": 26,
+              "width": 55,
+              "x": 678.85,
+              "y": 203.49199999999996
+            },
+            "propConfig": {
+              "props.text": {
+                "binding": {
+                  "config": {
+                    "bidirectional": true,
+                    "fallbackDelay": 2.5,
+                    "mode": "indirect",
+                    "references": {},
+                    "tagPath": "[default]site_composer2/settings/HMI_ScannerLength_mm"
+                  },
+                  "type": "tag"
+                }
+              }
+            },
+            "type": "ia.input.text-field"
+          },
+          {
+            "meta": {
+              "name": "Label_11"
+            },
+            "position": {
+              "height": 26,
+              "rotate": {
+                "anchor": "25% 90%"
+              },
+              "width": 235,
+              "x": 584.52,
+              "y": 502.51
+            },
+            "props": {
+              "style": {
+                "backgroundColor": "#D5D5D5"
+              },
+              "text": "Infeed Chain Encoder Setup",
+              "textStyle": {
+                "color": "#000000",
+                "fontWeight": "bold"
+              }
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "meta": {
+              "name": "Label_12"
+            },
+            "position": {
+              "height": 26,
+              "rotate": {
+                "anchor": "25% 90%"
+              },
+              "width": 235,
+              "x": 584.52,
+              "y": 543.49
+            },
+            "props": {
+              "style": {
+                "backgroundColor": "#D5D5D5"
+              },
+              "text": "Pulses Per Revolution",
+              "textStyle": {
+                "color": "#000000",
+                "fontWeight": "bold"
+              }
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "meta": {
+              "name": "TextField_3"
+            },
+            "position": {
+              "height": 26,
+              "width": 85,
+              "x": 822.178,
+              "y": 542.492
+            },
+            "propConfig": {
+              "props.text": {
+                "binding": {
+                  "config": {
+                    "bidirectional": true,
+                    "fallbackDelay": 2.5,
+                    "mode": "indirect",
+                    "references": {},
+                    "tagPath": "[default]site_composer2/settings/HMI_InfeedChainEncoderPPR"
+                  },
+                  "type": "tag"
+                }
+              }
+            },
+            "type": "ia.input.text-field"
+          },
+          {
+            "meta": {
+              "name": "Label_13"
+            },
+            "position": {
+              "height": 26,
+              "rotate": {
+                "anchor": "25% 90%"
+              },
+              "width": 235,
+              "x": 584.52,
+              "y": 580.49
+            },
+            "props": {
+              "style": {
+                "backgroundColor": "#D5D5D5"
+              },
+              "text": "Pulses Per Meter",
+              "textStyle": {
+                "color": "#000000",
+                "fontWeight": "bold"
+              }
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "meta": {
+              "name": "TextField_5"
+            },
+            "position": {
+              "height": 26,
+              "width": 60,
+              "x": 813.88,
+              "y": 450
+            },
+            "propConfig": {
+              "props.text": {
+                "binding": {
+                  "config": {
+                    "fallbackDelay": 2.5,
+                    "mode": "direct",
+                    "tagPath": "[default]site_composer2/settings/PresentValue_0_"
+                  },
+                  "type": "tag"
+                }
+              }
+            },
+            "type": "ia.input.text-field"
+          },
+          {
+            "meta": {
+              "name": "TextField_6"
+            },
+            "position": {
+              "height": 26,
+              "width": 85,
+              "x": 822.365,
+              "y": 580.9639999999999
+            },
+            "propConfig": {
+              "props.text": {
+                "binding": {
+                  "config": {
+                    "bidirectional": true,
+                    "fallbackDelay": 2.5,
+                    "mode": "indirect",
+                    "references": {},
+                    "tagPath": "[default]site_composer2/settings/HMI_OutfeedChainEncoder_PPM"
+                  },
+                  "type": "tag"
+                }
+              }
+            },
+            "type": "ia.input.text-field"
+          },
+          {
+            "meta": {
+              "name": "Label_16"
+            },
+            "position": {
+              "height": 26,
+              "rotate": {
+                "anchor": "25% 90%"
+              },
+              "width": 235,
+              "x": 985.52,
+              "y": 502.51
+            },
+            "props": {
+              "style": {
+                "backgroundColor": "#D5D5D5"
+              },
+              "text": "Infeed Chain Encoder Setup",
+              "textStyle": {
+                "color": "#000000",
+                "fontWeight": "bold"
+              }
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "meta": {
+              "name": "TextField_8"
+            },
+            "position": {
+              "height": 26,
+              "width": 58.000000000000114,
+              "x": 992.67,
+              "y": 446.98
+            },
+            "propConfig": {
+              "props.text": {
+                "binding": {
+                  "config": {
+                    "fallbackDelay": 2.5,
+                    "mode": "direct",
+                    "tagPath": "[default]site_composer2/settings/PresentValue_1_"
+                  },
+                  "type": "tag"
+                }
+              }
+            },
+            "type": "ia.input.text-field"
+          },
+          {
+            "meta": {
+              "name": "TextField_9"
+            },
+            "position": {
+              "height": 26,
+              "width": 85,
+              "x": 1223.18,
+              "y": 542.492
+            },
+            "propConfig": {
+              "props.text": {
+                "binding": {
+                  "config": {
+                    "bidirectional": true,
+                    "fallbackDelay": 2.5,
+                    "mode": "indirect",
+                    "references": {},
+                    "tagPath": "[default]site_composer2/settings/HMI_OutfeedChainEncoderPPR"
+                  },
+                  "type": "tag"
+                }
+              }
+            },
+            "type": "ia.input.text-field"
+          },
+          {
+            "meta": {
+              "name": "Label_18"
+            },
+            "position": {
+              "height": 26,
+              "rotate": {
+                "anchor": "25% 90%"
+              },
+              "width": 235,
+              "x": 985.52,
+              "y": 543.49
+            },
+            "props": {
+              "style": {
+                "backgroundColor": "#D5D5D5"
+              },
+              "text": "Pulses Per Revolution",
+              "textStyle": {
+                "color": "#000000",
+                "fontWeight": "bold"
+              }
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "meta": {
+              "name": "Label_20"
+            },
+            "position": {
+              "height": 26,
+              "rotate": {
+                "anchor": "25% 90%"
+              },
+              "width": 235,
+              "x": 985.52,
+              "y": 580.49
+            },
+            "props": {
+              "style": {
+                "backgroundColor": "#D5D5D5"
+              },
+              "text": "Pulses Per Meter",
+              "textStyle": {
+                "color": "#000000",
+                "fontWeight": "bold"
+              }
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "meta": {
+              "name": "TextField_11"
+            },
+            "position": {
+              "height": 26,
+              "width": 85,
+              "x": 1224.18,
+              "y": 579.9639999999999
+            },
+            "propConfig": {
+              "props.text": {
+                "binding": {
+                  "config": {
+                    "bidirectional": true,
+                    "fallbackDelay": 2.5,
+                    "mode": "indirect",
+                    "references": {},
+                    "tagPath": "[default]site_composer2/settings/HMI_OutfeedChainEncoder_PPM"
+                  },
+                  "type": "tag"
+                }
+              }
+            },
+            "type": "ia.input.text-field"
+          },
+          {
+            "events": {
+              "dom": {
+                "onClick": {
+                  "config": {
+                    "draggable": false,
+                    "id": "49KXtRvb",
+                    "modal": true,
+                    "overlayDismiss": true,
+                    "resizable": false,
+                    "showCloseIcon": true,
+                    "type": "open",
+                    "viewPath": "Popup_Views/Popup-ShiftChange-Composer2",
+                    "viewportBound": false
+                  },
+                  "scope": "C",
+                  "type": "popup"
+                }
+              }
+            },
+            "meta": {
+              "name": "Button"
+            },
+            "position": {
+              "height": 34,
+              "width": 348,
+              "x": 48,
+              "y": 29
+            },
+            "props": {
+              "style": {
+                "backgroundColor": "#008080"
+              },
+              "text": "SHIFT CHANGE"
+            },
+            "type": "ia.input.button"
+          }
+        ],
+        "meta": {
+          "name": "CoordinateContainer"
+        },
+        "position": {
+          "basis": "1088px"
+        },
+        "props": {
+          "style": {
+            "backgroundColor": "#00A2E8"
+          }
+        },
+        "type": "ia.container.coord"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "props": {
+      "direction": "column"
+    },
+    "type": "ia.container.flex"
+  }
+}

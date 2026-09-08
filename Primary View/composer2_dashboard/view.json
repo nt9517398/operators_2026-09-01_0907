@@ -1,0 +1,3280 @@
+{
+  "custom": {},
+  "params": {},
+  "props": {
+    "defaultSize": {
+      "height": 1160,
+      "width": 2200
+    }
+  },
+  "root": {
+    "children": [
+      {
+        "children": [
+          {
+            "meta": {
+              "name": "spacing1"
+            },
+            "position": {
+              "basis": "52px"
+            },
+            "type": "ia.container.flex"
+          },
+          {
+            "meta": {
+              "name": "Label"
+            },
+            "position": {
+              "basis": "267px"
+            },
+            "props": {
+              "text": "COMPOSER 2",
+              "textStyle": {
+                "borderStyle": "none",
+                "color": "#E8E8E8",
+                "fill": "#FFFDFD",
+                "fontFamily": "monospace",
+                "fontSize": 40,
+                "fontWeight": "bolder",
+                "outlineWidth": "10",
+                "textAlign": "center",
+                "textOverflow": "clip",
+                "textTransform": "uppercase",
+                "whiteSpace": "normal",
+                "wordWrap": "break-word"
+              }
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "meta": {
+              "name": "spacing"
+            },
+            "position": {
+              "basis": "718px"
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "children": [
+              {
+                "meta": {
+                  "name": "Label"
+                },
+                "position": {
+                  "basis": "120px"
+                },
+                "props": {
+                  "text": "STATUS",
+                  "textStyle": {
+                    "fontSize": 25
+                  }
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "children": [
+                  {
+                    "meta": {
+                      "name": "Green pilot light 2"
+                    },
+                    "position": {
+                      "basis": "30px"
+                    },
+                    "propConfig": {
+                      "meta.visible": {
+                        "binding": {
+                          "config": {
+                            "expression": "{[default]site_composer2/current/LineDownForMinutes} \u003d 0"
+                          },
+                          "type": "expr"
+                        }
+                      }
+                    },
+                    "props": {
+                      "elements": [
+                        {
+                          "cx": "499",
+                          "cy": "499",
+                          "fill": {
+                            "paint": "#000"
+                          },
+                          "name": "circle",
+                          "r": "499",
+                          "style": {},
+                          "type": "circle"
+                        },
+                        {
+                          "d": "M21,499 l34,-180 102,-162 162,-104 180,-34 180,34 162,104 104,162 34,180 -34,180 -104,162 -162,102 -180,34 -180,-34 -162,-102 -102,-162 -34,-180z",
+                          "fill": {
+                            "paint": "#0f0"
+                          },
+                          "name": "path",
+                          "style": {},
+                          "type": "path"
+                        },
+                        {
+                          "cx": "406",
+                          "cy": "405",
+                          "fill": {
+                            "paint": "#6bff6b"
+                          },
+                          "name": "circle",
+                          "r": "291",
+                          "style": {},
+                          "type": "circle"
+                        },
+                        {
+                          "cx": "359",
+                          "cy": "357",
+                          "fill": {
+                            "paint": "#a3ffa3"
+                          },
+                          "name": "circle",
+                          "r": "198",
+                          "style": {},
+                          "type": "circle"
+                        },
+                        {
+                          "cx": "311",
+                          "cy": "311",
+                          "fill": {
+                            "paint": "#d9ffd9"
+                          },
+                          "name": "circle",
+                          "r": "104",
+                          "style": {},
+                          "type": "circle"
+                        }
+                      ],
+                      "viewBox": "0 0 999 999"
+                    },
+                    "type": "ia.shapes.svg"
+                  },
+                  {
+                    "meta": {
+                      "name": "Red pilot light 2"
+                    },
+                    "position": {
+                      "basis": "30px"
+                    },
+                    "propConfig": {
+                      "meta.visible": {
+                        "binding": {
+                          "config": {
+                            "expression": "{[default]site_composer2/current/LineDownForMinutes} !\u003d 0"
+                          },
+                          "type": "expr"
+                        }
+                      }
+                    },
+                    "props": {
+                      "elements": [
+                        {
+                          "cx": "499",
+                          "cy": "499",
+                          "fill": {
+                            "paint": "#000"
+                          },
+                          "name": "circle",
+                          "r": "499",
+                          "style": {},
+                          "type": "circle"
+                        },
+                        {
+                          "d": "M22,497 l34,-178 104,-159 162,-107 175,-34 182,34 159,107 107,159 34,178 -34,179 -107,162 -159,104 -182,34 -175,-34 -162,-104 -104,-162 -34,-179z",
+                          "fill": {
+                            "paint": "#f00"
+                          },
+                          "name": "path",
+                          "stroke": {
+                            "paint": "#4c4c4c",
+                            "width": "2"
+                          },
+                          "style": {},
+                          "type": "path"
+                        },
+                        {
+                          "cx": "406",
+                          "cy": "405",
+                          "fill": {
+                            "paint": "#ff6b6b"
+                          },
+                          "name": "circle",
+                          "r": "291",
+                          "style": {},
+                          "type": "circle"
+                        },
+                        {
+                          "d": "M161,357 l15,-74 41,-66 68,-44 74,-13 74,13 66,44 44,66 14,74 -14,74 -44,68 -66,42 -74,14 -74,-14 -68,-42 -41,-68 -15,-74z",
+                          "fill": {
+                            "paint": "#ffa3a3"
+                          },
+                          "name": "path",
+                          "style": {},
+                          "type": "path"
+                        },
+                        {
+                          "d": "M208,311 l7,-39 22,-35 37,-22 37,-7 40,7 36,22 22,35 6,39 -6,40 -22,34 -36,22 -40,8 -37,-8 -37,-22 -22,-34 -7,-40z",
+                          "fill": {
+                            "paint": "#ffd9d9"
+                          },
+                          "name": "path",
+                          "style": {},
+                          "type": "path"
+                        }
+                      ],
+                      "viewBox": "0 0 999 999"
+                    },
+                    "type": "ia.shapes.svg"
+                  },
+                  {
+                    "meta": {
+                      "name": "Yellow pilot light 2",
+                      "visible": false
+                    },
+                    "position": {
+                      "basis": "30px"
+                    },
+                    "props": {
+                      "elements": [
+                        {
+                          "cx": "499",
+                          "cy": "499",
+                          "fill": {
+                            "paint": "#000"
+                          },
+                          "name": "circle",
+                          "r": "499",
+                          "stroke": {
+                            "paint": "#4c4c4c",
+                            "width": "2"
+                          },
+                          "style": {},
+                          "type": "circle"
+                        },
+                        {
+                          "d": "M21,499 l34,-180 103,-162 162,-102 180,-35 179,35 162,102 102,162 35,180 -35,179 -102,162 -162,103 -179,34 -180,-34 -162,-103 -103,-162 -34,-179z",
+                          "fill": {
+                            "paint": "#fc0"
+                          },
+                          "name": "path",
+                          "style": {},
+                          "type": "path"
+                        },
+                        {
+                          "d": "M115,404 l20,-108 63,-98 99,-64 108,-21 110,21 98,64 63,98 21,108 -21,110 -63,98 -98,63 -110,21 -108,-21 -99,-63 -63,-98 -20,-110z",
+                          "fill": {
+                            "paint": "#ffe06b"
+                          },
+                          "name": "path",
+                          "style": {},
+                          "type": "path"
+                        },
+                        {
+                          "cx": "359",
+                          "cy": "357",
+                          "fill": {
+                            "paint": "#ffeda3"
+                          },
+                          "name": "circle",
+                          "r": "198",
+                          "style": {},
+                          "type": "circle"
+                        },
+                        {
+                          "cx": "311",
+                          "cy": "311",
+                          "fill": {
+                            "paint": "#fffad9"
+                          },
+                          "name": "circle",
+                          "r": "104",
+                          "style": {},
+                          "type": "circle"
+                        }
+                      ],
+                      "viewBox": "0 0 999 999"
+                    },
+                    "type": "ia.shapes.svg"
+                  },
+                  {
+                    "meta": {
+                      "name": "Icon"
+                    },
+                    "position": {
+                      "basis": "30px"
+                    },
+                    "propConfig": {
+                      "meta.visible": {
+                        "binding": {
+                          "config": {
+                            "fallbackDelay": 2.5,
+                            "mode": "direct",
+                            "tagPath": "[default]site_composer2/Alarms/HMI_AlarmActive"
+                          },
+                          "transforms": [
+                            {
+                              "fallback": false,
+                              "inputType": "scalar",
+                              "mappings": [
+                                {
+                                  "input": true,
+                                  "output": true
+                                }
+                              ],
+                              "outputType": "scalar",
+                              "type": "map"
+                            }
+                          ],
+                          "type": "tag"
+                        }
+                      },
+                      "props.color": {
+                        "binding": {
+                          "config": {
+                            "fallbackDelay": 2.5,
+                            "mode": "direct",
+                            "tagPath": "[default]site_composer2/Alarms/HMI_AlarmActive"
+                          },
+                          "transforms": [
+                            {
+                              "fallback": "#FF0000",
+                              "inputType": "scalar",
+                              "mappings": [
+                                {
+                                  "input": false,
+                                  "output": "#808080"
+                                }
+                              ],
+                              "outputType": "color",
+                              "type": "map"
+                            }
+                          ],
+                          "type": "tag"
+                        }
+                      }
+                    },
+                    "props": {
+                      "path": "material/warning",
+                      "style": {
+                        "classes": ""
+                      }
+                    },
+                    "type": "ia.display.icon"
+                  }
+                ],
+                "meta": {
+                  "name": "FlexContainer"
+                },
+                "position": {
+                  "basis": "180px"
+                },
+                "type": "ia.container.flex"
+              }
+            ],
+            "meta": {
+              "name": "status"
+            },
+            "position": {
+              "basis": "300px"
+            },
+            "type": "ia.container.flex"
+          }
+        ],
+        "meta": {
+          "name": "header"
+        },
+        "position": {
+          "basis": "50px",
+          "shrink": 0
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "children": [
+          {
+            "meta": {
+              "name": "EmbeddedView"
+            },
+            "position": {
+              "basis": "320px",
+              "grow": 1
+            },
+            "props": {
+              "path": "Navigation/composer2_topmenu"
+            },
+            "type": "ia.display.view"
+          }
+        ],
+        "meta": {
+          "name": "FlexContainer_0"
+        },
+        "position": {
+          "basis": "38px",
+          "shrink": 0
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "children": [
+          {
+            "events": {
+              "dom": {
+                "onClick": {
+                  "config": {
+                    "draggable": false,
+                    "id": "IIiH2Lo6",
+                    "modal": false,
+                    "overlayDismiss": true,
+                    "resizable": false,
+                    "showCloseIcon": false,
+                    "type": "open",
+                    "viewPath": "Primary/Downtime_Composer2",
+                    "viewportBound": false
+                  },
+                  "scope": "C",
+                  "type": "popup"
+                }
+              }
+            },
+            "meta": {
+              "name": "Button",
+              "visible": false
+            },
+            "position": {
+              "basis": "80px"
+            },
+            "scripts": {
+              "customMethods": [],
+              "extensionFunctions": null,
+              "messageHandlers": [
+                {
+                  "messageType": "downtimepopup_composer2",
+                  "pageScope": true,
+                  "script": "\tsystem.perspective.openPopup(\u0027IIiH2Lo6\u0027, \u0027Primary/Downtime_Composer2\u0027, showCloseIcon \u003d False, draggable \u003d False,resizable \u003d False,  modal \u003d True)",
+                  "sessionScope": true,
+                  "viewScope": true
+                }
+              ]
+            },
+            "type": "ia.input.button"
+          }
+        ],
+        "meta": {
+          "name": "FlexContainer_1"
+        },
+        "position": {
+          "basis": "38px"
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "children": [
+          {
+            "children": [
+              {
+                "meta": {
+                  "name": "Label"
+                },
+                "position": {
+                  "basis": "325px",
+                  "grow": 1
+                },
+                "props": {
+                  "text": "SHEET NUMBER",
+                  "textStyle": {
+                    "classes": "Font/Description"
+                  }
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "Label_0"
+                },
+                "position": {
+                  "basis": "325px",
+                  "grow": 1
+                },
+                "props": {
+                  "text": "LENGTH(mm)",
+                  "textStyle": {
+                    "classes": "Font/Description"
+                  }
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "Label_1"
+                },
+                "position": {
+                  "basis": "325px",
+                  "grow": 1
+                },
+                "props": {
+                  "text": "WIDTH(mm)",
+                  "textStyle": {
+                    "classes": "Font/Description"
+                  }
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "Label_2"
+                },
+                "position": {
+                  "basis": "325px",
+                  "grow": 1
+                },
+                "props": {
+                  "text": "THICKNESS(mm)",
+                  "textStyle": {
+                    "classes": "Font/Description"
+                  }
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "Label_3"
+                },
+                "position": {
+                  "basis": "325px",
+                  "grow": 1
+                },
+                "props": {
+                  "text": "GRADE",
+                  "textStyle": {
+                    "classes": "Font/Description"
+                  }
+                },
+                "type": "ia.display.label"
+              }
+            ],
+            "meta": {
+              "name": "header"
+            },
+            "position": {
+              "basis": "82px"
+            },
+            "type": "ia.container.flex"
+          },
+          {
+            "children": [
+              {
+                "meta": {
+                  "name": "Label"
+                },
+                "position": {
+                  "basis": "325px",
+                  "grow": 1
+                },
+                "propConfig": {
+                  "props.text": {
+                    "binding": {
+                      "config": {
+                        "fallbackDelay": 2.5,
+                        "mode": "direct",
+                        "tagPath": "[default]site_composer2/current/TotalFullSheets"
+                      },
+                      "transforms": [
+                        {
+                          "formatType": "numeric",
+                          "formatValue": "#,###,###",
+                          "type": "format"
+                        }
+                      ],
+                      "type": "tag"
+                    }
+                  }
+                },
+                "props": {
+                  "textStyle": {
+                    "textAlign": "center"
+                  }
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "Label_0"
+                },
+                "position": {
+                  "basis": "325px",
+                  "grow": 1
+                },
+                "propConfig": {
+                  "props.text": {
+                    "binding": {
+                      "config": {
+                        "bidirectional": true,
+                        "fallbackDelay": 2.5,
+                        "mode": "indirect",
+                        "publishInitial": true,
+                        "references": {},
+                        "tagPath": "[default]site_composer2/current/input_length"
+                      },
+                      "type": "tag"
+                    }
+                  }
+                },
+                "props": {
+                  "textStyle": {
+                    "textAlign": "center"
+                  }
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "Label_1"
+                },
+                "position": {
+                  "basis": "325px",
+                  "grow": 1
+                },
+                "propConfig": {
+                  "props.text": {
+                    "binding": {
+                      "config": {
+                        "bidirectional": true,
+                        "fallbackDelay": 2.5,
+                        "mode": "indirect",
+                        "references": {},
+                        "tagPath": "[default]site_composer2/current/input_width"
+                      },
+                      "type": "tag"
+                    }
+                  }
+                },
+                "props": {
+                  "textStyle": {
+                    "textAlign": "center"
+                  }
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "Label_3"
+                },
+                "position": {
+                  "basis": "325px",
+                  "grow": 1
+                },
+                "propConfig": {
+                  "props.text": {
+                    "binding": {
+                      "config": {
+                        "bidirectional": true,
+                        "fallbackDelay": 2.5,
+                        "mode": "indirect",
+                        "references": {},
+                        "tagPath": "[default]site_composer2/current/input_thickness"
+                      },
+                      "type": "tag"
+                    }
+                  }
+                },
+                "props": {
+                  "textStyle": {
+                    "textAlign": "center"
+                  }
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "Label_2"
+                },
+                "position": {
+                  "basis": "325px",
+                  "grow": 1
+                },
+                "propConfig": {
+                  "props.text": {
+                    "binding": {
+                      "config": {
+                        "expression": "if({[default]site_composer2/current/I_C_GradeProduct},\"U2\", \r\nif({[default]site_composer2/current/I_D_GradeProduct},\"U3\",\"Unknown\"))"
+                      },
+                      "type": "expr"
+                    }
+                  }
+                },
+                "props": {
+                  "textStyle": {
+                    "textAlign": "center"
+                  }
+                },
+                "type": "ia.display.label"
+              }
+            ],
+            "meta": {
+              "name": "data"
+            },
+            "position": {
+              "basis": "82px"
+            },
+            "type": "ia.container.flex"
+          }
+        ],
+        "meta": {
+          "name": "current_data"
+        },
+        "position": {
+          "basis": "70px"
+        },
+        "props": {
+          "alignContent": "space-around",
+          "direction": "column",
+          "justify": "space-evenly",
+          "style": {
+            "classes": "ContainerCard"
+          }
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "children": [
+          {
+            "children": [
+              {
+                "custom": {
+                  "staticValue": {
+                    "$": [
+                      "ts",
+                      192,
+                      1764037333708
+                    ],
+                    "$ts": 1764010800000
+                  }
+                },
+                "meta": {
+                  "name": "DateFrom"
+                },
+                "propConfig": {
+                  "props.value": {
+                    "binding": {
+                      "config": {
+                        "expression": "if({../Button_0.custom.live} \u0026\u0026 {[default]1000msFlashingBit},\r\n   setTime(addDays(now(0),0),6,0,0),\r\n   {this.custom.staticValue})\r\n"
+                      },
+                      "type": "expr"
+                    },
+                    "onChange": {
+                      "enabled": null,
+                      "script": "\n\tif currentValue.value is not None:\n\t\tself.custom.staticValue \u003d currentValue.value"
+                    }
+                  }
+                },
+                "props": {
+                  "format": "MMM D,YYYY hh:mm:ss a",
+                  "formattedValue": "Nov 25,2025 06:00:00 am",
+                  "inputProps": {
+                    "style": {
+                      "backgroundColor": "#C51A45",
+                      "borderStyle": "double",
+                      "color": "#FFFFFF"
+                    }
+                  },
+                  "style": {
+                    "borderStyle": "double"
+                  }
+                },
+                "type": "ia.input.date-time-input"
+              },
+              {
+                "meta": {
+                  "name": "Label"
+                },
+                "position": {
+                  "basis": "32px"
+                },
+                "props": {
+                  "textStyle": {
+                    "fontSize": 50,
+                    "textAlign": "center"
+                  }
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "custom": {
+                  "staticValue": {
+                    "$": [
+                      "ts",
+                      192,
+                      1764043095058
+                    ],
+                    "$ts": 1764043095058
+                  }
+                },
+                "meta": {
+                  "name": "DateTo"
+                },
+                "propConfig": {
+                  "props.value": {
+                    "binding": {
+                      "config": {
+                        "expression": "if({../Button_0.custom.live} \u0026\u0026 {[default]1minFlashingBit},\r\n\tnow(),\r\n\t{this.custom.staticValue})\r\n"
+                      },
+                      "type": "expr"
+                    },
+                    "onChange": {
+                      "enabled": null,
+                      "script": "\n\tif currentValue.value is not None:\n\t\tself.custom.staticValue \u003d currentValue.value"
+                    }
+                  }
+                },
+                "props": {
+                  "format": "MMM D,YYYY hh:mm:ss a",
+                  "formattedValue": "Nov 25,2025 02:58:15 pm",
+                  "inputProps": {
+                    "style": {
+                      "backgroundColor": "#C51A45",
+                      "borderStyle": "double",
+                      "color": "#FFFFFF"
+                    }
+                  },
+                  "style": {
+                    "borderStyle": "double"
+                  }
+                },
+                "type": "ia.input.date-time-input"
+              },
+              {
+                "meta": {
+                  "name": "Label_0"
+                },
+                "position": {
+                  "basis": "18px"
+                },
+                "props": {
+                  "textStyle": {
+                    "fontSize": 50,
+                    "textAlign": "center"
+                  }
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "custom": {
+                  "live": true
+                },
+                "events": {
+                  "component": {
+                    "onActionPerformed": {
+                      "config": {
+                        "script": "\n\tself.custom.live \u003d not self.custom.live"
+                      },
+                      "scope": "G",
+                      "type": "script"
+                    }
+                  }
+                },
+                "meta": {
+                  "name": "Button_0"
+                },
+                "position": {
+                  "basis": "80px"
+                },
+                "propConfig": {
+                  "props.style.classes": {
+                    "binding": {
+                      "config": {
+                        "path": "this.custom.live"
+                      },
+                      "transforms": [
+                        {
+                          "fallback": "",
+                          "inputType": "scalar",
+                          "mappings": [
+                            {
+                              "input": true,
+                              "output": "LIVE"
+                            }
+                          ],
+                          "outputType": "style-list",
+                          "type": "map"
+                        }
+                      ],
+                      "type": "property"
+                    }
+                  }
+                },
+                "props": {
+                  "style": {
+                    "backgroundColor": "#808080"
+                  },
+                  "text": "LIVE",
+                  "textStyle": {
+                    "color": "#FFFFFF"
+                  }
+                },
+                "type": "ia.input.button"
+              }
+            ],
+            "meta": {
+              "name": "date_from_to"
+            },
+            "position": {
+              "basis": "36px",
+              "grow": 1
+            },
+            "props": {
+              "style": {
+                "backgroundColor": ""
+              }
+            },
+            "type": "ia.container.flex"
+          },
+          {
+            "children": [
+              {
+                "meta": {
+                  "name": "Label"
+                },
+                "position": {
+                  "basis": "1690px"
+                },
+                "props": {
+                  "text": "CURRENT DATA",
+                  "textStyle": {
+                    "classes": "Font/Description"
+                  }
+                },
+                "type": "ia.display.label"
+              }
+            ],
+            "meta": {
+              "name": "FlexContainer_0"
+            },
+            "position": {
+              "basis": "35px",
+              "grow": 1
+            },
+            "props": {
+              "wrap": "wrap"
+            },
+            "type": "ia.container.flex"
+          },
+          {
+            "meta": {
+              "name": "spacer"
+            },
+            "position": {
+              "basis": "36px",
+              "grow": 1
+            },
+            "props": {
+              "style": {
+                "backgroundColor": ""
+              }
+            },
+            "type": "ia.container.flex"
+          }
+        ],
+        "meta": {
+          "name": "FlexContainer"
+        },
+        "position": {
+          "basis": "36px",
+          "shrink": 0
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "children": [
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "children": [
+                          {
+                            "meta": {
+                              "name": "Label_1"
+                            },
+                            "position": {
+                              "height": 202,
+                              "width": 180,
+                              "x": 13.94,
+                              "y": 7.86
+                            },
+                            "props": {
+                              "style": {
+                                "backgroundColor": "#80808062"
+                              }
+                            },
+                            "type": "ia.display.label"
+                          },
+                          {
+                            "meta": {
+                              "name": "Label"
+                            },
+                            "position": {
+                              "height": 32,
+                              "width": 173,
+                              "x": 15.5,
+                              "y": 9.16
+                            },
+                            "props": {
+                              "style": {
+                                "fontFamily": "monospace",
+                                "textAlign": "center"
+                              },
+                              "text": "RUN TIME",
+                              "textStyle": {
+                                "fontFamily": "Merriweather",
+                                "fontWeight": "900",
+                                "textOverflow": "clip",
+                                "textTransform": "uppercase"
+                              }
+                            },
+                            "type": "ia.display.label"
+                          },
+                          {
+                            "meta": {
+                              "name": "Label_0"
+                            },
+                            "position": {
+                              "height": 36,
+                              "width": 91,
+                              "x": 64.99000000000001,
+                              "y": 172.46415649414064
+                            },
+                            "propConfig": {
+                              "props.text": {
+                                "binding": {
+                                  "config": {
+                                    "fallbackDelay": 2.5,
+                                    "mode": "direct",
+                                    "tagPath": "[default]site_composer2/current/RuntimePercentage"
+                                  },
+                                  "transforms": [
+                                    {
+                                      "formatType": "numeric",
+                                      "formatValue": "##.#",
+                                      "type": "format"
+                                    },
+                                    {
+                                      "expression": "{value} + \u0027 %\u0027",
+                                      "type": "expression"
+                                    }
+                                  ],
+                                  "type": "tag"
+                                }
+                              }
+                            },
+                            "props": {
+                              "style": {
+                                "textAlign": "center"
+                              },
+                              "textStyle": {
+                                "fontFamily": "Merriweather",
+                                "fontSize": 30,
+                                "fontWeight": "900"
+                              }
+                            },
+                            "type": "ia.display.label"
+                          },
+                          {
+                            "meta": {
+                              "name": "SimpleGauge"
+                            },
+                            "position": {
+                              "height": 174,
+                              "width": 172,
+                              "x": 16.67188149414062,
+                              "y": 21.45995824707029
+                            },
+                            "propConfig": {
+                              "props.value": {
+                                "binding": {
+                                  "config": {
+                                    "fallbackDelay": 2.5,
+                                    "mode": "direct",
+                                    "tagPath": "[default]site_composer2/current/RuntimePercentage"
+                                  },
+                                  "type": "tag"
+                                }
+                              }
+                            },
+                            "props": {
+                              "animate": true,
+                              "arc": {
+                                "color": "#00FFFF",
+                                "key": "value"
+                              },
+                              "arcBackground": {
+                                "color": "#FFFFFF"
+                              },
+                              "endAngle": 450,
+                              "label": {
+                                "visible": false
+                              },
+                              "startAngle": 90,
+                              "style": {
+                                "classes": []
+                              }
+                            },
+                            "type": "ia.chart.simple-gauge"
+                          }
+                        ],
+                        "meta": {
+                          "name": "CoordinateContainer_5"
+                        },
+                        "position": {
+                          "basis": "195.9px"
+                        },
+                        "type": "ia.container.coord"
+                      },
+                      {
+                        "children": [
+                          {
+                            "meta": {
+                              "name": "Label_1"
+                            },
+                            "position": {
+                              "height": 202,
+                              "width": 180,
+                              "x": 13.94,
+                              "y": 7.86
+                            },
+                            "props": {
+                              "style": {
+                                "backgroundColor": "#80808062"
+                              }
+                            },
+                            "type": "ia.display.label"
+                          },
+                          {
+                            "meta": {
+                              "name": "Label"
+                            },
+                            "position": {
+                              "height": 32,
+                              "width": 169,
+                              "x": 23.982147216796875,
+                              "y": 9.405544433593747
+                            },
+                            "props": {
+                              "style": {
+                                "fontFamily": "monospace",
+                                "textAlign": "center"
+                              },
+                              "text": "EFFECTIVE RUNTIME",
+                              "textStyle": {
+                                "fontFamily": "Merriweather",
+                                "fontWeight": "900",
+                                "textOverflow": "clip",
+                                "textTransform": "uppercase"
+                              }
+                            },
+                            "type": "ia.display.label"
+                          },
+                          {
+                            "meta": {
+                              "name": "Label_0"
+                            },
+                            "position": {
+                              "height": 36,
+                              "width": 91,
+                              "x": 64.99000000000001,
+                              "y": 172.46415649414064
+                            },
+                            "propConfig": {
+                              "props.text": {
+                                "binding": {
+                                  "config": {
+                                    "fallbackDelay": 2.5,
+                                    "mode": "direct",
+                                    "tagPath": "[default]site_composer2/current/EffectiveRuntimePercentage"
+                                  },
+                                  "transforms": [
+                                    {
+                                      "formatType": "numeric",
+                                      "formatValue": "##.#",
+                                      "type": "format"
+                                    },
+                                    {
+                                      "expression": "{value} + \u0027 %\u0027",
+                                      "type": "expression"
+                                    }
+                                  ],
+                                  "type": "tag"
+                                }
+                              }
+                            },
+                            "props": {
+                              "style": {
+                                "textAlign": "center"
+                              },
+                              "textStyle": {
+                                "fontFamily": "Merriweather",
+                                "fontSize": 30,
+                                "fontWeight": "900"
+                              }
+                            },
+                            "type": "ia.display.label"
+                          },
+                          {
+                            "meta": {
+                              "name": "SimpleGauge"
+                            },
+                            "position": {
+                              "height": 174,
+                              "width": 172,
+                              "x": 16.67188149414062,
+                              "y": 21.45995824707029
+                            },
+                            "propConfig": {
+                              "props.value": {
+                                "binding": {
+                                  "config": {
+                                    "fallbackDelay": 2.5,
+                                    "mode": "direct",
+                                    "tagPath": "[default]site_composer2/current/EffectiveRuntimePercentage"
+                                  },
+                                  "type": "tag"
+                                }
+                              }
+                            },
+                            "props": {
+                              "animate": true,
+                              "arc": {
+                                "color": "#00FFFF",
+                                "key": "value"
+                              },
+                              "arcBackground": {
+                                "color": "#FFFFFF"
+                              },
+                              "endAngle": 450,
+                              "label": {
+                                "visible": false
+                              },
+                              "startAngle": 90,
+                              "style": {
+                                "classes": []
+                              }
+                            },
+                            "type": "ia.chart.simple-gauge"
+                          }
+                        ],
+                        "meta": {
+                          "name": "CoordinateContainer_6"
+                        },
+                        "position": {
+                          "basis": "195.9px"
+                        },
+                        "type": "ia.container.coord"
+                      },
+                      {
+                        "children": [
+                          {
+                            "meta": {
+                              "name": "Label_1"
+                            },
+                            "position": {
+                              "height": 202,
+                              "width": 180,
+                              "x": 13.94,
+                              "y": 7.86
+                            },
+                            "props": {
+                              "style": {
+                                "backgroundColor": "#80808062"
+                              }
+                            },
+                            "type": "ia.display.label"
+                          },
+                          {
+                            "meta": {
+                              "name": "Label"
+                            },
+                            "position": {
+                              "height": 32,
+                              "width": 173,
+                              "x": 15.5,
+                              "y": 9.16
+                            },
+                            "props": {
+                              "style": {
+                                "fontFamily": "monospace",
+                                "textAlign": "center"
+                              },
+                              "text": "RUN RATE",
+                              "textStyle": {
+                                "fontFamily": "Merriweather",
+                                "fontWeight": "900",
+                                "textOverflow": "clip",
+                                "textTransform": "uppercase"
+                              }
+                            },
+                            "type": "ia.display.label"
+                          },
+                          {
+                            "meta": {
+                              "name": "Label_0"
+                            },
+                            "position": {
+                              "height": 36,
+                              "width": 138,
+                              "x": 27.99,
+                              "y": 173.22
+                            },
+                            "propConfig": {
+                              "props.text": {
+                                "binding": {
+                                  "config": {
+                                    "fallbackDelay": 2.5,
+                                    "mode": "direct",
+                                    "tagPath": "[default]site_composer2/current/LinealMetersPerHour"
+                                  },
+                                  "transforms": [
+                                    {
+                                      "formatType": "numeric",
+                                      "formatValue": "##.#",
+                                      "type": "format"
+                                    },
+                                    {
+                                      "expression": "{value} + \u0027 m/h\u0027",
+                                      "type": "expression"
+                                    }
+                                  ],
+                                  "type": "tag"
+                                }
+                              }
+                            },
+                            "props": {
+                              "style": {
+                                "textAlign": "center"
+                              },
+                              "textStyle": {
+                                "fontFamily": "Merriweather",
+                                "fontSize": 30,
+                                "fontWeight": "900"
+                              }
+                            },
+                            "type": "ia.display.label"
+                          },
+                          {
+                            "meta": {
+                              "name": "SimpleGauge"
+                            },
+                            "position": {
+                              "height": 174,
+                              "width": 172,
+                              "x": 16.67188149414062,
+                              "y": 21.45995824707029
+                            },
+                            "propConfig": {
+                              "props.value": {
+                                "binding": {
+                                  "config": {
+                                    "fallbackDelay": 2.5,
+                                    "mode": "direct",
+                                    "tagPath": "[default]site_composer2/current/LinealMetersPerHour"
+                                  },
+                                  "type": "tag"
+                                }
+                              }
+                            },
+                            "props": {
+                              "animate": true,
+                              "arc": {
+                                "color": "#00FFFF",
+                                "key": "value"
+                              },
+                              "arcBackground": {
+                                "color": "#FFFFFF"
+                              },
+                              "endAngle": 450,
+                              "label": {
+                                "visible": false
+                              },
+                              "maxValue": 800,
+                              "startAngle": 90,
+                              "style": {
+                                "classes": []
+                              }
+                            },
+                            "type": "ia.chart.simple-gauge"
+                          }
+                        ],
+                        "meta": {
+                          "name": "CoordinateContainer_7"
+                        },
+                        "position": {
+                          "basis": "195.9px"
+                        },
+                        "type": "ia.container.coord"
+                      }
+                    ],
+                    "meta": {
+                      "name": "FlexContainer"
+                    },
+                    "position": {
+                      "basis": "212px"
+                    },
+                    "props": {
+                      "alignItems": "center",
+                      "justify": "space-between"
+                    },
+                    "type": "ia.container.flex"
+                  },
+                  {
+                    "children": [
+                      {
+                        "children": [
+                          {
+                            "meta": {
+                              "name": "Label_1"
+                            },
+                            "position": {
+                              "height": 202,
+                              "width": 180,
+                              "x": 13.94,
+                              "y": 7.86
+                            },
+                            "props": {
+                              "style": {
+                                "backgroundColor": "#80808062"
+                              }
+                            },
+                            "type": "ia.display.label"
+                          },
+                          {
+                            "meta": {
+                              "name": "Label"
+                            },
+                            "position": {
+                              "height": 32,
+                              "width": 173,
+                              "x": 15.5,
+                              "y": 9.16
+                            },
+                            "props": {
+                              "style": {
+                                "fontFamily": "monospace",
+                                "textAlign": "center"
+                              },
+                              "text": "LINEAL METERS PRODUCED",
+                              "textStyle": {
+                                "fontFamily": "Merriweather",
+                                "fontWeight": "900",
+                                "textOverflow": "clip",
+                                "textTransform": "uppercase"
+                              }
+                            },
+                            "type": "ia.display.label"
+                          },
+                          {
+                            "meta": {
+                              "name": "Label_0"
+                            },
+                            "position": {
+                              "height": 36,
+                              "width": 91,
+                              "x": 64.99000000000001,
+                              "y": 172.46415649414064
+                            },
+                            "propConfig": {
+                              "props.text": {
+                                "binding": {
+                                  "config": {
+                                    "fallbackDelay": 2.5,
+                                    "mode": "direct",
+                                    "tagPath": "[default]site_composer2/current/LinealMeterGoodVeneer"
+                                  },
+                                  "transforms": [
+                                    {
+                                      "formatType": "numeric",
+                                      "formatValue": "##.#",
+                                      "type": "format"
+                                    }
+                                  ],
+                                  "type": "tag"
+                                }
+                              }
+                            },
+                            "props": {
+                              "style": {
+                                "textAlign": "center"
+                              },
+                              "textStyle": {
+                                "fontFamily": "Merriweather",
+                                "fontSize": 30,
+                                "fontWeight": "900"
+                              }
+                            },
+                            "type": "ia.display.label"
+                          },
+                          {
+                            "meta": {
+                              "name": "SimpleGauge"
+                            },
+                            "position": {
+                              "height": 174,
+                              "width": 172,
+                              "x": 16.67188149414062,
+                              "y": 21.45995824707029
+                            },
+                            "propConfig": {
+                              "props.value": {
+                                "binding": {
+                                  "config": {
+                                    "fallbackDelay": 2.5,
+                                    "mode": "direct",
+                                    "tagPath": "[default]site_composer2/current/LinealMeterGoodVeneer"
+                                  },
+                                  "type": "tag"
+                                }
+                              }
+                            },
+                            "props": {
+                              "animate": true,
+                              "arc": {
+                                "color": "#00FFFF",
+                                "key": "value"
+                              },
+                              "arcBackground": {
+                                "color": "#FFFFFF"
+                              },
+                              "endAngle": 450,
+                              "label": {
+                                "visible": false
+                              },
+                              "maxValue": 5000,
+                              "startAngle": 90,
+                              "style": {
+                                "classes": []
+                              }
+                            },
+                            "type": "ia.chart.simple-gauge"
+                          }
+                        ],
+                        "meta": {
+                          "name": "CoordinateContainer_5"
+                        },
+                        "position": {
+                          "basis": "195.9px"
+                        },
+                        "type": "ia.container.coord"
+                      },
+                      {
+                        "children": [
+                          {
+                            "meta": {
+                              "name": "Label_1"
+                            },
+                            "position": {
+                              "height": 202,
+                              "width": 180,
+                              "x": 13.94,
+                              "y": 7.86
+                            },
+                            "props": {
+                              "style": {
+                                "backgroundColor": "#80808062"
+                              }
+                            },
+                            "type": "ia.display.label"
+                          },
+                          {
+                            "meta": {
+                              "name": "Label"
+                            },
+                            "position": {
+                              "height": 32,
+                              "width": 140,
+                              "x": 33.96429443359375,
+                              "y": 8.13769165039065
+                            },
+                            "props": {
+                              "style": {
+                                "fontFamily": "monospace",
+                                "textAlign": "center"
+                              },
+                              "text": "DOWNTIME EVENTS",
+                              "textStyle": {
+                                "fontFamily": "Merriweather",
+                                "fontWeight": "900",
+                                "textOverflow": "clip",
+                                "textTransform": "uppercase"
+                              }
+                            },
+                            "type": "ia.display.label"
+                          },
+                          {
+                            "meta": {
+                              "name": "Label_0"
+                            },
+                            "position": {
+                              "height": 36,
+                              "width": 91,
+                              "x": 64.99000000000001,
+                              "y": 172.46415649414064
+                            },
+                            "propConfig": {
+                              "props.text": {
+                                "binding": {
+                                  "config": {
+                                    "fallbackDelay": 2.5,
+                                    "mode": "direct",
+                                    "tagPath": "[default]site_composer2/current/DowntimeEvents"
+                                  },
+                                  "transforms": [
+                                    {
+                                      "formatType": "numeric",
+                                      "formatValue": "##.#",
+                                      "type": "format"
+                                    }
+                                  ],
+                                  "type": "tag"
+                                }
+                              }
+                            },
+                            "props": {
+                              "style": {
+                                "textAlign": "center"
+                              },
+                              "textStyle": {
+                                "fontFamily": "Merriweather",
+                                "fontSize": 30,
+                                "fontWeight": "900"
+                              }
+                            },
+                            "type": "ia.display.label"
+                          },
+                          {
+                            "meta": {
+                              "name": "SimpleGauge"
+                            },
+                            "position": {
+                              "height": 174,
+                              "width": 172,
+                              "x": 16.67188149414062,
+                              "y": 21.45995824707029
+                            },
+                            "propConfig": {
+                              "props.value": {
+                                "binding": {
+                                  "config": {
+                                    "fallbackDelay": 2.5,
+                                    "mode": "direct",
+                                    "tagPath": "[default]site_composer2/current/DowntimeEvents"
+                                  },
+                                  "type": "tag"
+                                }
+                              }
+                            },
+                            "props": {
+                              "animate": true,
+                              "arc": {
+                                "color": "#00FFFF",
+                                "key": "value"
+                              },
+                              "arcBackground": {
+                                "color": "#FFFFFF"
+                              },
+                              "endAngle": 450,
+                              "label": {
+                                "visible": false
+                              },
+                              "maxValue": 50,
+                              "startAngle": 90,
+                              "style": {
+                                "classes": []
+                              }
+                            },
+                            "type": "ia.chart.simple-gauge"
+                          }
+                        ],
+                        "meta": {
+                          "name": "CoordinateContainer_6"
+                        },
+                        "position": {
+                          "basis": "195.9px"
+                        },
+                        "type": "ia.container.coord"
+                      },
+                      {
+                        "children": [
+                          {
+                            "meta": {
+                              "name": "Label_1"
+                            },
+                            "position": {
+                              "height": 202,
+                              "width": 180,
+                              "x": 13.94,
+                              "y": 7.86
+                            },
+                            "props": {
+                              "style": {
+                                "backgroundColor": "#80808062"
+                              }
+                            },
+                            "type": "ia.display.label"
+                          },
+                          {
+                            "meta": {
+                              "name": "Label"
+                            },
+                            "position": {
+                              "height": 32,
+                              "width": 173,
+                              "x": 15.5,
+                              "y": 9.16
+                            },
+                            "props": {
+                              "style": {
+                                "fontFamily": "monospace",
+                                "textAlign": "center"
+                              },
+                              "text": "DOWNTIME",
+                              "textStyle": {
+                                "fontFamily": "Merriweather",
+                                "fontWeight": "900",
+                                "textOverflow": "clip",
+                                "textTransform": "uppercase"
+                              }
+                            },
+                            "type": "ia.display.label"
+                          },
+                          {
+                            "meta": {
+                              "name": "Label_0"
+                            },
+                            "position": {
+                              "height": 36,
+                              "width": 132,
+                              "x": 38.39625000000001,
+                              "y": 175.30375000000004
+                            },
+                            "propConfig": {
+                              "props.text": {
+                                "binding": {
+                                  "config": {
+                                    "fallbackDelay": 2.5,
+                                    "mode": "direct",
+                                    "tagPath": "[default]site_composer2/current/Downtime"
+                                  },
+                                  "transforms": [
+                                    {
+                                      "expression": "{value} + \u0027 min\u0027",
+                                      "type": "expression"
+                                    }
+                                  ],
+                                  "type": "tag"
+                                }
+                              }
+                            },
+                            "props": {
+                              "style": {
+                                "textAlign": "center"
+                              },
+                              "textStyle": {
+                                "fontFamily": "Merriweather",
+                                "fontSize": 30,
+                                "fontWeight": "900"
+                              }
+                            },
+                            "type": "ia.display.label"
+                          },
+                          {
+                            "meta": {
+                              "name": "SimpleGauge"
+                            },
+                            "position": {
+                              "height": 174,
+                              "width": 172,
+                              "x": 16.67188149414062,
+                              "y": 21.45995824707029
+                            },
+                            "propConfig": {
+                              "props.value": {
+                                "binding": {
+                                  "config": {
+                                    "fallbackDelay": 2.5,
+                                    "mode": "direct",
+                                    "tagPath": "[default]site_composer2/current/Downtime"
+                                  },
+                                  "type": "tag"
+                                }
+                              }
+                            },
+                            "props": {
+                              "animate": true,
+                              "arc": {
+                                "color": "#00FFFF",
+                                "key": "value"
+                              },
+                              "arcBackground": {
+                                "color": "#FFFFFF"
+                              },
+                              "endAngle": 450,
+                              "label": {
+                                "visible": false
+                              },
+                              "maxValue": 600,
+                              "startAngle": 90,
+                              "style": {
+                                "classes": []
+                              }
+                            },
+                            "type": "ia.chart.simple-gauge"
+                          }
+                        ],
+                        "meta": {
+                          "name": "CoordinateContainer_7"
+                        },
+                        "position": {
+                          "basis": "195.9px"
+                        },
+                        "type": "ia.container.coord"
+                      }
+                    ],
+                    "meta": {
+                      "name": "FlexContainer_0"
+                    },
+                    "position": {
+                      "basis": "214px"
+                    },
+                    "props": {
+                      "alignItems": "center",
+                      "justify": "space-between"
+                    },
+                    "type": "ia.container.flex"
+                  }
+                ],
+                "meta": {
+                  "name": "FlexContainer_2"
+                },
+                "position": {
+                  "basis": "471px"
+                },
+                "props": {
+                  "alignItems": "center",
+                  "direction": "column",
+                  "justify": "space-around",
+                  "wrap": "wrap"
+                },
+                "type": "ia.container.flex"
+              }
+            ],
+            "meta": {
+              "name": "Right"
+            },
+            "position": {
+              "basis": "685px"
+            },
+            "props": {
+              "alignItems": "center",
+              "direction": "column",
+              "justify": "space-evenly",
+              "style": {
+                "classes": "ContainerCard"
+              },
+              "wrap": "wrap"
+            },
+            "type": "ia.container.flex"
+          },
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "meta": {
+                      "name": "Label_1"
+                    },
+                    "position": {
+                      "height": 349.02000000000004,
+                      "width": 466,
+                      "x": 71.28,
+                      "y": 8.58
+                    },
+                    "props": {
+                      "style": {
+                        "backgroundColor": "#80808062"
+                      }
+                    },
+                    "type": "ia.display.label"
+                  },
+                  {
+                    "meta": {
+                      "name": "Label"
+                    },
+                    "position": {
+                      "height": 32.629999999999995,
+                      "width": 367.61,
+                      "x": 125.596,
+                      "y": 37.31
+                    },
+                    "propConfig": {
+                      "props.text": {
+                        "binding": {
+                          "config": {
+                            "expression": "dateFormat(now(60000), \u0027HH:mm a\u0027)"
+                          },
+                          "transforms": [
+                            {
+                              "expression": "\u0027CONFORMANCE\u0027+ \u0027 TO \u0027 + {value}",
+                              "type": "expression"
+                            }
+                          ],
+                          "type": "expr"
+                        }
+                      }
+                    },
+                    "props": {
+                      "style": {
+                        "fontFamily": "monospace",
+                        "fontSize": 40,
+                        "textAlign": "center"
+                      },
+                      "textStyle": {
+                        "fontFamily": "Merriweather",
+                        "fontWeight": "900",
+                        "textOverflow": "clip",
+                        "textTransform": "uppercase"
+                      }
+                    },
+                    "type": "ia.display.label"
+                  },
+                  {
+                    "meta": {
+                      "name": "Label_0"
+                    },
+                    "position": {
+                      "height": 58.329999999999984,
+                      "width": 484,
+                      "x": 60.01,
+                      "y": 299.29375
+                    },
+                    "propConfig": {
+                      "props.text": {
+                        "binding": {
+                          "config": {
+                            "expression": "\u0027Actual: \u0027 + {../SimpleGauge.props.value} + \u0027      / Target:  \u0027 + {../SimpleGauge.props.maxValue}"
+                          },
+                          "type": "expr"
+                        }
+                      }
+                    },
+                    "props": {
+                      "style": {
+                        "textAlign": "center"
+                      },
+                      "textStyle": {
+                        "fontFamily": "Merriweather",
+                        "fontSize": 40,
+                        "fontWeight": "900"
+                      }
+                    },
+                    "type": "ia.display.label"
+                  },
+                  {
+                    "meta": {
+                      "name": "SimpleGauge"
+                    },
+                    "position": {
+                      "height": 258.06000000000006,
+                      "width": 356.64,
+                      "x": 124.92599999999999,
+                      "y": 59.1
+                    },
+                    "propConfig": {
+                      "props.maxValue": {
+                        "binding": {
+                          "config": {
+                            "expression": "if({[default]site_composer2/schedule/Shift1_bit},dateDiff({[default]site_composer2/schedule/Shift1},now(60000),\"minute\")*160/60,if({[default]site_composer2/schedule/Shift2_bit},dateDiff({[default]site_composer2/schedule/Shift2},now(60000),\"minute\")*160/60,if({[default]site_composer2/schedule/Shift3_bit},dateDiff({[default]site_composer2/schedule/Shift3},now(60000),\"minute\")*160/60,if({[default]site_composer2/schedule/TheNightBeforeShift_bit},dateDiff({[default]site_composer2/schedule/TheNightBeforeShift},now(60000),\"minute\")*160/60,0))))"
+                          },
+                          "transforms": [
+                            {
+                              "formatType": "numeric",
+                              "formatValue": "#",
+                              "type": "format"
+                            }
+                          ],
+                          "type": "expr"
+                        }
+                      },
+                      "props.value": {
+                        "binding": {
+                          "config": {
+                            "expression": "if({[default]site_composer2/schedule/Shift1_bit},{[default]site_composer2/schedule/Shift1_TotalSheets},if({[default]site_composer2/schedule/Shift2_bit},{[default]site_composer2/schedule/Shift2_TotalSheets},if({[default]site_composer2/schedule/Shift3_bit},{[default]site_composer2/schedule/Shift3_TotalSheets},if({[default]site_composer2/schedule/TheNightBeforeShift_bit},{[default]site_composer2/schedule/TheNightBeforeShift_TotalSheets},0))))"
+                          },
+                          "type": "expr"
+                        }
+                      }
+                    },
+                    "props": {
+                      "animate": true,
+                      "arc": {
+                        "color": "#00FFFF",
+                        "key": "value",
+                        "width": 40
+                      },
+                      "arcBackground": {
+                        "color": "#FFFFFF"
+                      },
+                      "endAngle": 450,
+                      "label": {
+                        "visible": false
+                      },
+                      "startAngle": 90,
+                      "style": {
+                        "classes": []
+                      }
+                    },
+                    "type": "ia.chart.simple-gauge"
+                  },
+                  {
+                    "meta": {
+                      "name": "Label_2"
+                    },
+                    "position": {
+                      "height": 23,
+                      "width": 70.99999999999997,
+                      "x": 262.09,
+                      "y": 178.12
+                    },
+                    "propConfig": {
+                      "props.text": {
+                        "binding": {
+                          "config": {
+                            "expression": "{../SimpleGauge.props.value} / {../SimpleGauge.props.maxValue} * 100"
+                          },
+                          "transforms": [
+                            {
+                              "formatType": "numeric",
+                              "formatValue": "##",
+                              "type": "format"
+                            },
+                            {
+                              "expression": "{value} + \u0027%\u0027",
+                              "type": "expression"
+                            }
+                          ],
+                          "type": "expr"
+                        }
+                      }
+                    },
+                    "props": {
+                      "style": {
+                        "fontFamily": "monospace",
+                        "fontSize": 35,
+                        "textAlign": "center"
+                      },
+                      "textStyle": {
+                        "fontFamily": "Merriweather",
+                        "fontWeight": "900",
+                        "textOverflow": "clip",
+                        "textTransform": "uppercase"
+                      }
+                    },
+                    "type": "ia.display.label"
+                  },
+                  {
+                    "meta": {
+                      "name": "Label_3"
+                    },
+                    "position": {
+                      "height": 32,
+                      "width": 314,
+                      "x": -8.21,
+                      "y": 385.61
+                    },
+                    "propConfig": {
+                      "props.text": {
+                        "binding": {
+                          "config": {
+                            "expression": "\u0027Previous Shift Actual: \u0027  + if({[default]site_composer2/schedule/Shift1_bit},{[default]site_composer2/schedule/TheNightBeforeShift_TotalSheets},if({[default]site_composer2/schedule/Shift2_bit},{[default]site_composer2/schedule/Shift1_TotalSheets},if({[default]site_composer2/schedule/Shift3_bit},{[default]site_composer2/schedule/Shift2_TotalSheets},if({[default]site_composer2/schedule/TheNightBeforeShift_bit},{[default]site_composer2/schedule/Shift1_TotalSheets},0))))"
+                          },
+                          "type": "expr"
+                        }
+                      }
+                    },
+                    "props": {
+                      "style": {
+                        "textAlign": "center"
+                      },
+                      "textStyle": {
+                        "fontFamily": "Merriweather",
+                        "fontSize": 25,
+                        "fontWeight": "900"
+                      }
+                    },
+                    "type": "ia.display.label"
+                  }
+                ],
+                "meta": {
+                  "name": "CoordinateContainer_5"
+                },
+                "position": {
+                  "basis": "195.9px",
+                  "display": false,
+                  "grow": 1
+                },
+                "type": "ia.container.coord"
+              },
+              {
+                "meta": {
+                  "name": "Label_0"
+                },
+                "props": {
+                  "text": "CONFORMANCE",
+                  "textStyle": {
+                    "classes": "Font/Description",
+                    "fontSize": 48
+                  }
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "SimpleGauge"
+                },
+                "position": {
+                  "basis": "379px"
+                },
+                "propConfig": {
+                  "props.arc.color": {
+                    "binding": {
+                      "config": {
+                        "expression": "({this.props.value}/{this.props.maxValue})*100"
+                      },
+                      "transforms": [
+                        {
+                          "fallback": "#00FFFF",
+                          "inputType": "range",
+                          "mappings": [
+                            {
+                              "input": {
+                                "exclusiveMax": true,
+                                "min": 99
+                              },
+                              "output": "#00FFFF"
+                            },
+                            {
+                              "input": {
+                                "exclusiveMax": true,
+                                "max": 99,
+                                "min": 80
+                              },
+                              "output": "#FFFF5D"
+                            },
+                            {
+                              "input": {
+                                "exclusiveMin": true,
+                                "max": 80
+                              },
+                              "output": "#FF444D"
+                            }
+                          ],
+                          "outputType": "color",
+                          "type": "map"
+                        }
+                      ],
+                      "type": "expr"
+                    }
+                  },
+                  "props.value": {
+                    "binding": {
+                      "config": {
+                        "expression": "if({[default]site_composer2/schedule/Shift1_bit},{[default]site_composer2/schedule/Shift1_TotalSheets},if({[default]site_composer2/schedule/Shift2_bit},{[default]site_composer2/schedule/Shift2_TotalSheets},if({[default]site_composer2/schedule/Shift3_bit},{[default]site_composer2/schedule/Shift3_TotalSheets},if({[default]site_composer2/schedule/TheNightBeforeShift_bit},{[default]site_composer2/schedule/TheNightBeforeShift_TotalSheets},0))))"
+                      },
+                      "transforms": [
+                        {
+                          "expression": "{value}/(if({[default]site_composer2/schedule/Shift1_bit},dateDiff({[default]site_composer2/schedule/Shift1},now(60000),\"minute\")*160/60,if({[default]site_composer2/schedule/Shift2_bit},dateDiff({[default]site_composer2/schedule/Shift2},now(60000),\"minute\")*160/60,if({[default]site_composer2/schedule/Shift3_bit},dateDiff({[default]site_composer2/schedule/Shift3},now(60000),\"minute\")*160/60,if({[default]site_composer2/schedule/TheNightBeforeShift_bit},dateDiff({[default]site_composer2/schedule/TheNightBeforeShift},now(60000),\"minute\")*160/60,0)))))*100",
+                          "type": "expression"
+                        }
+                      ],
+                      "type": "expr"
+                    }
+                  }
+                },
+                "props": {
+                  "animate": true,
+                  "arc": {
+                    "width": 40
+                  },
+                  "arcBackground": {
+                    "color": "#FFFFFF"
+                  },
+                  "endAngle": 450,
+                  "label": {
+                    "maxDecimal": 1,
+                    "offsetY": 30,
+                    "size": 48,
+                    "units": "%"
+                  },
+                  "startAngle": 90
+                },
+                "type": "ia.chart.simple-gauge"
+              },
+              {
+                "meta": {
+                  "name": "Label_1"
+                },
+                "propConfig": {
+                  "props.text": {
+                    "binding": {
+                      "config": {
+                        "expression": "\u0027Actual: \u0027 + if({[default]site_composer2/schedule/Shift1_bit},{[default]site_composer2/schedule/Shift1_TotalSheets},if({[default]site_composer2/schedule/Shift2_bit},{[default]site_composer2/schedule/Shift2_TotalSheets},if({[default]site_composer2/schedule/Shift3_bit},{[default]site_composer2/schedule/Shift3_TotalSheets},if({[default]site_composer2/schedule/TheNightBeforeShift_bit},{[default]site_composer2/schedule/TheNightBeforeShift_TotalSheets},0)))) + \u0027      / Target:  \u0027 + round((if({[default]site_composer2/schedule/Shift1_bit},dateDiff({[default]site_composer2/schedule/Shift1},now(60000),\"minute\")*160/60,if({[default]site_composer2/schedule/Shift2_bit},dateDiff({[default]site_composer2/schedule/Shift2},now(60000),\"minute\")*160/60,if({[default]site_composer2/schedule/Shift3_bit},dateDiff({[default]site_composer2/schedule/Shift3},now(60000),\"minute\")*160/60,if({[default]site_composer2/schedule/TheNightBeforeShift_bit},dateDiff({[default]site_composer2/schedule/TheNightBeforeShift},now(60000),\"minute\")*160/60,0))))))"
+                      },
+                      "type": "expr"
+                    }
+                  }
+                },
+                "props": {
+                  "style": {
+                    "textAlign": "center"
+                  },
+                  "textStyle": {
+                    "fontSize": 32
+                  }
+                },
+                "type": "ia.display.label"
+              }
+            ],
+            "meta": {
+              "name": "Middle"
+            },
+            "position": {
+              "basis": "685px"
+            },
+            "props": {
+              "direction": "column",
+              "justify": "space-around",
+              "style": {
+                "classes": "ContainerCard"
+              }
+            },
+            "type": "ia.container.flex"
+          },
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "meta": {
+                      "name": "ReportViewer"
+                    },
+                    "position": {
+                      "basis": "700px"
+                    },
+                    "propConfig": {
+                      "props.params.key": {
+                        "binding": {
+                          "config": {
+                            "parameters": {
+                              "date_from": "\"\"",
+                              "date_to": "\"\""
+                            },
+                            "polling": {
+                              "enabled": true,
+                              "rate": "30"
+                            },
+                            "queryPath": "composer2EachHour"
+                          },
+                          "type": "query"
+                        }
+                      }
+                    },
+                    "props": {
+                      "page": 1,
+                      "pageCount": 1,
+                      "source": "composer2_onehour"
+                    },
+                    "type": "ia.reporting.report-viewer"
+                  }
+                ],
+                "meta": {
+                  "name": "Middle"
+                },
+                "position": {
+                  "basis": "487px",
+                  "display": false
+                },
+                "props": {
+                  "direction": "column",
+                  "style": {
+                    "borderStyle": "outset",
+                    "borderWidth": 0.5
+                  }
+                },
+                "type": "ia.container.flex"
+              },
+              {
+                "meta": {
+                  "name": "XYChart"
+                },
+                "position": {
+                  "basis": "100px",
+                  "grow": 1
+                },
+                "propConfig": {
+                  "props.dataSources.example": {
+                    "binding": {
+                      "config": {
+                        "path": "/root.custom.composer2Data"
+                      },
+                      "transforms": [
+                        {
+                          "code": "\n\timport system\n\n\tdata \u003d []\n\n\tif value is None:\n\t\treturn data\n\n\t# Convert Named Query dataset to Python data\n\tpydata \u003d system.dataset.toPyDataSet(value)\n\n\tfor row in pydata:\n\t\ttry:\n\t\t\t# Extract and format the hour bucket (full date + time)\n\t\t\thour_bucket \u003d row[\u0027hour_bucket\u0027]\n\t\t\tformatted_datetime \u003d system.date.format(hour_bucket, \"yyyy-MM-dd HH:mm\")\n\n\t\t\t# Actual sheets per hour\n\t\t\tsheets \u003d row[\u0027total_sheets\u0027]\n\n\t\t\t# Target value (you can change this threshold)\n\t\t\ttarget \u003d 150\n\n\t\t\t# Determine bar color based on whether production met/exceeded target\n\t\t\tif sheets \u003e\u003d target:\n\t\t\t\tcolor \u003d \"#61BEDA\"  # blue\n\t\t\telse:\n\t\t\t\tcolor \u003d \"#FF8C00\"  # orange\n\n\t\t\t# Append row to chart dataset\n\t\t\tdata.append({\n\t\t\t\t\"hour\": formatted_datetime,  # X-axis\n\t\t\t\t\"sheets\": sheets,            # Y-axis (bar height)\n\t\t\t\t\"target\": target,            # optional reference line\n\t\t\t\t\"color\": color               # bar color\n\t\t\t})\n\n\t\texcept Exception as e:\n\t\t\tsystem.util.getLogger(\"Composer2_XYChart\").warn(\"Row transform error: %s\" % str(e))\n\n\treturn data",
+                          "type": "script"
+                        }
+                      ],
+                      "type": "property"
+                    }
+                  },
+                  "props.xAxes[0].appearance.grid.minDistance": {
+                    "binding": {
+                      "config": {
+                        "expression": "round(\r\n  max(\r\n    10,\r\n    min(10,\r\n      coalesce({this.meta.size.width}, 800) / max(1, len({this.props.dataSources.example}))\r\n    )\r\n  )\r\n)\r\n"
+                      },
+                      "type": "expr"
+                    }
+                  }
+                },
+                "props": {
+                  "cursor": {
+                    "enabled": false,
+                    "series": "Logs"
+                  },
+                  "dataSources": {},
+                  "legend": {
+                    "enabled": false
+                  },
+                  "series": [
+                    {
+                      "candlestick": {
+                        "appearance": {
+                          "deriveFieldsFromData": {
+                            "fill": {
+                              "color": "",
+                              "opacity": ""
+                            },
+                            "stroke": {
+                              "color": "",
+                              "opacity": "",
+                              "width": ""
+                            }
+                          },
+                          "fill": {
+                            "color": "",
+                            "opacity": 1
+                          },
+                          "heatRules": {
+                            "dataField": "",
+                            "enabled": false,
+                            "max": "",
+                            "min": ""
+                          },
+                          "stacked": false,
+                          "stroke": {
+                            "color": "",
+                            "opacity": 1,
+                            "width": 1
+                          }
+                        },
+                        "high": {
+                          "x": "",
+                          "y": ""
+                        },
+                        "low": {
+                          "x": "",
+                          "y": ""
+                        },
+                        "open": {
+                          "x": "",
+                          "y": ""
+                        }
+                      },
+                      "column": {
+                        "appearance": {
+                          "deriveFieldsFromData": {
+                            "fill": {
+                              "color": "color",
+                              "opacity": ""
+                            },
+                            "stroke": {
+                              "color": "",
+                              "opacity": "",
+                              "width": ""
+                            }
+                          },
+                          "fill": {
+                            "color": "",
+                            "opacity": 1
+                          },
+                          "heatRules": {
+                            "dataField": "aboveTarget",
+                            "enabled": false,
+                            "max": "#61BEDA",
+                            "min": "#FF8C00"
+                          },
+                          "height": null,
+                          "stacked": false,
+                          "stroke": {
+                            "color": "",
+                            "opacity": 1,
+                            "width": 1
+                          },
+                          "width": null
+                        },
+                        "open": {
+                          "x": "",
+                          "y": ""
+                        }
+                      },
+                      "data": {
+                        "source": "example",
+                        "x": "hour",
+                        "y": "sheets"
+                      },
+                      "defaultState": {
+                        "visible": true
+                      },
+                      "hiddenInLegend": false,
+                      "label": {
+                        "text": ""
+                      },
+                      "line": {
+                        "appearance": {
+                          "bullets": [
+                            {
+                              "deriveFieldsFromData": {
+                                "fill": {
+                                  "color": "",
+                                  "opacity": ""
+                                },
+                                "rotation": "",
+                                "stroke": {
+                                  "color": "",
+                                  "opacity": "",
+                                  "width": ""
+                                }
+                              },
+                              "enabled": false,
+                              "fill": {
+                                "color": "",
+                                "opacity": 1
+                              },
+                              "heatRules": {
+                                "dataField": "",
+                                "enabled": false,
+                                "max": 100,
+                                "min": 2
+                              },
+                              "height": 10,
+                              "label": {
+                                "position": {
+                                  "dx": 0,
+                                  "dy": 0
+                                },
+                                "text": "{value}"
+                              },
+                              "render": "circle",
+                              "rotation": 0,
+                              "stroke": {
+                                "color": "",
+                                "opacity": 1,
+                                "width": 1
+                              },
+                              "tooltip": {
+                                "background": {
+                                  "color": "",
+                                  "opacity": 1
+                                },
+                                "cornerRadius": 3,
+                                "enabled": true,
+                                "pointerLength": 4,
+                                "text": "{name}: [bold]{valueY}[/]"
+                              },
+                              "width": 10
+                            }
+                          ],
+                          "connect": true,
+                          "fill": {
+                            "color": "",
+                            "opacity": 0
+                          },
+                          "minDistance": 0.5,
+                          "stroke": {
+                            "color": "",
+                            "dashArray": "",
+                            "opacity": 1,
+                            "width": 3
+                          },
+                          "tensionX": 1,
+                          "tensionY": 1
+                        },
+                        "open": {
+                          "x": "",
+                          "y": ""
+                        }
+                      },
+                      "name": "Sheets",
+                      "render": "column",
+                      "stepLine": {
+                        "appearance": {
+                          "bullets": [
+                            {
+                              "deriveFieldsFromData": {
+                                "fill": {
+                                  "color": "",
+                                  "opacity": ""
+                                },
+                                "rotation": "",
+                                "stroke": {
+                                  "color": "",
+                                  "opacity": "",
+                                  "width": ""
+                                }
+                              },
+                              "enabled": true,
+                              "fill": {
+                                "color": "",
+                                "opacity": 1
+                              },
+                              "heatRules": {
+                                "dataField": "",
+                                "enabled": false,
+                                "max": 100,
+                                "min": 2
+                              },
+                              "height": 10,
+                              "label": {
+                                "position": {
+                                  "dx": 0,
+                                  "dy": 0
+                                },
+                                "text": "{value}"
+                              },
+                              "render": "circle",
+                              "rotation": 0,
+                              "stroke": {
+                                "color": "",
+                                "opacity": 1,
+                                "width": 1
+                              },
+                              "tooltip": {
+                                "background": {
+                                  "color": "",
+                                  "opacity": 1
+                                },
+                                "cornerRadius": 3,
+                                "enabled": true,
+                                "pointerLength": 4,
+                                "text": "{name}: [bold]{valueY}[/]"
+                              },
+                              "width": 10
+                            }
+                          ],
+                          "connect": true,
+                          "fill": {
+                            "color": "",
+                            "opacity": 0
+                          },
+                          "minDistance": 0.5,
+                          "stroke": {
+                            "color": "",
+                            "dashArray": "",
+                            "opacity": 1,
+                            "width": 3
+                          },
+                          "tensionX": 1,
+                          "tensionY": 1
+                        },
+                        "open": {
+                          "x": "",
+                          "y": ""
+                        }
+                      },
+                      "tooltip": {
+                        "background": {
+                          "color": "",
+                          "opacity": 1
+                        },
+                        "cornerRadius": 3,
+                        "enabled": true,
+                        "pointerLength": 4,
+                        "text": "{name}: [bold]{valueY}[/]"
+                      },
+                      "visible": true,
+                      "xAxis": "hour",
+                      "yAxis": "sheets",
+                      "zIndex": 0
+                    },
+                    {
+                      "candlestick": {
+                        "appearance": {
+                          "deriveFieldsFromData": {
+                            "fill": {
+                              "color": "",
+                              "opacity": ""
+                            },
+                            "stroke": {
+                              "color": "",
+                              "opacity": "",
+                              "width": ""
+                            }
+                          },
+                          "fill": {
+                            "color": "",
+                            "opacity": 1
+                          },
+                          "heatRules": {
+                            "dataField": "",
+                            "enabled": false,
+                            "max": "",
+                            "min": ""
+                          },
+                          "stacked": false,
+                          "stroke": {
+                            "color": "",
+                            "opacity": 1,
+                            "width": 1
+                          }
+                        },
+                        "high": {
+                          "x": "",
+                          "y": ""
+                        },
+                        "low": {
+                          "x": "",
+                          "y": ""
+                        },
+                        "open": {
+                          "x": "",
+                          "y": ""
+                        }
+                      },
+                      "column": {
+                        "appearance": {
+                          "deriveFieldsFromData": {
+                            "fill": {
+                              "color": "",
+                              "opacity": ""
+                            },
+                            "stroke": {
+                              "color": "",
+                              "opacity": "",
+                              "width": ""
+                            }
+                          },
+                          "fill": {
+                            "color": "",
+                            "opacity": 1
+                          },
+                          "heatRules": {
+                            "dataField": "",
+                            "enabled": false,
+                            "max": "",
+                            "min": ""
+                          },
+                          "height": null,
+                          "stacked": false,
+                          "stroke": {
+                            "color": "",
+                            "opacity": 1,
+                            "width": 1
+                          },
+                          "width": null
+                        },
+                        "open": {
+                          "x": "",
+                          "y": ""
+                        }
+                      },
+                      "data": {
+                        "source": "example",
+                        "x": "hour",
+                        "y": "target"
+                      },
+                      "defaultState": {
+                        "visible": true
+                      },
+                      "hiddenInLegend": false,
+                      "label": {
+                        "text": "Target"
+                      },
+                      "line": {
+                        "appearance": {
+                          "bullets": [
+                            {
+                              "deriveFieldsFromData": {
+                                "fill": {
+                                  "color": "",
+                                  "opacity": ""
+                                },
+                                "rotation": "",
+                                "stroke": {
+                                  "color": "",
+                                  "opacity": "",
+                                  "width": ""
+                                }
+                              },
+                              "enabled": true,
+                              "fill": {
+                                "color": "",
+                                "opacity": 1
+                              },
+                              "heatRules": {
+                                "dataField": "",
+                                "enabled": false,
+                                "max": 100,
+                                "min": 2
+                              },
+                              "height": 10,
+                              "label": {
+                                "position": {
+                                  "dx": 0,
+                                  "dy": 0
+                                },
+                                "text": "{value}"
+                              },
+                              "render": "circle",
+                              "rotation": 0,
+                              "stroke": {
+                                "color": "",
+                                "opacity": 1,
+                                "width": 1
+                              },
+                              "tooltip": {
+                                "background": {
+                                  "color": "",
+                                  "opacity": 1
+                                },
+                                "cornerRadius": 3,
+                                "enabled": true,
+                                "pointerLength": 4,
+                                "text": "{name}: [bold]{valueY}[/]"
+                              },
+                              "width": 10
+                            }
+                          ],
+                          "connect": true,
+                          "fill": {
+                            "color": "",
+                            "opacity": 0
+                          },
+                          "minDistance": 0.5,
+                          "stroke": {
+                            "color": "",
+                            "dashArray": "",
+                            "opacity": 1,
+                            "width": 3
+                          },
+                          "tensionX": 1,
+                          "tensionY": 1
+                        },
+                        "open": {
+                          "x": "",
+                          "y": ""
+                        }
+                      },
+                      "name": "Target",
+                      "render": "line",
+                      "stepLine": {
+                        "appearance": {
+                          "bullets": [
+                            {
+                              "deriveFieldsFromData": {
+                                "fill": {
+                                  "color": "",
+                                  "opacity": ""
+                                },
+                                "rotation": "",
+                                "stroke": {
+                                  "color": "",
+                                  "opacity": "",
+                                  "width": ""
+                                }
+                              },
+                              "enabled": true,
+                              "fill": {
+                                "color": "#FF8C00",
+                                "opacity": 1
+                              },
+                              "heatRules": {
+                                "dataField": "",
+                                "enabled": true,
+                                "max": "",
+                                "min": 0
+                              },
+                              "height": 10,
+                              "label": {
+                                "position": {
+                                  "dx": 0,
+                                  "dy": 0
+                                },
+                                "text": "{value}"
+                              },
+                              "render": "circle",
+                              "rotation": 0,
+                              "stroke": {
+                                "color": "",
+                                "opacity": 1,
+                                "width": 1
+                              },
+                              "tooltip": {
+                                "background": {
+                                  "color": "",
+                                  "opacity": 1
+                                },
+                                "cornerRadius": 3,
+                                "enabled": true,
+                                "pointerLength": 4,
+                                "text": "{name}: [bold]{valueY}[/]"
+                              },
+                              "width": 10
+                            }
+                          ],
+                          "connect": true,
+                          "fill": {
+                            "color": "",
+                            "opacity": 0
+                          },
+                          "minDistance": 0.5,
+                          "stroke": {
+                            "color": "#FF8C00",
+                            "dashArray": "",
+                            "opacity": 1,
+                            "width": 3
+                          },
+                          "tensionX": 1,
+                          "tensionY": 1
+                        },
+                        "open": {
+                          "x": "",
+                          "y": ""
+                        }
+                      },
+                      "tooltip": {
+                        "background": {
+                          "color": "",
+                          "opacity": 1
+                        },
+                        "cornerRadius": 3,
+                        "enabled": true,
+                        "pointerLength": 4,
+                        "text": "{name}: [bold]{valueY}[/]"
+                      },
+                      "visible": true,
+                      "xAxis": "hour",
+                      "yAxis": "target",
+                      "zIndex": 0
+                    }
+                  ],
+                  "title": {
+                    "text": "Hourly Production"
+                  },
+                  "xAxes": [
+                    {
+                      "appearance": {
+                        "font": {
+                          "size": 10,
+                          "weight": 500
+                        },
+                        "grid": {
+                          "color": "",
+                          "dashArray": "",
+                          "opacity": 1,
+                          "position": 0.5
+                        },
+                        "inside": false,
+                        "labels": {
+                          "color": "",
+                          "horizontalCenter": "middle",
+                          "opacity": 1,
+                          "rotation": 0,
+                          "verticalCenter": "middle"
+                        },
+                        "opposite": false
+                      },
+                      "category": {
+                        "break": {
+                          "enabled": false,
+                          "endCategory": "",
+                          "size": 0.05,
+                          "startCategory": ""
+                        }
+                      },
+                      "date": {
+                        "baseInterval": {
+                          "count": 1,
+                          "enabled": true,
+                          "skipEmptyPeriods": true,
+                          "timeUnit": "hour"
+                        },
+                        "break": {
+                          "enabled": false,
+                          "endDate": "",
+                          "size": 0.05,
+                          "startDate": ""
+                        },
+                        "format": "HH a",
+                        "inputFormat": "M/d/yyyy HH:mm:ss",
+                        "range": {
+                          "max": "",
+                          "min": "",
+                          "useStrict": false
+                        },
+                        "tick": {
+                          "count": 1
+                        }
+                      },
+                      "inversed": false,
+                      "label": {
+                        "color": "",
+                        "enabled": false,
+                        "text": "Hour"
+                      },
+                      "name": "hour",
+                      "render": "date",
+                      "tooltip": {
+                        "background": {
+                          "color": "",
+                          "opacity": 1
+                        },
+                        "cornerRadius": 3,
+                        "enabled": true,
+                        "pointerLength": 4,
+                        "text": ""
+                      },
+                      "value": {
+                        "break": {
+                          "enabled": false,
+                          "endValue": 100,
+                          "size": 0.05,
+                          "startValue": 0
+                        },
+                        "format": "#,###.##",
+                        "logarithmic": false,
+                        "range": {
+                          "max": "",
+                          "min": "",
+                          "useStrict": false
+                        }
+                      },
+                      "visible": true
+                    }
+                  ],
+                  "yAxes": [
+                    {
+                      "appearance": {
+                        "font": {
+                          "size": 10,
+                          "weight": 500
+                        },
+                        "grid": {
+                          "color": "",
+                          "dashArray": "",
+                          "minDistance": null,
+                          "opacity": 1,
+                          "position": 0.5
+                        },
+                        "inside": false,
+                        "labels": {
+                          "color": "",
+                          "horizontalCenter": "middle",
+                          "opacity": 1,
+                          "rotation": 0,
+                          "verticalCenter": "middle"
+                        },
+                        "opposite": false
+                      },
+                      "category": {
+                        "break": {
+                          "enabled": false,
+                          "endCategory": "",
+                          "size": 0.05,
+                          "startCategory": ""
+                        }
+                      },
+                      "date": {
+                        "baseInterval": {
+                          "count": 1,
+                          "enabled": false,
+                          "skipEmptyPeriods": false,
+                          "timeUnit": "hour"
+                        },
+                        "break": {
+                          "enabled": false,
+                          "endDate": "",
+                          "size": 0.05,
+                          "startDate": ""
+                        },
+                        "format": "M/d/yyyy HH:mm:ss",
+                        "inputFormat": "yyyy-MM-dd kk:mm:ss",
+                        "range": {
+                          "max": "",
+                          "min": "",
+                          "useStrict": false
+                        }
+                      },
+                      "inversed": false,
+                      "label": {
+                        "color": "",
+                        "enabled": true,
+                        "text": "Sheets"
+                      },
+                      "name": "sheets",
+                      "render": "value",
+                      "tooltip": {
+                        "background": {
+                          "color": "",
+                          "opacity": 1
+                        },
+                        "cornerRadius": 3,
+                        "enabled": true,
+                        "pointerLength": 4,
+                        "text": ""
+                      },
+                      "value": {
+                        "break": {
+                          "enabled": false,
+                          "endValue": 100,
+                          "size": 0.05,
+                          "startValue": 0
+                        },
+                        "format": "#,###.##",
+                        "logarithmic": false,
+                        "range": {
+                          "max": 300,
+                          "min": 0,
+                          "useStrict": false
+                        }
+                      },
+                      "visible": true
+                    },
+                    {
+                      "appearance": {
+                        "font": {
+                          "size": 10,
+                          "weight": 500
+                        },
+                        "grid": {
+                          "color": "",
+                          "dashArray": "",
+                          "minDistance": null,
+                          "opacity": 1,
+                          "position": 0.5
+                        },
+                        "inside": false,
+                        "labels": {
+                          "color": "",
+                          "horizontalCenter": "middle",
+                          "opacity": 1,
+                          "rotation": 0,
+                          "verticalCenter": "middle"
+                        },
+                        "opposite": false
+                      },
+                      "category": {
+                        "break": {
+                          "enabled": false,
+                          "endCategory": "",
+                          "size": 0.05,
+                          "startCategory": ""
+                        }
+                      },
+                      "date": {
+                        "baseInterval": {
+                          "count": 1,
+                          "enabled": false,
+                          "skipEmptyPeriods": false,
+                          "timeUnit": "hour"
+                        },
+                        "break": {
+                          "enabled": false,
+                          "endDate": "",
+                          "size": 0.05,
+                          "startDate": ""
+                        },
+                        "format": "M/d/yyyy HH:mm:ss",
+                        "inputFormat": "yyyy-MM-dd kk:mm:ss",
+                        "range": {
+                          "max": "",
+                          "min": "",
+                          "useStrict": false
+                        }
+                      },
+                      "inversed": false,
+                      "label": {
+                        "color": "",
+                        "enabled": true,
+                        "text": "Target"
+                      },
+                      "name": "target",
+                      "render": "value",
+                      "tooltip": {
+                        "background": {
+                          "color": "",
+                          "opacity": 1
+                        },
+                        "cornerRadius": 3,
+                        "enabled": true,
+                        "pointerLength": 4,
+                        "text": ""
+                      },
+                      "value": {
+                        "break": {
+                          "enabled": false,
+                          "endValue": 100,
+                          "size": 0.05,
+                          "startValue": 0
+                        },
+                        "format": "#,###.##",
+                        "logarithmic": false,
+                        "range": {
+                          "max": 300,
+                          "min": 0,
+                          "useStrict": false
+                        }
+                      },
+                      "visible": false
+                    }
+                  ]
+                },
+                "type": "ia.chart.xy"
+              }
+            ],
+            "meta": {
+              "name": "Left"
+            },
+            "position": {
+              "basis": "685px"
+            },
+            "props": {
+              "direction": "column",
+              "justify": "space-around",
+              "style": {
+                "classes": "ContainerCard"
+              }
+            },
+            "type": "ia.container.flex"
+          }
+        ],
+        "meta": {
+          "name": "current_shift"
+        },
+        "position": {
+          "basis": "499px"
+        },
+        "props": {
+          "style": {
+            "outlineStyle": "none"
+          }
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "meta": {
+          "name": "AlarmStatusTable"
+        },
+        "position": {
+          "basis": "235px"
+        },
+        "props": {
+          "columns": {
+            "active": {
+              "activeTime": {
+                "sort": "descending"
+              },
+              "displayPath": {
+                "enabled": false
+              },
+              "name": {
+                "order": 3
+              },
+              "priority": {
+                "enabled": false,
+                "sort": "none"
+              },
+              "source": {
+                "enabled": false
+              },
+              "state": {
+                "order": 6
+              }
+            }
+          },
+          "filters": {
+            "active": {
+              "conditions": {
+                "source": "*composer*"
+              },
+              "priorities": {
+                "critical": false,
+                "high": false,
+                "low": false,
+                "medium": false
+              },
+              "states": {
+                "clearUnacked": false
+              }
+            }
+          },
+          "pager": {
+            "enabled": false
+          },
+          "rowStyles": {
+            "activeUnacked": {
+              "base": {
+                "fontWeight": 900
+              }
+            },
+            "clearUnacked": {
+              "base": {
+                "fontWeight": "900"
+              }
+            }
+          },
+          "style": {
+            "fontSize": 20
+          },
+          "toolbar": {
+            "enableActiveTab": false,
+            "enableConfiguration": false,
+            "enableFilter": false,
+            "enablePreFilters": false,
+            "enableShelvedTab": false
+          }
+        },
+        "type": "ia.display.alarmstatustable"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "propConfig": {
+      "custom.composer2Data": {
+        "binding": {
+          "config": {
+            "parameters": {
+              "endTime": "{./FlexContainer/date_from_to/DateTo.props.value}",
+              "startTime": "{./FlexContainer/date_from_to/DateFrom.props.value}"
+            },
+            "queryPath": "composer2/hourly_counts",
+            "returnFormat": "dataset"
+          },
+          "type": "query"
+        }
+      }
+    },
+    "props": {
+      "direction": "column"
+    },
+    "type": "ia.container.flex"
+  }
+}

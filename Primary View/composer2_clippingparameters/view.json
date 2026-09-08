@@ -1,0 +1,2767 @@
+{
+  "custom": {},
+  "params": {},
+  "props": {
+    "defaultSize": {
+      "height": 1160,
+      "width": 2200
+    }
+  },
+  "root": {
+    "children": [
+      {
+        "children": [
+          {
+            "meta": {
+              "name": "spacing1"
+            },
+            "position": {
+              "basis": "52px"
+            },
+            "type": "ia.container.flex"
+          },
+          {
+            "meta": {
+              "name": "Label"
+            },
+            "position": {
+              "basis": "267px"
+            },
+            "props": {
+              "text": "COMPOSER 2",
+              "textStyle": {
+                "borderStyle": "none",
+                "color": "#E8E8E8",
+                "fill": "#FFFDFD",
+                "fontFamily": "monospace",
+                "fontSize": 40,
+                "fontWeight": "bolder",
+                "outlineWidth": "10",
+                "textAlign": "center",
+                "textOverflow": "clip",
+                "textTransform": "uppercase",
+                "whiteSpace": "normal",
+                "wordWrap": "break-word"
+              }
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "meta": {
+              "name": "spacing"
+            },
+            "position": {
+              "basis": "1293px"
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "children": [
+              {
+                "meta": {
+                  "name": "Label"
+                },
+                "position": {
+                  "basis": "120px"
+                },
+                "props": {
+                  "text": "STATUS",
+                  "textStyle": {
+                    "fontSize": 25
+                  }
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "children": [
+                  {
+                    "meta": {
+                      "name": "Green pilot light 2"
+                    },
+                    "position": {
+                      "basis": "30px"
+                    },
+                    "propConfig": {
+                      "meta.visible": {
+                        "binding": {
+                          "config": {
+                            "expression": "{[default]site_composer2/current/LineDownForMinutes} \u003d 0"
+                          },
+                          "type": "expr"
+                        }
+                      }
+                    },
+                    "props": {
+                      "elements": [
+                        {
+                          "cx": "499",
+                          "cy": "499",
+                          "fill": {
+                            "paint": "#000"
+                          },
+                          "name": "circle",
+                          "r": "499",
+                          "style": {},
+                          "type": "circle"
+                        },
+                        {
+                          "d": "M21,499 l34,-180 102,-162 162,-104 180,-34 180,34 162,104 104,162 34,180 -34,180 -104,162 -162,102 -180,34 -180,-34 -162,-102 -102,-162 -34,-180z",
+                          "fill": {
+                            "paint": "#0f0"
+                          },
+                          "name": "path",
+                          "style": {},
+                          "type": "path"
+                        },
+                        {
+                          "cx": "406",
+                          "cy": "405",
+                          "fill": {
+                            "paint": "#6bff6b"
+                          },
+                          "name": "circle",
+                          "r": "291",
+                          "style": {},
+                          "type": "circle"
+                        },
+                        {
+                          "cx": "359",
+                          "cy": "357",
+                          "fill": {
+                            "paint": "#a3ffa3"
+                          },
+                          "name": "circle",
+                          "r": "198",
+                          "style": {},
+                          "type": "circle"
+                        },
+                        {
+                          "cx": "311",
+                          "cy": "311",
+                          "fill": {
+                            "paint": "#d9ffd9"
+                          },
+                          "name": "circle",
+                          "r": "104",
+                          "style": {},
+                          "type": "circle"
+                        }
+                      ],
+                      "viewBox": "0 0 999 999"
+                    },
+                    "type": "ia.shapes.svg"
+                  },
+                  {
+                    "meta": {
+                      "name": "Red pilot light 2"
+                    },
+                    "position": {
+                      "basis": "30px"
+                    },
+                    "propConfig": {
+                      "meta.visible": {
+                        "binding": {
+                          "config": {
+                            "expression": "{[default]site_composer2/current/LineDownForMinutes} !\u003d 0"
+                          },
+                          "type": "expr"
+                        }
+                      }
+                    },
+                    "props": {
+                      "elements": [
+                        {
+                          "cx": "499",
+                          "cy": "499",
+                          "fill": {
+                            "paint": "#000"
+                          },
+                          "name": "circle",
+                          "r": "499",
+                          "style": {},
+                          "type": "circle"
+                        },
+                        {
+                          "d": "M22,497 l34,-178 104,-159 162,-107 175,-34 182,34 159,107 107,159 34,178 -34,179 -107,162 -159,104 -182,34 -175,-34 -162,-104 -104,-162 -34,-179z",
+                          "fill": {
+                            "paint": "#f00"
+                          },
+                          "name": "path",
+                          "stroke": {
+                            "paint": "#4c4c4c",
+                            "width": "2"
+                          },
+                          "style": {},
+                          "type": "path"
+                        },
+                        {
+                          "cx": "406",
+                          "cy": "405",
+                          "fill": {
+                            "paint": "#ff6b6b"
+                          },
+                          "name": "circle",
+                          "r": "291",
+                          "style": {},
+                          "type": "circle"
+                        },
+                        {
+                          "d": "M161,357 l15,-74 41,-66 68,-44 74,-13 74,13 66,44 44,66 14,74 -14,74 -44,68 -66,42 -74,14 -74,-14 -68,-42 -41,-68 -15,-74z",
+                          "fill": {
+                            "paint": "#ffa3a3"
+                          },
+                          "name": "path",
+                          "style": {},
+                          "type": "path"
+                        },
+                        {
+                          "d": "M208,311 l7,-39 22,-35 37,-22 37,-7 40,7 36,22 22,35 6,39 -6,40 -22,34 -36,22 -40,8 -37,-8 -37,-22 -22,-34 -7,-40z",
+                          "fill": {
+                            "paint": "#ffd9d9"
+                          },
+                          "name": "path",
+                          "style": {},
+                          "type": "path"
+                        }
+                      ],
+                      "viewBox": "0 0 999 999"
+                    },
+                    "type": "ia.shapes.svg"
+                  },
+                  {
+                    "meta": {
+                      "name": "Yellow pilot light 2",
+                      "visible": false
+                    },
+                    "position": {
+                      "basis": "30px"
+                    },
+                    "props": {
+                      "elements": [
+                        {
+                          "cx": "499",
+                          "cy": "499",
+                          "fill": {
+                            "paint": "#000"
+                          },
+                          "name": "circle",
+                          "r": "499",
+                          "stroke": {
+                            "paint": "#4c4c4c",
+                            "width": "2"
+                          },
+                          "style": {},
+                          "type": "circle"
+                        },
+                        {
+                          "d": "M21,499 l34,-180 103,-162 162,-102 180,-35 179,35 162,102 102,162 35,180 -35,179 -102,162 -162,103 -179,34 -180,-34 -162,-103 -103,-162 -34,-179z",
+                          "fill": {
+                            "paint": "#fc0"
+                          },
+                          "name": "path",
+                          "style": {},
+                          "type": "path"
+                        },
+                        {
+                          "d": "M115,404 l20,-108 63,-98 99,-64 108,-21 110,21 98,64 63,98 21,108 -21,110 -63,98 -98,63 -110,21 -108,-21 -99,-63 -63,-98 -20,-110z",
+                          "fill": {
+                            "paint": "#ffe06b"
+                          },
+                          "name": "path",
+                          "style": {},
+                          "type": "path"
+                        },
+                        {
+                          "cx": "359",
+                          "cy": "357",
+                          "fill": {
+                            "paint": "#ffeda3"
+                          },
+                          "name": "circle",
+                          "r": "198",
+                          "style": {},
+                          "type": "circle"
+                        },
+                        {
+                          "cx": "311",
+                          "cy": "311",
+                          "fill": {
+                            "paint": "#fffad9"
+                          },
+                          "name": "circle",
+                          "r": "104",
+                          "style": {},
+                          "type": "circle"
+                        }
+                      ],
+                      "viewBox": "0 0 999 999"
+                    },
+                    "type": "ia.shapes.svg"
+                  }
+                ],
+                "meta": {
+                  "name": "FlexContainer"
+                },
+                "position": {
+                  "basis": "180px"
+                },
+                "type": "ia.container.flex"
+              }
+            ],
+            "meta": {
+              "name": "status"
+            },
+            "position": {
+              "basis": "300px"
+            },
+            "type": "ia.container.flex"
+          }
+        ],
+        "meta": {
+          "name": "header"
+        },
+        "position": {
+          "basis": "50px",
+          "shrink": 0
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "children": [
+          {
+            "meta": {
+              "name": "EmbeddedView"
+            },
+            "position": {
+              "basis": "320px",
+              "grow": 1
+            },
+            "props": {
+              "path": "Navigation/composer2_topmenu"
+            },
+            "type": "ia.display.view"
+          }
+        ],
+        "meta": {
+          "name": "FlexContainer_0"
+        },
+        "position": {
+          "basis": "38px",
+          "shrink": 0
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "children": [
+          {
+            "children": [
+              {
+                "meta": {
+                  "name": "clipping_parameter_blue_2"
+                },
+                "position": {
+                  "height": 560,
+                  "width": 470,
+                  "x": 138.62,
+                  "y": 27.57
+                },
+                "propConfig": {
+                  "props.tint.enabled": {
+                    "binding": {
+                      "config": {
+                        "fallbackDelay": 2.5,
+                        "mode": "direct",
+                        "tagPath": "[default]site_composer2/clipping_parameters/D_grade/I_D_GradeProduct"
+                      },
+                      "transforms": [
+                        {
+                          "fallback": false,
+                          "inputType": "scalar",
+                          "mappings": [
+                            {
+                              "input": false,
+                              "output": true
+                            }
+                          ],
+                          "outputType": "scalar",
+                          "type": "map"
+                        }
+                      ],
+                      "type": "tag"
+                    }
+                  }
+                },
+                "props": {
+                  "source": "/system/images/RYAN/clipping_parameter_blue_3.jpg",
+                  "tint": {
+                    "color": "#000000"
+                  }
+                },
+                "type": "ia.display.image"
+              },
+              {
+                "events": {
+                  "dom": {
+                    "onMouseEnter": {
+                      "config": {
+                        "script": "\t\tself.getSibling(\"Label_0\").props.style.classes \u003d \u0027highlighting_clipping_parameters\u0027"
+                      },
+                      "scope": "G",
+                      "type": "script"
+                    },
+                    "onMouseLeave": {
+                      "config": {
+                        "script": "\t\tself.getSibling(\"Label_0\").props.style.classes \u003d \u0027\u0027"
+                      },
+                      "scope": "G",
+                      "type": "script"
+                    }
+                  }
+                },
+                "meta": {
+                  "name": "Label_7"
+                },
+                "position": {
+                  "height": 23.000000000000004,
+                  "rotate": {
+                    "anchor": "25% 90%"
+                  },
+                  "width": 240,
+                  "x": 196.643625,
+                  "y": 2.3799999999999955
+                },
+                "props": {
+                  "style": {
+                    "backgroundColor": "#D5D5D5"
+                  },
+                  "text": "Leading Edge Clipping Offset\n\n\n",
+                  "textStyle": {
+                    "color": "#000000",
+                    "fontWeight": "bold"
+                  }
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "events": {
+                  "dom": {
+                    "onClick": {
+                      "config": {
+                        "script": "\tself.getSibling(\"Label_0\").props.style.classes \u003d \u0027highlighting_clipping_parameters\u0027"
+                      },
+                      "scope": "G",
+                      "type": "script"
+                    },
+                    "onMouseLeave": {
+                      "config": {
+                        "script": "\tself.getSibling(\"Label_0\").props.style.classes \u003d \u0027\u0027"
+                      },
+                      "scope": "G",
+                      "type": "script"
+                    }
+                  }
+                },
+                "meta": {
+                  "name": "TextField_14"
+                },
+                "position": {
+                  "height": 26,
+                  "width": 55,
+                  "x": 381.644,
+                  "y": 25.195
+                },
+                "propConfig": {
+                  "props.text": {
+                    "binding": {
+                      "config": {
+                        "bidirectional": true,
+                        "fallbackDelay": 2.5,
+                        "mode": "indirect",
+                        "references": {},
+                        "tagPath": "[default]site_composer2/clipping_parameters/D_grade/HMI_D_GradeLeadingEdgeClippingOffset_mm"
+                      },
+                      "type": "tag"
+                    }
+                  }
+                },
+                "type": "ia.input.text-field"
+              },
+              {
+                "events": {
+                  "dom": {
+                    "onClick": {
+                      "config": {
+                        "script": "\t\t\t\t\tself.getSibling(\"Label_13\").props.style.classes \u003d \u0027highlighting_clipping_parameters\u0027"
+                      },
+                      "scope": "G",
+                      "type": "script"
+                    },
+                    "onMouseLeave": {
+                      "config": {
+                        "script": "\t\t\t\t\tself.getSibling(\"Label_13\").props.style.classes \u003d \u0027\u0027"
+                      },
+                      "scope": "G",
+                      "type": "script"
+                    }
+                  }
+                },
+                "meta": {
+                  "name": "TextField_0"
+                },
+                "position": {
+                  "height": 26,
+                  "width": 55,
+                  "x": 526.51,
+                  "y": 140.137
+                },
+                "propConfig": {
+                  "props.text": {
+                    "binding": {
+                      "config": {
+                        "bidirectional": true,
+                        "fallbackDelay": 2.5,
+                        "mode": "indirect",
+                        "references": {},
+                        "tagPath": "[default]site_composer2/clipping_parameters/D_grade/HMI_D_GradeMaximumSplitLength_mm"
+                      },
+                      "type": "tag"
+                    }
+                  }
+                },
+                "type": "ia.input.text-field"
+              },
+              {
+                "meta": {
+                  "name": "Label_8"
+                },
+                "position": {
+                  "height": 27,
+                  "rotate": {
+                    "anchor": "25% 90%"
+                  },
+                  "width": 204,
+                  "x": 3.9581249999999955,
+                  "y": 133.4955
+                },
+                "props": {
+                  "style": {
+                    "backgroundColor": "#D5D5D5"
+                  },
+                  "text": "Axis Hunt Compensation\n\n\n",
+                  "textStyle": {
+                    "color": "#000000",
+                    "fontWeight": "bold"
+                  }
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "TextField_5"
+                },
+                "position": {
+                  "height": 25.999999999999986,
+                  "width": 55,
+                  "x": 153.733,
+                  "y": 160.805
+                },
+                "propConfig": {
+                  "props.text": {
+                    "binding": {
+                      "config": {
+                        "bidirectional": true,
+                        "fallbackDelay": 2.5,
+                        "mode": "indirect",
+                        "references": {},
+                        "tagPath": "[default]site_composer2/clipping_parameters/D_grade/HMI_D_GradeAxisHuntCompensation_mm"
+                      },
+                      "type": "tag"
+                    }
+                  }
+                },
+                "type": "ia.input.text-field"
+              },
+              {
+                "meta": {
+                  "name": "TextField_1"
+                },
+                "position": {
+                  "height": 25.999999999999986,
+                  "width": 55,
+                  "x": 468.407,
+                  "y": 186.051
+                },
+                "propConfig": {
+                  "props.text": {
+                    "binding": {
+                      "config": {
+                        "bidirectional": true,
+                        "fallbackDelay": 2.5,
+                        "mode": "indirect",
+                        "references": {},
+                        "tagPath": "[default]site_composer2/clipping_parameters/D_grade/HMI_D_GradeMaximumSplitSize_mm"
+                      },
+                      "type": "tag"
+                    }
+                  }
+                },
+                "type": "ia.input.text-field"
+              },
+              {
+                "events": {
+                  "dom": {
+                    "onMouseEnter": {
+                      "config": {
+                        "script": "\t\t\tself.getSibling(\"Label_16\").props.style.classes \u003d \u0027highlighting_clipping_parameters\u0027\n\t\t\tself.getSibling(\"Label_17\").props.style.classes \u003d \u0027highlighting_clipping_parameters\u0027\n\t\t\tself.getSibling(\"Label_18\").props.style.classes \u003d \u0027highlighting_clipping_parameters\u0027\n\t\t\tself.getSibling(\"Label_19\").props.style.classes \u003d \u0027highlighting_clipping_parameters\u0027\n\t\t\tself.getSibling(\"Label_21\").props.style.classes \u003d \u0027highlighting_clipping_parameters\u0027\n\t\t\tself.getSibling(\"Label_22\").props.style.classes \u003d \u0027highlighting_clipping_parameters\u0027"
+                      },
+                      "scope": "G",
+                      "type": "script"
+                    },
+                    "onMouseLeave": {
+                      "config": {
+                        "script": "\t\t\t\tself.getSibling(\"Label_16\").props.style.classes \u003d \u0027\u0027\n\t\t\t\tself.getSibling(\"Label_17\").props.style.classes \u003d \u0027\u0027\n\t\t\t\tself.getSibling(\"Label_18\").props.style.classes \u003d \u0027\u0027\n\t\t\t\tself.getSibling(\"Label_19\").props.style.classes \u003d \u0027\u0027\n\t\t\t\tself.getSibling(\"Label_21\").props.style.classes \u003d \u0027\u0027\n\t\t\t\tself.getSibling(\"Label_22\").props.style.classes \u003d \u0027\u0027"
+                      },
+                      "scope": "G",
+                      "type": "script"
+                    }
+                  }
+                },
+                "meta": {
+                  "name": "Label_9"
+                },
+                "position": {
+                  "height": 27,
+                  "rotate": {
+                    "anchor": "25% 90%"
+                  },
+                  "width": 194,
+                  "x": 497.718125,
+                  "y": 313.1875
+                },
+                "props": {
+                  "style": {
+                    "backgroundColor": "#D5D5D5"
+                  },
+                  "text": "Maximum Defect Size\n",
+                  "textStyle": {
+                    "color": "#000000",
+                    "fontWeight": "bold"
+                  }
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "events": {
+                  "dom": {
+                    "onClick": {
+                      "config": {
+                        "script": "\t\tself.getSibling(\"Label_16\").props.style.classes \u003d \u0027highlighting_clipping_parameters\u0027\n\t\tself.getSibling(\"Label_17\").props.style.classes \u003d \u0027highlighting_clipping_parameters\u0027\n\t\tself.getSibling(\"Label_18\").props.style.classes \u003d \u0027highlighting_clipping_parameters\u0027\n"
+                      },
+                      "scope": "G",
+                      "type": "script"
+                    },
+                    "onMouseLeave": {
+                      "config": {
+                        "script": "\t\t\tself.getSibling(\"Label_16\").props.style.classes \u003d \u0027\u0027\n\t\t\tself.getSibling(\"Label_17\").props.style.classes \u003d \u0027\u0027\n\t\t\tself.getSibling(\"Label_18\").props.style.classes \u003d \u0027\u0027"
+                      },
+                      "scope": "G",
+                      "type": "script"
+                    }
+                  }
+                },
+                "meta": {
+                  "name": "TextField_2"
+                },
+                "position": {
+                  "height": 25.999999999999986,
+                  "width": 55,
+                  "x": 542.58,
+                  "y": 340
+                },
+                "propConfig": {
+                  "props.text": {
+                    "binding": {
+                      "config": {
+                        "bidirectional": true,
+                        "fallbackDelay": 2.5,
+                        "mode": "direct",
+                        "tagPath": "[default]site_composer2/clipping_parameters/D_grade/HMI_D_GradeMaximumDefectWidth_mm"
+                      },
+                      "type": "tag"
+                    }
+                  }
+                },
+                "type": "ia.input.text-field"
+              },
+              {
+                "meta": {
+                  "name": "Label_3"
+                },
+                "position": {
+                  "height": 32,
+                  "width": 17,
+                  "x": 520.434125,
+                  "y": 337.7995
+                },
+                "props": {
+                  "style": {
+                    "color": "#FF0000",
+                    "fontWeight": "bold"
+                  },
+                  "text": "w:"
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "events": {
+                  "dom": {
+                    "onClick": {
+                      "config": {
+                        "script": "\t\t\tself.getSibling(\"Label_19\").props.style.classes \u003d \u0027highlighting_clipping_parameters\u0027\n\t\t\tself.getSibling(\"Label_21\").props.style.classes \u003d \u0027highlighting_clipping_parameters\u0027\n\t\t\tself.getSibling(\"Label_22\").props.style.classes \u003d \u0027highlighting_clipping_parameters\u0027"
+                      },
+                      "scope": "G",
+                      "type": "script"
+                    },
+                    "onMouseLeave": {
+                      "config": {
+                        "script": "\t\t\tself.getSibling(\"Label_19\").props.style.classes \u003d \u0027\u0027\n\t\t\tself.getSibling(\"Label_21\").props.style.classes \u003d \u0027\u0027\n\t\t\tself.getSibling(\"Label_22\").props.style.classes \u003d \u0027\u0027"
+                      },
+                      "scope": "G",
+                      "type": "script"
+                    }
+                  }
+                },
+                "meta": {
+                  "name": "TextField_13"
+                },
+                "position": {
+                  "height": 25.999999999999986,
+                  "width": 55,
+                  "x": 542.58,
+                  "y": 368.19
+                },
+                "propConfig": {
+                  "props.text": {
+                    "binding": {
+                      "config": {
+                        "bidirectional": true,
+                        "fallbackDelay": 2.5,
+                        "mode": "indirect",
+                        "references": {},
+                        "tagPath": "[default]site_composer2/clipping_parameters/D_grade/HMI_D_GradeMaximumDefectLength_mm"
+                      },
+                      "type": "tag"
+                    }
+                  }
+                },
+                "type": "ia.input.text-field"
+              },
+              {
+                "meta": {
+                  "name": "Label_20"
+                },
+                "position": {
+                  "height": 32,
+                  "width": 17,
+                  "x": 520.434125,
+                  "y": 365.9895
+                },
+                "props": {
+                  "style": {
+                    "color": "#FF0000",
+                    "fontWeight": "bold"
+                  },
+                  "text": "l:"
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "events": {
+                  "dom": {
+                    "onMouseEnter": {
+                      "config": {
+                        "script": "\tself.getSibling(\"Label_23\").props.style.classes \u003d \u0027highlighting_clipping_parameters\u0027"
+                      },
+                      "scope": "G",
+                      "type": "script"
+                    },
+                    "onMouseLeave": {
+                      "config": {
+                        "script": "\tself.getSibling(\"Label_23\").props.style.classes \u003d \u0027\u0027"
+                      },
+                      "scope": "G",
+                      "type": "script"
+                    }
+                  }
+                },
+                "meta": {
+                  "name": "Label_10"
+                },
+                "position": {
+                  "height": 42,
+                  "rotate": {
+                    "anchor": "25% 90%"
+                  },
+                  "width": 149,
+                  "x": 448.12175,
+                  "y": 417.64575
+                },
+                "props": {
+                  "style": {
+                    "backgroundColor": "#D5D5D5"
+                  },
+                  "text": "Maximum Thin Veneer Length\n",
+                  "textStyle": {
+                    "color": "#000000",
+                    "fontWeight": "bold"
+                  }
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "events": {
+                  "dom": {
+                    "onClick": {
+                      "config": {
+                        "script": "\tself.getSibling(\"Label_23\").props.style.classes \u003d \u0027highlighting_clipping_parameters\u0027"
+                      },
+                      "scope": "G",
+                      "type": "script"
+                    },
+                    "onMouseLeave": {
+                      "config": {
+                        "script": "\t\t\t\t\tself.getSibling(\"Label_23\").props.style.classes \u003d \u0027\u0027"
+                      },
+                      "scope": "G",
+                      "type": "script"
+                    }
+                  }
+                },
+                "meta": {
+                  "name": "TextField_3"
+                },
+                "position": {
+                  "height": 25.999999999999986,
+                  "width": 55,
+                  "x": 447.25175,
+                  "y": 459.618625
+                },
+                "propConfig": {
+                  "props.text": {
+                    "binding": {
+                      "config": {
+                        "bidirectional": true,
+                        "fallbackDelay": 2.5,
+                        "mode": "indirect",
+                        "references": {},
+                        "tagPath": "[default]site_composer2/clipping_parameters/D_grade/HMI_D_GradeMaximumBarkLength_mm"
+                      },
+                      "type": "tag"
+                    }
+                  }
+                },
+                "type": "ia.input.text-field"
+              },
+              {
+                "events": {
+                  "dom": {
+                    "onMouseEnter": {
+                      "config": {
+                        "script": "\t\t\tself.getSibling(\"Label_24\").props.style.classes \u003d \u0027highlighting_clipping_parameters\u0027"
+                      },
+                      "scope": "G",
+                      "type": "script"
+                    },
+                    "onMouseLeave": {
+                      "config": {
+                        "script": "\t\t\t\tself.getSibling(\"Label_24\").props.style.classes \u003d \u0027\u0027"
+                      },
+                      "scope": "G",
+                      "type": "script"
+                    }
+                  }
+                },
+                "meta": {
+                  "name": "Label_11"
+                },
+                "position": {
+                  "height": 51,
+                  "rotate": {
+                    "anchor": "25% 90%"
+                  },
+                  "width": 149,
+                  "x": 90.71812499999999,
+                  "y": 507.9375
+                },
+                "props": {
+                  "style": {
+                    "backgroundColor": "#D5D5D5"
+                  },
+                  "text": "Trailing Edge Clipping Offset\n",
+                  "textStyle": {
+                    "color": "#000000",
+                    "fontWeight": "bold"
+                  }
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "events": {
+                  "dom": {
+                    "onClick": {
+                      "config": {
+                        "script": "\t\t\t\tself.getSibling(\"Label_24\").props.style.classes \u003d \u0027highlighting_clipping_parameters\u0027"
+                      },
+                      "scope": "G",
+                      "type": "script"
+                    },
+                    "onMouseLeave": {
+                      "config": {
+                        "script": "\t\t\t\tself.getSibling(\"Label_24\").props.style.classes \u003d \u0027\u0027"
+                      },
+                      "scope": "G",
+                      "type": "script"
+                    }
+                  }
+                },
+                "meta": {
+                  "name": "TextField_4"
+                },
+                "position": {
+                  "height": 25.999999999999986,
+                  "width": 55,
+                  "x": 90.77912500000002,
+                  "y": 559.1945
+                },
+                "propConfig": {
+                  "props.text": {
+                    "binding": {
+                      "config": {
+                        "bidirectional": true,
+                        "fallbackDelay": 2.5,
+                        "mode": "indirect",
+                        "references": {},
+                        "tagPath": "[default]site_composer2/clipping_parameters/D_grade/HMI_D_GradeTrailingEdgeClippingOffset_mm"
+                      },
+                      "type": "tag"
+                    }
+                  }
+                },
+                "type": "ia.input.text-field"
+              },
+              {
+                "meta": {
+                  "name": "Label"
+                },
+                "position": {
+                  "height": 74,
+                  "width": 110,
+                  "x": 314.828125,
+                  "y": 604.3755
+                },
+                "props": {
+                  "style": {
+                    "fontSize": 70
+                  },
+                  "text": "U3"
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "events": {
+                  "dom": {
+                    "onMouseEnter": {
+                      "config": {
+                        "script": "\t\t\tself.getSibling(\"Label_12\").props.style.classes \u003d \u0027highlighting_clipping_parameters\u0027"
+                      },
+                      "scope": "G",
+                      "type": "script"
+                    },
+                    "onMouseLeave": {
+                      "config": {
+                        "script": "\t\t\t\tself.getSibling(\"Label_12\").props.style.classes \u003d \u0027\u0027"
+                      },
+                      "scope": "G",
+                      "type": "script"
+                    }
+                  }
+                },
+                "meta": {
+                  "name": "Label_6"
+                },
+                "position": {
+                  "height": 24,
+                  "rotate": {
+                    "anchor": "25% 90%"
+                  },
+                  "width": 200.00000000000006,
+                  "x": 474.44,
+                  "y": 2.99
+                },
+                "props": {
+                  "style": {
+                    "backgroundColor": "#D5D5D5"
+                  },
+                  "text": "Minimum Clipping Width\n\n\n",
+                  "textStyle": {
+                    "color": "#000000",
+                    "fontWeight": "bold"
+                  }
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "events": {
+                  "dom": {
+                    "onClick": {
+                      "config": {
+                        "script": "\t\t\t\tself.getSibling(\"Label_12\").props.style.classes \u003d \u0027highlighting_clipping_parameters\u0027"
+                      },
+                      "scope": "G",
+                      "type": "script"
+                    },
+                    "onMouseLeave": {
+                      "config": {
+                        "script": "\t\t\t\tself.getSibling(\"Label_12\").props.style.classes \u003d \u0027\u0027"
+                      },
+                      "scope": "G",
+                      "type": "script"
+                    }
+                  }
+                },
+                "meta": {
+                  "name": "TextField_17"
+                },
+                "position": {
+                  "height": 26,
+                  "width": 55,
+                  "x": 533.231,
+                  "y": 26.8515
+                },
+                "propConfig": {
+                  "props.text": {
+                    "binding": {
+                      "config": {
+                        "bidirectional": true,
+                        "fallbackDelay": 2.5,
+                        "mode": "indirect",
+                        "references": {},
+                        "tagPath": "[default]site_composer2/clipping_parameters/D_grade/HMI_D_GradeMinimumClippingWidth_mm"
+                      },
+                      "type": "tag"
+                    }
+                  }
+                },
+                "type": "ia.input.text-field"
+              },
+              {
+                "meta": {
+                  "name": "Label_0"
+                },
+                "position": {
+                  "height": 444,
+                  "width": 6,
+                  "x": 318.9,
+                  "y": 93.61
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "Label_13"
+                },
+                "position": {
+                  "height": 106.00000000000001,
+                  "width": 4,
+                  "x": 337.9,
+                  "y": 96.24
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "Label_14"
+                },
+                "position": {
+                  "height": 3,
+                  "width": 18,
+                  "x": 331.9,
+                  "y": 203.17
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "Label_15"
+                },
+                "position": {
+                  "height": 3,
+                  "width": 19,
+                  "x": 330.9,
+                  "y": 92.95
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "Label_16"
+                },
+                "position": {
+                  "height": 95,
+                  "width": 4,
+                  "x": 402.9,
+                  "y": 324.83
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "Label_1"
+                },
+                "position": {
+                  "height": 32,
+                  "width": 17,
+                  "x": 397.939,
+                  "y": 323.95711163330077
+                },
+                "props": {
+                  "style": {
+                    "color": "#FF0000",
+                    "fontWeight": "bold"
+                  },
+                  "text": "w"
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "Label_2"
+                },
+                "position": {
+                  "height": 32,
+                  "width": 17,
+                  "x": 393.765,
+                  "y": 365.8821039886475
+                },
+                "props": {
+                  "style": {
+                    "color": "#FF0000",
+                    "fontWeight": "bold"
+                  },
+                  "text": "l"
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "Label_17"
+                },
+                "position": {
+                  "height": 3,
+                  "width": 22,
+                  "x": 393.9,
+                  "y": 321.72
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "Label_18"
+                },
+                "position": {
+                  "height": 4,
+                  "width": 19,
+                  "x": 395.9,
+                  "y": 419.07
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "Label_19"
+                },
+                "position": {
+                  "height": 4,
+                  "width": 32,
+                  "x": 387.9,
+                  "y": 368.81
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "Label_21"
+                },
+                "position": {
+                  "height": 18,
+                  "width": 5,
+                  "x": 384.9,
+                  "y": 362.1
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "Label_22"
+                },
+                "position": {
+                  "height": 18,
+                  "width": 5,
+                  "x": 418.797,
+                  "y": 362.56841967773437
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "Label_23"
+                },
+                "position": {
+                  "height": 5,
+                  "width": 38,
+                  "x": 442.8,
+                  "y": 532.57
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "Label_12"
+                },
+                "position": {
+                  "height": 447,
+                  "width": 4,
+                  "x": 440.9,
+                  "y": 92.34
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "events": {
+                  "dom": {
+                    "onMouseEnter": {
+                      "config": {
+                        "script": "\t\t\t\tself.getSibling(\"Label_13\").props.style.classes \u003d \u0027highlighting_clipping_parameters\u0027"
+                      },
+                      "scope": "G",
+                      "type": "script"
+                    },
+                    "onMouseLeave": {
+                      "config": {
+                        "script": "\t\t\t\t\tself.getSibling(\"Label_13\").props.style.classes \u003d \u0027\u0027"
+                      },
+                      "scope": "G",
+                      "type": "script"
+                    }
+                  }
+                },
+                "meta": {
+                  "name": "Label_5"
+                },
+                "position": {
+                  "height": 18,
+                  "rotate": {
+                    "anchor": "25% 90%"
+                  },
+                  "width": 200,
+                  "x": 381.861,
+                  "y": 122.917
+                },
+                "props": {
+                  "style": {
+                    "backgroundColor": "#D5D5D5"
+                  },
+                  "text": "Maximum Split Length\n\n\n",
+                  "textStyle": {
+                    "color": "#000000",
+                    "fontWeight": "bold"
+                  }
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "events": {
+                  "dom": {
+                    "onMouseEnter": {
+                      "config": {
+                        "script": "\tself.getSibling(\"Label_14\").props.style.classes \u003d \u0027highlighting_clipping_parameters\u0027\n\tself.getSibling(\"Label_15\").props.style.classes \u003d \u0027highlighting_clipping_parameters\u0027"
+                      },
+                      "scope": "G",
+                      "type": "script"
+                    },
+                    "onMouseLeave": {
+                      "config": {
+                        "script": "\t\tself.getSibling(\"Label_14\").props.style.classes \u003d \u0027\u0027\n\t\tself.getSibling(\"Label_15\").props.style.classes \u003d \u0027\u0027"
+                      },
+                      "scope": "G",
+                      "type": "script"
+                    }
+                  }
+                },
+                "meta": {
+                  "name": "Label_4"
+                },
+                "position": {
+                  "height": 21,
+                  "rotate": {
+                    "anchor": "25% 90%"
+                  },
+                  "width": 173,
+                  "x": 349.848625,
+                  "y": 165.322
+                },
+                "props": {
+                  "style": {
+                    "backgroundColor": "#D5D5D5"
+                  },
+                  "text": "Maximum Split Size\n\n",
+                  "textStyle": {
+                    "color": "#000000",
+                    "fontWeight": "bold"
+                  }
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "Label_24"
+                },
+                "position": {
+                  "height": 444,
+                  "width": 6,
+                  "x": 284.9,
+                  "y": 91.7576
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "Label_25"
+                },
+                "position": {
+                  "height": 27,
+                  "rotate": {
+                    "anchor": "25% 90%"
+                  },
+                  "width": 204,
+                  "x": 3.9581249999999955,
+                  "y": 133.4955
+                },
+                "props": {
+                  "style": {
+                    "backgroundColor": "#D5D5D5"
+                  },
+                  "text": "Axis Hunt Compensation\n\n\n",
+                  "textStyle": {
+                    "color": "#000000",
+                    "fontWeight": "bold"
+                  }
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "Label_27"
+                },
+                "position": {
+                  "height": 39,
+                  "rotate": {
+                    "anchor": "25% 90%"
+                  },
+                  "width": 204,
+                  "x": 5.01,
+                  "y": 269.47
+                },
+                "props": {
+                  "style": {
+                    "backgroundColor": "#D5D5D5"
+                  },
+                  "text": "Veneer Detection Threshold (%)\n\n\n",
+                  "textStyle": {
+                    "color": "#000000",
+                    "fontWeight": "bold"
+                  }
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "TextField_7"
+                },
+                "position": {
+                  "height": 25.999999999999986,
+                  "width": 55,
+                  "x": 154.782,
+                  "y": 310.782
+                },
+                "propConfig": {
+                  "props.text": {
+                    "binding": {
+                      "config": {
+                        "bidirectional": true,
+                        "fallbackDelay": 2.5,
+                        "mode": "indirect",
+                        "references": {},
+                        "tagPath": "[default]site_composer2/clipping_parameters/D_grade/HMI_D_VeneerDetectionThreshold_Percent"
+                      },
+                      "type": "tag"
+                    }
+                  }
+                },
+                "type": "ia.input.text-field"
+              },
+              {
+                "meta": {
+                  "name": "Label_28"
+                },
+                "position": {
+                  "height": 6,
+                  "width": 56,
+                  "x": 387.8,
+                  "y": 531.57
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "events": {
+                  "dom": {
+                    "onMouseEnter": {
+                      "config": {
+                        "script": "\t\tself.getSibling(\"Label_28\").props.style.classes \u003d \u0027highlighting_clipping_parameters\u0027"
+                      },
+                      "scope": "G",
+                      "type": "script"
+                    },
+                    "onMouseLeave": {
+                      "config": {
+                        "script": "\tself.getSibling(\"Label_28\").props.style.classes \u003d \u0027\u0027"
+                      },
+                      "scope": "G",
+                      "type": "script"
+                    }
+                  }
+                },
+                "meta": {
+                  "name": "Label_26"
+                },
+                "position": {
+                  "height": 39,
+                  "rotate": {
+                    "anchor": "25% 90%"
+                  },
+                  "width": 137.00000000000006,
+                  "x": 476.96,
+                  "y": 553.66
+                },
+                "props": {
+                  "style": {
+                    "backgroundColor": "#D5D5D5"
+                  },
+                  "text": "Maximum Trash Cutting Width\n\n\n\n",
+                  "textStyle": {
+                    "color": "#000000",
+                    "fontWeight": "bold"
+                  }
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "events": {
+                  "dom": {
+                    "onClick": {
+                      "config": {
+                        "script": "\t\tself.getSibling(\"Label_28\").props.style.classes \u003d \u0027highlighting_clipping_parameters\u0027"
+                      },
+                      "scope": "G",
+                      "type": "script"
+                    },
+                    "onMouseLeave": {
+                      "config": {
+                        "script": "\t\t\t\t\t\tself.getSibling(\"Label_28\").props.style.classes \u003d \u0027\u0027"
+                      },
+                      "scope": "G",
+                      "type": "script"
+                    }
+                  }
+                },
+                "meta": {
+                  "name": "TextField_6"
+                },
+                "position": {
+                  "height": 25.999999999999986,
+                  "width": 55,
+                  "x": 476.733,
+                  "y": 595.974
+                },
+                "propConfig": {
+                  "props.text": {
+                    "binding": {
+                      "config": {
+                        "bidirectional": true,
+                        "fallbackDelay": 2.5,
+                        "mode": "indirect",
+                        "references": {},
+                        "tagPath": "[default]site_composer2/clipping_parameters/D_grade/HMI_D_MaximumTrashCuttingWidth_mm"
+                      },
+                      "type": "tag"
+                    }
+                  }
+                },
+                "type": "ia.input.text-field"
+              }
+            ],
+            "meta": {
+              "name": "CoordinateContainer_0"
+            },
+            "position": {
+              "height": 694,
+              "width": 738,
+              "x": 1096.01,
+              "y": 26.990468750000005
+            },
+            "propConfig": {
+              "props.style.backgroundColor": {
+                "binding": {
+                  "config": {
+                    "fallbackDelay": 2.5,
+                    "mode": "direct",
+                    "tagPath": "[default]site_composer2/clipping_parameters/D_grade/I_D_GradeProduct"
+                  },
+                  "transforms": [
+                    {
+                      "fallback": "#00A2E8",
+                      "inputType": "scalar",
+                      "mappings": [
+                        {
+                          "input": false,
+                          "output": "#000000"
+                        }
+                      ],
+                      "outputType": "color",
+                      "type": "map"
+                    }
+                  ],
+                  "type": "tag"
+                }
+              }
+            },
+            "type": "ia.container.coord"
+          },
+          {
+            "children": [
+              {
+                "meta": {
+                  "name": "clipping_parameter_blue_2"
+                },
+                "position": {
+                  "height": 560,
+                  "width": 470,
+                  "x": 138.62,
+                  "y": 27.57
+                },
+                "propConfig": {
+                  "props.tint.enabled": {
+                    "binding": {
+                      "config": {
+                        "fallbackDelay": 2.5,
+                        "mode": "direct",
+                        "tagPath": "[default]site_composer2/clipping_parameters/C_grade/I_C_GradeProduct"
+                      },
+                      "transforms": [
+                        {
+                          "fallback": false,
+                          "inputType": "scalar",
+                          "mappings": [
+                            {
+                              "input": false,
+                              "output": true
+                            }
+                          ],
+                          "outputType": "scalar",
+                          "type": "map"
+                        }
+                      ],
+                      "type": "tag"
+                    }
+                  }
+                },
+                "props": {
+                  "source": "/system/images/RYAN/clipping_parameter_blue_3.jpg",
+                  "tint": {
+                    "color": "#000000"
+                  }
+                },
+                "type": "ia.display.image"
+              },
+              {
+                "events": {
+                  "dom": {
+                    "onMouseEnter": {
+                      "config": {
+                        "script": "\t\tself.getSibling(\"Label_0\").props.style.classes \u003d \u0027highlighting_clipping_parameters\u0027"
+                      },
+                      "scope": "G",
+                      "type": "script"
+                    },
+                    "onMouseLeave": {
+                      "config": {
+                        "script": "\t\tself.getSibling(\"Label_0\").props.style.classes \u003d \u0027\u0027"
+                      },
+                      "scope": "G",
+                      "type": "script"
+                    }
+                  }
+                },
+                "meta": {
+                  "name": "Label_7"
+                },
+                "position": {
+                  "height": 23.000000000000004,
+                  "rotate": {
+                    "anchor": "25% 90%"
+                  },
+                  "width": 240,
+                  "x": 196.643625,
+                  "y": 2.3799999999999955
+                },
+                "props": {
+                  "style": {
+                    "backgroundColor": "#D5D5D5"
+                  },
+                  "text": "Leading Edge Clipping Offset\n\n\n",
+                  "textStyle": {
+                    "color": "#000000",
+                    "fontWeight": "bold"
+                  }
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "events": {
+                  "dom": {
+                    "onClick": {
+                      "config": {
+                        "script": "\tself.getSibling(\"Label_0\").props.style.classes \u003d \u0027highlighting_clipping_parameters\u0027"
+                      },
+                      "scope": "G",
+                      "type": "script"
+                    },
+                    "onMouseLeave": {
+                      "config": {
+                        "script": "\tself.getSibling(\"Label_0\").props.style.classes \u003d \u0027\u0027"
+                      },
+                      "scope": "G",
+                      "type": "script"
+                    }
+                  }
+                },
+                "meta": {
+                  "name": "TextField_14"
+                },
+                "position": {
+                  "height": 26,
+                  "width": 55,
+                  "x": 381.644,
+                  "y": 25.195
+                },
+                "propConfig": {
+                  "props.text": {
+                    "binding": {
+                      "config": {
+                        "bidirectional": true,
+                        "fallbackDelay": 2.5,
+                        "mode": "indirect",
+                        "references": {},
+                        "tagPath": "[default]site_composer2/clipping_parameters/C_grade/HMI_C_GradeLeadingEdgeClippingOffset_mm"
+                      },
+                      "type": "tag"
+                    }
+                  }
+                },
+                "type": "ia.input.text-field"
+              },
+              {
+                "events": {
+                  "dom": {
+                    "onClick": {
+                      "config": {
+                        "script": "\t\t\t\t\tself.getSibling(\"Label_13\").props.style.classes \u003d \u0027highlighting_clipping_parameters\u0027"
+                      },
+                      "scope": "G",
+                      "type": "script"
+                    },
+                    "onMouseLeave": {
+                      "config": {
+                        "script": "\t\t\t\t\tself.getSibling(\"Label_13\").props.style.classes \u003d \u0027\u0027"
+                      },
+                      "scope": "G",
+                      "type": "script"
+                    }
+                  }
+                },
+                "meta": {
+                  "name": "TextField_0"
+                },
+                "position": {
+                  "height": 26,
+                  "width": 55,
+                  "x": 526.51,
+                  "y": 140.137
+                },
+                "propConfig": {
+                  "props.text": {
+                    "binding": {
+                      "config": {
+                        "bidirectional": true,
+                        "fallbackDelay": 2.5,
+                        "mode": "indirect",
+                        "references": {},
+                        "tagPath": "[default]site_composer2/clipping_parameters/C_grade/HMI_C_GradeMaximumSplitLength_mm"
+                      },
+                      "type": "tag"
+                    }
+                  }
+                },
+                "type": "ia.input.text-field"
+              },
+              {
+                "meta": {
+                  "name": "Label_8"
+                },
+                "position": {
+                  "height": 27,
+                  "rotate": {
+                    "anchor": "25% 90%"
+                  },
+                  "width": 204,
+                  "x": 3.9581249999999955,
+                  "y": 133.4955
+                },
+                "props": {
+                  "style": {
+                    "backgroundColor": "#D5D5D5"
+                  },
+                  "text": "Axis Hunt Compensation\n\n\n",
+                  "textStyle": {
+                    "color": "#000000",
+                    "fontWeight": "bold"
+                  }
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "TextField_5"
+                },
+                "position": {
+                  "height": 25.999999999999986,
+                  "width": 55,
+                  "x": 153.733,
+                  "y": 160.805
+                },
+                "propConfig": {
+                  "props.text": {
+                    "binding": {
+                      "config": {
+                        "bidirectional": true,
+                        "fallbackDelay": 2.5,
+                        "mode": "indirect",
+                        "references": {},
+                        "tagPath": "[default]site_composer2/clipping_parameters/C_grade/HMI_C_GradeAxisHuntCompensation_mm"
+                      },
+                      "type": "tag"
+                    }
+                  }
+                },
+                "type": "ia.input.text-field"
+              },
+              {
+                "meta": {
+                  "name": "TextField_1"
+                },
+                "position": {
+                  "height": 25.999999999999986,
+                  "width": 55,
+                  "x": 468.407,
+                  "y": 186.051
+                },
+                "propConfig": {
+                  "props.text": {
+                    "binding": {
+                      "config": {
+                        "bidirectional": true,
+                        "fallbackDelay": 2.5,
+                        "mode": "indirect",
+                        "references": {},
+                        "tagPath": "[default]site_composer2/clipping_parameters/C_grade/HMI_C_GradeMaximumSplitSize_mm"
+                      },
+                      "type": "tag"
+                    }
+                  }
+                },
+                "type": "ia.input.text-field"
+              },
+              {
+                "events": {
+                  "dom": {
+                    "onMouseEnter": {
+                      "config": {
+                        "script": "\t\t\tself.getSibling(\"Label_16\").props.style.classes \u003d \u0027highlighting_clipping_parameters\u0027\n\t\t\tself.getSibling(\"Label_17\").props.style.classes \u003d \u0027highlighting_clipping_parameters\u0027\n\t\t\tself.getSibling(\"Label_18\").props.style.classes \u003d \u0027highlighting_clipping_parameters\u0027\n\t\t\tself.getSibling(\"Label_19\").props.style.classes \u003d \u0027highlighting_clipping_parameters\u0027\n\t\t\tself.getSibling(\"Label_21\").props.style.classes \u003d \u0027highlighting_clipping_parameters\u0027\n\t\t\tself.getSibling(\"Label_22\").props.style.classes \u003d \u0027highlighting_clipping_parameters\u0027"
+                      },
+                      "scope": "G",
+                      "type": "script"
+                    },
+                    "onMouseLeave": {
+                      "config": {
+                        "script": "\t\t\t\tself.getSibling(\"Label_16\").props.style.classes \u003d \u0027\u0027\n\t\t\t\tself.getSibling(\"Label_17\").props.style.classes \u003d \u0027\u0027\n\t\t\t\tself.getSibling(\"Label_18\").props.style.classes \u003d \u0027\u0027\n\t\t\t\tself.getSibling(\"Label_19\").props.style.classes \u003d \u0027\u0027\n\t\t\t\tself.getSibling(\"Label_21\").props.style.classes \u003d \u0027\u0027\n\t\t\t\tself.getSibling(\"Label_22\").props.style.classes \u003d \u0027\u0027"
+                      },
+                      "scope": "G",
+                      "type": "script"
+                    }
+                  }
+                },
+                "meta": {
+                  "name": "Label_9"
+                },
+                "position": {
+                  "height": 27,
+                  "rotate": {
+                    "anchor": "25% 90%"
+                  },
+                  "width": 194,
+                  "x": 497.718125,
+                  "y": 313.1875
+                },
+                "props": {
+                  "style": {
+                    "backgroundColor": "#D5D5D5"
+                  },
+                  "text": "Maximum Defect Size\n",
+                  "textStyle": {
+                    "color": "#000000",
+                    "fontWeight": "bold"
+                  }
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "events": {
+                  "dom": {
+                    "onClick": {
+                      "config": {
+                        "script": "\t\tself.getSibling(\"Label_16\").props.style.classes \u003d \u0027highlighting_clipping_parameters\u0027\n\t\tself.getSibling(\"Label_17\").props.style.classes \u003d \u0027highlighting_clipping_parameters\u0027\n\t\tself.getSibling(\"Label_18\").props.style.classes \u003d \u0027highlighting_clipping_parameters\u0027\n"
+                      },
+                      "scope": "G",
+                      "type": "script"
+                    },
+                    "onMouseLeave": {
+                      "config": {
+                        "script": "\t\t\tself.getSibling(\"Label_16\").props.style.classes \u003d \u0027\u0027\n\t\t\tself.getSibling(\"Label_17\").props.style.classes \u003d \u0027\u0027\n\t\t\tself.getSibling(\"Label_18\").props.style.classes \u003d \u0027\u0027"
+                      },
+                      "scope": "G",
+                      "type": "script"
+                    }
+                  }
+                },
+                "meta": {
+                  "name": "TextField_2"
+                },
+                "position": {
+                  "height": 25.999999999999986,
+                  "width": 55,
+                  "x": 542.58,
+                  "y": 340
+                },
+                "propConfig": {
+                  "props.text": {
+                    "binding": {
+                      "config": {
+                        "bidirectional": true,
+                        "fallbackDelay": 2.5,
+                        "mode": "direct",
+                        "tagPath": "[default]site_composer2/clipping_parameters/C_grade/HMI_C_GradeMaximumDefectWidth_mm"
+                      },
+                      "type": "tag"
+                    }
+                  }
+                },
+                "type": "ia.input.text-field"
+              },
+              {
+                "meta": {
+                  "name": "Label_3"
+                },
+                "position": {
+                  "height": 32,
+                  "width": 17,
+                  "x": 520.434125,
+                  "y": 337.7995
+                },
+                "props": {
+                  "style": {
+                    "color": "#FF0000",
+                    "fontWeight": "bold"
+                  },
+                  "text": "w:"
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "events": {
+                  "dom": {
+                    "onClick": {
+                      "config": {
+                        "script": "\t\t\tself.getSibling(\"Label_19\").props.style.classes \u003d \u0027highlighting_clipping_parameters\u0027\n\t\t\tself.getSibling(\"Label_21\").props.style.classes \u003d \u0027highlighting_clipping_parameters\u0027\n\t\t\tself.getSibling(\"Label_22\").props.style.classes \u003d \u0027highlighting_clipping_parameters\u0027"
+                      },
+                      "scope": "G",
+                      "type": "script"
+                    },
+                    "onMouseLeave": {
+                      "config": {
+                        "script": "\t\t\tself.getSibling(\"Label_19\").props.style.classes \u003d \u0027\u0027\n\t\t\tself.getSibling(\"Label_21\").props.style.classes \u003d \u0027\u0027\n\t\t\tself.getSibling(\"Label_22\").props.style.classes \u003d \u0027\u0027"
+                      },
+                      "scope": "G",
+                      "type": "script"
+                    }
+                  }
+                },
+                "meta": {
+                  "name": "TextField_13"
+                },
+                "position": {
+                  "height": 25.999999999999986,
+                  "width": 55,
+                  "x": 542.58,
+                  "y": 368.19
+                },
+                "propConfig": {
+                  "props.text": {
+                    "binding": {
+                      "config": {
+                        "bidirectional": true,
+                        "fallbackDelay": 2.5,
+                        "mode": "indirect",
+                        "references": {},
+                        "tagPath": "[default]site_composer2/clipping_parameters/C_grade/HMI_C_GradeMaximumDefectLength_mm"
+                      },
+                      "type": "tag"
+                    }
+                  }
+                },
+                "type": "ia.input.text-field"
+              },
+              {
+                "meta": {
+                  "name": "Label_20"
+                },
+                "position": {
+                  "height": 32,
+                  "width": 17,
+                  "x": 520.434125,
+                  "y": 365.9895
+                },
+                "props": {
+                  "style": {
+                    "color": "#FF0000",
+                    "fontWeight": "bold"
+                  },
+                  "text": "l:"
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "events": {
+                  "dom": {
+                    "onMouseEnter": {
+                      "config": {
+                        "script": "\tself.getSibling(\"Label_23\").props.style.classes \u003d \u0027highlighting_clipping_parameters\u0027"
+                      },
+                      "scope": "G",
+                      "type": "script"
+                    },
+                    "onMouseLeave": {
+                      "config": {
+                        "script": "\tself.getSibling(\"Label_23\").props.style.classes \u003d \u0027\u0027"
+                      },
+                      "scope": "G",
+                      "type": "script"
+                    }
+                  }
+                },
+                "meta": {
+                  "name": "Label_10"
+                },
+                "position": {
+                  "height": 42,
+                  "rotate": {
+                    "anchor": "25% 90%"
+                  },
+                  "width": 149,
+                  "x": 448.12175,
+                  "y": 417.64575
+                },
+                "props": {
+                  "style": {
+                    "backgroundColor": "#D5D5D5"
+                  },
+                  "text": "Maximum Thin Veneer Length\n",
+                  "textStyle": {
+                    "color": "#000000",
+                    "fontWeight": "bold"
+                  }
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "events": {
+                  "dom": {
+                    "onClick": {
+                      "config": {
+                        "script": "\tself.getSibling(\"Label_23\").props.style.classes \u003d \u0027highlighting_clipping_parameters\u0027"
+                      },
+                      "scope": "G",
+                      "type": "script"
+                    },
+                    "onMouseLeave": {
+                      "config": {
+                        "script": "\t\t\t\t\tself.getSibling(\"Label_23\").props.style.classes \u003d \u0027\u0027"
+                      },
+                      "scope": "G",
+                      "type": "script"
+                    }
+                  }
+                },
+                "meta": {
+                  "name": "TextField_3"
+                },
+                "position": {
+                  "height": 25.999999999999986,
+                  "width": 55,
+                  "x": 447.25175,
+                  "y": 459.618625
+                },
+                "propConfig": {
+                  "props.text": {
+                    "binding": {
+                      "config": {
+                        "bidirectional": true,
+                        "fallbackDelay": 2.5,
+                        "mode": "indirect",
+                        "references": {},
+                        "tagPath": "[default]site_composer2/clipping_parameters/C_grade/HMI_C_GradeMaximumBarkLength_mm"
+                      },
+                      "type": "tag"
+                    }
+                  }
+                },
+                "type": "ia.input.text-field"
+              },
+              {
+                "events": {
+                  "dom": {
+                    "onMouseEnter": {
+                      "config": {
+                        "script": "\t\t\tself.getSibling(\"Label_24\").props.style.classes \u003d \u0027highlighting_clipping_parameters\u0027"
+                      },
+                      "scope": "G",
+                      "type": "script"
+                    },
+                    "onMouseLeave": {
+                      "config": {
+                        "script": "\t\t\t\tself.getSibling(\"Label_24\").props.style.classes \u003d \u0027\u0027"
+                      },
+                      "scope": "G",
+                      "type": "script"
+                    }
+                  }
+                },
+                "meta": {
+                  "name": "Label_11"
+                },
+                "position": {
+                  "height": 51,
+                  "rotate": {
+                    "anchor": "25% 90%"
+                  },
+                  "width": 149,
+                  "x": 90.71812499999999,
+                  "y": 507.9375
+                },
+                "props": {
+                  "style": {
+                    "backgroundColor": "#D5D5D5"
+                  },
+                  "text": "Trailing Edge Clipping Offset\n",
+                  "textStyle": {
+                    "color": "#000000",
+                    "fontWeight": "bold"
+                  }
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "events": {
+                  "dom": {
+                    "onClick": {
+                      "config": {
+                        "script": "\t\t\t\tself.getSibling(\"Label_24\").props.style.classes \u003d \u0027highlighting_clipping_parameters\u0027"
+                      },
+                      "scope": "G",
+                      "type": "script"
+                    },
+                    "onMouseLeave": {
+                      "config": {
+                        "script": "\t\t\t\tself.getSibling(\"Label_24\").props.style.classes \u003d \u0027\u0027"
+                      },
+                      "scope": "G",
+                      "type": "script"
+                    }
+                  }
+                },
+                "meta": {
+                  "name": "TextField_4"
+                },
+                "position": {
+                  "height": 25.999999999999986,
+                  "width": 55,
+                  "x": 90.77912500000002,
+                  "y": 559.1945
+                },
+                "propConfig": {
+                  "props.text": {
+                    "binding": {
+                      "config": {
+                        "bidirectional": true,
+                        "fallbackDelay": 2.5,
+                        "mode": "indirect",
+                        "references": {},
+                        "tagPath": "[default]site_composer2/clipping_parameters/C_grade/HMI_C_GradeTrailingEdgeClippingOffset_mm"
+                      },
+                      "type": "tag"
+                    }
+                  }
+                },
+                "type": "ia.input.text-field"
+              },
+              {
+                "meta": {
+                  "name": "Label"
+                },
+                "position": {
+                  "height": 74,
+                  "width": 110,
+                  "x": 314.828125,
+                  "y": 604.3755
+                },
+                "props": {
+                  "style": {
+                    "fontSize": 70
+                  },
+                  "text": "U2"
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "events": {
+                  "dom": {
+                    "onMouseEnter": {
+                      "config": {
+                        "script": "\t\t\tself.getSibling(\"Label_12\").props.style.classes \u003d \u0027highlighting_clipping_parameters\u0027"
+                      },
+                      "scope": "G",
+                      "type": "script"
+                    },
+                    "onMouseLeave": {
+                      "config": {
+                        "script": "\t\t\t\tself.getSibling(\"Label_12\").props.style.classes \u003d \u0027\u0027"
+                      },
+                      "scope": "G",
+                      "type": "script"
+                    }
+                  }
+                },
+                "meta": {
+                  "name": "Label_6"
+                },
+                "position": {
+                  "height": 24,
+                  "rotate": {
+                    "anchor": "25% 90%"
+                  },
+                  "width": 200.00000000000006,
+                  "x": 474.44,
+                  "y": 2.99
+                },
+                "props": {
+                  "style": {
+                    "backgroundColor": "#D5D5D5"
+                  },
+                  "text": "Minimum Clipping Width\n\n\n",
+                  "textStyle": {
+                    "color": "#000000",
+                    "fontWeight": "bold"
+                  }
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "events": {
+                  "dom": {
+                    "onClick": {
+                      "config": {
+                        "script": "\t\t\t\tself.getSibling(\"Label_12\").props.style.classes \u003d \u0027highlighting_clipping_parameters\u0027"
+                      },
+                      "scope": "G",
+                      "type": "script"
+                    },
+                    "onMouseLeave": {
+                      "config": {
+                        "script": "\t\t\t\tself.getSibling(\"Label_12\").props.style.classes \u003d \u0027\u0027"
+                      },
+                      "scope": "G",
+                      "type": "script"
+                    }
+                  }
+                },
+                "meta": {
+                  "name": "TextField_17"
+                },
+                "position": {
+                  "height": 26,
+                  "width": 55,
+                  "x": 533.231,
+                  "y": 26.8515
+                },
+                "propConfig": {
+                  "props.text": {
+                    "binding": {
+                      "config": {
+                        "bidirectional": true,
+                        "fallbackDelay": 2.5,
+                        "mode": "indirect",
+                        "references": {},
+                        "tagPath": "[default]site_composer2/clipping_parameters/C_grade/HMI_C_GradeMinimumClippingWidth_mm"
+                      },
+                      "type": "tag"
+                    }
+                  }
+                },
+                "type": "ia.input.text-field"
+              },
+              {
+                "meta": {
+                  "name": "Label_0"
+                },
+                "position": {
+                  "height": 444,
+                  "width": 6,
+                  "x": 318.9,
+                  "y": 93.61
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "Label_13"
+                },
+                "position": {
+                  "height": 106.00000000000001,
+                  "width": 4,
+                  "x": 337.9,
+                  "y": 96.24
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "Label_14"
+                },
+                "position": {
+                  "height": 3,
+                  "width": 18,
+                  "x": 331.9,
+                  "y": 203.17
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "Label_15"
+                },
+                "position": {
+                  "height": 3,
+                  "width": 19,
+                  "x": 330.9,
+                  "y": 92.95
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "Label_16"
+                },
+                "position": {
+                  "height": 95,
+                  "width": 4,
+                  "x": 402.9,
+                  "y": 324.83
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "Label_1"
+                },
+                "position": {
+                  "height": 32,
+                  "width": 17,
+                  "x": 397.939,
+                  "y": 323.95711163330077
+                },
+                "props": {
+                  "style": {
+                    "color": "#FF0000",
+                    "fontWeight": "bold"
+                  },
+                  "text": "w"
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "Label_2"
+                },
+                "position": {
+                  "height": 32,
+                  "width": 17,
+                  "x": 393.765,
+                  "y": 365.8821039886475
+                },
+                "props": {
+                  "style": {
+                    "color": "#FF0000",
+                    "fontWeight": "bold"
+                  },
+                  "text": "l"
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "Label_17"
+                },
+                "position": {
+                  "height": 3,
+                  "width": 22,
+                  "x": 393.9,
+                  "y": 321.72
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "Label_18"
+                },
+                "position": {
+                  "height": 4,
+                  "width": 19,
+                  "x": 395.9,
+                  "y": 419.07
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "Label_19"
+                },
+                "position": {
+                  "height": 4,
+                  "width": 32,
+                  "x": 387.9,
+                  "y": 368.81
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "Label_21"
+                },
+                "position": {
+                  "height": 18,
+                  "width": 5,
+                  "x": 384.9,
+                  "y": 362.1
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "Label_22"
+                },
+                "position": {
+                  "height": 18,
+                  "width": 5,
+                  "x": 418.797,
+                  "y": 362.56841967773437
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "Label_23"
+                },
+                "position": {
+                  "height": 5,
+                  "width": 38,
+                  "x": 442.8,
+                  "y": 532.57
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "Label_12"
+                },
+                "position": {
+                  "height": 447,
+                  "width": 4,
+                  "x": 440.9,
+                  "y": 92.34
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "events": {
+                  "dom": {
+                    "onMouseEnter": {
+                      "config": {
+                        "script": "\t\t\t\tself.getSibling(\"Label_13\").props.style.classes \u003d \u0027highlighting_clipping_parameters\u0027"
+                      },
+                      "scope": "G",
+                      "type": "script"
+                    },
+                    "onMouseLeave": {
+                      "config": {
+                        "script": "\t\t\t\t\tself.getSibling(\"Label_13\").props.style.classes \u003d \u0027\u0027"
+                      },
+                      "scope": "G",
+                      "type": "script"
+                    }
+                  }
+                },
+                "meta": {
+                  "name": "Label_5"
+                },
+                "position": {
+                  "height": 18,
+                  "rotate": {
+                    "anchor": "25% 90%"
+                  },
+                  "width": 200,
+                  "x": 381.861,
+                  "y": 122.917
+                },
+                "props": {
+                  "style": {
+                    "backgroundColor": "#D5D5D5"
+                  },
+                  "text": "Maximum Split Length\n\n\n",
+                  "textStyle": {
+                    "color": "#000000",
+                    "fontWeight": "bold"
+                  }
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "events": {
+                  "dom": {
+                    "onMouseEnter": {
+                      "config": {
+                        "script": "\tself.getSibling(\"Label_14\").props.style.classes \u003d \u0027highlighting_clipping_parameters\u0027\n\tself.getSibling(\"Label_15\").props.style.classes \u003d \u0027highlighting_clipping_parameters\u0027"
+                      },
+                      "scope": "G",
+                      "type": "script"
+                    },
+                    "onMouseLeave": {
+                      "config": {
+                        "script": "\t\tself.getSibling(\"Label_14\").props.style.classes \u003d \u0027\u0027\n\t\tself.getSibling(\"Label_15\").props.style.classes \u003d \u0027\u0027"
+                      },
+                      "scope": "G",
+                      "type": "script"
+                    }
+                  }
+                },
+                "meta": {
+                  "name": "Label_4"
+                },
+                "position": {
+                  "height": 21,
+                  "rotate": {
+                    "anchor": "25% 90%"
+                  },
+                  "width": 173,
+                  "x": 349.848625,
+                  "y": 165.322
+                },
+                "props": {
+                  "style": {
+                    "backgroundColor": "#D5D5D5"
+                  },
+                  "text": "Maximum Split Size\n\n",
+                  "textStyle": {
+                    "color": "#000000",
+                    "fontWeight": "bold"
+                  }
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "Label_24"
+                },
+                "position": {
+                  "height": 444,
+                  "width": 6,
+                  "x": 284.9,
+                  "y": 91.7576
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "Label_25"
+                },
+                "position": {
+                  "height": 27,
+                  "rotate": {
+                    "anchor": "25% 90%"
+                  },
+                  "width": 204,
+                  "x": 3.9581249999999955,
+                  "y": 133.4955
+                },
+                "props": {
+                  "style": {
+                    "backgroundColor": "#D5D5D5"
+                  },
+                  "text": "Axis Hunt Compensation\n\n\n",
+                  "textStyle": {
+                    "color": "#000000",
+                    "fontWeight": "bold"
+                  }
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "events": {
+                  "dom": {
+                    "onMouseEnter": {
+                      "config": {
+                        "script": "\t\tself.getSibling(\"Label_28\").props.style.classes \u003d \u0027highlighting_clipping_parameters\u0027"
+                      },
+                      "scope": "G",
+                      "type": "script"
+                    },
+                    "onMouseLeave": {
+                      "config": {
+                        "script": "\tself.getSibling(\"Label_28\").props.style.classes \u003d \u0027\u0027"
+                      },
+                      "scope": "G",
+                      "type": "script"
+                    }
+                  }
+                },
+                "meta": {
+                  "name": "Label_26"
+                },
+                "position": {
+                  "height": 39,
+                  "rotate": {
+                    "anchor": "25% 90%"
+                  },
+                  "width": 137.00000000000006,
+                  "x": 479.96,
+                  "y": 555.66
+                },
+                "props": {
+                  "style": {
+                    "backgroundColor": "#D5D5D5"
+                  },
+                  "text": "Maximum Trash Cutting Width\n\n\n\n",
+                  "textStyle": {
+                    "color": "#000000",
+                    "fontWeight": "bold"
+                  }
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "events": {
+                  "dom": {
+                    "onClick": {
+                      "config": {
+                        "script": "\t\tself.getSibling(\"Label_28\").props.style.classes \u003d \u0027highlighting_clipping_parameters\u0027"
+                      },
+                      "scope": "G",
+                      "type": "script"
+                    },
+                    "onMouseLeave": {
+                      "config": {
+                        "script": "\t\t\t\t\t\tself.getSibling(\"Label_28\").props.style.classes \u003d \u0027\u0027"
+                      },
+                      "scope": "G",
+                      "type": "script"
+                    }
+                  }
+                },
+                "meta": {
+                  "name": "TextField_6"
+                },
+                "position": {
+                  "height": 25.999999999999986,
+                  "width": 55,
+                  "x": 479.733,
+                  "y": 595.974
+                },
+                "propConfig": {
+                  "props.text": {
+                    "binding": {
+                      "config": {
+                        "bidirectional": true,
+                        "fallbackDelay": 2.5,
+                        "mode": "indirect",
+                        "references": {},
+                        "tagPath": "[default]site_composer2/clipping_parameters/C_grade/HMI_C_MaximumTrashCuttingWidth_mm"
+                      },
+                      "type": "tag"
+                    }
+                  }
+                },
+                "type": "ia.input.text-field"
+              },
+              {
+                "meta": {
+                  "name": "Label_27"
+                },
+                "position": {
+                  "height": 39,
+                  "rotate": {
+                    "anchor": "25% 90%"
+                  },
+                  "width": 204,
+                  "x": 5.01,
+                  "y": 269.47
+                },
+                "props": {
+                  "style": {
+                    "backgroundColor": "#D5D5D5"
+                  },
+                  "text": "Veneer Detection Threshold (%)\n\n\n",
+                  "textStyle": {
+                    "color": "#000000",
+                    "fontWeight": "bold"
+                  }
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "TextField_7"
+                },
+                "position": {
+                  "height": 25.999999999999986,
+                  "width": 55,
+                  "x": 154.782,
+                  "y": 310.782
+                },
+                "propConfig": {
+                  "props.text": {
+                    "binding": {
+                      "config": {
+                        "bidirectional": true,
+                        "fallbackDelay": 2.5,
+                        "mode": "indirect",
+                        "references": {},
+                        "tagPath": "[default]site_composer2/clipping_parameters/C_grade/HMI_C_VeneerDetectionThreshold_Percent"
+                      },
+                      "type": "tag"
+                    }
+                  }
+                },
+                "type": "ia.input.text-field"
+              },
+              {
+                "meta": {
+                  "name": "Label_28"
+                },
+                "position": {
+                  "height": 5,
+                  "width": 52,
+                  "x": 389.21,
+                  "y": 533.41
+                },
+                "type": "ia.display.label"
+              }
+            ],
+            "meta": {
+              "name": "CoordinateContainer_1"
+            },
+            "position": {
+              "height": 694,
+              "width": 738,
+              "x": 305.01,
+              "y": 27.9905
+            },
+            "propConfig": {
+              "props.style.backgroundColor": {
+                "binding": {
+                  "config": {
+                    "fallbackDelay": 2.5,
+                    "mode": "direct",
+                    "tagPath": "[default]site_composer2/clipping_parameters/C_grade/I_C_GradeProduct"
+                  },
+                  "transforms": [
+                    {
+                      "fallback": "#00A2E8",
+                      "inputType": "scalar",
+                      "mappings": [
+                        {
+                          "input": false,
+                          "output": "#000000"
+                        }
+                      ],
+                      "outputType": "color",
+                      "type": "map"
+                    }
+                  ],
+                  "type": "tag"
+                }
+              }
+            },
+            "type": "ia.container.coord"
+          }
+        ],
+        "meta": {
+          "name": "CoordinateContainer"
+        },
+        "position": {
+          "basis": "1088px"
+        },
+        "props": {
+          "style": {
+            "backgroundColor": "#000000"
+          }
+        },
+        "type": "ia.container.coord"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "props": {
+      "direction": "column"
+    },
+    "type": "ia.container.flex"
+  }
+}
