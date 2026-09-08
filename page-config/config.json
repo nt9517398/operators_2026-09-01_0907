@@ -1,0 +1,199 @@
+{
+  "pages": {
+    "/composer2_alarms": {
+      "docks": {
+        "top": [
+          {
+            "anchor": "fixed",
+            "autoBreakpoint": 480,
+            "content": "push",
+            "handle": "hide",
+            "iconUrl": "",
+            "id": "",
+            "modal": false,
+            "resizable": false,
+            "show": "visible",
+            "size": 50,
+            "viewParams": {},
+            "viewPath": "Navigation/composer2_topmenu"
+          }
+        ]
+      },
+      "title": "",
+      "viewPath": "Primary View/composer2_alarms"
+    },
+    "/composer2_clippingparameters": {
+      "docks": {
+        "top": [
+          {
+            "anchor": "fixed",
+            "autoBreakpoint": 480,
+            "content": "push",
+            "handle": "hide",
+            "iconUrl": "",
+            "id": "",
+            "modal": false,
+            "resizable": false,
+            "show": "visible",
+            "size": 50,
+            "viewParams": {},
+            "viewPath": "Navigation/composer2_topmenu"
+          }
+        ]
+      },
+      "title": "",
+      "viewPath": "Primary View/composer2_clippingparameters"
+    },
+    "/composer2_dashboard": {
+      "docks": {
+        "top": [
+          {
+            "anchor": "fixed",
+            "autoBreakpoint": 480,
+            "content": "push",
+            "handle": "hide",
+            "iconUrl": "",
+            "id": "",
+            "modal": false,
+            "resizable": false,
+            "show": "visible",
+            "size": 50,
+            "viewParams": {},
+            "viewPath": "Navigation/composer2_topmenu"
+          }
+        ]
+      },
+      "title": "",
+      "viewPath": "Primary View/composer2_dashboard"
+    },
+    "/composer2_diagnostic": {
+      "docks": {
+        "top": [
+          {
+            "anchor": "fixed",
+            "autoBreakpoint": 480,
+            "content": "push",
+            "handle": "hide",
+            "iconUrl": "",
+            "id": "",
+            "modal": false,
+            "resizable": false,
+            "show": "visible",
+            "size": 50,
+            "viewParams": {},
+            "viewPath": "Navigation/composer2_topmenu"
+          }
+        ]
+      },
+      "title": "",
+      "viewPath": "Primary View/composer2_diagnostic"
+    },
+    "/composer2_downtime": {
+      "title": "",
+      "viewPath": "Primary/Downtime_Composer2"
+    },
+    "/composer2_settings": {
+      "docks": {
+        "top": [
+          {
+            "anchor": "fixed",
+            "autoBreakpoint": 480,
+            "content": "push",
+            "handle": "hide",
+            "iconUrl": "",
+            "id": "",
+            "modal": false,
+            "resizable": false,
+            "show": "visible",
+            "size": 50,
+            "viewParams": {},
+            "viewPath": "Navigation/composer2_topmenu"
+          }
+        ]
+      },
+      "title": "",
+      "viewPath": "Primary View/composer2_settings"
+    },
+    "/concentrator_dashboard": {
+      "title": "",
+      "viewPath": "Primary View_Scada_Hmi/concentrator_dashboard"
+    },
+    "/debarker_dashboard": {
+      "docks": {
+        "top": [
+          {
+            "anchor": "fixed",
+            "autoBreakpoint": 480,
+            "content": "push",
+            "handle": "hide",
+            "iconUrl": "",
+            "id": "",
+            "modal": false,
+            "resizable": false,
+            "show": "visible",
+            "size": 50,
+            "viewParams": {},
+            "viewPath": "Navigation/TOP VIEW"
+          }
+        ]
+      },
+      "title": "",
+      "viewPath": "Primary View/debarker_dashboard"
+    },
+    "/debarker_downtime": {
+      "title": "",
+      "viewPath": "Primary/Downtime"
+    },
+    "/formply_press_dashboard": {
+      "title": "",
+      "viewPath": "Primary View/formply_press_dashboard"
+    },
+    "/formply_press_downtime": {
+      "title": "",
+      "viewPath": "Primary/Downtime_Formply_Press"
+    },
+    "/formply_trimline_dashboard": {
+      "title": "",
+      "viewPath": "Primary View/formply_trimline_dashboard"
+    },
+    "/formply_trimline_downtime": {
+      "title": "",
+      "viewPath": "Primary/Downtime_Formply_Trimline"
+    },
+    "/formply_trimline_hmi": {
+      "title": "",
+      "viewPath": "Primary View_Scada_Hmi/formply_trimline_hmi"
+    },
+    "/site_layup": {
+      "title": "",
+      "viewPath": "Primary View/site_layup"
+    },
+    "/site_press": {
+      "title": "",
+      "viewPath": "Primary View/site_press"
+    },
+    "/site_sander": {
+      "title": "",
+      "viewPath": "Primary View/site_sander"
+    }
+  },
+  "sharedDocks": {
+    "cornerPriority": "top-bottom",
+    "top": [
+      {
+        "anchor": "fixed",
+        "autoBreakpoint": 480,
+        "content": "push",
+        "handle": "hide",
+        "iconUrl": "",
+        "id": "",
+        "modal": false,
+        "resizable": false,
+        "show": "visible",
+        "size": 58,
+        "viewParams": {},
+        "viewPath": "Header/Header"
+      }
+    ]
+  }
+}

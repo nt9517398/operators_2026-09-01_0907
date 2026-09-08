@@ -1,2 +1,2 @@
-def onStartup():
+def onStartup(session):
 	

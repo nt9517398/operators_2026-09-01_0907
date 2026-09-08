@@ -1,0 +1,16 @@
+{
+  "base": {
+    "animation": {
+      "duration": "3s",
+      "fillMode": "backwards",
+      "keyframes": {
+        "0%": {
+          "backgroundColor": "#00FFFF"
+        },
+        "100%": {
+          "backgroundColor": "#00ACAC"
+        }
+      }
+    }
+  }
+}

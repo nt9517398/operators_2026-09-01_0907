@@ -4,14 +4,13 @@
   "restricted": false,
   "overridable": true,
   "files": [
-    "onStartup.py"
+    "props.json"
   ],
   "attributes": {
-    "lastModificationSignature": "93a9e35e285d33537234ab55e99fa8052d52e7de0cad28302534b2181567b3d9",
     "lastModification": {
       "actor": "Administrator",
-      "timestamp": "2025-11-12T02:30:32Z"
+      "timestamp": "2026-08-31T23:06:43Z"
     },
-    "enabled": true
+    "lastModificationSignature": "3e16a09c2e4357eb6d21fb5c87c2e8541c9f294ad08e10a6237cd7603a0274f8"
   }
 }

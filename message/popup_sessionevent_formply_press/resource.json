@@ -4,14 +4,15 @@
   "restricted": false,
   "overridable": true,
   "files": [
-    "onStartup.py"
+    "handleMessage.py"
   ],
   "attributes": {
-    "lastModificationSignature": "93a9e35e285d33537234ab55e99fa8052d52e7de0cad28302534b2181567b3d9",
+    "lastModificationSignature": "4d3d6310760d162faea8893fdceda5218aa3d60f337fe22d1250f17bef60e230",
     "lastModification": {
       "actor": "Administrator",
-      "timestamp": "2025-11-12T02:30:32Z"
+      "timestamp": "2025-11-11T23:14:22Z"
     },
+    "threadType": "Shared",
     "enabled": true
   }
 }

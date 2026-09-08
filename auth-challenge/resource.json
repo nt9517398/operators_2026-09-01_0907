@@ -4,13 +4,13 @@
   "restricted": false,
   "overridable": true,
   "files": [
-    "onStartup.py"
+    "onAuthChallengeCompleted.py"
   ],
   "attributes": {
-    "lastModificationSignature": "93a9e35e285d33537234ab55e99fa8052d52e7de0cad28302534b2181567b3d9",
+    "lastModificationSignature": "a6389a132f2b365e04fcfcfdfdbabe96a51e042f10828865de23e50f55281310",
     "lastModification": {
       "actor": "Administrator",
-      "timestamp": "2025-11-12T02:30:32Z"
+      "timestamp": "2025-11-11T07:56:02Z"
     },
     "enabled": true
   }

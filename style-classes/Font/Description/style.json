@@ -1,0 +1,9 @@
+{
+  "base": {
+    "style": {
+      "color": "#C51A45",
+      "fontWeight": "bold",
+      "textAlign": "center"
+    }
+  }
+}

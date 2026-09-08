@@ -1,0 +1,18 @@
+{
+  "scope": "A",
+  "version": 1,
+  "restricted": false,
+  "overridable": true,
+  "files": [
+    "handleMessage.py"
+  ],
+  "attributes": {
+    "lastModificationSignature": "f6b334b6811a410f56bd1ac5eb634ac44d09c60a802db99c86676c8402dff03a",
+    "lastModification": {
+      "actor": "Administrator",
+      "timestamp": "2025-11-10T23:49:21Z"
+    },
+    "threadType": "Shared",
+    "enabled": true
+  }
+}
