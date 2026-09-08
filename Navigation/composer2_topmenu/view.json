@@ -1,0 +1,309 @@
+{
+  "custom": {},
+  "params": {},
+  "props": {
+    "defaultSize": {
+      "height": 30,
+      "width": 2050
+    }
+  },
+  "root": {
+    "children": [
+      {
+        "meta": {
+          "name": "HorizontalMenu_0"
+        },
+        "position": {
+          "basis": "317px",
+          "grow": 1
+        },
+        "propConfig": {
+          "props.items[1].style.classes": {
+            "binding": {
+              "config": {
+                "fallbackDelay": 2.5,
+                "mode": "direct",
+                "tagPath": "[default]site_composer2/Alarms/HMI_AlarmActive"
+              },
+              "transforms": [
+                {
+                  "fallback": "",
+                  "inputType": "scalar",
+                  "mappings": [
+                    {
+                      "input": true,
+                      "output": "Alarm_1"
+                    }
+                  ],
+                  "outputType": "style-list",
+                  "type": "map"
+                }
+              ],
+              "type": "tag"
+            }
+          }
+        },
+        "props": {
+          "items": [
+            {
+              "enabled": true,
+              "icon": {
+                "path": ""
+              },
+              "items": [],
+              "label": "MAIN",
+              "style": {
+                "classes": ""
+              },
+              "target": "/composer2_dashboard"
+            },
+            {
+              "enabled": "true",
+              "icon": {
+                "path": ""
+              },
+              "items": [],
+              "label": "ALARMS",
+              "style": {},
+              "target": "/composer2_alarms"
+            },
+            {
+              "enabled": true,
+              "icon": {
+                "path": ""
+              },
+              "items": [],
+              "label": "DIAGNOSTIC",
+              "style": {
+                "classes": ""
+              },
+              "target": "/composer2_diagnostic"
+            },
+            {
+              "enabled": false,
+              "icon": {
+                "path": ""
+              },
+              "items": [],
+              "label": "CLIPPING PARAMETERS",
+              "style": {
+                "classes": ""
+              },
+              "target": "/composer2_clippingparameters"
+            },
+            {
+              "enabled": false,
+              "icon": {
+                "path": ""
+              },
+              "items": [],
+              "label": "SETTINGS",
+              "style": {
+                "classes": ""
+              },
+              "target": "/composer2_settings"
+            }
+          ]
+        },
+        "type": "ia.navigation.horizontalmenu"
+      },
+      {
+        "meta": {
+          "name": "FlexContainer_0"
+        },
+        "position": {
+          "basis": "661px",
+          "display": false
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "meta": {
+          "name": "Label",
+          "visible": false
+        },
+        "position": {
+          "basis": "127px",
+          "display": false
+        },
+        "props": {
+          "text": "0"
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "events": {
+          "dom": {
+            "onClick": {
+              "config": {
+                "script": "\t\timport time\n\t\ttagValue \u003d system.tag.read(\u0027[default]site_composer2/Alarms/HMI_Alarm_Reset\u0027).value\n\t\n\t\tif tagValue \u003d\u003d 0:\n\t\t\tnewValue \u003d 1\n\t    \tsystem.tag.write(\u0027[default]site_composer2/Alarms/HMI_Alarm_Reset\u0027,newValue)\n\t    \ttime.sleep(1) \n\t    \tsystem.tag.write(\u0027[default]site_composer2/Alarms/HMI_Alarm_Reset\u0027,0)\n"
+              },
+              "scope": "G",
+              "type": "script"
+            }
+          }
+        },
+        "meta": {
+          "name": "Button_0"
+        },
+        "position": {
+          "basis": "134px"
+        },
+        "propConfig": {
+          "props.style.classes": {
+            "binding": {
+              "config": {
+                "fallbackDelay": 2.5,
+                "mode": "direct",
+                "tagPath": "[default]site_composer2/Alarms/HMI_AlarmActive"
+              },
+              "transforms": [
+                {
+                  "fallback": "Alarm_1",
+                  "inputType": "scalar",
+                  "mappings": [
+                    {
+                      "input": false,
+                      "output": ""
+                    }
+                  ],
+                  "outputType": "style-list",
+                  "type": "map"
+                }
+              ],
+              "type": "tag"
+            }
+          }
+        },
+        "props": {
+          "style": {
+            "backgroundColor": "#AAAAAA"
+          },
+          "text": "ALARM RESET"
+        },
+        "type": "ia.input.button"
+      },
+      {
+        "meta": {
+          "name": "FlexContainer"
+        },
+        "position": {
+          "basis": "13px"
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "events": {
+          "dom": {
+            "onKeyPress": {
+              "config": {
+                "script": "\n\timport system\n\t\n\tmenu \u003d self.getSibling(\"HorizontalMenu_0\")\n\titems \u003d system.util.jsonDecode(system.util.jsonEncode(menu.props.items))  # deep copy list\n\t\n\tisComposer2 \u003d self.props.text \u003d\u003d \"composer2\"\n\t\n\t# Toggle only items 3 and 4\n\tfor i in [3, 4]:\n\t\tif i \u003c len(items):\n\t\t\titems[i][\"enabled\"] \u003d True if isComposer2 else False\n\t\n\t# Assign back (force UI update)\n\tmenu.props.items \u003d items\n\t\n\t# Update label\n\tlabel \u003d self.getSibling(\"Label\")\n\tif isComposer2:\n\t\tlabel.props.text \u003d system.date.format(system.date.now(), \"yyyy-MM-dd HH:mm:ss\")\n\telse:\n\t\tlabel.props.text \u003d \"0\""
+              },
+              "scope": "G",
+              "type": "script"
+            }
+          }
+        },
+        "meta": {
+          "name": "PasswordField"
+        },
+        "position": {
+          "basis": "214px"
+        },
+        "props": {
+          "placeholder": " Enter Password"
+        },
+        "type": "ia.input.password-field"
+      },
+      {
+        "events": {
+          "dom": {
+            "onClick": {
+              "config": {
+                "script": "\t\n\tsystem.util.sendMessage(project\u003d\"operators\",messageHandler\u003d\"logout_button_composer2\",scope\u003d\"S\")\n\tself.getSibling(\"Label\").props.text \u003d \u00270\u0027"
+              },
+              "scope": "G",
+              "type": "script"
+            }
+          }
+        },
+        "meta": {
+          "name": "Button"
+        },
+        "position": {
+          "basis": "101px"
+        },
+        "props": {
+          "style": {
+            "justify": "flex-end"
+          },
+          "text": "LOG OUT"
+        },
+        "scripts": {
+          "customMethods": [],
+          "extensionFunctions": null,
+          "messageHandlers": [
+            {
+              "messageType": "logout_button",
+              "pageScope": true,
+              "script": "\n\timport system\n\t\n\t# Clear password field\n\tself.getSibling(\"PasswordField\").props.text \u003d \u0027\u0027\n\t\n\t# Get the HorizontalMenu_0 component\n\tmenu \u003d self.getSibling(\"HorizontalMenu_0\")\n\t\n\t# Deep copy of the items list so Perspective detects a change\n\titems \u003d system.util.jsonDecode(system.util.jsonEncode(menu.props.items))\n\t\n\t# Disable only menu items 3 and 4\n\tfor i in [3, 4]:\n\t\tif i \u003c len(items):\n\t\t\titems[i][\"enabled\"] \u003d False\n\t\n\t# Write modified list back to menu\n\tmenu.props.items \u003d items\n\t\n\t# Optional: navigate back to dashboard\n\tsystem.perspective.navigate(\"/composer2_dashboard\")",
+              "sessionScope": true,
+              "viewScope": true
+            }
+          ]
+        },
+        "type": "ia.input.button"
+      },
+      {
+        "meta": {
+          "name": "Label_0",
+          "visible": false
+        },
+        "position": {
+          "basis": "26px"
+        },
+        "propConfig": {
+          "props.text": {
+            "binding": {
+              "config": {
+                "expression": "datediff({../Label.props.text},now(1000),\"minute\")"
+              },
+              "transforms": [
+                {
+                  "fallback": 0,
+                  "inputType": "range",
+                  "mappings": [
+                    {
+                      "input": {
+                        "max": 5.1,
+                        "min": 5
+                      },
+                      "output": 1
+                    }
+                  ],
+                  "outputType": "scalar",
+                  "type": "map"
+                },
+                {
+                  "code": "\tif value \u003d\u003d 1:\n\t\tsystem.util.sendMessage(project\u003d\"operators\",messageHandler\u003d\"logout_button_composer2\",scope\u003d\"S\")\n\treturn value",
+                  "type": "script"
+                }
+              ],
+              "type": "expr"
+            }
+          }
+        },
+        "type": "ia.display.label"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "props": {
+      "style": {
+        "backgroundImage": ""
+      }
+    },
+    "type": "ia.container.flex"
+  }
+}

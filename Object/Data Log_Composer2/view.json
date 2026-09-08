@@ -1,0 +1,447 @@
+{
+  "custom": {},
+  "params": {},
+  "props": {
+    "defaultSize": {
+      "height": 386,
+      "width": 900
+    }
+  },
+  "root": {
+    "children": [
+      {
+        "children": [
+          {
+            "meta": {
+              "name": "Label"
+            },
+            "position": {
+              "basis": "800px",
+              "grow": 1
+            },
+            "props": {
+              "text": "PRODUCTION LINE: COMPOSER 2",
+              "textStyle": {
+                "classes": "Font/Description",
+                "fontSize": 32
+              }
+            },
+            "type": "ia.display.label"
+          }
+        ],
+        "meta": {
+          "name": "TITLE"
+        },
+        "position": {
+          "basis": "48px"
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "children": [
+          {
+            "meta": {
+              "name": "Label"
+            },
+            "position": {
+              "basis": "127px",
+              "grow": 1
+            },
+            "props": {
+              "style": {
+                "textAlign": "center"
+              },
+              "text": "SUB AREA :",
+              "textStyle": {
+                "fontSize": 30
+              }
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "custom": {
+              "displayvalue": ""
+            },
+            "meta": {
+              "name": "sub_area"
+            },
+            "position": {
+              "basis": "462px",
+              "grow": 1
+            },
+            "props": {
+              "dropdownOptionStyle": {
+                "fontSize": 25
+              },
+              "maxMenuHeight": 500,
+              "options": [
+                {
+                  "label": "CS1-CROWDER SECTION 1",
+                  "value": "CS1-CROWDER SECTION 1"
+                },
+                {
+                  "label": "CS2-CROWDER SECTION 2",
+                  "value": "CS2-CROWDER SECTION 2"
+                },
+                {
+                  "label": "CLIP-CLIPPER",
+                  "value": "CLIP-CLIPPER"
+                },
+                {
+                  "label": "SAW",
+                  "value": "SAW-SAW"
+                },
+                {
+                  "label": "ST-STACKER",
+                  "value": "ST-STACKER"
+                },
+                {
+                  "label": "INF-INFEED",
+                  "value": "INF-INFEED"
+                },
+                {
+                  "label": "OUT-OUTFEED",
+                  "value": "OUT-OUTFEED"
+                },
+                {
+                  "label": "COM1-COMPOSER 1",
+                  "value": "COM1-COMPOSER 1"
+                },
+                {
+                  "label": "COM2-COMPOSER2",
+                  "value": "COM2-COMPOSER2"
+                },
+                {
+                  "label": "TB1-TRANSFER BELT 1",
+                  "value": "TB1-TRANSFER BELT 1"
+                },
+                {
+                  "label": "TB2-TRANSFER BELT 2",
+                  "value": "TB2-TRANSFER BELT 2"
+                }
+              ],
+              "style": {
+                "classes": "dropdown",
+                "fontSize": 25
+              }
+            },
+            "type": "ia.input.dropdown"
+          }
+        ],
+        "meta": {
+          "name": "FlexContainer"
+        },
+        "position": {
+          "basis": "44px"
+        },
+        "props": {
+          "style": {
+            "marginBottom": 10,
+            "marginLeft": 10,
+            "marginRight": 10,
+            "marginTop": 10
+          }
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "children": [
+          {
+            "meta": {
+              "name": "Label"
+            },
+            "position": {
+              "basis": "127px",
+              "grow": 1
+            },
+            "props": {
+              "style": {
+                "fontSize": 30,
+                "textAlign": "center"
+              },
+              "text": "FAULT :"
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "meta": {
+              "name": "fault"
+            },
+            "position": {
+              "basis": 462,
+              "grow": 1
+            },
+            "props": {
+              "dropdownOptionStyle": {
+                "fontSize": 25
+              },
+              "maxMenuHeight": 500,
+              "options": [
+                {
+                  "label": "ST-START UP CHECKS",
+                  "value": "ST-START UP CHECKS"
+                },
+                {
+                  "label": "P-PLANNED DOWNTIME",
+                  "value": "P-PLANNED DOWNTIME"
+                },
+                {
+                  "label": "PC-PACK CHANGES",
+                  "value": "PC-PACK CHANGES"
+                },
+                {
+                  "label": "RTR-REPLACE STRING ROLL",
+                  "value": "RTR-REPLACE STRING ROLL"
+                },
+                {
+                  "label": "RS1-RE-STRING TOP",
+                  "value": "RS1-RE-STRING TOP"
+                },
+                {
+                  "label": "RS2-RE-STRING BOTTOM",
+                  "value": "RS2-RE-STRING BOTTOM"
+                },
+                {
+                  "label": "RS-REMOVE SHEET",
+                  "value": "RS-REMOVE SHEET"
+                },
+                {
+                  "label": "OTH-OTHER",
+                  "value": "OTH-OTHER"
+                },
+                {
+                  "label": "SM-SMOKO",
+                  "value": "SM-SMOKO"
+                },
+                {
+                  "label": "EW-EXCESSIVE WANE",
+                  "value": "EW-EXCESSIVE WANE"
+                },
+                {
+                  "label": "F-FOUL UP",
+                  "value": "F-FOUL UP"
+                },
+                {
+                  "label": "PRC-PRODUCT CHANGE",
+                  "value": "PRC-PRODUCT CHANGE"
+                },
+                {
+                  "label": "SHT-SHORT STOPS",
+                  "value": "SHT-SHORT STOPS"
+                },
+                {
+                  "label": "CR-CRASH",
+                  "value": "CR-CRASH"
+                },
+                {
+                  "label": "MT-MEETINGS",
+                  "value": "MT-MEETINGS"
+                },
+                {
+                  "label": "CL-CLEANING",
+                  "value": "CL-CLEANING"
+                },
+                {
+                  "label": "NP-NO PRODUCT",
+                  "value": "NP-NO PRODUCT"
+                },
+                {
+                  "label": "SAW-SAWS/KNIVES",
+                  "value": "SAW-SAWS/KNIVES"
+                },
+                {
+                  "label": "S-PRODUCT/SIZE/SORT CHANGES",
+                  "value": "S-PRODUCT/SIZE/SORT CHANGES"
+                },
+                {
+                  "label": "CHI-CHIPPER",
+                  "value": "CHI-CHIPPER"
+                },
+                {
+                  "label": "QC-QC/TESTING",
+                  "value": "QC-QC/TESTING"
+                },
+                {
+                  "label": "FD-FORKLIFT DELAY",
+                  "value": "FD-FORKLIFT DELAY"
+                },
+                {
+                  "label": "PLC-PLC/PC/NETWORKS",
+                  "value": "PLC-PLC/PC/NETWORKS"
+                },
+                {
+                  "label": "ALR-ALARMS(FIRE,ETC)",
+                  "value": "ALR-ALARMS(FIRE,ETC)"
+                },
+                {
+                  "label": "EXT-EXTERNAL(EG. POWER CUT, GAS)",
+                  "value": "EXT-EXTERNAL(EG. POWER CUT, GAS)"
+                },
+                {
+                  "label": "EM-ELECTRICAL MOTOR",
+                  "value": "EM-ELECTRICAL MOTOR"
+                },
+                {
+                  "label": "AIR-PNEUMATIC FAILURE",
+                  "value": "AIR-PNEUMATIC FAILURE"
+                },
+                {
+                  "label": "HYD-HYDRAULIC FAILURE",
+                  "value": "HYD-HYDRAULIC FAILURE"
+                },
+                {
+                  "label": "EF-ELECTRICAL FAILURE",
+                  "value": "EF-ELECTRICAL FAILURE"
+                },
+                {
+                  "label": "OL-OVERLOAD",
+                  "value": "OL-OVERLOAD"
+                },
+                {
+                  "label": "M-MECHANICAL FAILURE",
+                  "value": "M-MECHANICAL FAILURE"
+                },
+                {
+                  "label": "DRV-MECH DRIVE/GBOX/CHAIN/BELT",
+                  "value": "DRV-MECH DRIVE/GBOX/CHAIN/BELT"
+                },
+                {
+                  "label": "ES-ELECTRICAL PHOTO EYE/SENSOR/LIMIT SW",
+                  "value": "ES-ELECTRICAL PHOTO EYE/SENSOR/LIMIT SW"
+                }
+              ],
+              "style": {
+                "classes": "dropdown",
+                "fontSize": 25
+              }
+            },
+            "type": "ia.input.dropdown"
+          }
+        ],
+        "meta": {
+          "name": "FlexContainer_1"
+        },
+        "position": {
+          "basis": "44px"
+        },
+        "props": {
+          "style": {
+            "marginBottom": 10,
+            "marginLeft": 10,
+            "marginRight": 10,
+            "marginTop": 10
+          }
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "children": [
+          {
+            "meta": {
+              "name": "comments"
+            },
+            "position": {
+              "basis": "127px",
+              "grow": 1
+            },
+            "props": {
+              "style": {
+                "fontSize": 30,
+                "textAlign": "center"
+              },
+              "text": "COMMENTS :"
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "meta": {
+              "name": "TextArea"
+            },
+            "position": {
+              "basis": "462px",
+              "grow": 1
+            },
+            "type": "ia.input.text-area"
+          }
+        ],
+        "meta": {
+          "name": "FlexContainer_2"
+        },
+        "position": {
+          "basis": "44px"
+        },
+        "props": {
+          "style": {
+            "marginBottom": 10,
+            "marginLeft": 10,
+            "marginRight": 10,
+            "marginTop": 10
+          }
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "children": [
+          {
+            "children": [
+              {
+                "events": {
+                  "dom": {
+                    "onClick": {
+                      "config": {
+                        "script": "\t\n\tsub_area \u003d self.parent.parent.parent.getChild(\"FlexContainer\").getChild(\"sub_area\").props.value\n\t\n\tfault \u003d self.parent.parent.parent.getChild(\"FlexContainer_1\").getChild(\"fault\").props.value\n\tcomments \u003d self.parent.parent.parent.getChild(\"FlexContainer_2\").getChild(\"TextArea\").props.text\t\n\t\t\t\t\t\t\n\tquery \u003d (\u0027UPDATE downtime_composer2 \u0027 \n\t\t\t\t+ \u0027SET sub_area\u003d?,fault\u003d?,comments\u003d? \u0027\n\t\t\t\t+ \u0027WHERE start_time \u003d (select max(start_time) from downtime_composer2) \u0027 )\n\targs \u003d [sub_area,fault,comments]\n\tsystem.db.runPrepUpdate(query, args,\"downtime_data\")\n\tself.parent.parent.parent.getChild(\"FlexContainer\").getChild(\"sub_area\").props.value\u003d None\n\tself.parent.parent.parent.getChild(\"FlexContainer_1\").getChild(\"fault\").props.value \u003d None\n\tself.parent.parent.parent.getChild(\"FlexContainer_2\").getChild(\"TextArea\").props.text \u003d\u0027\u0027\n\tsystem.perspective.closePopup(\u0027IIiH2Lo6\u0027)"
+                      },
+                      "scope": "G",
+                      "type": "script"
+                    }
+                  }
+                },
+                "meta": {
+                  "name": "Button"
+                },
+                "position": {
+                  "height": 116,
+                  "width": 340.00000000000006,
+                  "x": 270.95,
+                  "y": 21
+                },
+                "props": {
+                  "style": {
+                    "backgroundColor": "#C51A45",
+                    "fontSize": 40
+                  },
+                  "text": "ENTER",
+                  "textStyle": {
+                    "color": "#FFFFFF"
+                  }
+                },
+                "type": "ia.input.button"
+              }
+            ],
+            "meta": {
+              "name": "CoordinateContainer"
+            },
+            "position": {
+              "basis": "900px"
+            },
+            "type": "ia.container.coord"
+          }
+        ],
+        "meta": {
+          "name": "button"
+        },
+        "position": {
+          "basis": "158px"
+        },
+        "type": "ia.container.flex"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "props": {
+      "direction": "column"
+    },
+    "type": "ia.container.flex"
+  }
+}

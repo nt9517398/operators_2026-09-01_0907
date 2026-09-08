@@ -1,0 +1,3645 @@
+{
+  "custom": {},
+  "params": {},
+  "props": {
+    "defaultSize": {
+      "height": 606,
+      "width": 900
+    }
+  },
+  "root": {
+    "children": [
+      {
+        "children": [
+          {
+            "meta": {
+              "name": "Label"
+            },
+            "position": {
+              "basis": "800px"
+            },
+            "props": {
+              "style": {
+                "fontSize": 20,
+                "textAlign": "center"
+              },
+              "text": "PRODUCTION LINE: DEBARKER"
+            },
+            "type": "ia.display.label"
+          }
+        ],
+        "meta": {
+          "name": "TITLE"
+        },
+        "position": {
+          "basis": "48px"
+        },
+        "props": {
+          "style": {
+            "backgroundColor": "#004B3A"
+          }
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "children": [
+          {
+            "meta": {
+              "name": "Label"
+            },
+            "position": {
+              "basis": "200px",
+              "grow": 1
+            },
+            "props": {
+              "style": {
+                "textAlign": "center"
+              },
+              "text": "AREA :",
+              "textStyle": {
+                "fontSize": 40
+              }
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "custom": {
+              "displayvalue": ""
+            },
+            "meta": {
+              "name": "Dropdown"
+            },
+            "position": {
+              "basis": "420px",
+              "grow": 1
+            },
+            "props": {
+              "dropdownOptionStyle": {
+                "fontSize": 40
+              },
+              "options": [
+                {
+                  "label": "DEBARKER",
+                  "value": "DEBARKER"
+                },
+                {
+                  "label": "INFEED",
+                  "value": "INFEED"
+                },
+                {
+                  "label": "OUTFEED",
+                  "value": "OUTFEED"
+                },
+                {
+                  "label": "LOG SORTING",
+                  "value": "LOG SORTING"
+                },
+                {
+                  "label": "WASTE HANDLING",
+                  "value": "WASTE HANDLING"
+                },
+                {
+                  "label": "LOG SCANNING",
+                  "value": "LOG SCANNING"
+                }
+              ],
+              "showClearIcon": true,
+              "style": {
+                "fontSize": 40
+              },
+              "value": null
+            },
+            "type": "ia.input.dropdown"
+          },
+          {
+            "meta": {
+              "name": "FlexContainer"
+            },
+            "position": {
+              "basis": "37px"
+            },
+            "type": "ia.container.flex"
+          }
+        ],
+        "meta": {
+          "name": "FlexContainer"
+        },
+        "position": {
+          "basis": "56px"
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "meta": {
+          "name": "FlexContainer_3"
+        },
+        "position": {
+          "basis": "15px"
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "children": [
+          {
+            "meta": {
+              "name": "Label"
+            },
+            "position": {
+              "basis": "200px",
+              "grow": 1
+            },
+            "props": {
+              "style": {
+                "fontSize": 40,
+                "textAlign": "center"
+              },
+              "text": "SUB AREA :"
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "children": [
+              {
+                "meta": {
+                  "name": "infeed_subarea"
+                },
+                "position": {
+                  "height": 57,
+                  "width": 538,
+                  "x": 3.75,
+                  "y": 1
+                },
+                "propConfig": {
+                  "meta.visible": {
+                    "binding": {
+                      "config": {
+                        "expression": "{..../FlexContainer/Dropdown.props.value} \u003d \u0027INFEED\u0027"
+                      },
+                      "type": "expr"
+                    }
+                  }
+                },
+                "props": {
+                  "dropdownOptionStyle": {
+                    "fontSize": 40
+                  },
+                  "options": [
+                    {
+                      "label": "LOG LOADING DECK",
+                      "value": "LOG LOADING DECK"
+                    },
+                    {
+                      "label": "LOADING DECK CHAIN\n",
+                      "value": "LOADING DECK CHAIN"
+                    },
+                    {
+                      "label": "LOAD UNSCRAMBLER",
+                      "value": "LOAD UNSCRAMBLER"
+                    },
+                    {
+                      "label": "LOG DOSING UNIT",
+                      "value": "LOG DOSING UNIT"
+                    },
+                    {
+                      "label": "DEBARKER INFEED CHAIN",
+                      "value": "DEBARKER INFEED CHAIN"
+                    },
+                    {
+                      "label": "LOG SCANNER",
+                      "value": "LOG SCANNER"
+                    },
+                    {
+                      "label": "WATER SPRAYING",
+                      "value": "WATER SPRAYING"
+                    }
+                  ],
+                  "style": {
+                    "fontSize": 40
+                  },
+                  "value": null
+                },
+                "type": "ia.input.dropdown"
+              },
+              {
+                "meta": {
+                  "name": "debarker_subarea"
+                },
+                "position": {
+                  "height": 57,
+                  "width": 538,
+                  "x": 3.75,
+                  "y": 1
+                },
+                "propConfig": {
+                  "meta.visible": {
+                    "binding": {
+                      "config": {
+                        "expression": "{..../FlexContainer/Dropdown.props.value} \u003d \u0027DEBARKER\u0027"
+                      },
+                      "type": "expr"
+                    }
+                  }
+                },
+                "props": {
+                  "dropdownOptionStyle": {
+                    "fontSize": 40
+                  },
+                  "options": [
+                    {
+                      "label": "INFEED CHAIN",
+                      "value": "INFEED CHAIN"
+                    },
+                    {
+                      "label": "INFEED ROLLER\n\n",
+                      "value": "INFEED ROLLER"
+                    },
+                    {
+                      "label": "ROTOR",
+                      "value": "ROTOR"
+                    },
+                    {
+                      "label": "OUTFEED ROLLERS\n",
+                      "value": "OUTFEED ROLLERS"
+                    },
+                    {
+                      "label": "HYDRAULICS",
+                      "value": "HYDRAULICS"
+                    },
+                    {
+                      "label": "CONTROL ROOM",
+                      "value": "CONTROL ROOM"
+                    },
+                    {
+                      "label": "MOTOR CONTROL CENTER",
+                      "value": "MOTOR CONTROL CENTER"
+                    },
+                    {
+                      "label": "DEBARKER",
+                      "value": "DEBARKER"
+                    }
+                  ],
+                  "style": {
+                    "fontSize": 40
+                  },
+                  "value": null
+                },
+                "type": "ia.input.dropdown"
+              },
+              {
+                "meta": {
+                  "name": "logscanning_subarea"
+                },
+                "position": {
+                  "height": 57,
+                  "width": 538,
+                  "x": 3.75,
+                  "y": 1
+                },
+                "propConfig": {
+                  "meta.visible": {
+                    "binding": {
+                      "config": {
+                        "expression": "{..../FlexContainer/Dropdown.props.value} \u003d \u0027LOG SCANNING\u0027"
+                      },
+                      "type": "expr"
+                    }
+                  }
+                },
+                "props": {
+                  "dropdownOptionStyle": {
+                    "fontSize": 40
+                  },
+                  "options": [
+                    {
+                      "label": "LOG SCANNER",
+                      "value": "LOG SCANNER"
+                    }
+                  ],
+                  "style": {
+                    "fontSize": 40
+                  },
+                  "value": null
+                },
+                "type": "ia.input.dropdown"
+              },
+              {
+                "meta": {
+                  "name": "outfeed_subarea"
+                },
+                "position": {
+                  "height": 57,
+                  "width": 538,
+                  "x": 3.75,
+                  "y": 1
+                },
+                "propConfig": {
+                  "meta.visible": {
+                    "binding": {
+                      "config": {
+                        "expression": "{..../FlexContainer/Dropdown.props.value} \u003d \u0027OUTFEED\u0027"
+                      },
+                      "type": "expr"
+                    }
+                  }
+                },
+                "props": {
+                  "dropdownOptionStyle": {
+                    "fontSize": 40
+                  },
+                  "options": [
+                    {
+                      "label": "KICKER A",
+                      "value": "KICKER A"
+                    },
+                    {
+                      "label": "KICKER B",
+                      "value": "KICKER B"
+                    },
+                    {
+                      "label": "KICKER D",
+                      "value": "KICKER D"
+                    },
+                    {
+                      "label": "KICKER E",
+                      "value": "KICKER E"
+                    }
+                  ],
+                  "style": {
+                    "fontSize": 40
+                  },
+                  "value": null
+                },
+                "type": "ia.input.dropdown"
+              },
+              {
+                "meta": {
+                  "name": "logsorting_subarea"
+                },
+                "position": {
+                  "height": 57,
+                  "width": 538,
+                  "x": 3.75,
+                  "y": 1
+                },
+                "propConfig": {
+                  "meta.visible": {
+                    "binding": {
+                      "config": {
+                        "expression": "{..../FlexContainer/Dropdown.props.value} \u003d \u0027LOG SORTING\u0027"
+                      },
+                      "type": "expr"
+                    }
+                  }
+                },
+                "props": {
+                  "dropdownOptionStyle": {
+                    "fontSize": 40
+                  },
+                  "options": [
+                    {
+                      "label": "SORTING CHAIN",
+                      "value": "SORTING CHAIN"
+                    },
+                    {
+                      "label": "BIN A",
+                      "value": "BIN A"
+                    },
+                    {
+                      "label": "BIN B",
+                      "value": "BIN B"
+                    },
+                    {
+                      "label": "BIN D",
+                      "value": "BIN D"
+                    },
+                    {
+                      "label": "BIN E",
+                      "value": "BIN E"
+                    }
+                  ],
+                  "style": {
+                    "fontSize": 40
+                  },
+                  "value": null
+                },
+                "type": "ia.input.dropdown"
+              },
+              {
+                "meta": {
+                  "name": "wastehandling_subarea"
+                },
+                "position": {
+                  "height": 57,
+                  "width": 538,
+                  "x": 3.75,
+                  "y": 1
+                },
+                "propConfig": {
+                  "meta.visible": {
+                    "binding": {
+                      "config": {
+                        "expression": "{..../FlexContainer/Dropdown.props.value} \u003d \u0027WASTE HANDLING\u0027\r\n"
+                      },
+                      "type": "expr"
+                    }
+                  }
+                },
+                "props": {
+                  "dropdownOptionStyle": {
+                    "fontSize": 40
+                  },
+                  "options": [
+                    {
+                      "label": "WASTE CHUTE",
+                      "value": "WASTE CHUTE"
+                    },
+                    {
+                      "label": "WASTE CONVEYOR",
+                      "value": "WASTE CONVEYOR"
+                    },
+                    {
+                      "label": "WASTE TIPPING AREA",
+                      "value": "WASTE TIPPING AREA"
+                    },
+                    {
+                      "label": "HOGGER",
+                      "value": "HOGGER"
+                    }
+                  ],
+                  "style": {
+                    "fontSize": 40
+                  },
+                  "value": null
+                },
+                "type": "ia.input.dropdown"
+              }
+            ],
+            "meta": {
+              "name": "CoordinateContainer"
+            },
+            "position": {
+              "basis": "462px",
+              "grow": 1
+            },
+            "type": "ia.container.coord"
+          }
+        ],
+        "meta": {
+          "name": "FlexContainer_1"
+        },
+        "position": {
+          "basis": "60px"
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "meta": {
+          "name": "FlexContainer_4"
+        },
+        "position": {
+          "basis": "11px"
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "children": [
+          {
+            "meta": {
+              "name": "Label"
+            },
+            "position": {
+              "basis": "322px"
+            },
+            "props": {
+              "style": {
+                "fontSize": 40,
+                "textAlign": "center"
+              },
+              "text": "RESPONSIBILITY:"
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "meta": {
+              "name": "Dropdown"
+            },
+            "position": {
+              "basis": "539px"
+            },
+            "props": {
+              "dropdownOptionStyle": {
+                "fontSize": 40
+              },
+              "options": [
+                {
+                  "label": "PRODUCTION",
+                  "value": "PRODUCTION"
+                },
+                {
+                  "label": "MECHANICAL",
+                  "value": "MECHANICAL"
+                },
+                {
+                  "label": "ELECTRICAL",
+                  "value": "ELECTRICAL"
+                },
+                {
+                  "label": "EMERGENCY SERVICES",
+                  "value": "EMERGENCY SERVICES"
+                }
+              ],
+              "showClearIcon": true,
+              "style": {
+                "fontSize": 40
+              },
+              "value": "PRODUCTION"
+            },
+            "type": "ia.input.dropdown"
+          }
+        ],
+        "meta": {
+          "name": "FlexContainer_2"
+        },
+        "position": {
+          "basis": "62px"
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "meta": {
+          "name": "FlexContainer_5"
+        },
+        "position": {
+          "basis": "13px"
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "children": [
+          {
+            "meta": {
+              "name": "Label"
+            },
+            "position": {
+              "basis": "200px",
+              "grow": 1
+            },
+            "props": {
+              "style": {
+                "fontSize": 40,
+                "textAlign": "center"
+              },
+              "text": "REASON:"
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "children": [
+              {
+                "meta": {
+                  "name": "PRODUCTION_EQUIPMENT"
+                },
+                "position": {
+                  "height": 58,
+                  "width": 540,
+                  "x": 1,
+                  "y": 7
+                },
+                "propConfig": {
+                  "meta.visible": {
+                    "binding": {
+                      "config": {
+                        "expression": "{..../FlexContainer_2/Dropdown.props.value} \u003d \u0027PRODUCTION\u0027"
+                      },
+                      "type": "expr"
+                    }
+                  }
+                },
+                "props": {
+                  "dropdownOptionStyle": {
+                    "fontSize": 40
+                  },
+                  "multiSelect": true,
+                  "options": [
+                    {
+                      "label": "BIN FULL",
+                      "value": "BIN FULL"
+                    },
+                    {
+                      "label": "BLOCKAGE",
+                      "value": "BLOCKAGE"
+                    },
+                    {
+                      "label": "CLEAN",
+                      "value": "CLEAN"
+                    },
+                    {
+                      "label": "LOG LOADER",
+                      "value": "LOG LOADER"
+                    },
+                    {
+                      "label": "START UP CHECKS",
+                      "value": "START UP CHECKS"
+                    },
+                    {
+                      "label": "STAFF",
+                      "value": "STAFF"
+                    },
+                    {
+                      "label": "NO PRODUCTS",
+                      "value": "NO PRODUCTS"
+                    }
+                  ],
+                  "style": {
+                    "fontSize": 40
+                  },
+                  "value": null
+                },
+                "type": "ia.input.dropdown"
+              },
+              {
+                "meta": {
+                  "name": "MECHANICAL_EQUIPMENT"
+                },
+                "position": {
+                  "height": 58,
+                  "width": 540,
+                  "x": 1,
+                  "y": 7
+                },
+                "propConfig": {
+                  "meta.visible": {
+                    "binding": {
+                      "config": {
+                        "expression": "{..../FlexContainer_2/Dropdown.props.value} \u003d \u0027MECHANICAL\u0027"
+                      },
+                      "type": "expr"
+                    }
+                  }
+                },
+                "props": {
+                  "dropdownOptionStyle": {
+                    "fontSize": 40
+                  },
+                  "options": [
+                    {
+                      "label": "PNEUMATIC CYLINDER",
+                      "value": "PNEUMATIC CYLINDER"
+                    },
+                    {
+                      "label": "PNEUMATIC PIPE",
+                      "value": "PNEUMATIC PIPE"
+                    },
+                    {
+                      "label": "PNEUMATIC VALVE",
+                      "value": "PNEUMATIC VALVE"
+                    },
+                    {
+                      "label": "HYDRAULIC CYLINDER",
+                      "value": "HYDRAULIC CYLINDER"
+                    },
+                    {
+                      "label": "HYDRAULIC PIPE",
+                      "value": "HYDRAULIC PIPE"
+                    },
+                    {
+                      "label": "HYDRAULIC VALVE",
+                      "value": "HYDRAULIC VALVE"
+                    },
+                    {
+                      "label": "MOTOR",
+                      "value": "MOTOR"
+                    },
+                    {
+                      "label": "BEARING",
+                      "value": "BEARING"
+                    },
+                    {
+                      "label": "CONVEYOR",
+                      "value": "CONVEYOR"
+                    },
+                    {
+                      "label": "CHAIN",
+                      "value": "CHAIN"
+                    },
+                    {
+                      "label": "WEARSTRIP",
+                      "value": "WEARSTRIP"
+                    },
+                    {
+                      "label": "SPROCKET",
+                      "value": "SPROCKET"
+                    },
+                    {
+                      "label": "BELT",
+                      "value": "BELT"
+                    },
+                    {
+                      "label": "PULLEY",
+                      "value": "PULLEY"
+                    },
+                    {
+                      "label": "V-BELT",
+                      "value": "V-BELT"
+                    },
+                    {
+                      "label": "PLATEN",
+                      "value": "PLATEN"
+                    },
+                    {
+                      "label": "STEAM TRAP",
+                      "value": "STEAM TRAP"
+                    },
+                    {
+                      "label": "SHAFT",
+                      "value": "SHAFT"
+                    },
+                    {
+                      "label": "PUMP",
+                      "value": "PUMP"
+                    }
+                  ],
+                  "style": {
+                    "fontSize": 40
+                  },
+                  "value": null
+                },
+                "type": "ia.input.dropdown"
+              },
+              {
+                "meta": {
+                  "name": "ELECTRICAL_EQUIPMENT"
+                },
+                "position": {
+                  "height": 58,
+                  "width": 540,
+                  "x": 1,
+                  "y": 7
+                },
+                "propConfig": {
+                  "meta.visible": {
+                    "binding": {
+                      "config": {
+                        "expression": "{..../FlexContainer_2/Dropdown.props.value} \u003d \u0027ELECTRICAL\u0027"
+                      },
+                      "type": "expr"
+                    }
+                  }
+                },
+                "props": {
+                  "dropdownOptionStyle": {
+                    "fontSize": 40
+                  },
+                  "options": [
+                    {
+                      "label": "MOTOR",
+                      "value": "MOTOR"
+                    },
+                    {
+                      "label": "CABLE",
+                      "value": "CABLE"
+                    },
+                    {
+                      "label": "BREAKER",
+                      "value": "BREAKER"
+                    },
+                    {
+                      "label": "MCC",
+                      "value": "MCC"
+                    },
+                    {
+                      "label": "PHOTO CELL",
+                      "value": "PHOTO CELL"
+                    },
+                    {
+                      "label": "LIMIT SWITCH",
+                      "value": "LIMIT SWITCH"
+                    },
+                    {
+                      "label": "TRANSDUCER",
+                      "value": "TRANSDUCER"
+                    },
+                    {
+                      "label": "SOFT STARTER",
+                      "value": "SOFT STARTER"
+                    },
+                    {
+                      "label": "VSD",
+                      "value": "VSD"
+                    },
+                    {
+                      "label": "OVERLOAD",
+                      "value": "OVERLOAD"
+                    },
+                    {
+                      "label": "LIGHT CURTAIN",
+                      "value": "LIGHT CURTAIN"
+                    },
+                    {
+                      "label": "CAMERA",
+                      "value": "CAMERA"
+                    },
+                    {
+                      "label": "SOLENOID VALVE",
+                      "value": "SOLENOID VALVE"
+                    },
+                    {
+                      "label": "PLUG",
+                      "value": "PLUG"
+                    },
+                    {
+                      "label": "COIL",
+                      "value": "COIL"
+                    },
+                    {
+                      "label": "LIGHT",
+                      "value": "LIGHT"
+                    },
+                    {
+                      "label": "HEATER",
+                      "value": "HEATER"
+                    },
+                    {
+                      "label": "COOLER",
+                      "value": "COOLER"
+                    },
+                    {
+                      "label": "ENCODER",
+                      "value": "ENCODER"
+                    },
+                    {
+                      "label": "PLC PROGRAM",
+                      "value": "PLC PROGRAM"
+                    },
+                    {
+                      "label": "PUMP",
+                      "value": "PUMP"
+                    }
+                  ],
+                  "style": {
+                    "fontSize": 40
+                  },
+                  "value": null
+                },
+                "type": "ia.input.dropdown"
+              },
+              {
+                "meta": {
+                  "name": "EMERGENCY_EQUIPMENT"
+                },
+                "position": {
+                  "height": 58,
+                  "width": 540,
+                  "x": 1,
+                  "y": 7
+                },
+                "propConfig": {
+                  "meta.visible": {
+                    "binding": {
+                      "config": {
+                        "expression": "{..../FlexContainer_2/Dropdown.props.value} \u003d \u0027EMERGENCY SERVICES\u0027"
+                      },
+                      "type": "expr"
+                    }
+                  }
+                },
+                "props": {
+                  "dropdownOptionStyle": {
+                    "fontSize": 40
+                  },
+                  "options": [
+                    {
+                      "label": "EVACUATE",
+                      "value": "EVACUATE"
+                    }
+                  ],
+                  "style": {
+                    "fontSize": 40
+                  },
+                  "value": null
+                },
+                "type": "ia.input.dropdown"
+              }
+            ],
+            "meta": {
+              "name": "CoordinateContainer"
+            },
+            "position": {
+              "basis": "462px",
+              "grow": 1
+            },
+            "type": "ia.container.coord"
+          }
+        ],
+        "meta": {
+          "name": "EQUIPMENT"
+        },
+        "position": {
+          "basis": "73px"
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "meta": {
+          "name": "FlexContainer_6"
+        },
+        "position": {
+          "basis": "16px"
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "children": [
+          {
+            "meta": {
+              "name": "Label"
+            },
+            "position": {
+              "basis": "200px",
+              "grow": 1
+            },
+            "props": {
+              "style": {
+                "fontSize": 40,
+                "textAlign": "center"
+              },
+              "text": "ACTION:"
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "children": [
+              {
+                "meta": {
+                  "name": "PRODUCTION_SETUP"
+                },
+                "position": {
+                  "height": 50,
+                  "rotate": {
+                    "anchor": "25% 0%"
+                  },
+                  "width": 540,
+                  "x": 2,
+                  "y": 4.92
+                },
+                "propConfig": {
+                  "meta.visible": {
+                    "binding": {
+                      "config": {
+                        "expression": "{..../FlexContainer_2/Dropdown.props.value} \u003d \u0027PRODUCTION\u0027 \u0026 {..../EQUIPMENT/CoordinateContainer/PRODUCTION_EQUIPMENT.props.value} \u003d \u0027START UP CHECKS\u0027"
+                      },
+                      "type": "expr"
+                    }
+                  }
+                },
+                "props": {
+                  "dropdownOptionStyle": {
+                    "fontSize": 40
+                  },
+                  "options": [
+                    {
+                      "label": "START UP CHECKS",
+                      "value": "START UP CHECKS"
+                    }
+                  ],
+                  "style": {
+                    "fontSize": 40
+                  },
+                  "value": null
+                },
+                "type": "ia.input.dropdown"
+              },
+              {
+                "meta": {
+                  "name": "PRODUCTION_STAFF"
+                },
+                "position": {
+                  "height": 50,
+                  "rotate": {
+                    "anchor": "25% 0%"
+                  },
+                  "width": 540,
+                  "x": 2,
+                  "y": 4.92
+                },
+                "propConfig": {
+                  "meta.visible": {
+                    "binding": {
+                      "config": {
+                        "expression": "{..../FlexContainer_2/Dropdown.props.value} \u003d\u0027PRODUCTION\u0027 \u0026 {..../EQUIPMENT/CoordinateContainer/PRODUCTION_EQUIPMENT.props.value} \u003d \u0027STAFF\u0027"
+                      },
+                      "type": "expr"
+                    }
+                  }
+                },
+                "props": {
+                  "dropdownOptionStyle": {
+                    "fontSize": 40
+                  },
+                  "options": [
+                    {
+                      "label": "CHANGE OVER",
+                      "value": "CHANGE OVER"
+                    },
+                    {
+                      "label": "LOW",
+                      "value": "LOW"
+                    },
+                    {
+                      "label": "LUNCH",
+                      "value": "LUNCH"
+                    },
+                    {
+                      "label": "SMOKO",
+                      "value": "SMOKO"
+                    },
+                    {
+                      "label": "TRAINING",
+                      "value": "TRAINING"
+                    }
+                  ],
+                  "style": {
+                    "fontSize": 40
+                  },
+                  "value": "LOW"
+                },
+                "type": "ia.input.dropdown"
+              },
+              {
+                "meta": {
+                  "name": "PRODUCTION_FEEDSTOCK"
+                },
+                "position": {
+                  "height": 50,
+                  "rotate": {
+                    "anchor": "25% 0%"
+                  },
+                  "width": 540,
+                  "x": 2,
+                  "y": 4.92
+                },
+                "propConfig": {
+                  "meta.visible": {
+                    "binding": {
+                      "config": {
+                        "expression": "{..../FlexContainer_2/Dropdown.props.value} \u003d\u0027PRODUCTION\u0027 \u0026 {..../EQUIPMENT/CoordinateContainer/PRODUCTION_EQUIPMENT.props.value} \u003d \u0027NO PRODUCTS\u0027"
+                      },
+                      "type": "expr"
+                    }
+                  }
+                },
+                "props": {
+                  "dropdownOptionStyle": {
+                    "fontSize": 40
+                  },
+                  "options": [
+                    {
+                      "label": "NO PRODUCTS",
+                      "value": "NO PRODUCTS"
+                    }
+                  ],
+                  "style": {
+                    "fontSize": 40
+                  },
+                  "value": "NO PRODUCTS"
+                },
+                "type": "ia.input.dropdown"
+              },
+              {
+                "meta": {
+                  "name": "PRODUCTION_BLOCKAGE"
+                },
+                "position": {
+                  "height": 50,
+                  "rotate": {
+                    "anchor": "25% 0%"
+                  },
+                  "width": 540,
+                  "x": 2,
+                  "y": 4.92
+                },
+                "propConfig": {
+                  "meta.visible": {
+                    "binding": {
+                      "config": {
+                        "expression": "{..../FlexContainer_2/Dropdown.props.value} \u003d\u0027PRODUCTION\u0027 \u0026 {..../EQUIPMENT/CoordinateContainer/PRODUCTION_EQUIPMENT.props.value} \u003d \u0027BLOCKAGE\u0027"
+                      },
+                      "type": "expr"
+                    }
+                  }
+                },
+                "props": {
+                  "dropdownOptionStyle": {
+                    "fontSize": 40
+                  },
+                  "options": [
+                    {
+                      "label": "CLEAR",
+                      "value": "CLEAR"
+                    }
+                  ],
+                  "style": {
+                    "fontSize": 40
+                  },
+                  "value": "CLEAR"
+                },
+                "type": "ia.input.dropdown"
+              },
+              {
+                "meta": {
+                  "name": "PRODUCTION_HOUSEKEEPING"
+                },
+                "position": {
+                  "height": 50,
+                  "rotate": {
+                    "anchor": "25% 0%"
+                  },
+                  "width": 540,
+                  "x": 2,
+                  "y": 4.92
+                },
+                "propConfig": {
+                  "meta.visible": {
+                    "binding": {
+                      "config": {
+                        "expression": "{..../FlexContainer_2/Dropdown.props.value} \u003d\u0027PRODUCTION\u0027 \u0026 {..../EQUIPMENT/CoordinateContainer/PRODUCTION_EQUIPMENT.props.value} \u003d \u0027CLEAN\u0027"
+                      },
+                      "type": "expr"
+                    }
+                  }
+                },
+                "props": {
+                  "dropdownOptionStyle": {
+                    "fontSize": 40
+                  },
+                  "options": [
+                    {
+                      "label": "CLEAN",
+                      "value": "CLEAN"
+                    }
+                  ],
+                  "style": {
+                    "fontSize": 40
+                  },
+                  "value": "CLEAN"
+                },
+                "type": "ia.input.dropdown"
+              },
+              {
+                "meta": {
+                  "name": "PRODUCTION_CONSUMABLES"
+                },
+                "position": {
+                  "height": 50,
+                  "rotate": {
+                    "anchor": "25% 0%"
+                  },
+                  "width": 540,
+                  "x": 2,
+                  "y": 4.92
+                },
+                "propConfig": {
+                  "meta.visible": {
+                    "binding": {
+                      "config": {
+                        "expression": "{..../FlexContainer_2/Dropdown.props.value} \u003d \u0027PRODUCTION\u0027 \u0026 {..../EQUIPMENT/CoordinateContainer/PRODUCTION_EQUIPMENT.props.value} \u003d \u0027CONSUMABLES\u0027"
+                      },
+                      "type": "expr"
+                    }
+                  }
+                },
+                "props": {
+                  "dropdownOptionStyle": {
+                    "fontSize": 40
+                  },
+                  "options": [
+                    {
+                      "label": "LOW",
+                      "value": "LOW"
+                    }
+                  ],
+                  "style": {
+                    "fontSize": 40
+                  },
+                  "value": null
+                },
+                "type": "ia.input.dropdown"
+              },
+              {
+                "meta": {
+                  "name": "PRODUCTION_LOGLOADER"
+                },
+                "position": {
+                  "height": 50,
+                  "rotate": {
+                    "anchor": "25% 0%"
+                  },
+                  "width": 540,
+                  "x": 2,
+                  "y": 4.92
+                },
+                "propConfig": {
+                  "meta.visible": {
+                    "binding": {
+                      "config": {
+                        "expression": "{..../FlexContainer_2/Dropdown.props.value} \u003d\u0027PRODUCTION\u0027 \u0026 {..../EQUIPMENT/CoordinateContainer/PRODUCTION_EQUIPMENT.props.value} \u003d \u0027LOG LOADER\u0027"
+                      },
+                      "type": "expr"
+                    }
+                  }
+                },
+                "props": {
+                  "dropdownOptionStyle": {
+                    "fontSize": 40
+                  },
+                  "options": [
+                    {
+                      "label": "DELAY",
+                      "value": "DELAY"
+                    }
+                  ],
+                  "style": {
+                    "fontSize": 40
+                  },
+                  "value": null
+                },
+                "type": "ia.input.dropdown"
+              },
+              {
+                "meta": {
+                  "name": "MECHANICAL_PNEUCYL"
+                },
+                "position": {
+                  "height": 50,
+                  "rotate": {
+                    "anchor": "25% 0%"
+                  },
+                  "width": 540,
+                  "x": 2,
+                  "y": 4.92
+                },
+                "propConfig": {
+                  "meta.visible": {
+                    "binding": {
+                      "config": {
+                        "expression": "{..../FlexContainer_2/Dropdown.props.value} \u003d\u0027MECHANICAL\u0027 \u0026 {..../EQUIPMENT/CoordinateContainer/MECHANICAL_EQUIPMENT.props.value} \u003d \u0027PNEUMATIC CYLINDER\u0027"
+                      },
+                      "type": "expr"
+                    }
+                  }
+                },
+                "props": {
+                  "dropdownOptionStyle": {
+                    "fontSize": 40
+                  },
+                  "options": [
+                    {
+                      "label": "CHANGE",
+                      "value": "CHANGE"
+                    },
+                    {
+                      "label": "ADJUST",
+                      "value": "ADJUST"
+                    },
+                    {
+                      "label": "TIGHTEN",
+                      "value": "TIGHTEN"
+                    }
+                  ],
+                  "style": {
+                    "fontSize": 40
+                  },
+                  "value": null
+                },
+                "type": "ia.input.dropdown"
+              },
+              {
+                "meta": {
+                  "name": "MECHANICAL_PIPE"
+                },
+                "position": {
+                  "height": 50,
+                  "rotate": {
+                    "anchor": "25% 0%"
+                  },
+                  "width": 540,
+                  "x": 2,
+                  "y": 4.92
+                },
+                "propConfig": {
+                  "meta.visible": {
+                    "binding": {
+                      "config": {
+                        "expression": "{..../FlexContainer_2/Dropdown.props.value} \u003d\u0027MECHANICAL\u0027 \u0026 {..../EQUIPMENT/CoordinateContainer/MECHANICAL_EQUIPMENT.props.value} \u003d \u0027PNEUMATIC PIPE\u0027"
+                      },
+                      "type": "expr"
+                    }
+                  }
+                },
+                "props": {
+                  "dropdownOptionStyle": {
+                    "fontSize": 40
+                  },
+                  "options": [
+                    {
+                      "label": "REPLACE",
+                      "value": "REPLACE"
+                    },
+                    {
+                      "label": "REPAIR",
+                      "value": "REPAIR"
+                    },
+                    {
+                      "label": "TIGHTEN",
+                      "value": "TIGHTEN"
+                    }
+                  ],
+                  "style": {
+                    "fontSize": 40
+                  },
+                  "value": null
+                },
+                "type": "ia.input.dropdown"
+              },
+              {
+                "meta": {
+                  "name": "MECHANICAL_VALVE"
+                },
+                "position": {
+                  "height": 50,
+                  "rotate": {
+                    "anchor": "25% 0%"
+                  },
+                  "width": 540,
+                  "x": 2,
+                  "y": 4.92
+                },
+                "propConfig": {
+                  "meta.visible": {
+                    "binding": {
+                      "config": {
+                        "expression": "{..../FlexContainer_2/Dropdown.props.value} \u003d \u0027MECHANICAL\u0027 \u0026 {..../EQUIPMENT/CoordinateContainer/MECHANICAL_EQUIPMENT.props.value} \u003d \u0027PNEUMATIC VALVE\u0027"
+                      },
+                      "type": "expr"
+                    }
+                  }
+                },
+                "props": {
+                  "dropdownOptionStyle": {
+                    "fontSize": 40
+                  },
+                  "options": [
+                    {
+                      "label": "REPLACE",
+                      "value": "REPLACE"
+                    },
+                    {
+                      "label": "REPAIR",
+                      "value": "REPAIR"
+                    },
+                    {
+                      "label": "TIGHTEN",
+                      "value": "TIGHTEN"
+                    },
+                    {
+                      "label": "ADJUST",
+                      "value": "ADJUST"
+                    },
+                    {
+                      "label": "CLEAN",
+                      "value": "CLEAN"
+                    }
+                  ],
+                  "style": {
+                    "fontSize": 40
+                  },
+                  "value": null
+                },
+                "type": "ia.input.dropdown"
+              },
+              {
+                "meta": {
+                  "name": "MECHANICAL_HYDRAUCYL"
+                },
+                "position": {
+                  "height": 50,
+                  "rotate": {
+                    "anchor": "25% 0%"
+                  },
+                  "width": 540,
+                  "x": 2,
+                  "y": 4.92
+                },
+                "propConfig": {
+                  "meta.visible": {
+                    "binding": {
+                      "config": {
+                        "expression": "{..../FlexContainer_2/Dropdown.props.value} \u003d\u0027MECHANICAL\u0027 \u0026 {..../EQUIPMENT/CoordinateContainer/MECHANICAL_EQUIPMENT.props.value} \u003d \u0027HYDRAULIC CYLINDER\u0027"
+                      },
+                      "type": "expr"
+                    }
+                  }
+                },
+                "props": {
+                  "dropdownOptionStyle": {
+                    "fontSize": 40
+                  },
+                  "options": [
+                    {
+                      "label": "REPLACE",
+                      "value": "REPLACE"
+                    },
+                    {
+                      "label": "TIGHTEN",
+                      "value": "TIGHTEN"
+                    },
+                    {
+                      "label": "ADJUST",
+                      "value": "ADJUST"
+                    }
+                  ],
+                  "style": {
+                    "fontSize": 40
+                  },
+                  "value": null
+                },
+                "type": "ia.input.dropdown"
+              },
+              {
+                "meta": {
+                  "name": "MECHANICAL_HYDRAUPIPE"
+                },
+                "position": {
+                  "height": 50,
+                  "rotate": {
+                    "anchor": "25% 0%"
+                  },
+                  "width": 540,
+                  "x": 2,
+                  "y": 4.92
+                },
+                "propConfig": {
+                  "meta.visible": {
+                    "binding": {
+                      "config": {
+                        "expression": "{..../FlexContainer_2/Dropdown.props.value} \u003d\u0027MECHANICAL\u0027 \u0026 {..../EQUIPMENT/CoordinateContainer/MECHANICAL_EQUIPMENT.props.value} \u003d \u0027HYDRAULIC PIPE\u0027"
+                      },
+                      "type": "expr"
+                    }
+                  }
+                },
+                "props": {
+                  "dropdownOptionStyle": {
+                    "fontSize": 40
+                  },
+                  "options": [
+                    {
+                      "label": "REPLACE",
+                      "value": "REPLACE"
+                    },
+                    {
+                      "label": "TIGHTEN",
+                      "value": "TIGHTEN"
+                    }
+                  ],
+                  "style": {
+                    "fontSize": 40
+                  },
+                  "value": null
+                },
+                "type": "ia.input.dropdown"
+              },
+              {
+                "meta": {
+                  "name": "MECHANICAL_HYDRAUVALVE"
+                },
+                "position": {
+                  "height": 50,
+                  "rotate": {
+                    "anchor": "25% 0%"
+                  },
+                  "width": 540,
+                  "x": 2,
+                  "y": 4.92
+                },
+                "propConfig": {
+                  "meta.visible": {
+                    "binding": {
+                      "config": {
+                        "expression": "{..../FlexContainer_2/Dropdown.props.value} \u003d\u0027MECHANICAL\u0027 \u0026 {..../EQUIPMENT/CoordinateContainer/MECHANICAL_EQUIPMENT.props.value} \u003d \u0027HYDRAULIC VALVE\u0027"
+                      },
+                      "type": "expr"
+                    }
+                  }
+                },
+                "props": {
+                  "dropdownOptionStyle": {
+                    "fontSize": 40
+                  },
+                  "options": [
+                    {
+                      "label": "ADJUST",
+                      "value": "ADJUST"
+                    },
+                    {
+                      "label": "CALIBRATE",
+                      "value": "CALIBRATE"
+                    },
+                    {
+                      "label": "TIGHTEN",
+                      "value": "TIGHTEN"
+                    },
+                    {
+                      "label": "REPLACE",
+                      "value": "REPLACE"
+                    },
+                    {
+                      "label": "REPAIR",
+                      "value": "REPAIR"
+                    }
+                  ],
+                  "style": {
+                    "fontSize": 40
+                  },
+                  "value": null
+                },
+                "type": "ia.input.dropdown"
+              },
+              {
+                "meta": {
+                  "name": "MECHANICAL_MOTOR"
+                },
+                "position": {
+                  "height": 50,
+                  "rotate": {
+                    "anchor": "25% 0%"
+                  },
+                  "width": 540,
+                  "x": 2,
+                  "y": 4.92
+                },
+                "propConfig": {
+                  "meta.visible": {
+                    "binding": {
+                      "config": {
+                        "expression": "{..../FlexContainer_2/Dropdown.props.value} \u003d\u0027MECHANICAL\u0027 \u0026 {..../EQUIPMENT/CoordinateContainer/MECHANICAL_EQUIPMENT.props.value} \u003d \u0027MOTOR\u0027"
+                      },
+                      "type": "expr"
+                    }
+                  }
+                },
+                "props": {
+                  "dropdownOptionStyle": {
+                    "fontSize": 40
+                  },
+                  "options": [
+                    {
+                      "label": "ADJUST",
+                      "value": "ADJUST"
+                    },
+                    {
+                      "label": "LUBRICATE",
+                      "value": "LUBRICATE"
+                    },
+                    {
+                      "label": "TIGHTEN",
+                      "value": "TIGHTEN"
+                    },
+                    {
+                      "label": "REPLACE",
+                      "value": "REPLACE"
+                    },
+                    {
+                      "label": "CLEAN",
+                      "value": "CLEAN"
+                    }
+                  ],
+                  "style": {
+                    "fontSize": 40
+                  },
+                  "value": null
+                },
+                "type": "ia.input.dropdown"
+              },
+              {
+                "meta": {
+                  "name": "MECHANICAL_BEARING"
+                },
+                "position": {
+                  "height": 50,
+                  "rotate": {
+                    "anchor": "25% 0%"
+                  },
+                  "width": 540,
+                  "x": 2,
+                  "y": 4.92
+                },
+                "propConfig": {
+                  "meta.visible": {
+                    "binding": {
+                      "config": {
+                        "expression": "{..../FlexContainer_2/Dropdown.props.value} \u003d\u0027MECHANICAL\u0027 \u0026 {..../EQUIPMENT/CoordinateContainer/MECHANICAL_EQUIPMENT.props.value} \u003d \u0027BEARING\u0027"
+                      },
+                      "type": "expr"
+                    }
+                  }
+                },
+                "props": {
+                  "dropdownOptionStyle": {
+                    "fontSize": 40
+                  },
+                  "options": [
+                    {
+                      "label": "ADJUST",
+                      "value": "ADJUST"
+                    },
+                    {
+                      "label": "LUBRICATE",
+                      "value": "LUBRICATE"
+                    },
+                    {
+                      "label": "TIGHTEN",
+                      "value": "TIGHTEN"
+                    },
+                    {
+                      "label": "REPLACE",
+                      "value": "REPLACE"
+                    },
+                    {
+                      "label": "CLEAN",
+                      "value": "CLEAN"
+                    },
+                    {
+                      "label": "SEIZED",
+                      "value": "SEIZED"
+                    }
+                  ],
+                  "style": {
+                    "fontSize": 40
+                  },
+                  "value": null
+                },
+                "type": "ia.input.dropdown"
+              },
+              {
+                "meta": {
+                  "name": "MECHANICAL_CONVEYOR"
+                },
+                "position": {
+                  "height": 50,
+                  "rotate": {
+                    "anchor": "25% 0%"
+                  },
+                  "width": 540,
+                  "x": 2,
+                  "y": 4.92
+                },
+                "propConfig": {
+                  "meta.visible": {
+                    "binding": {
+                      "config": {
+                        "expression": "{..../FlexContainer_2/Dropdown.props.value} \u003d\u0027MECHANICAL\u0027 \u0026 {..../EQUIPMENT/CoordinateContainer/MECHANICAL_EQUIPMENT.props.value} \u003d \u0027CONVEYOR\u0027"
+                      },
+                      "type": "expr"
+                    }
+                  }
+                },
+                "props": {
+                  "dropdownOptionStyle": {
+                    "fontSize": 40
+                  },
+                  "options": [
+                    {
+                      "label": "ADJUST",
+                      "value": "ADJUST"
+                    },
+                    {
+                      "label": "TIGHTEN",
+                      "value": "TIGHTEN"
+                    },
+                    {
+                      "label": "REPLACE",
+                      "value": "REPLACE"
+                    },
+                    {
+                      "label": "CLEAN",
+                      "value": "CLEAN"
+                    },
+                    {
+                      "label": "REPAIR",
+                      "value": "REPAIR"
+                    }
+                  ],
+                  "style": {
+                    "fontSize": 40
+                  },
+                  "value": null
+                },
+                "type": "ia.input.dropdown"
+              },
+              {
+                "meta": {
+                  "name": "MECHANICAL_CHAIN"
+                },
+                "position": {
+                  "height": 50,
+                  "rotate": {
+                    "anchor": "25% 0%"
+                  },
+                  "width": 540,
+                  "x": 2,
+                  "y": 4.92
+                },
+                "propConfig": {
+                  "meta.visible": {
+                    "binding": {
+                      "config": {
+                        "expression": "{..../FlexContainer_2/Dropdown.props.value} \u003d\u0027MECHANICAL\u0027 \u0026 {..../EQUIPMENT/CoordinateContainer/MECHANICAL_EQUIPMENT.props.value} \u003d \u0027CHAIN\u0027"
+                      },
+                      "type": "expr"
+                    }
+                  }
+                },
+                "props": {
+                  "dropdownOptionStyle": {
+                    "fontSize": 40
+                  },
+                  "options": [
+                    {
+                      "label": "ADJUST",
+                      "value": "ADJUST"
+                    },
+                    {
+                      "label": "TIGHTEN",
+                      "value": "TIGHTEN"
+                    },
+                    {
+                      "label": "REPLACE",
+                      "value": "REPLACE"
+                    },
+                    {
+                      "label": "CLEAN",
+                      "value": "CLEAN"
+                    },
+                    {
+                      "label": "REPAIR",
+                      "value": "REPAIR"
+                    },
+                    {
+                      "label": "LUBRICATE",
+                      "value": "LUBRICATE"
+                    },
+                    {
+                      "label": "SEIZED",
+                      "value": "SEIZED"
+                    }
+                  ],
+                  "style": {
+                    "fontSize": 40
+                  },
+                  "value": null
+                },
+                "type": "ia.input.dropdown"
+              },
+              {
+                "meta": {
+                  "name": "MECHANICAL_WEARSTRIP"
+                },
+                "position": {
+                  "height": 50,
+                  "rotate": {
+                    "anchor": "25% 0%"
+                  },
+                  "width": 540,
+                  "x": 2,
+                  "y": 4.92
+                },
+                "propConfig": {
+                  "meta.visible": {
+                    "binding": {
+                      "config": {
+                        "expression": "{..../FlexContainer_2/Dropdown.props.value} \u003d\u0027MECHANICAL\u0027 \u0026 {..../EQUIPMENT/CoordinateContainer/MECHANICAL_EQUIPMENT.props.value} \u003d \u0027WEARSTRIP\u0027"
+                      },
+                      "type": "expr"
+                    }
+                  }
+                },
+                "props": {
+                  "dropdownOptionStyle": {
+                    "fontSize": 40
+                  },
+                  "options": [
+                    {
+                      "label": "ADJUST",
+                      "value": "ADJUST"
+                    },
+                    {
+                      "label": "TIGHTEN",
+                      "value": "TIGHTEN"
+                    },
+                    {
+                      "label": "REPLACE",
+                      "value": "REPLACE"
+                    },
+                    {
+                      "label": "CLEAN",
+                      "value": "CLEAN"
+                    },
+                    {
+                      "label": "REPAIR",
+                      "value": "REPAIR"
+                    },
+                    {
+                      "label": "LUBRICATE",
+                      "value": "LUBRICATE"
+                    }
+                  ],
+                  "style": {
+                    "fontSize": 40
+                  },
+                  "value": null
+                },
+                "type": "ia.input.dropdown"
+              },
+              {
+                "meta": {
+                  "name": "MECHANICAL_SPROCKET"
+                },
+                "position": {
+                  "height": 50,
+                  "rotate": {
+                    "anchor": "25% 0%"
+                  },
+                  "width": 540,
+                  "x": 2,
+                  "y": 3.92
+                },
+                "propConfig": {
+                  "meta.visible": {
+                    "binding": {
+                      "config": {
+                        "expression": "{..../FlexContainer_2/Dropdown.props.value} \u003d\u0027MECHANICAL\u0027 \u0026 {..../EQUIPMENT/CoordinateContainer/MECHANICAL_EQUIPMENT.props.value} \u003d \u0027SPROCKET\u0027 "
+                      },
+                      "type": "expr"
+                    }
+                  }
+                },
+                "props": {
+                  "dropdownOptionStyle": {
+                    "fontSize": 40
+                  },
+                  "options": [
+                    {
+                      "label": "ADJUST",
+                      "value": "ADJUST"
+                    },
+                    {
+                      "label": "TIGHTEN",
+                      "value": "TIGHTEN"
+                    },
+                    {
+                      "label": "REPLACE",
+                      "value": "REPLACE"
+                    }
+                  ],
+                  "style": {
+                    "fontSize": 40
+                  },
+                  "value": null
+                },
+                "type": "ia.input.dropdown"
+              },
+              {
+                "meta": {
+                  "name": "MECHANICAL_BELT"
+                },
+                "position": {
+                  "height": 50,
+                  "rotate": {
+                    "anchor": "25% 0%"
+                  },
+                  "width": 540,
+                  "x": 2,
+                  "y": 3.92
+                },
+                "propConfig": {
+                  "meta.visible": {
+                    "binding": {
+                      "config": {
+                        "expression": "{..../FlexContainer_2/Dropdown.props.value} \u003d\u0027MECHANICAL\u0027 \u0026 {..../EQUIPMENT/CoordinateContainer/MECHANICAL_EQUIPMENT.props.value} \u003d \u0027BELT\u0027"
+                      },
+                      "type": "expr"
+                    }
+                  }
+                },
+                "props": {
+                  "dropdownOptionStyle": {
+                    "fontSize": 40
+                  },
+                  "options": [
+                    {
+                      "label": "ADJUST",
+                      "value": "ADJUST"
+                    },
+                    {
+                      "label": "TIGHTEN",
+                      "value": "TIGHTEN"
+                    },
+                    {
+                      "label": "REPLACE",
+                      "value": "REPLACE"
+                    },
+                    {
+                      "label": "CLEAN",
+                      "value": "CLEAN"
+                    },
+                    {
+                      "label": "REAPAIR",
+                      "value": "REAPAIR"
+                    }
+                  ],
+                  "style": {
+                    "fontSize": 40
+                  },
+                  "value": null
+                },
+                "type": "ia.input.dropdown"
+              },
+              {
+                "meta": {
+                  "name": "MECHANICAL_PULLEY"
+                },
+                "position": {
+                  "height": 50,
+                  "rotate": {
+                    "anchor": "25% 0%"
+                  },
+                  "width": 540,
+                  "x": 2,
+                  "y": 2.92
+                },
+                "propConfig": {
+                  "meta.visible": {
+                    "binding": {
+                      "config": {
+                        "expression": "{..../FlexContainer_2/Dropdown.props.value} \u003d\u0027MECHANICAL\u0027 \u0026 {..../EQUIPMENT/CoordinateContainer/MECHANICAL_EQUIPMENT.props.value} \u003d \u0027PULLEY\u0027"
+                      },
+                      "type": "expr"
+                    }
+                  }
+                },
+                "props": {
+                  "dropdownOptionStyle": {
+                    "fontSize": 40
+                  },
+                  "options": [
+                    {
+                      "label": "ADJUST",
+                      "value": "ADJUST"
+                    },
+                    {
+                      "label": "TIGHTEN",
+                      "value": "TIGHTEN"
+                    },
+                    {
+                      "label": "REPLACE",
+                      "value": "REPLACE"
+                    }
+                  ],
+                  "style": {
+                    "fontSize": 40
+                  },
+                  "value": null
+                },
+                "type": "ia.input.dropdown"
+              },
+              {
+                "meta": {
+                  "name": "MECHANICAL_V-BELT"
+                },
+                "position": {
+                  "height": 50,
+                  "rotate": {
+                    "anchor": "25% 0%"
+                  },
+                  "width": 540,
+                  "x": 2,
+                  "y": 2.92
+                },
+                "propConfig": {
+                  "meta.visible": {
+                    "binding": {
+                      "config": {
+                        "expression": "{..../FlexContainer_2/Dropdown.props.value} \u003d\u0027MECHANICAL\u0027 \u0026 {..../EQUIPMENT/CoordinateContainer/MECHANICAL_EQUIPMENT.props.value} \u003d \u0027V-BELT\u0027"
+                      },
+                      "type": "expr"
+                    }
+                  }
+                },
+                "props": {
+                  "dropdownOptionStyle": {
+                    "fontSize": 40
+                  },
+                  "options": [
+                    {
+                      "label": "ADJUST",
+                      "value": "ADJUST"
+                    },
+                    {
+                      "label": "TIGHTEN",
+                      "value": "TIGHTEN"
+                    },
+                    {
+                      "label": "REPLACE",
+                      "value": "REPLACE"
+                    },
+                    {
+                      "label": "REPAIR",
+                      "value": "REPAIR"
+                    }
+                  ],
+                  "style": {
+                    "fontSize": 40
+                  },
+                  "value": null
+                },
+                "type": "ia.input.dropdown"
+              },
+              {
+                "meta": {
+                  "name": "MECHANICAL_PLATEN"
+                },
+                "position": {
+                  "height": 50,
+                  "rotate": {
+                    "anchor": "25% 0%"
+                  },
+                  "width": 540,
+                  "x": 2,
+                  "y": 2.92
+                },
+                "propConfig": {
+                  "meta.visible": {
+                    "binding": {
+                      "config": {
+                        "expression": "{..../FlexContainer_2/Dropdown.props.value} \u003d\u0027MECHANICAL\u0027 \u0026 {..../EQUIPMENT/CoordinateContainer/MECHANICAL_EQUIPMENT.props.value} \u003d \u0027PLATEN\u0027"
+                      },
+                      "type": "expr"
+                    }
+                  }
+                },
+                "props": {
+                  "dropdownOptionStyle": {
+                    "fontSize": 40
+                  },
+                  "options": [
+                    {
+                      "label": "ADJUST",
+                      "value": "ADJUST"
+                    },
+                    {
+                      "label": "TIGHTEN",
+                      "value": "TIGHTEN"
+                    },
+                    {
+                      "label": "REPLACE",
+                      "value": "REPLACE"
+                    },
+                    {
+                      "label": "REPAIR",
+                      "value": "REPAIR"
+                    },
+                    {
+                      "label": "CLEAN",
+                      "value": "CLEAN"
+                    }
+                  ],
+                  "style": {
+                    "fontSize": 40
+                  },
+                  "value": null
+                },
+                "type": "ia.input.dropdown"
+              },
+              {
+                "meta": {
+                  "name": "MECHANICAL_STEAMTRAP"
+                },
+                "position": {
+                  "height": 50,
+                  "rotate": {
+                    "anchor": "25% 0%"
+                  },
+                  "width": 540,
+                  "x": 2,
+                  "y": 2.92
+                },
+                "propConfig": {
+                  "meta.visible": {
+                    "binding": {
+                      "config": {
+                        "expression": "{..../FlexContainer_2/Dropdown.props.value} \u003d\u0027MECHANICAL\u0027 \u0026 {..../EQUIPMENT/CoordinateContainer/MECHANICAL_EQUIPMENT.props.value} \u003d \u0027STEAM TRAP\u0027"
+                      },
+                      "type": "expr"
+                    }
+                  }
+                },
+                "props": {
+                  "dropdownOptionStyle": {
+                    "fontSize": 40
+                  },
+                  "options": [
+                    {
+                      "label": "TIGHTEN",
+                      "value": "TIGHTEN"
+                    },
+                    {
+                      "label": "REPLACE",
+                      "value": "REPLACE"
+                    },
+                    {
+                      "label": "REPAIR",
+                      "value": "REPAIR"
+                    },
+                    {
+                      "label": "CLEAN",
+                      "value": "CLEAN"
+                    }
+                  ],
+                  "style": {
+                    "fontSize": 40
+                  },
+                  "value": null
+                },
+                "type": "ia.input.dropdown"
+              },
+              {
+                "meta": {
+                  "name": "MECHANICAL_SHAFT"
+                },
+                "position": {
+                  "height": 50,
+                  "rotate": {
+                    "anchor": "25% 0%"
+                  },
+                  "width": 540,
+                  "x": 2,
+                  "y": 2.92
+                },
+                "propConfig": {
+                  "meta.visible": {
+                    "binding": {
+                      "config": {
+                        "expression": "{..../FlexContainer_2/Dropdown.props.value} \u003d\u0027MECHANICAL\u0027 \u0026 {..../EQUIPMENT/CoordinateContainer/MECHANICAL_EQUIPMENT.props.value} \u003d \u0027SHAFT\u0027"
+                      },
+                      "type": "expr"
+                    }
+                  }
+                },
+                "props": {
+                  "dropdownOptionStyle": {
+                    "fontSize": 40
+                  },
+                  "options": [
+                    {
+                      "label": "TIGHTEN",
+                      "value": "TIGHTEN"
+                    },
+                    {
+                      "label": "REPLACE",
+                      "value": "REPLACE"
+                    },
+                    {
+                      "label": "REPAIR",
+                      "value": "REPAIR"
+                    },
+                    {
+                      "label": "ADJUST",
+                      "value": "ADJUST"
+                    }
+                  ],
+                  "style": {
+                    "fontSize": 40
+                  },
+                  "value": null
+                },
+                "type": "ia.input.dropdown"
+              },
+              {
+                "meta": {
+                  "name": "MECHANICAL_PUMP"
+                },
+                "position": {
+                  "height": 50,
+                  "rotate": {
+                    "anchor": "25% 0%"
+                  },
+                  "width": 540,
+                  "x": 2,
+                  "y": 2.92
+                },
+                "propConfig": {
+                  "meta.visible": {
+                    "binding": {
+                      "config": {
+                        "expression": "{..../FlexContainer_2/Dropdown.props.value} \u003d\u0027MECHANICAL\u0027 \u0026 {..../EQUIPMENT/CoordinateContainer/MECHANICAL_EQUIPMENT.props.value} \u003d \u0027PUMP\u0027"
+                      },
+                      "type": "expr"
+                    }
+                  }
+                },
+                "props": {
+                  "dropdownOptionStyle": {
+                    "fontSize": 40
+                  },
+                  "options": [
+                    {
+                      "label": "TIGHTEN",
+                      "value": "TIGHTEN"
+                    },
+                    {
+                      "label": "REPLACE",
+                      "value": "REPLACE"
+                    },
+                    {
+                      "label": "REPAIR",
+                      "value": "REPAIR"
+                    },
+                    {
+                      "label": "ADJUST",
+                      "value": "ADJUST"
+                    },
+                    {
+                      "label": "CLEAN",
+                      "value": "CLEAN"
+                    }
+                  ],
+                  "style": {
+                    "fontSize": 40
+                  },
+                  "value": null
+                },
+                "type": "ia.input.dropdown"
+              },
+              {
+                "meta": {
+                  "name": "ELECTRICAL_MOTOR"
+                },
+                "position": {
+                  "height": 50,
+                  "rotate": {
+                    "anchor": "25% 0%"
+                  },
+                  "width": 540,
+                  "x": 2,
+                  "y": 2.92
+                },
+                "propConfig": {
+                  "meta.visible": {
+                    "binding": {
+                      "config": {
+                        "expression": "{..../FlexContainer_2/Dropdown.props.value} \u003d\u0027ELECTRICAL\u0027 \u0026 {..../EQUIPMENT/CoordinateContainer/ELECTRICAL_EQUIPMENT.props.value} \u003d \u0027MOTOR\u0027"
+                      },
+                      "type": "expr"
+                    }
+                  }
+                },
+                "props": {
+                  "dropdownOptionStyle": {
+                    "fontSize": 40
+                  },
+                  "options": [
+                    {
+                      "label": "REPLACE",
+                      "value": "REPLACE"
+                    },
+                    {
+                      "label": "REPAIR",
+                      "value": "REPAIR"
+                    },
+                    {
+                      "label": "ADJUST",
+                      "value": "ADJUST"
+                    },
+                    {
+                      "label": "TRIPPED",
+                      "value": "TRIPPED"
+                    }
+                  ],
+                  "style": {
+                    "fontSize": 40
+                  },
+                  "value": null
+                },
+                "type": "ia.input.dropdown"
+              },
+              {
+                "meta": {
+                  "name": "ELECTRICAL_CABLE"
+                },
+                "position": {
+                  "height": 50,
+                  "rotate": {
+                    "anchor": "25% 0%"
+                  },
+                  "width": 540,
+                  "x": 2,
+                  "y": 2.92
+                },
+                "propConfig": {
+                  "meta.visible": {
+                    "binding": {
+                      "config": {
+                        "expression": "{..../FlexContainer_2/Dropdown.props.value} \u003d\u0027ELECTRICAL\u0027 \u0026 {..../EQUIPMENT/CoordinateContainer/ELECTRICAL_EQUIPMENT.props.value} \u003d \u0027CABLE\u0027"
+                      },
+                      "type": "expr"
+                    }
+                  }
+                },
+                "props": {
+                  "dropdownOptionStyle": {
+                    "fontSize": 40
+                  },
+                  "options": [
+                    {
+                      "label": "REPLACE",
+                      "value": "REPLACE"
+                    },
+                    {
+                      "label": "REPAIR",
+                      "value": "REPAIR"
+                    },
+                    {
+                      "label": "TIGHTEN",
+                      "value": "TIGHTEN"
+                    }
+                  ],
+                  "style": {
+                    "fontSize": 40
+                  },
+                  "value": null
+                },
+                "type": "ia.input.dropdown"
+              },
+              {
+                "meta": {
+                  "name": "ELECTRICAL_BREAKER"
+                },
+                "position": {
+                  "height": 50,
+                  "rotate": {
+                    "anchor": "25% 0%"
+                  },
+                  "width": 540,
+                  "x": 2,
+                  "y": 2.92
+                },
+                "propConfig": {
+                  "meta.visible": {
+                    "binding": {
+                      "config": {
+                        "expression": " \u003d\u0027ELECTRICAL\u0027 \u0026 {..../EQUIPMENT/CoordinateContainer/ELECTRICAL_EQUIPMENT.props.value} \u003d \u0027BREAKER\u0027"
+                      },
+                      "type": "expr"
+                    }
+                  }
+                },
+                "props": {
+                  "dropdownOptionStyle": {
+                    "fontSize": 40
+                  },
+                  "options": [
+                    {
+                      "label": "REPLACE",
+                      "value": "REPLACE"
+                    },
+                    {
+                      "label": "REPAIR",
+                      "value": "REPAIR"
+                    },
+                    {
+                      "label": "TIGHTEN",
+                      "value": "TIGHTEN"
+                    },
+                    {
+                      "label": "ADJUST",
+                      "value": "ADJUST"
+                    },
+                    {
+                      "label": "RESET",
+                      "value": "RESET"
+                    }
+                  ],
+                  "style": {
+                    "fontSize": 40
+                  },
+                  "value": null
+                },
+                "type": "ia.input.dropdown"
+              },
+              {
+                "meta": {
+                  "name": "ELECTRICAL_MCC"
+                },
+                "position": {
+                  "height": 50,
+                  "rotate": {
+                    "anchor": "25% 0%"
+                  },
+                  "width": 540,
+                  "x": 2,
+                  "y": 2.92
+                },
+                "propConfig": {
+                  "meta.visible": {
+                    "binding": {
+                      "config": {
+                        "expression": "{..../FlexContainer_2/Dropdown.props.value} \u003d\u0027ELECTRICAL\u0027 \u0026 {..../EQUIPMENT/CoordinateContainer/ELECTRICAL_EQUIPMENT.props.value} \u003d \u0027MCC\u0027"
+                      },
+                      "type": "expr"
+                    }
+                  }
+                },
+                "props": {
+                  "dropdownOptionStyle": {
+                    "fontSize": 40
+                  },
+                  "options": [
+                    {
+                      "label": "CLEAN",
+                      "value": "CLEAN"
+                    },
+                    {
+                      "label": "REPAIR",
+                      "value": "REPAIR"
+                    },
+                    {
+                      "label": "RESET",
+                      "value": "RESET"
+                    }
+                  ],
+                  "style": {
+                    "fontSize": 40
+                  },
+                  "value": null
+                },
+                "type": "ia.input.dropdown"
+              },
+              {
+                "meta": {
+                  "name": "ELECTRICAL_PHOTOCELL"
+                },
+                "position": {
+                  "height": 50,
+                  "rotate": {
+                    "anchor": "25% 0%"
+                  },
+                  "width": 540,
+                  "x": 2,
+                  "y": 2.92
+                },
+                "propConfig": {
+                  "meta.visible": {
+                    "binding": {
+                      "config": {
+                        "expression": "{..../FlexContainer_2/Dropdown.props.value} \u003d\u0027ELECTRICAL\u0027 \u0026 {..../EQUIPMENT/CoordinateContainer/ELECTRICAL_EQUIPMENT.props.value} \u003d \u0027PHOTO CELL\u0027"
+                      },
+                      "type": "expr"
+                    }
+                  },
+                  "props.options": {
+                    "persistent": true
+                  }
+                },
+                "props": {
+                  "dropdownOptionStyle": {
+                    "fontSize": 40
+                  },
+                  "options": [
+                    {
+                      "label": "CLEAN",
+                      "value": "CLEAN"
+                    },
+                    {
+                      "label": "REPAIR",
+                      "value": "REPAIR"
+                    },
+                    {
+                      "label": "REPLACE",
+                      "value": "REPLACE"
+                    },
+                    {
+                      "label": "ADJUST",
+                      "value": "ADJUST"
+                    },
+                    {
+                      "label": "TIGHTEN",
+                      "value": "TIGHTEN"
+                    }
+                  ],
+                  "style": {
+                    "fontSize": 40
+                  },
+                  "value": null
+                },
+                "type": "ia.input.dropdown"
+              },
+              {
+                "meta": {
+                  "name": "ELECTRICAL_LIMITSWITCH"
+                },
+                "position": {
+                  "height": 50,
+                  "rotate": {
+                    "anchor": "25% 0%"
+                  },
+                  "width": 540,
+                  "x": 2,
+                  "y": 2.92
+                },
+                "propConfig": {
+                  "meta.visible": {
+                    "binding": {
+                      "config": {
+                        "expression": "{..../FlexContainer_2/Dropdown.props.value} \u003d\u0027ELECTRICAL\u0027 \u0026 {..../EQUIPMENT/CoordinateContainer/ELECTRICAL_EQUIPMENT.props.value} \u003d \u0027LIMIT SWITCH\u0027"
+                      },
+                      "type": "expr"
+                    }
+                  },
+                  "props.options": {
+                    "persistent": true
+                  }
+                },
+                "props": {
+                  "dropdownOptionStyle": {
+                    "fontSize": 40
+                  },
+                  "options": [
+                    {
+                      "label": "CLEAN",
+                      "value": "CLEAN"
+                    },
+                    {
+                      "label": "REPAIR",
+                      "value": "REPAIR"
+                    },
+                    {
+                      "label": "REPLACE",
+                      "value": "REPLACE"
+                    },
+                    {
+                      "label": "ADJUST",
+                      "value": "ADJUST"
+                    },
+                    {
+                      "label": "TIGHTEN",
+                      "value": "TIGHTEN"
+                    }
+                  ],
+                  "style": {
+                    "fontSize": 40
+                  },
+                  "value": null
+                },
+                "type": "ia.input.dropdown"
+              },
+              {
+                "meta": {
+                  "name": "ELECTRICAL_TRANSDUCER"
+                },
+                "position": {
+                  "height": 50,
+                  "rotate": {
+                    "anchor": "25% 0%"
+                  },
+                  "width": 540,
+                  "x": 2,
+                  "y": 2.92
+                },
+                "propConfig": {
+                  "meta.visible": {
+                    "binding": {
+                      "config": {
+                        "expression": "{..../FlexContainer_2/Dropdown.props.value} \u003d\u0027ELECTRICAL\u0027 \u0026 {..../EQUIPMENT/CoordinateContainer/ELECTRICAL_EQUIPMENT.props.value} \u003d \u0027TRANSDUCER\u0027"
+                      },
+                      "type": "expr"
+                    }
+                  },
+                  "props.options": {
+                    "persistent": true
+                  }
+                },
+                "props": {
+                  "dropdownOptionStyle": {
+                    "fontSize": 40
+                  },
+                  "options": [
+                    {
+                      "label": "CLEAN",
+                      "value": "CLEAN"
+                    },
+                    {
+                      "label": "REPAIR",
+                      "value": "REPAIR"
+                    },
+                    {
+                      "label": "REPLACE",
+                      "value": "REPLACE"
+                    },
+                    {
+                      "label": "ADJUST",
+                      "value": "ADJUST"
+                    },
+                    {
+                      "label": "TIGHTEN",
+                      "value": "TIGHTEN"
+                    },
+                    {
+                      "label": "RESET",
+                      "value": "RESET"
+                    },
+                    {
+                      "label": "CALIBRATE",
+                      "value": "CALIBRATE"
+                    }
+                  ],
+                  "style": {
+                    "fontSize": 40
+                  },
+                  "value": null
+                },
+                "type": "ia.input.dropdown"
+              },
+              {
+                "meta": {
+                  "name": "ELECTRICAL_SOFTSTARTER"
+                },
+                "position": {
+                  "height": 50,
+                  "rotate": {
+                    "anchor": "25% 0%"
+                  },
+                  "width": 540,
+                  "x": 2,
+                  "y": 1.92
+                },
+                "propConfig": {
+                  "meta.visible": {
+                    "binding": {
+                      "config": {
+                        "expression": "{..../FlexContainer_2/Dropdown.props.value} \u003d\u0027ELECTRICAL\u0027 \u0026 {..../EQUIPMENT/CoordinateContainer/ELECTRICAL_EQUIPMENT.props.value} \u003d \u0027SOFT STARTER\u0027"
+                      },
+                      "type": "expr"
+                    }
+                  },
+                  "props.options": {
+                    "persistent": true
+                  }
+                },
+                "props": {
+                  "dropdownOptionStyle": {
+                    "fontSize": 40
+                  },
+                  "options": [
+                    {
+                      "label": "CLEAN",
+                      "value": "CLEAN"
+                    },
+                    {
+                      "label": "REPAIR",
+                      "value": "REPAIR"
+                    },
+                    {
+                      "label": "REPLACE",
+                      "value": "REPLACE"
+                    },
+                    {
+                      "label": "ADJUST",
+                      "value": "ADJUST"
+                    },
+                    {
+                      "label": "RESET",
+                      "value": "RESET"
+                    }
+                  ],
+                  "style": {
+                    "fontSize": 40
+                  },
+                  "value": null
+                },
+                "type": "ia.input.dropdown"
+              },
+              {
+                "meta": {
+                  "name": "ELECTRICAL_VSD"
+                },
+                "position": {
+                  "height": 50,
+                  "rotate": {
+                    "anchor": "25% 0%"
+                  },
+                  "width": 540,
+                  "x": 2,
+                  "y": 1.92
+                },
+                "propConfig": {
+                  "meta.visible": {
+                    "binding": {
+                      "config": {
+                        "expression": "{..../FlexContainer_2/Dropdown.props.value} \u003d\u0027ELECTRICAL\u0027 \u0026 {..../EQUIPMENT/CoordinateContainer/ELECTRICAL_EQUIPMENT.props.value} \u003d \u0027VSD\u0027"
+                      },
+                      "type": "expr"
+                    }
+                  },
+                  "props.options": {
+                    "persistent": true
+                  }
+                },
+                "props": {
+                  "dropdownOptionStyle": {
+                    "fontSize": 40
+                  },
+                  "options": [
+                    {
+                      "label": "CLEAN",
+                      "value": "CLEAN"
+                    },
+                    {
+                      "label": "REPAIR",
+                      "value": "REPAIR"
+                    },
+                    {
+                      "label": "REPLACE",
+                      "value": "REPLACE"
+                    },
+                    {
+                      "label": "ADJUST",
+                      "value": "ADJUST"
+                    },
+                    {
+                      "label": "RESET",
+                      "value": "RESET"
+                    }
+                  ],
+                  "style": {
+                    "fontSize": 40
+                  },
+                  "value": null
+                },
+                "type": "ia.input.dropdown"
+              },
+              {
+                "meta": {
+                  "name": "ELECTRICAL_OVERLOAD"
+                },
+                "position": {
+                  "height": 50,
+                  "rotate": {
+                    "anchor": "25% 0%"
+                  },
+                  "width": 540,
+                  "x": 2,
+                  "y": 1.92
+                },
+                "propConfig": {
+                  "meta.visible": {
+                    "binding": {
+                      "config": {
+                        "expression": "{..../FlexContainer_2/Dropdown.props.value} \u003d\u0027ELECTRICAL\u0027 \u0026 {..../EQUIPMENT/CoordinateContainer/ELECTRICAL_EQUIPMENT.props.value} \u003d \u0027OVERLOAD\u0027"
+                      },
+                      "type": "expr"
+                    }
+                  },
+                  "props.options": {
+                    "persistent": true
+                  }
+                },
+                "props": {
+                  "dropdownOptionStyle": {
+                    "fontSize": 40
+                  },
+                  "options": [
+                    {
+                      "label": "CLEAN",
+                      "value": "CLEAN"
+                    },
+                    {
+                      "label": "REPAIR",
+                      "value": "REPAIR"
+                    },
+                    {
+                      "label": "REPLACE",
+                      "value": "REPLACE"
+                    },
+                    {
+                      "label": "ADJUST",
+                      "value": "ADJUST"
+                    },
+                    {
+                      "label": "RESET",
+                      "value": "RESET"
+                    }
+                  ],
+                  "style": {
+                    "fontSize": 40
+                  },
+                  "value": null
+                },
+                "type": "ia.input.dropdown"
+              },
+              {
+                "meta": {
+                  "name": "ELECTRICAL_LIGHTCURTAIN"
+                },
+                "position": {
+                  "height": 50,
+                  "rotate": {
+                    "anchor": "25% 0%"
+                  },
+                  "width": 540,
+                  "x": 2,
+                  "y": 1.92
+                },
+                "propConfig": {
+                  "meta.visible": {
+                    "binding": {
+                      "config": {
+                        "expression": "{..../FlexContainer_2/Dropdown.props.value} \u003d\u0027ELECTRICAL\u0027 \u0026 {..../EQUIPMENT/CoordinateContainer/ELECTRICAL_EQUIPMENT.props.value} \u003d \u0027LIGHT CURTAIN\u0027"
+                      },
+                      "type": "expr"
+                    }
+                  },
+                  "props.options": {
+                    "persistent": true
+                  }
+                },
+                "props": {
+                  "dropdownOptionStyle": {
+                    "fontSize": 40
+                  },
+                  "options": [
+                    {
+                      "label": "CLEAN",
+                      "value": "CLEAN"
+                    },
+                    {
+                      "label": "REPAIR",
+                      "value": "REPAIR"
+                    },
+                    {
+                      "label": "REPLACE",
+                      "value": "REPLACE"
+                    },
+                    {
+                      "label": "ADJUST",
+                      "value": "ADJUST"
+                    },
+                    {
+                      "label": "RESET",
+                      "value": "RESET"
+                    },
+                    {
+                      "label": "CALIBRATE",
+                      "value": "CALIBRATE"
+                    },
+                    {
+                      "label": "TIGHTEN",
+                      "value": "TIGHTEN"
+                    }
+                  ],
+                  "style": {
+                    "fontSize": 40
+                  },
+                  "value": null
+                },
+                "type": "ia.input.dropdown"
+              },
+              {
+                "meta": {
+                  "name": "ELECTRICAL_CAMERA"
+                },
+                "position": {
+                  "height": 50,
+                  "rotate": {
+                    "anchor": "25% 0%"
+                  },
+                  "width": 540,
+                  "x": 2,
+                  "y": 1.92
+                },
+                "propConfig": {
+                  "meta.visible": {
+                    "binding": {
+                      "config": {
+                        "expression": "{..../FlexContainer_2/Dropdown.props.value} \u003d\u0027ELECTRICAL\u0027 \u0026 {..../EQUIPMENT/CoordinateContainer/ELECTRICAL_EQUIPMENT.props.value} \u003d \u0027CAMERA\u0027"
+                      },
+                      "type": "expr"
+                    }
+                  },
+                  "props.options": {
+                    "persistent": true
+                  }
+                },
+                "props": {
+                  "dropdownOptionStyle": {
+                    "fontSize": 40
+                  },
+                  "options": [
+                    {
+                      "label": "CLEAN",
+                      "value": "CLEAN"
+                    },
+                    {
+                      "label": "REPAIR",
+                      "value": "REPAIR"
+                    },
+                    {
+                      "label": "REPLACE",
+                      "value": "REPLACE"
+                    },
+                    {
+                      "label": "ADJUST",
+                      "value": "ADJUST"
+                    },
+                    {
+                      "label": "RESET",
+                      "value": "RESET"
+                    },
+                    {
+                      "label": "CALIBRATE",
+                      "value": "CALIBRATE"
+                    },
+                    {
+                      "label": "TIGHTEN",
+                      "value": "TIGHTEN"
+                    }
+                  ],
+                  "style": {
+                    "fontSize": 40
+                  },
+                  "value": null
+                },
+                "type": "ia.input.dropdown"
+              },
+              {
+                "meta": {
+                  "name": "ELECTRICAL_SOLENOIDVALVE"
+                },
+                "position": {
+                  "height": 50,
+                  "rotate": {
+                    "anchor": "25% 0%"
+                  },
+                  "width": 540,
+                  "x": 2,
+                  "y": 1.92
+                },
+                "propConfig": {
+                  "meta.visible": {
+                    "binding": {
+                      "config": {
+                        "expression": "{..../FlexContainer_2/Dropdown.props.value} \u003d\u0027ELECTRICAL\u0027 \u0026 {..../EQUIPMENT/CoordinateContainer/ELECTRICAL_EQUIPMENT.props.value} \u003d \u0027SOLENOID VALVE\u0027"
+                      },
+                      "type": "expr"
+                    }
+                  },
+                  "props.options": {
+                    "persistent": true
+                  }
+                },
+                "props": {
+                  "dropdownOptionStyle": {
+                    "fontSize": 40
+                  },
+                  "options": [
+                    {
+                      "label": "CLEAN",
+                      "value": "CLEAN"
+                    },
+                    {
+                      "label": "REPAIR",
+                      "value": "REPAIR"
+                    },
+                    {
+                      "label": "REPLACE",
+                      "value": "REPLACE"
+                    },
+                    {
+                      "label": "ADJUST",
+                      "value": "ADJUST"
+                    },
+                    {
+                      "label": "TIGHTEN",
+                      "value": "TIGHTEN"
+                    }
+                  ],
+                  "style": {
+                    "fontSize": 40
+                  },
+                  "value": null
+                },
+                "type": "ia.input.dropdown"
+              },
+              {
+                "meta": {
+                  "name": "ELECTRICAL_PLUG"
+                },
+                "position": {
+                  "height": 50,
+                  "rotate": {
+                    "anchor": "25% 0%"
+                  },
+                  "width": 540,
+                  "x": 2,
+                  "y": 1.92
+                },
+                "propConfig": {
+                  "meta.visible": {
+                    "binding": {
+                      "config": {
+                        "expression": "{..../FlexContainer_2/Dropdown.props.value} \u003d\u0027ELECTRICAL\u0027 \u0026 {..../EQUIPMENT/CoordinateContainer/ELECTRICAL_EQUIPMENT.props.value} \u003d \u0027PLUG\u0027"
+                      },
+                      "type": "expr"
+                    }
+                  },
+                  "props.options": {
+                    "persistent": true
+                  }
+                },
+                "props": {
+                  "dropdownOptionStyle": {
+                    "fontSize": 40
+                  },
+                  "options": [
+                    {
+                      "label": "CLEAN",
+                      "value": "CLEAN"
+                    },
+                    {
+                      "label": "REPAIR",
+                      "value": "REPAIR"
+                    },
+                    {
+                      "label": "REPLACE",
+                      "value": "REPLACE"
+                    },
+                    {
+                      "label": "ADJUST",
+                      "value": 4
+                    },
+                    {
+                      "label": "TIGHTEN",
+                      "value": "TIGHTEN"
+                    }
+                  ],
+                  "style": {
+                    "fontSize": 40
+                  },
+                  "value": null
+                },
+                "type": "ia.input.dropdown"
+              },
+              {
+                "meta": {
+                  "name": "ELECTRICAL_COIL"
+                },
+                "position": {
+                  "height": 50,
+                  "rotate": {
+                    "anchor": "25% 0%"
+                  },
+                  "width": 540,
+                  "x": 2,
+                  "y": 1.92
+                },
+                "propConfig": {
+                  "meta.visible": {
+                    "binding": {
+                      "config": {
+                        "expression": "{..../FlexContainer_2/Dropdown.props.value} \u003d\u0027ELECTRICAL\u0027 \u0026 {..../EQUIPMENT/CoordinateContainer/ELECTRICAL_EQUIPMENT.props.value} \u003d \u0027COIL\u0027"
+                      },
+                      "type": "expr"
+                    }
+                  },
+                  "props.options": {
+                    "persistent": true
+                  }
+                },
+                "props": {
+                  "dropdownOptionStyle": {
+                    "fontSize": 40
+                  },
+                  "options": [
+                    {
+                      "label": "TIGHTEN",
+                      "value": "TIGHTEN"
+                    },
+                    {
+                      "label": "REPLACE",
+                      "value": "REPLACE"
+                    }
+                  ],
+                  "style": {
+                    "fontSize": 40
+                  },
+                  "value": null
+                },
+                "type": "ia.input.dropdown"
+              },
+              {
+                "meta": {
+                  "name": "ELECTRICAL_LIGHT"
+                },
+                "position": {
+                  "height": 50,
+                  "rotate": {
+                    "anchor": "25% 0%"
+                  },
+                  "width": 540,
+                  "x": 2,
+                  "y": 1.92
+                },
+                "propConfig": {
+                  "meta.visible": {
+                    "binding": {
+                      "config": {
+                        "expression": "{..../FlexContainer_2/Dropdown.props.value} \u003d\u0027ELECTRICAL\u0027 \u0026 {..../EQUIPMENT/CoordinateContainer/ELECTRICAL_EQUIPMENT.props.value} \u003d \u0027LIGHT\u0027"
+                      },
+                      "type": "expr"
+                    }
+                  },
+                  "props.options": {
+                    "persistent": true
+                  }
+                },
+                "props": {
+                  "dropdownOptionStyle": {
+                    "fontSize": 40
+                  },
+                  "options": [
+                    {
+                      "label": "CLEAN",
+                      "value": "CLEAN"
+                    },
+                    {
+                      "label": "REPAIR",
+                      "value": "REPAIR"
+                    },
+                    {
+                      "label": "REPLACE",
+                      "value": "REPLACE"
+                    },
+                    {
+                      "label": "TIGHTEN",
+                      "value": "TIGHTEN"
+                    },
+                    {
+                      "label": "ADJUST",
+                      "value": "ADJUST"
+                    }
+                  ],
+                  "style": {
+                    "fontSize": 40
+                  },
+                  "value": null
+                },
+                "type": "ia.input.dropdown"
+              },
+              {
+                "meta": {
+                  "name": "ELECTRICAL_HEATER"
+                },
+                "position": {
+                  "height": 50,
+                  "rotate": {
+                    "anchor": "25% 0%"
+                  },
+                  "width": 540,
+                  "x": 2,
+                  "y": 1.92
+                },
+                "propConfig": {
+                  "meta.visible": {
+                    "binding": {
+                      "config": {
+                        "expression": "{..../FlexContainer_2/Dropdown.props.value} \u003d\u0027ELECTRICAL\u0027 \u0026 {..../EQUIPMENT/CoordinateContainer/ELECTRICAL_EQUIPMENT.props.value} \u003d \u0027HEATER\u0027"
+                      },
+                      "type": "expr"
+                    }
+                  },
+                  "props.options": {
+                    "persistent": true
+                  }
+                },
+                "props": {
+                  "dropdownOptionStyle": {
+                    "fontSize": 40
+                  },
+                  "options": [
+                    {
+                      "label": "CLEAN",
+                      "value": "CLEAN"
+                    },
+                    {
+                      "label": "REPAIR",
+                      "value": "REPAIR"
+                    },
+                    {
+                      "label": "REPLACE",
+                      "value": "REPLACE"
+                    },
+                    {
+                      "label": "RESET",
+                      "value": "RESET"
+                    },
+                    {
+                      "label": "ADJUST",
+                      "value": "ADJUST"
+                    }
+                  ],
+                  "style": {
+                    "fontSize": 40
+                  },
+                  "value": null
+                },
+                "type": "ia.input.dropdown"
+              },
+              {
+                "meta": {
+                  "name": "ELECTRICAL_COOLER"
+                },
+                "position": {
+                  "height": 50,
+                  "rotate": {
+                    "anchor": "25% 0%"
+                  },
+                  "width": 540,
+                  "x": 2,
+                  "y": 1.92
+                },
+                "propConfig": {
+                  "meta.visible": {
+                    "binding": {
+                      "config": {
+                        "expression": "{..../FlexContainer_2/Dropdown.props.value} \u003d\u0027ELECTRICAL\u0027 \u0026 {..../EQUIPMENT/CoordinateContainer/ELECTRICAL_EQUIPMENT.props.value} \u003d \u0027COOLER\u0027"
+                      },
+                      "type": "expr"
+                    }
+                  },
+                  "props.options": {
+                    "persistent": true
+                  }
+                },
+                "props": {
+                  "dropdownOptionStyle": {
+                    "fontSize": 40
+                  },
+                  "options": [
+                    {
+                      "label": "CLEAN",
+                      "value": "CLEAN"
+                    },
+                    {
+                      "label": "REPAIR",
+                      "value": "REPAIR"
+                    },
+                    {
+                      "label": "REPLACE",
+                      "value": "REPLACE"
+                    },
+                    {
+                      "label": "RESET",
+                      "value": "RESET"
+                    },
+                    {
+                      "label": "ADJUST",
+                      "value": "ADJUST"
+                    }
+                  ],
+                  "style": {
+                    "fontSize": 40
+                  },
+                  "value": null
+                },
+                "type": "ia.input.dropdown"
+              },
+              {
+                "meta": {
+                  "name": "ELECTRICAL_ENCODER"
+                },
+                "position": {
+                  "height": 50,
+                  "rotate": {
+                    "anchor": "25% 0%"
+                  },
+                  "width": 540,
+                  "x": 2,
+                  "y": 1.92
+                },
+                "propConfig": {
+                  "meta.visible": {
+                    "binding": {
+                      "config": {
+                        "expression": "{..../FlexContainer_2/Dropdown.props.value} \u003d\u0027ELECTRICAL\u0027 \u0026 {..../EQUIPMENT/CoordinateContainer/ELECTRICAL_EQUIPMENT.props.value} \u003d \u0027ENCODER\u0027"
+                      },
+                      "type": "expr"
+                    }
+                  },
+                  "props.options": {
+                    "persistent": true
+                  }
+                },
+                "props": {
+                  "dropdownOptionStyle": {
+                    "fontSize": 40
+                  },
+                  "options": [
+                    {
+                      "label": "CLEAN",
+                      "value": "CLEAN"
+                    },
+                    {
+                      "label": "REPAIR",
+                      "value": "REPAIR"
+                    },
+                    {
+                      "label": "REPLACE",
+                      "value": "REPLACE"
+                    },
+                    {
+                      "label": "RESET",
+                      "value": "RESET"
+                    },
+                    {
+                      "label": "ADJUST",
+                      "value": "ADJUST"
+                    }
+                  ],
+                  "style": {
+                    "fontSize": 40
+                  },
+                  "value": null
+                },
+                "type": "ia.input.dropdown"
+              },
+              {
+                "meta": {
+                  "name": "ELECTRICAL_PLC.PROGRAM"
+                },
+                "position": {
+                  "height": 50,
+                  "rotate": {
+                    "anchor": "25% 0%"
+                  },
+                  "width": 540,
+                  "x": 2,
+                  "y": 1.92
+                },
+                "propConfig": {
+                  "meta.visible": {
+                    "binding": {
+                      "config": {
+                        "expression": "{..../FlexContainer_2/Dropdown.props.value} \u003d\u0027ELECTRICAL\u0027 \u0026 {..../EQUIPMENT/CoordinateContainer/ELECTRICAL_EQUIPMENT.props.value} \u003d \u0027PLC PROGRAM\u0027"
+                      },
+                      "type": "expr"
+                    }
+                  },
+                  "props.options": {
+                    "persistent": true
+                  }
+                },
+                "props": {
+                  "dropdownOptionStyle": {
+                    "fontSize": 40
+                  },
+                  "options": [
+                    {
+                      "label": "REPAIR",
+                      "value": "REPAIR"
+                    },
+                    {
+                      "label": "RESET",
+                      "value": 2
+                    },
+                    {
+                      "label": "CHANGE",
+                      "value": "CHANGE"
+                    }
+                  ],
+                  "style": {
+                    "fontSize": 40
+                  },
+                  "value": null
+                },
+                "type": "ia.input.dropdown"
+              },
+              {
+                "meta": {
+                  "name": "ELECTRICAL_PUMP"
+                },
+                "position": {
+                  "height": 50,
+                  "rotate": {
+                    "anchor": "25% 0%"
+                  },
+                  "width": 540,
+                  "x": 2,
+                  "y": 1.92
+                },
+                "propConfig": {
+                  "meta.visible": {
+                    "binding": {
+                      "config": {
+                        "expression": "{..../FlexContainer_2/Dropdown.props.value} \u003d\u0027ELECTRICAL\u0027 \u0026 {..../EQUIPMENT/CoordinateContainer/ELECTRICAL_EQUIPMENT.props.value} \u003d \u0027PUMP\u0027"
+                      },
+                      "type": "expr"
+                    }
+                  },
+                  "props.options": {
+                    "persistent": true
+                  }
+                },
+                "props": {
+                  "dropdownOptionStyle": {
+                    "fontSize": 40
+                  },
+                  "options": [
+                    {
+                      "label": "RESET",
+                      "value": "RESET"
+                    }
+                  ],
+                  "style": {
+                    "fontSize": 40
+                  },
+                  "value": null
+                },
+                "type": "ia.input.dropdown"
+              },
+              {
+                "meta": {
+                  "name": "EMERGENCYSERVICES"
+                },
+                "position": {
+                  "height": 50,
+                  "rotate": {
+                    "anchor": "25% 0%"
+                  },
+                  "width": 540,
+                  "x": 2,
+                  "y": 1.92
+                },
+                "propConfig": {
+                  "meta.visible": {
+                    "binding": {
+                      "config": {
+                        "expression": "{..../FlexContainer_2/Dropdown.props.value} \u003d\u0027EMERGENCY SERVICES\u0027 \u0026 {..../EQUIPMENT/CoordinateContainer/EMERGENCY_EQUIPMENT.props.value} \u003d \u0027EVACUATE\u0027"
+                      },
+                      "type": "expr"
+                    }
+                  },
+                  "props.options": {
+                    "persistent": true
+                  }
+                },
+                "props": {
+                  "dropdownOptionStyle": {
+                    "fontSize": 40
+                  },
+                  "options": [
+                    {
+                      "label": "EVACUATE",
+                      "value": "EVACUATE"
+                    }
+                  ],
+                  "style": {
+                    "fontSize": 40
+                  },
+                  "value": null
+                },
+                "type": "ia.input.dropdown"
+              },
+              {
+                "meta": {
+                  "name": "PRODUCTION_BINFULL"
+                },
+                "position": {
+                  "height": 50,
+                  "rotate": {
+                    "anchor": "25% 0%"
+                  },
+                  "width": 540,
+                  "x": 2,
+                  "y": 1.92
+                },
+                "propConfig": {
+                  "meta.visible": {
+                    "binding": {
+                      "config": {
+                        "expression": "{..../FlexContainer_2/Dropdown.props.value} \u003d\u0027PRODUCTION\u0027 \u0026 {..../EQUIPMENT/CoordinateContainer/PRODUCTION_EQUIPMENT.props.value} \u003d \u0027BIN FULL\u0027"
+                      },
+                      "type": "expr"
+                    }
+                  }
+                },
+                "props": {
+                  "dropdownOptionStyle": {
+                    "fontSize": 40
+                  },
+                  "options": [
+                    {
+                      "label": "CLEAR",
+                      "value": "CLEAR"
+                    }
+                  ],
+                  "style": {
+                    "fontSize": 40
+                  },
+                  "value": "CLEAR"
+                },
+                "type": "ia.input.dropdown"
+              }
+            ],
+            "meta": {
+              "name": "CoordinateContainer"
+            },
+            "position": {
+              "basis": "462px",
+              "grow": 1
+            },
+            "type": "ia.container.coord"
+          }
+        ],
+        "meta": {
+          "name": "FlexContainer_0"
+        },
+        "position": {
+          "basis": "60px"
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "children": [
+          {
+            "children": [
+              {
+                "events": {
+                  "dom": {
+                    "onClick": {
+                      "config": {
+                        "script": "\tarea \u003d self.parent.parent.parent.getChild(\"FlexContainer\").getChild(\"Dropdown\").props.value\n\trespon \u003d self.parent.parent.parent.getChild(\"FlexContainer_2\").getChild(\"Dropdown\").props.value\n\t\n\tif self.parent.parent.parent.getChild(\"FlexContainer_1\").getChild(\"CoordinateContainer\").getChild(\"infeed_subarea\").meta.visible \u003d\u003d 1 :\n\t\tsub_area \u003d self.parent.parent.parent.getChild(\"FlexContainer_1\").getChild(\"CoordinateContainer\").getChild(\"infeed_subarea\").props.value\n\t\t\n\t\t\n\telif self.parent.parent.parent.getChild(\"FlexContainer_1\").getChild(\"CoordinateContainer\").getChild(\"debarker_subarea\").meta.visible \u003d\u003d 1 :\n\t\t\tsub_area \u003d self.parent.parent.parent.getChild(\"FlexContainer_1\").getChild(\"CoordinateContainer\").getChild(\"debarker_subarea\").props.value\n\t\t\t\n\t\t\t\n\telif self.parent.parent.parent.getChild(\"FlexContainer_1\").getChild(\"CoordinateContainer\").getChild(\"logscanning_subarea\").meta.visible \u003d\u003d 1 :\n\t\t\tsub_area \u003d self.parent.parent.parent.getChild(\"FlexContainer_1\").getChild(\"CoordinateContainer\").getChild(\"logscanning_subarea\").props.value\n\t\t\t\n\t\t\t\n\telif self.parent.parent.parent.getChild(\"FlexContainer_1\").getChild(\"CoordinateContainer\").getChild(\"outfeed_subarea\").meta.visible \u003d\u003d 1 :\n\t\t\tsub_area \u003d self.parent.parent.parent.getChild(\"FlexContainer_1\").getChild(\"CoordinateContainer\").getChild(\"outfeed_subarea\").props.value\n\t\t\t\n\t\n\telif self.parent.parent.parent.getChild(\"FlexContainer_1\").getChild(\"CoordinateContainer\").getChild(\"logsorting_subarea\").meta.visible \u003d\u003d 1 :\n\t\t\tsub_area \u003d self.parent.parent.parent.getChild(\"FlexContainer_1\").getChild(\"CoordinateContainer\").getChild(\"logsorting_subarea\").props.value\n\t\t\t\n\t\t\t\n\telif self.parent.parent.parent.getChild(\"FlexContainer_1\").getChild(\"CoordinateContainer\").getChild(\"wastehandling_subarea\").meta.visible \u003d\u003d 1 :\n\t\t\tsub_area \u003d self.parent.parent.parent.getChild(\"FlexContainer_1\").getChild(\"CoordinateContainer\").getChild(\"wastehandling_subarea\").props.value\n\t\n\tif self.parent.parent.parent.getChild(\"EQUIPMENT\").getChild(\"CoordinateContainer\").getChild(\"PRODUCTION_EQUIPMENT\").meta.visible \u003d\u003d 1 :\n\t\t\tequip \u003d self.parent.parent.parent.getChild(\"EQUIPMENT\").getChild(\"CoordinateContainer\").getChild(\"PRODUCTION_EQUIPMENT\").props.value\n\telif self.parent.parent.parent.getChild(\"EQUIPMENT\").getChild(\"CoordinateContainer\").getChild(\"MECHANICAL_EQUIPMENT\").meta.visible \u003d\u003d 1:\n\t\t\tequip \u003d self.parent.parent.parent.getChild(\"EQUIPMENT\").getChild(\"CoordinateContainer\").getChild(\"MECHANICAL_EQUIPMENT\").props.value\n\telif self.parent.parent.parent.getChild(\"EQUIPMENT\").getChild(\"CoordinateContainer\").getChild(\"ELECTRICAL_EQUIPMENT\").meta.visible \u003d\u003d 1 :\n\t\tequip \u003d self.parent.parent.parent.getChild(\"EQUIPMENT\").getChild(\"CoordinateContainer\").getChild(\"ELECTRICAL_EQUIPMENT\").props.value\n\telif self.parent.parent.parent.getChild(\"EQUIPMENT\").getChild(\"CoordinateContainer\").getChild(\"EMERGENCY_EQUIPMENT\").meta.visible \u003d\u003d 1 :\n\t\tequip \u003d self.parent.parent.parent.getChild(\"EQUIPMENT\").getChild(\"CoordinateContainer\").getChild(\"EMERGENCY_EQUIPMENT\").props.value\n\t\n\tif self.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"PRODUCTION_BINFULL\").meta.visible \u003d\u003d 1 :\n\t\taction \u003d self.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"PRODUCTION_BINFULL\").props.value\n\telif self.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"PRODUCTION_STAFF\").meta.visible \u003d\u003d 1 :\n\t\taction \u003d self.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"PRODUCTION_STAFF\").props.value\n\telif self.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"PRODUCTION_FEEDSTOCK\").meta.visible \u003d\u003d 1 :\n\t\taction \u003d self.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"PRODUCTION_FEEDSTOCK\").props.value\n\telif self.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"PRODUCTION_BLOCKAGE\").meta.visible \u003d\u003d 1 :\n\t\taction \u003d self.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"PRODUCTION_BLOCKAGE\").props.value\n\telif self.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"PRODUCTION_HOUSEKEEPING\").meta.visible \u003d\u003d 1 :\n\t\taction \u003d self.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"PRODUCTION_HOUSEKEEPING\").props.value\t\t\n\telif self.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"PRODUCTION_CONSUMABLES\").meta.visible \u003d\u003d 1 :\n\t\taction \u003d self.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"PRODUCTION_CONSUMABLES\").props.value\n\telif self.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"PRODUCTION_LOGLOADER\").meta.visible \u003d\u003d 1 :\n\t\taction \u003d self.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"PRODUCTION_LOGLOADER\").props.value\n\telif self.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"PRODUCTION_SETUP\").meta.visible \u003d\u003d 1 :\n\t\taction \u003d self.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"PRODUCTION_SETUP\").props.value\n\telif self.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"MECHANICAL_PNEUCYL\").meta.visible \u003d\u003d 1 :\n\t\taction \u003d self.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"MECHANICAL_PNEUCYL\").props.value\t\t\n\telif self.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"MECHANICAL_PNEUCYL\").meta.visible \u003d\u003d 1 :\n\t \taction \u003d self.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"MECHANICAL_PNEUCYL\").props.value\n\telif self.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"MECHANICAL_PNEUCYL\").meta.visible \u003d\u003d 1 :\n\t\t action \u003d self.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"MECHANICAL_PNEUCYL\").props.value\n\telif self.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"MECHANICAL_PIPE\").meta.visible \u003d\u003d 1 :\n\t\taction \u003d self.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"MECHANICAL_PIPE\").props.value\n\telif self.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"MECHANICAL_VALVE\").meta.visible \u003d\u003d 1 :\n\t\taction \u003d self.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"MECHANICAL_VALVE\").props.value\n\telif self.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"MECHANICAL_HYDRAUCYL\").meta.visible \u003d\u003d 1 :\n\t\taction \u003d self.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"MECHANICAL_HYDRAUCYL\").props.value\n\telif self.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"MECHANICAL_HYDRAUPIPE\").meta.visible \u003d\u003d 1 :\n\t\taction \u003d self.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"MECHANICAL_HYDRAUPIPE\").props.value\t\t\t\t\n\telif self.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"MECHANICAL_HYDRAUVALVE\").meta.visible \u003d\u003d 1 :\n\t\t action \u003d self.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"MECHANICAL_HYDRAUVALVE\").props.value\n\telif self.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"MECHANICAL_MOTOR\").meta.visible \u003d\u003d 1 :\n\t\taction \u003d self.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"MECHANICAL_MOTOR\").props.value\t\t\t\t\t\t\n\telif self.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"MECHANICAL_BEARING\").meta.visible \u003d\u003d 1 :\n\t\taction \u003d self.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"MECHANICAL_BEARING\").props.value\n\telif self.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"MECHANICAL_CONVEYOR\").meta.visible \u003d\u003d 1 :\n\t\t\taction \u003d self.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"MECHANICAL_CONVEYOR\").props.value\n\telif self.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"MECHANICAL_CHAIN\").meta.visible \u003d\u003d 1 :\n\t\t\taction \u003d self.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"MECHANICAL_CHAIN\").props.value\n\telif self.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"MECHANICAL_WEARSTRIP\").meta.visible \u003d\u003d 1 :\n\t\t\taction \u003d self.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"MECHANICAL_WEARSTRIP\").props.value\n\telif self.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"MECHANICAL_SPROCKET\").meta.visible \u003d\u003d 1 :\n\t\t\taction \u003d self.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"MECHANICAL_SPROCKET\").props.value\n\telif self.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"MECHANICAL_BELT\").meta.visible \u003d\u003d 1 :\n\t\taction \u003d self.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"MECHANICAL_BELT\").props.value\t \t\n\telif self.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"MECHANICAL_PULLEY\").meta.visible \u003d\u003d 1 :\n\t\taction \u003d self.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"MECHANICAL_PULLEY\").props.value\n\telif self.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"MECHANICAL_V-BELT\").meta.visible \u003d\u003d 1 :\n\t\taction \u003d self.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"MECHANICAL_V-BELT\").props.value\n\telif self.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"MECHANICAL_PLATEN\").meta.visible \u003d\u003d 1 :\n\t\taction \u003d self.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"MECHANICAL_PLATEN\").props.value\n\telif self.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"MECHANICAL_STEAMTRAP\").meta.visible \u003d\u003d 1 :\n\t\taction \u003d self.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"MECHANICAL_STEAMTRAP\").props.value\n\telif self.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"MECHANICAL_SHAFT\").meta.visible \u003d\u003d 1 :\n\t\taction \u003d self.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"MECHANICAL_SHAFT\").props.value\n\telif self.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"MECHANICAL_PUMP\").meta.visible \u003d\u003d 1 :\n\t\taction \u003d self.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"MECHANICAL_PUMP\").props.value\n\telif self.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"ELECTRICAL_MOTOR\").meta.visible \u003d\u003d 1 :\n\t\taction \u003d self.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"ELECTRICAL_MOTOR\").props.value\t \t\t\t\t\n\telif self.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"ELECTRICAL_CABLE\").meta.visible \u003d\u003d 1 :\n\t\taction \u003d self.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"ELECTRICALL_CABLE\").props.value\n\telif self.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"ELECTRICAL_BREAKER\").meta.visible \u003d\u003d 1 :\n\t\taction \u003d self.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"ELECTRICAL_BREAKER\").props.value\n\telif self.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"ELECTRICAL_MCC\").meta.visible \u003d\u003d 1 :\n\t\taction \u003d self.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"ELECTRICAL_MCC\").props.value\n\telif self.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"ELECTRICAL_PHOTOCELL\").meta.visible \u003d\u003d 1 :\n\t\taction \u003d self.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"ELECTRICAL_PHOTOCELL\").props.value\n\telif self.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"ELECTRICAL_LIMITSWITCH\").meta.visible \u003d\u003d 1 :\n\t\taction \u003d self.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"ELECTRICAL_LIMITSWITCH\").props.value\n\telif self.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"ELECTRICAL_TRANSDUCER\").meta.visible :\n\t\taction \u003d self.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"ELECTRICAL_TRANSDUCER\").props.value\n\telif self.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"ELECTRICAL_SOFTSTARTER\").meta.visible \u003d\u003d 1 :\n\t\taction \u003d self.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"ELECTRICAL_SOFTSTARTER\").props.value\n\telif self.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"ELECTRICAL_VSD\").meta.visible \u003d\u003d 1 :\n\t\taction \u003d self.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"ELECTRICAL_VSD\").props.value\n\telif self.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"ELECTRICAL_OVERLOAD\").meta.visible \u003d\u003d 1 :\n\t\taction \u003d self.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"ELECTRICAL_OVERLOAD\").props.value\n\telif self.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"ELECTRICAL_LIGHTCURTAIN\").meta.visible \u003d\u003d 1 :\n\t\taction \u003d self.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"ELECTRICAL_LIGHTCURTAIN\").props.value\n\telif self.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"ELECTRICAL_CAMERA\").meta.visible \u003d\u003d 1 :\n\t\taction \u003d self.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"ELECTRICAL_CAMERA\").props.value\n\telif self.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"ELECTRICAL_SOLENOIDVALVE\").meta.visible \u003d\u003d 1 :\n\t\taction \u003d self.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"ELECTRICAL_SOLENOIDVALVE\").props.value\n\telif self.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"ELECTRICAL_PLUG\").meta.visible \u003d\u003d 1 :\n\t\taction \u003d self.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"ELECTRICAL_PLUG\").props.value\n\telif self.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"ELECTRICAL_COIL\").meta.visible \u003d\u003d 1 :\n\t\taction \u003d self.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"ELECTRICAL_COIL\").props.value\n\telif self.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"ELECTRICAL_LIGHT\").meta.visible \u003d\u003d 1 :\n\t\taction \u003d self.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"ELECTRICAL_LIGHT\").props.value\n\telif self.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"ELECTRICAL_HEATER\").meta.visible \u003d\u003d 1 :\n\t\taction \u003d self.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"ELECTRICAL_HEATER\").props.value\n\telif self.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"ELECTRICAL_COOLER\").meta.visible \u003d\u003d 1 :\n\t\taction \u003d self.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"ELECTRICAL_COOLER\").props.value\n\telif self.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"ELECTRICAL_ENCODER\").meta.visible \u003d\u003d 1 :\n\t\taction \u003d self.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"ELECTRICAL_ENCODER\").props.value\n\telif self.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"ELECTRICAL_PLC.PROGRAM\").meta.visible \u003d\u003d 1 :\n\t\taction \u003d self.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"ELECTRICAL_PLC.PROGRAM\").props.value\n\telif self.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"ELECTRICAL_PUMP\").meta.visible \u003d\u003d 1 :\n\t\taction \u003d self.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"ELECTRICAL_PUMP\").props.value\n\telif self.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"EMERGENCYSERVICES\").meta.visible \u003d\u003d 1 :\n\t\taction \u003d self.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"EMERGENCYSERVICES\").props.value\t \t\n\t\t\t\t \t \t\t\t \t\t\t\t \t\t\t\n\t\t\t\t\t\t\n\t\t\n\t\t\t\t\t\t\t\n\tquery \u003d (\u0027UPDATE downtime_debarker \u0027 \n\t\t\t\t+ \u0027SET area\u003d?,sub_area\u003d?,responsibility\u003d?,equipment\u003d?,action\u003d? \u0027\n\t\t\t\t+ \u0027WHERE start_time \u003d (select max(start_time) from downtime_debarker) \u0027 )\n\targs \u003d [area,sub_area,respon,\", \".join(equip),action]\n\t \t\t\t\t\t\t\n\tsystem.db.runPrepUpdate(query, args,\"downtime_data\")\n\t\n\tself.parent.parent.parent.getChild(\"FlexContainer\").getChild(\"Dropdown\").props.value \u003d None\n\tself.parent.parent.parent.getChild(\"FlexContainer_1\").getChild(\"CoordinateContainer\").getChild(\"infeed_subarea\").props.value \u003d None\n\tself.parent.parent.parent.getChild(\"FlexContainer_1\").getChild(\"CoordinateContainer\").getChild(\"debarker_subarea\").props.value \u003d None\n\tself.parent.parent.parent.getChild(\"FlexContainer_1\").getChild(\"CoordinateContainer\").getChild(\"logscanning_subarea\").props.value \u003d None\n\tself.parent.parent.parent.getChild(\"FlexContainer_1\").getChild(\"CoordinateContainer\").getChild(\"outfeed_subarea\").props.value \u003d None\n\tself.parent.parent.parent.getChild(\"FlexContainer_1\").getChild(\"CoordinateContainer\").getChild(\"logsorting_subarea\").props.value \u003d None\n\tself.parent.parent.parent.getChild(\"FlexContainer_1\").getChild(\"CoordinateContainer\").getChild(\"wastehandling_subarea\").props.value \u003d None\n\t\n\t\n\t\n\tself.parent.parent.parent.getChild(\"EQUIPMENT\").getChild(\"CoordinateContainer\").getChild(\"PRODUCTION_EQUIPMENT\").props.value \u003d None\n\tself.parent.parent.parent.getChild(\"EQUIPMENT\").getChild(\"CoordinateContainer\").getChild(\"MECHANICAL_EQUIPMENT\").props.value \u003d None\n\tself.parent.parent.parent.getChild(\"EQUIPMENT\").getChild(\"CoordinateContainer\").getChild(\"ELECTRICAL_EQUIPMENT\").props.value \u003d None\n\tself.parent.parent.parent.getChild(\"EQUIPMENT\").getChild(\"CoordinateContainer\").getChild(\"EMERGENCY_EQUIPMENT\").props.value \u003d None\n\t\n\tself.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"PRODUCTION_SETUP\").props.value \u003d None\n\tself.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"PRODUCTION_LOGLOADER\").props.value \u003d None\n\tself.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"MECHANICAL_PNEUCYL\").props.value \u003d None\n\tself.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"MECHANICAL_PIPE\").props.value \u003d None\n\tself.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"MECHANICAL_VALVE\").props.value \u003d None\n\tself.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"MECHANICAL_HYDRAUCYL\").props.value \u003d None\n\tself.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"MECHANICAL_HYDRAUPIPE\").props.value \u003d None\n\tself.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"MECHANICAL_HYDRAUVALVE\").props.value \u003d None\n\tself.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"MECHANICAL_MOTOR\").props.value \u003d None\n\tself.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"MECHANICAL_BEARING\").props.value \u003d None\n\tself.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"MECHANICAL_CONVEYOR\").props.value \u003d None\n\tself.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"MECHANICAL_CHAIN\").props.value \u003d None\n\tself.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"MECHANICAL_WEARSTRIP\").props.value \u003d None\n\tself.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"MECHANICAL_SPROCKET\").props.value \u003d None\n\tself.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"MECHANICAL_BELT\").props.value \u003d None\n\tself.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"MECHANICAL_PULLEY\").props.value \u003d None\n\tself.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"MECHANICAL_V-BELT\").props.value \u003d None\n\tself.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"MECHANICAL_PLATEN\").props.value \u003d None\n\tself.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"MECHANICAL_STEAMTRAP\").props.value \u003d None\n\tself.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"MECHANICAL_SHAFT\").props.value \u003d None\n\tself.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"MECHANICAL_PUMP\").props.value \u003d None\n\tself.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"ELECTRICAL_MOTOR\").props.value \u003d None\n\tself.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"ELECTRICAL_CABLE\").props.value \u003d None\n\tself.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"ELECTRICAL_BREAKER\").props.value \u003d None\n\tself.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"ELECTRICAL_MCC\").props.value \u003d None\n\tself.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"ELECTRICAL_PHOTOCELL\").props.value \u003d None\n\tself.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"ELECTRICAL_LIMITSWITCH\").props.value \u003d None\n\tself.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"ELECTRICAL_TRANSDUCER\").props.value \u003d None\n\tself.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"ELECTRICAL_SOFTSTARTER\").props.value \u003d None\n\tself.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"ELECTRICAL_VSD\").props.value \u003d None\n\tself.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"ELECTRICAL_OVERLOAD\").props.value \u003d None\n\tself.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"ELECTRICAL_LIGHTCURTAIN\").props.value \u003d None\n\tself.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"ELECTRICAL_CAMERA\").props.value \u003d None\n\tself.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"ELECTRICAL_SOLENOIDVALVE\").props.value \u003d None\n\tself.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"ELECTRICAL_PLUG\").props.value \u003d None\n\tself.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"ELECTRICAL_COIL\").props.value \u003d None\n\tself.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"ELECTRICAL_LIGHT\").props.value \u003d None\n\tself.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"ELECTRICAL_HEATER\").props.value \u003d None\n\tself.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"ELECTRICAL_COOLER\").props.value \u003d None\n\tself.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"ELECTRICAL_ENCODER\").props.value \u003d None\n\tself.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"ELECTRICAL_PLC.PROGRAM\").props.value \u003d None\n\tself.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"CoordinateContainer\").getChild(\"ELECTRICAL_PUMP\").props.value \u003d None\n\t\n\t\n\tself.parent.parent.parent.getChild(\"FlexContainer_2\").getChild(\"Dropdown\").props.value \u003d None\n\t\n\tsystem.perspective.closePopup(\u002797oSJOmz\u0027)\n\t"
+                      },
+                      "scope": "G",
+                      "type": "script"
+                    }
+                  }
+                },
+                "meta": {
+                  "name": "Button"
+                },
+                "position": {
+                  "height": 116,
+                  "width": 340.00000000000006,
+                  "x": 269.95,
+                  "y": 55
+                },
+                "props": {
+                  "style": {
+                    "backgroundColor": "#004B3A",
+                    "fontSize": 40
+                  },
+                  "text": "ENTER",
+                  "textStyle": {
+                    "color": "#FFFFFF"
+                  }
+                },
+                "type": "ia.input.button"
+              }
+            ],
+            "meta": {
+              "name": "CoordinateContainer"
+            },
+            "position": {
+              "basis": "812px"
+            },
+            "type": "ia.container.coord"
+          }
+        ],
+        "meta": {
+          "name": "button"
+        },
+        "position": {
+          "basis": "181px"
+        },
+        "type": "ia.container.flex"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "props": {
+      "direction": "column"
+    },
+    "type": "ia.container.flex"
+  }
+}

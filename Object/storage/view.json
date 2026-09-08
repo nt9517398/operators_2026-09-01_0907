@@ -1,0 +1,30 @@
+{
+  "custom": {},
+  "params": {},
+  "props": {
+    "defaultSize": {
+      "height": 547,
+      "width": 693
+    }
+  },
+  "root": {
+    "children": [
+      {
+        "meta": {
+          "name": "Progress"
+        },
+        "position": {
+          "basis": "20px"
+        },
+        "type": "ia.display.progress"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "props": {
+      "direction": "column"
+    },
+    "type": "ia.container.flex"
+  }
+}

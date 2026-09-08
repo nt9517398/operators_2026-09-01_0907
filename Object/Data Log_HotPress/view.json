@@ -1,0 +1,421 @@
+{
+  "custom": {},
+  "params": {},
+  "props": {
+    "defaultSize": {
+      "height": 386,
+      "width": 900
+    }
+  },
+  "root": {
+    "children": [
+      {
+        "children": [
+          {
+            "meta": {
+              "name": "Label"
+            },
+            "position": {
+              "basis": "800px"
+            },
+            "props": {
+              "style": {
+                "fontSize": 32,
+                "textAlign": "center"
+              },
+              "text": "PRODUCTION LINE: HOT PRESS",
+              "textStyle": {
+                "classes": "Font/Description"
+              }
+            },
+            "type": "ia.display.label"
+          }
+        ],
+        "meta": {
+          "name": "TITLE"
+        },
+        "position": {
+          "basis": "48px"
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "children": [
+          {
+            "meta": {
+              "name": "Label"
+            },
+            "position": {
+              "basis": "127px",
+              "grow": 1
+            },
+            "props": {
+              "style": {
+                "textAlign": "center"
+              },
+              "text": "SUB AREA :",
+              "textStyle": {
+                "fontSize": 30
+              }
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "custom": {
+              "displayvalue": ""
+            },
+            "meta": {
+              "name": "sub_area"
+            },
+            "position": {
+              "basis": "462px",
+              "grow": 1
+            },
+            "props": {
+              "dropdownOptionStyle": {
+                "fontSize": 30
+              },
+              "options": [
+                {
+                  "label": "PRESS LINE",
+                  "value": "PRESS LINE"
+                },
+                {
+                  "label": "PANEL INFEED",
+                  "value": "PANEL INFEED"
+                },
+                {
+                  "label": "PANEL HOIST",
+                  "value": "PANEL HOIST"
+                },
+                {
+                  "label": "PAPER STATION",
+                  "value": "PAPER STATION"
+                },
+                {
+                  "label": "WELD STATION",
+                  "value": "WELD STATION"
+                },
+                {
+                  "label": "PANEL OUTFEED",
+                  "value": "PANEL OUTFEED"
+                },
+                {
+                  "label": "HOT PRESS LINE",
+                  "value": "HOT PRESS LINE"
+                },
+                {
+                  "label": "LOAD RACK",
+                  "value": "LOAD RACK"
+                },
+                {
+                  "label": "UNLOAD RACK",
+                  "value": "UNLOAD RACK"
+                },
+                {
+                  "label": "BELT CONVEYOR 1",
+                  "value": "BELT CONVEYOR 1"
+                },
+                {
+                  "label": "BELT CONVEYOR 2",
+                  "value": "BELT CONVEYOR 2"
+                },
+                {
+                  "label": "OUTFEED STACKER",
+                  "value": "OUTFEED STACKER"
+                }
+              ],
+              "style": {
+                "classes": "dropdown",
+                "fontSize": 30
+              },
+              "value": null
+            },
+            "type": "ia.input.dropdown"
+          }
+        ],
+        "meta": {
+          "name": "FlexContainer"
+        },
+        "position": {
+          "basis": "44px"
+        },
+        "props": {
+          "style": {
+            "marginBottom": 10,
+            "marginLeft": 10,
+            "marginRight": 10,
+            "marginTop": 10
+          }
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "children": [
+          {
+            "meta": {
+              "name": "Label"
+            },
+            "position": {
+              "basis": "127px",
+              "grow": 1
+            },
+            "props": {
+              "style": {
+                "fontSize": 30,
+                "textAlign": "center"
+              },
+              "text": "FAULT :"
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "meta": {
+              "name": "fault"
+            },
+            "position": {
+              "basis": "462px",
+              "grow": 1
+            },
+            "props": {
+              "dropdownOptionStyle": {
+                "fontSize": 30
+              },
+              "options": [
+                {
+                  "label": "ADJUSTMENT",
+                  "value": "ADJUSTMENT"
+                },
+                {
+                  "label": "ADJUST P.E CELLS",
+                  "value": "ADJUST P.E CELLS"
+                },
+                {
+                  "label": "ALIGN PUSHERS \u0026 LOAD RACK",
+                  "value": "ALIGN PUSHERS \u0026 LOAD RACK"
+                },
+                {
+                  "label": "BLOCKAGE",
+                  "value": "BLOCKAGE"
+                },
+                {
+                  "label": "BOWED BOARD",
+                  "value": "BOWED BOARD"
+                },
+                {
+                  "label": "CLEANING",
+                  "value": "CLEANING"
+                },
+                {
+                  "label": "ELECTRICAL FAILURE",
+                  "value": "ELECTRICAL FAILURE"
+                },
+                {
+                  "label": "EXT- GAS S",
+                  "value": "EXT- GAS S"
+                },
+                {
+                  "label": "FORKLIFT DELAY",
+                  "value": "FORKLIFT DELAY"
+                },
+                {
+                  "label": "FOUL UP/JAM",
+                  "value": "FOUL UP/JAM"
+                },
+                {
+                  "label": "DRIVE/GBOX/CHAIN/BELT",
+                  "value": "DRIVE/GBOX/CHAIN/BELT"
+                },
+                {
+                  "label": "MECHANICAL STRUCTURE",
+                  "value": "MECHANICAL STRUCTURE"
+                },
+                {
+                  "label": "MEETINGS",
+                  "value": "MEETINGS"
+                },
+                {
+                  "label": "NIP ROLLERS",
+                  "value": "NIP ROLLERS"
+                },
+                {
+                  "label": "NO PRODUCT",
+                  "value": "NO PRODUCT"
+                },
+                {
+                  "label": "NO/LOW STEAM",
+                  "value": "NO/LOW STEAM"
+                },
+                {
+                  "label": "OVERNIGHT SHUT",
+                  "value": "OVERNIGHT SHUT"
+                },
+                {
+                  "label": "PACK TWISTED INFEED",
+                  "value": "PACK TWISTED INFEED"
+                },
+                {
+                  "label": "PANEL TWISTED",
+                  "value": "PANEL TWISTED"
+                },
+                {
+                  "label": "PAPER CHANGE",
+                  "value": "PAPER CHANGE"
+                },
+                {
+                  "label": "PANEL LIFTER",
+                  "value": "PANEL LIFTER"
+                },
+                {
+                  "label": "PAPER",
+                  "value": "PAPER"
+                },
+                {
+                  "label": "PLANNED DOWNTIME",
+                  "value": "PLANNED DOWNTIME"
+                },
+                {
+                  "label": "PRODUCT CHANGE",
+                  "value": "PRODUCT CHANGE"
+                },
+                {
+                  "label": "QC-TESTING",
+                  "value": "QC-TESTING"
+                },
+                {
+                  "label": "LUNCH",
+                  "value": "LUNCH"
+                },
+                {
+                  "label": "SMOKO",
+                  "value": "SMOKO"
+                },
+                {
+                  "label": "SPRAY PLATTENS",
+                  "value": "SPRAY PLATTENS"
+                },
+                {
+                  "label": "PLC - RELAYS",
+                  "value": "PLC - RELAYS"
+                },
+                {
+                  "label": "PNEUMATIC",
+                  "value": "PNEUMATIC"
+                },
+                {
+                  "label": "REMOVE PANEL",
+                  "value": "REMOVE PANEL"
+                },
+                {
+                  "label": "REJECTS",
+                  "value": "REJECTS"
+                },
+                {
+                  "label": "START UP CHECKS",
+                  "value": "START UP CHECKS"
+                },
+                {
+                  "label": "STRAIGHTEN / ADJUST PANEL",
+                  "value": "STRAIGHTEN / ADJUST PANEL"
+                },
+                {
+                  "label": "SHORT STOP",
+                  "value": "SHORT STOP"
+                },
+                {
+                  "label": "TIGHTEN SKINS",
+                  "value": "TIGHTEN SKINS"
+                },
+                {
+                  "label": "TEMPERATURE",
+                  "value": "TEMPERATURE"
+                },
+                {
+                  "label": "TRAINING",
+                  "value": "TRAINING"
+                }
+              ],
+              "style": {
+                "classes": "dropdown",
+                "fontSize": 30
+              },
+              "value": null
+            },
+            "type": "ia.input.dropdown"
+          }
+        ],
+        "meta": {
+          "name": "FlexContainer_1"
+        },
+        "position": {
+          "basis": "43px"
+        },
+        "props": {
+          "style": {
+            "marginBottom": 10,
+            "marginLeft": 10,
+            "marginRight": 10,
+            "marginTop": 10
+          }
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "children": [
+          {
+            "events": {
+              "dom": {
+                "onClick": {
+                  "config": {
+                    "script": "\n\timport system\n\n\t# Go up from Button → button → root\n\troot \u003d self.parent.parent\n\n\ttry:\n\t\t# Read dropdown values\n\t\tsub_area \u003d root.getChild(\"FlexContainer\").getChild(\"sub_area\").props.value\n\t\tfault \u003d root.getChild(\"FlexContainer_1\").getChild(\"fault\").props.value\n\n\t\t# Write to database\n\t\tquery \u003d \"\"\"\n\t\t\tUPDATE downtime_formply_press\n\t\t\tSET sub_area \u003d ?, fault \u003d ?\n\t\t\tWHERE start_time \u003d (SELECT max(start_time) FROM downtime_formply_press)\n\t\t\"\"\"\n\t\targs \u003d [sub_area, fault]\n\t\tsystem.db.runPrepUpdate(query, args, \"downtime_data\")\n\n\t\t# Reset dropdowns\n\t\troot.getChild(\"FlexContainer\").getChild(\"sub_area\").props.value \u003d None\n\t\troot.getChild(\"FlexContainer_1\").getChild(\"fault\").props.value \u003d None\n\n\t\t# Close the popup\n\t\tsystem.perspective.closePopup(\"Ruf91Bp1\")\n\n\t\t# Log confirmation (for troubleshooting)\n\t\tsystem.util.getLogger(\"DowntimeFormplyPress\").info(\"Downtime record updated successfully.\")\n\n\texcept Exception as e:\n\t\tsystem.util.getLogger(\"DowntimeFormplyPress\").error(\"Error updating downtime record: %s\" % str(e))"
+                  },
+                  "scope": "G",
+                  "type": "script"
+                }
+              }
+            },
+            "meta": {
+              "name": "Button"
+            },
+            "position": {
+              "basis": "300px"
+            },
+            "props": {
+              "image": {
+                "position": "center"
+              },
+              "style": {
+                "backgroundColor": "#C51A45",
+                "fontSize": 40,
+                "marginBottom": 50,
+                "marginTop": 50
+              },
+              "text": "ENTER",
+              "textStyle": {
+                "color": "#FFFFFF"
+              }
+            },
+            "type": "ia.input.button"
+          }
+        ],
+        "meta": {
+          "name": "button"
+        },
+        "position": {
+          "basis": "184px"
+        },
+        "props": {
+          "justify": "center"
+        },
+        "type": "ia.container.flex"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "props": {
+      "direction": "column"
+    },
+    "type": "ia.container.flex"
+  }
+}

@@ -1,0 +1,812 @@
+{
+  "custom": {},
+  "params": {},
+  "props": {
+    "defaultSize": {
+      "height": 424,
+      "width": 2200
+    }
+  },
+  "root": {
+    "children": [
+      {
+        "meta": {
+          "name": "ViewCanvas"
+        },
+        "position": {
+          "basis": "320px",
+          "grow": 1
+        },
+        "propConfig": {
+          "props.instances[10].left": {
+            "binding": {
+              "config": {
+                "fallbackDelay": 2.5,
+                "mode": "direct",
+                "tagPath": "[default]Debarker/log_position/Position6"
+              },
+              "transforms": [
+                {
+                  "expression": "{value} * 0.0556 + \"px\"",
+                  "type": "expression"
+                }
+              ],
+              "type": "tag"
+            }
+          },
+          "props.instances[10].zIndex": {
+            "binding": {
+              "config": {
+                "fallbackDelay": 2.5,
+                "mode": "direct",
+                "tagPath": "[default]Debarker/log_position/Position6"
+              },
+              "transforms": [
+                {
+                  "fallback": 10,
+                  "inputType": "range",
+                  "mappings": [
+                    {
+                      "input": {
+                        "exclusiveMax": true,
+                        "max": 800,
+                        "min": 0
+                      },
+                      "output": -5
+                    }
+                  ],
+                  "outputType": "scalar",
+                  "type": "map"
+                }
+              ],
+              "type": "tag"
+            }
+          },
+          "props.instances[11].left": {
+            "binding": {
+              "config": {
+                "fallbackDelay": 2.5,
+                "mode": "direct",
+                "tagPath": "[default]Debarker/log_position/Position7"
+              },
+              "transforms": [
+                {
+                  "expression": "{value} * 0.0556 + \"px\"",
+                  "type": "expression"
+                }
+              ],
+              "type": "tag"
+            }
+          },
+          "props.instances[11].zIndex": {
+            "binding": {
+              "config": {
+                "fallbackDelay": 2.5,
+                "mode": "direct",
+                "tagPath": "[default]Debarker/log_position/Position7"
+              },
+              "transforms": [
+                {
+                  "fallback": 10,
+                  "inputType": "range",
+                  "mappings": [
+                    {
+                      "input": {
+                        "exclusiveMax": true,
+                        "max": 800,
+                        "min": 0
+                      },
+                      "output": -5
+                    }
+                  ],
+                  "outputType": "scalar",
+                  "type": "map"
+                }
+              ],
+              "type": "tag"
+            }
+          },
+          "props.instances[12].left": {
+            "binding": {
+              "config": {
+                "fallbackDelay": 2.5,
+                "mode": "direct",
+                "tagPath": "[default]Debarker/log_position/Position8"
+              },
+              "transforms": [
+                {
+                  "expression": "{value} * 0.0556 + \"px\"",
+                  "type": "expression"
+                }
+              ],
+              "type": "tag"
+            }
+          },
+          "props.instances[12].zIndex": {
+            "binding": {
+              "config": {
+                "fallbackDelay": 2.5,
+                "mode": "direct",
+                "tagPath": "[default]Debarker/log_position/Position8"
+              },
+              "transforms": [
+                {
+                  "fallback": 10,
+                  "inputType": "range",
+                  "mappings": [
+                    {
+                      "input": {
+                        "exclusiveMax": true,
+                        "max": 800,
+                        "min": 0
+                      },
+                      "output": -5
+                    }
+                  ],
+                  "outputType": "scalar",
+                  "type": "map"
+                }
+              ],
+              "type": "tag"
+            }
+          },
+          "props.instances[13].left": {
+            "binding": {
+              "config": {
+                "fallbackDelay": 2.5,
+                "mode": "direct",
+                "tagPath": "[default]Debarker/log_position/Position9"
+              },
+              "transforms": [
+                {
+                  "expression": "{value} * 0.0556 + \"px\"",
+                  "type": "expression"
+                }
+              ],
+              "type": "tag"
+            }
+          },
+          "props.instances[13].zIndex": {
+            "binding": {
+              "config": {
+                "fallbackDelay": 2.5,
+                "mode": "direct",
+                "tagPath": "[default]Debarker/log_position/Position9"
+              },
+              "transforms": [
+                {
+                  "fallback": 10,
+                  "inputType": "range",
+                  "mappings": [
+                    {
+                      "input": {
+                        "exclusiveMax": true,
+                        "max": 800,
+                        "min": 0
+                      },
+                      "output": -5
+                    }
+                  ],
+                  "outputType": "scalar",
+                  "type": "map"
+                }
+              ],
+              "type": "tag"
+            }
+          },
+          "props.instances[14].left": {
+            "binding": {
+              "config": {
+                "fallbackDelay": 2.5,
+                "mode": "direct",
+                "tagPath": "[default]Debarker/log_position/Position10"
+              },
+              "transforms": [
+                {
+                  "expression": "{value} * 0.0556 + \"px\"",
+                  "type": "expression"
+                }
+              ],
+              "type": "tag"
+            }
+          },
+          "props.instances[14].zIndex": {
+            "binding": {
+              "config": {
+                "fallbackDelay": 2.5,
+                "mode": "direct",
+                "tagPath": "[default]Debarker/log_position/Position10"
+              },
+              "transforms": [
+                {
+                  "fallback": 10,
+                  "inputType": "range",
+                  "mappings": [
+                    {
+                      "input": {
+                        "exclusiveMax": true,
+                        "max": 800,
+                        "min": 0
+                      },
+                      "output": -5
+                    }
+                  ],
+                  "outputType": "scalar",
+                  "type": "map"
+                }
+              ],
+              "type": "tag"
+            }
+          },
+          "props.instances[15].left": {
+            "binding": {
+              "config": {
+                "fallbackDelay": 2.5,
+                "mode": "direct",
+                "tagPath": "[default]Debarker/log_position/Position11"
+              },
+              "transforms": [
+                {
+                  "expression": "{value} * 0.0556 + \"px\"",
+                  "type": "expression"
+                }
+              ],
+              "type": "tag"
+            }
+          },
+          "props.instances[15].zIndex": {
+            "binding": {
+              "config": {
+                "fallbackDelay": 2.5,
+                "mode": "direct",
+                "tagPath": "[default]Debarker/log_position/Position11"
+              },
+              "transforms": [
+                {
+                  "fallback": 10,
+                  "inputType": "range",
+                  "mappings": [
+                    {
+                      "input": {
+                        "exclusiveMax": true,
+                        "max": 800,
+                        "min": 0
+                      },
+                      "output": -5
+                    }
+                  ],
+                  "outputType": "scalar",
+                  "type": "map"
+                }
+              ],
+              "type": "tag"
+            }
+          },
+          "props.instances[16].left": {
+            "binding": {
+              "config": {
+                "fallbackDelay": 2.5,
+                "mode": "direct",
+                "tagPath": "[default]Debarker/log_position/Position12"
+              },
+              "transforms": [
+                {
+                  "expression": "{value} * 0.0556 + \"px\"",
+                  "type": "expression"
+                }
+              ],
+              "type": "tag"
+            }
+          },
+          "props.instances[16].zIndex": {
+            "binding": {
+              "config": {
+                "fallbackDelay": 2.5,
+                "mode": "direct",
+                "tagPath": "[default]Debarker/log_position/Position12"
+              },
+              "transforms": [
+                {
+                  "fallback": 10,
+                  "inputType": "range",
+                  "mappings": [
+                    {
+                      "input": {
+                        "exclusiveMax": true,
+                        "max": 800,
+                        "min": 0
+                      },
+                      "output": -5
+                    }
+                  ],
+                  "outputType": "scalar",
+                  "type": "map"
+                }
+              ],
+              "type": "tag"
+            }
+          },
+          "props.instances[5].left": {
+            "binding": {
+              "config": {
+                "fallbackDelay": 2.5,
+                "mode": "direct",
+                "tagPath": "[default]Debarker/log_position/Position1"
+              },
+              "transforms": [
+                {
+                  "expression": "{value} * 0.0556 + \"px\"",
+                  "type": "expression"
+                }
+              ],
+              "type": "tag"
+            }
+          },
+          "props.instances[5].zIndex": {
+            "binding": {
+              "config": {
+                "fallbackDelay": 2.5,
+                "mode": "direct",
+                "tagPath": "[default]Debarker/log_position/Position1"
+              },
+              "transforms": [
+                {
+                  "fallback": 10,
+                  "inputType": "scalar",
+                  "mappings": [
+                    {
+                      "input": 0,
+                      "output": -1
+                    }
+                  ],
+                  "outputType": "scalar",
+                  "type": "map"
+                }
+              ],
+              "type": "tag"
+            }
+          },
+          "props.instances[6].left": {
+            "binding": {
+              "config": {
+                "fallbackDelay": 2.5,
+                "mode": "direct",
+                "tagPath": "[default]Debarker/log_position/Position2"
+              },
+              "transforms": [
+                {
+                  "expression": "{value} * 0.0556 + \"px\"",
+                  "type": "expression"
+                }
+              ],
+              "type": "tag"
+            }
+          },
+          "props.instances[6].zIndex": {
+            "binding": {
+              "config": {
+                "fallbackDelay": 2.5,
+                "mode": "direct",
+                "tagPath": "[default]Debarker/log_position/Position2"
+              },
+              "transforms": [
+                {
+                  "fallback": 10,
+                  "inputType": "scalar",
+                  "mappings": [
+                    {
+                      "input": 0,
+                      "output": -1
+                    }
+                  ],
+                  "outputType": "scalar",
+                  "type": "map"
+                }
+              ],
+              "type": "tag"
+            }
+          },
+          "props.instances[7].left": {
+            "binding": {
+              "config": {
+                "fallbackDelay": 2.5,
+                "mode": "direct",
+                "tagPath": "[default]Debarker/log_position/Position3"
+              },
+              "transforms": [
+                {
+                  "expression": "{value} * 0.0556 + \"px\"",
+                  "type": "expression"
+                }
+              ],
+              "type": "tag"
+            }
+          },
+          "props.instances[7].zIndex": {
+            "binding": {
+              "config": {
+                "fallbackDelay": 2.5,
+                "mode": "direct",
+                "tagPath": "[default]Debarker/log_position/Position3"
+              },
+              "transforms": [
+                {
+                  "fallback": 10,
+                  "inputType": "scalar",
+                  "mappings": [
+                    {
+                      "input": 0,
+                      "output": -1
+                    }
+                  ],
+                  "outputType": "scalar",
+                  "type": "map"
+                }
+              ],
+              "type": "tag"
+            }
+          },
+          "props.instances[8].left": {
+            "binding": {
+              "config": {
+                "fallbackDelay": 2.5,
+                "mode": "direct",
+                "tagPath": "[default]Debarker/log_position/Position4"
+              },
+              "transforms": [
+                {
+                  "expression": "{value} * 0.0556 + \"px\"",
+                  "type": "expression"
+                }
+              ],
+              "type": "tag"
+            }
+          },
+          "props.instances[8].zIndex": {
+            "binding": {
+              "config": {
+                "fallbackDelay": 2.5,
+                "mode": "direct",
+                "tagPath": "[default]Debarker/log_position/Position4"
+              },
+              "transforms": [
+                {
+                  "fallback": 10,
+                  "inputType": "scalar",
+                  "mappings": [
+                    {
+                      "input": 0,
+                      "output": -1
+                    }
+                  ],
+                  "outputType": "scalar",
+                  "type": "map"
+                }
+              ],
+              "type": "tag"
+            }
+          },
+          "props.instances[9].left": {
+            "binding": {
+              "config": {
+                "fallbackDelay": 2.5,
+                "mode": "direct",
+                "tagPath": "[default]Debarker/log_position/Position5"
+              },
+              "transforms": [
+                {
+                  "expression": "{value} * 0.0556 + \"px\"",
+                  "type": "expression"
+                }
+              ],
+              "type": "tag"
+            }
+          },
+          "props.instances[9].zIndex": {
+            "binding": {
+              "config": {
+                "fallbackDelay": 2.5,
+                "mode": "direct",
+                "tagPath": "[default]Debarker/log_position/Position5"
+              },
+              "transforms": [
+                {
+                  "fallback": 10,
+                  "inputType": "range",
+                  "mappings": [
+                    {
+                      "input": {
+                        "exclusiveMax": true,
+                        "max": 800,
+                        "min": 0
+                      },
+                      "output": -5
+                    }
+                  ],
+                  "outputType": "scalar",
+                  "type": "map"
+                }
+              ],
+              "type": "tag"
+            }
+          }
+        },
+        "props": {
+          "instances": [
+            {
+              "bottom": "auto",
+              "height": "auto",
+              "left": "290px",
+              "name": "conveyor1",
+              "position": "absolute",
+              "right": "auto",
+              "style": {
+                "classes": ""
+              },
+              "top": "200px",
+              "viewParams": {},
+              "viewPath": "Object/conveyor",
+              "width": "auto",
+              "zIndex": 5
+            },
+            {
+              "bottom": "auto",
+              "height": "auto",
+              "left": "620px",
+              "name": "conveyor2",
+              "position": "absolute",
+              "right": "auto",
+              "style": {
+                "classes": ""
+              },
+              "top": "200px",
+              "viewParams": {},
+              "viewPath": "Object/conveyor",
+              "width": "auto",
+              "zIndex": 5
+            },
+            {
+              "bottom": "auto",
+              "height": "auto",
+              "left": "950px\n\n",
+              "name": "conveyor3",
+              "position": "absolute",
+              "right": "auto",
+              "style": {
+                "classes": ""
+              },
+              "top": "200px",
+              "viewParams": {},
+              "viewPath": "Object/conveyor",
+              "width": "auto",
+              "zIndex": 5
+            },
+            {
+              "bottom": "auto",
+              "height": "auto",
+              "left": "1270px\n",
+              "name": "conveyor4",
+              "position": "absolute",
+              "right": "auto",
+              "style": {
+                "classes": ""
+              },
+              "top": "200px",
+              "viewParams": {},
+              "viewPath": "Object/conveyor",
+              "width": "auto",
+              "zIndex": 5
+            },
+            {
+              "bottom": "auto",
+              "height": "auto",
+              "left": "1600px",
+              "name": "conveyor5",
+              "position": "absolute",
+              "right": "auto",
+              "style": {
+                "classes": ""
+              },
+              "top": "200px",
+              "viewParams": {},
+              "viewPath": "Object/conveyor",
+              "width": "auto",
+              "zIndex": 5
+            },
+            {
+              "bottom": "auto",
+              "height": "auto",
+              "name": "log1",
+              "position": "absolute",
+              "right": "auto",
+              "style": {
+                "classes": ""
+              },
+              "top": "185px",
+              "viewParams": {},
+              "viewPath": "Object/block",
+              "width": "auto"
+            },
+            {
+              "bottom": "auto",
+              "height": "auto",
+              "key": "log2",
+              "name": "log1",
+              "position": "absolute",
+              "right": "auto",
+              "style": {
+                "classes": ""
+              },
+              "top": "185px",
+              "viewParams": {},
+              "viewPath": "Object/block",
+              "width": "auto"
+            },
+            {
+              "bottom": "auto",
+              "height": "auto",
+              "key": "log3",
+              "name": "log1",
+              "position": "absolute",
+              "right": "auto",
+              "style": {
+                "classes": ""
+              },
+              "top": "185px",
+              "viewParams": {},
+              "viewPath": "Object/block",
+              "width": "auto"
+            },
+            {
+              "bottom": "auto",
+              "height": "auto",
+              "key": "log4",
+              "name": "log1",
+              "position": "absolute",
+              "right": "auto",
+              "style": {
+                "classes": ""
+              },
+              "top": "185px",
+              "viewParams": {},
+              "viewPath": "Object/block",
+              "width": "auto"
+            },
+            {
+              "bottom": "auto",
+              "height": "auto",
+              "key": "log5",
+              "name": "log1",
+              "position": "absolute",
+              "right": "auto",
+              "style": {
+                "classes": ""
+              },
+              "top": "185px",
+              "viewParams": {},
+              "viewPath": "Object/block",
+              "width": "auto"
+            },
+            {
+              "bottom": "auto",
+              "height": "auto",
+              "key": "log6",
+              "name": "log1",
+              "position": "absolute",
+              "right": "auto",
+              "style": {
+                "classes": ""
+              },
+              "top": "185px",
+              "viewParams": {},
+              "viewPath": "Object/block",
+              "width": "auto"
+            },
+            {
+              "bottom": "auto",
+              "height": "auto",
+              "key": "log7",
+              "name": "log1",
+              "position": "absolute",
+              "right": "auto",
+              "style": {
+                "classes": ""
+              },
+              "top": "185px",
+              "viewParams": {},
+              "viewPath": "Object/block",
+              "width": "auto"
+            },
+            {
+              "bottom": "auto",
+              "height": "auto",
+              "key": "log8",
+              "name": "log1",
+              "position": "absolute",
+              "right": "auto",
+              "style": {
+                "classes": ""
+              },
+              "top": "185px",
+              "viewParams": {},
+              "viewPath": "Object/block",
+              "width": "auto"
+            },
+            {
+              "bottom": "auto",
+              "height": "auto",
+              "key": "log9",
+              "name": "log1",
+              "position": "absolute",
+              "right": "auto",
+              "style": {
+                "classes": ""
+              },
+              "top": "185px",
+              "viewParams": {},
+              "viewPath": "Object/block",
+              "width": "auto"
+            },
+            {
+              "bottom": "auto",
+              "height": "auto",
+              "key": "log10",
+              "name": "log1",
+              "position": "absolute",
+              "right": "auto",
+              "style": {
+                "classes": ""
+              },
+              "top": "185px",
+              "viewParams": {},
+              "viewPath": "Object/block",
+              "width": "auto"
+            },
+            {
+              "bottom": "auto",
+              "height": "auto",
+              "key": "log11",
+              "name": "log1",
+              "position": "absolute",
+              "right": "auto",
+              "style": {
+                "classes": ""
+              },
+              "top": "185px",
+              "viewParams": {},
+              "viewPath": "Object/block",
+              "width": "auto"
+            },
+            {
+              "bottom": "auto",
+              "height": "auto",
+              "key": "log12",
+              "name": "log1",
+              "position": "absolute",
+              "right": "auto",
+              "style": {
+                "classes": ""
+              },
+              "top": "185px",
+              "viewParams": {},
+              "viewPath": "Object/block",
+              "width": "auto"
+            }
+          ],
+          "transitionSettings": {
+            "duration": "1s",
+            "timingFunction": "linear"
+          }
+        },
+        "type": "ia.display.viewcanvas"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "props": {
+      "direction": "column"
+    },
+    "type": "ia.container.flex"
+  }
+}

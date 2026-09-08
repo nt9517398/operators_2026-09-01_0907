@@ -1,0 +1,2034 @@
+{
+  "custom": {},
+  "params": {},
+  "props": {
+    "defaultSize": {
+      "height": 161,
+      "width": 442
+    }
+  },
+  "root": {
+    "children": [
+      {
+        "children": [
+          {
+            "meta": {
+              "name": "Mezzanine decking"
+            },
+            "position": {
+              "height": 137,
+              "width": 447,
+              "x": -21.91,
+              "y": 5.19
+            },
+            "props": {
+              "elements": [
+                {
+                  "d": "M983,304 l-20,-10 0,-253 21,0 0,253 15,0 0,10 -16,0z",
+                  "fill": {
+                    "paint": "#4c4c4c"
+                  },
+                  "name": "path",
+                  "style": {},
+                  "type": "path"
+                },
+                {
+                  "d": "M847,445 l-20,-10 0,-252 20,-15 0,267 15,0 0,10 -15,0z",
+                  "fill": {
+                    "paint": "#4c4c4c"
+                  },
+                  "name": "path",
+                  "style": {},
+                  "type": "path"
+                },
+                {
+                  "d": "M590,304 l-20,-10 0,-253 20,0 0,253 15,0 0,10 -15,0z",
+                  "fill": {
+                    "paint": "#4c4c4c"
+                  },
+                  "name": "path",
+                  "style": {},
+                  "type": "path"
+                },
+                {
+                  "d": "M433,445 l-20,-10 0,-252 21,0 0,252 15,0 0,10 -16,0z",
+                  "fill": {
+                    "paint": "#4c4c4c"
+                  },
+                  "name": "path",
+                  "style": {},
+                  "type": "path"
+                },
+                {
+                  "d": "M201,304 l-20,-10 0,-253 21,0 0,253 14,0 0,10 -15,0z",
+                  "fill": {
+                    "paint": "#4c4c4c"
+                  },
+                  "name": "path",
+                  "style": {},
+                  "type": "path"
+                },
+                {
+                  "d": "M50,445 l-20,-10 0,-252 20,0 0,252 15,0 0,10 -15,0z",
+                  "fill": {
+                    "paint": "#4c4c4c"
+                  },
+                  "name": "path",
+                  "style": {},
+                  "type": "path"
+                },
+                {
+                  "d": "M933,304 l0,-10 15,0 0,-253 20,0 0,253 15,0 0,10 -50,0z",
+                  "fill": {
+                    "paint": "#999"
+                  },
+                  "name": "path",
+                  "stroke": {
+                    "paint": "#4c4c4c",
+                    "width": "2"
+                  },
+                  "style": {},
+                  "type": "path"
+                },
+                {
+                  "d": "M797,445 l0,-10 15,0 0,-252 20,0 0,252 15,0 0,10 -50,0z",
+                  "fill": {
+                    "paint": "#999"
+                  },
+                  "name": "path",
+                  "stroke": {
+                    "paint": "#4c4c4c",
+                    "width": "2"
+                  },
+                  "style": {},
+                  "type": "path"
+                },
+                {
+                  "d": "M539,304 l0,-10 16,0 0,-253 20,0 0,253 15,0 0,10 -51,0z",
+                  "fill": {
+                    "paint": "#999"
+                  },
+                  "name": "path",
+                  "stroke": {
+                    "paint": "#4c4c4c",
+                    "width": "2"
+                  },
+                  "style": {},
+                  "type": "path"
+                },
+                {
+                  "d": "M383,445 l0,-10 15,0 0,-252 21,0 0,252 14,0 0,10 -50,0z",
+                  "fill": {
+                    "paint": "#999"
+                  },
+                  "name": "path",
+                  "stroke": {
+                    "paint": "#4c4c4c",
+                    "width": "2"
+                  },
+                  "style": {},
+                  "type": "path"
+                },
+                {
+                  "d": "M151,304 l0,-10 15,0 0,-253 20,0 0,253 15,0 0,10 -50,0z",
+                  "fill": {
+                    "paint": "#999"
+                  },
+                  "name": "path",
+                  "stroke": {
+                    "paint": "#4c4c4c",
+                    "width": "2"
+                  },
+                  "style": {},
+                  "type": "path"
+                },
+                {
+                  "d": "M0,445 l0,-10 15,0 0,-252 20,0 0,252 15,0 0,10 -50,0z",
+                  "fill": {
+                    "paint": "#999"
+                  },
+                  "name": "path",
+                  "stroke": {
+                    "paint": "#4c4c4c",
+                    "width": "2"
+                  },
+                  "style": {},
+                  "type": "path"
+                },
+                {
+                  "d": "M25,61 l141,-61 0,5 -141,62 0,-6z",
+                  "fill": {
+                    "paint": "#e5b200"
+                  },
+                  "name": "path",
+                  "style": {},
+                  "type": "path"
+                },
+                {
+                  "d": "M25,92 l141,-70 0,5 -141,70 0,-5z",
+                  "fill": {
+                    "paint": "#e5b200"
+                  },
+                  "name": "path",
+                  "style": {},
+                  "type": "path"
+                },
+                {
+                  "d": "M60,47 l5,-6 0,56 -5,5 0,-55z",
+                  "fill": {
+                    "paint": "#e5b200"
+                  },
+                  "name": "path",
+                  "style": {},
+                  "type": "path"
+                },
+                {
+                  "d": "M101,31 l5,-5 0,46 -5,5 0,-46z",
+                  "fill": {
+                    "paint": "#e5b200"
+                  },
+                  "name": "path",
+                  "style": {},
+                  "type": "path"
+                },
+                {
+                  "d": "M136,16 l5,-5 0,46 -5,4 0,-45z",
+                  "fill": {
+                    "paint": "#e5b200"
+                  },
+                  "name": "path",
+                  "style": {},
+                  "type": "path"
+                },
+                {
+                  "d": "M15,122 l817,0 151,-81 -817,0 -151,81z",
+                  "fill": {
+                    "paint": "#b2b2b2"
+                  },
+                  "name": "path",
+                  "stroke": {
+                    "paint": "#4c4c4c",
+                    "width": "2"
+                  },
+                  "style": {},
+                  "type": "path"
+                },
+                {
+                  "d": "M15,61 l10,0 0,61 -10,0 0,-61z",
+                  "fill": {
+                    "paint": "#fc0"
+                  },
+                  "name": "path",
+                  "style": {},
+                  "type": "path"
+                },
+                {
+                  "d": "M822,61 l10,0 0,61 -10,0 0,-61z",
+                  "fill": {
+                    "paint": "#fc0"
+                  },
+                  "name": "path",
+                  "style": {},
+                  "type": "path"
+                },
+                {
+                  "d": "M176,61 l10,0 0,61 -10,0 0,-61z",
+                  "fill": {
+                    "paint": "#fc0"
+                  },
+                  "name": "path",
+                  "style": {},
+                  "type": "path"
+                },
+                {
+                  "d": "M338,61 l10,0 0,61 -10,0 0,-61z",
+                  "fill": {
+                    "paint": "#fc0"
+                  },
+                  "name": "path",
+                  "style": {},
+                  "type": "path"
+                },
+                {
+                  "d": "M499,61 l10,0 0,61 -10,0 0,-61z",
+                  "fill": {
+                    "paint": "#fc0"
+                  },
+                  "name": "path",
+                  "style": {},
+                  "type": "path"
+                },
+                {
+                  "d": "M660,61 l10,0 0,61 -10,0 0,-61z",
+                  "fill": {
+                    "paint": "#fc0"
+                  },
+                  "name": "path",
+                  "style": {},
+                  "type": "path"
+                },
+                {
+                  "d": "M973,1 l10,0 0,40 -10,0 0,-40z",
+                  "fill": {
+                    "paint": "#bf8c00"
+                  },
+                  "name": "path",
+                  "style": {},
+                  "type": "path"
+                },
+                {
+                  "d": "M166,1 l10,0 0,40 -10,0 0,-40z",
+                  "fill": {
+                    "paint": "#bf8c00"
+                  },
+                  "name": "path",
+                  "style": {},
+                  "type": "path"
+                },
+                {
+                  "d": "M328,1 l10,0 0,40 -10,0 0,-40z",
+                  "fill": {
+                    "paint": "#bf8c00"
+                  },
+                  "name": "path",
+                  "style": {},
+                  "type": "path"
+                },
+                {
+                  "d": "M489,1 l10,0 0,40 -10,0 0,-40z",
+                  "fill": {
+                    "paint": "#bf8c00"
+                  },
+                  "name": "path",
+                  "style": {},
+                  "type": "path"
+                },
+                {
+                  "d": "M650,1 l10,0 0,40 -10,0 0,-40z",
+                  "fill": {
+                    "paint": "#bf8c00"
+                  },
+                  "name": "path",
+                  "style": {},
+                  "type": "path"
+                },
+                {
+                  "d": "M812,1 l10,0 0,40 -10,0 0,-40z",
+                  "fill": {
+                    "paint": "#bf8c00"
+                  },
+                  "name": "path",
+                  "style": {},
+                  "type": "path"
+                },
+                {
+                  "d": "M25,61 l797,0 0,6 -797,0 0,-6z",
+                  "fill": {
+                    "paint": "#fc0"
+                  },
+                  "name": "path",
+                  "style": {},
+                  "type": "path"
+                },
+                {
+                  "d": "M25,92 l797,0 0,5 -797,0 0,-5z",
+                  "fill": {
+                    "paint": "#fc0"
+                  },
+                  "name": "path",
+                  "style": {},
+                  "type": "path"
+                },
+                {
+                  "d": "M872,47 l5,-6 0,56 -5,5 0,-55z",
+                  "fill": {
+                    "paint": "#e5b200"
+                  },
+                  "name": "path",
+                  "style": {},
+                  "type": "path"
+                },
+                {
+                  "d": "M176,1 l797,0 0,4 -797,0 0,-4z",
+                  "fill": {
+                    "paint": "#bf8c00"
+                  },
+                  "name": "path",
+                  "style": {},
+                  "type": "path"
+                },
+                {
+                  "d": "M176,21 l797,0 0,4 -797,0 0,-4z",
+                  "fill": {
+                    "paint": "#bf8c00"
+                  },
+                  "name": "path",
+                  "style": {},
+                  "type": "path"
+                },
+                {
+                  "d": "M832,61 l141,-59 0,6 -141,59 0,-6z",
+                  "fill": {
+                    "paint": "#e5b200"
+                  },
+                  "name": "path",
+                  "style": {},
+                  "type": "path"
+                },
+                {
+                  "d": "M832,92 l141,-71 0,5 -141,71 0,-5z",
+                  "fill": {
+                    "paint": "#e5b200"
+                  },
+                  "name": "path",
+                  "style": {},
+                  "type": "path"
+                },
+                {
+                  "d": "M15,122 l817,0 0,61 -817,0 0,-61z",
+                  "fill": {
+                    "paint": "#7f7f7f"
+                  },
+                  "name": "path",
+                  "stroke": {
+                    "paint": "#4c4c4c",
+                    "width": "2"
+                  },
+                  "style": {},
+                  "type": "path"
+                },
+                {
+                  "d": "M913,31 l5,-5 0,46 -5,5 0,-46z",
+                  "fill": {
+                    "paint": "#e5b200"
+                  },
+                  "name": "path",
+                  "style": {},
+                  "type": "path"
+                },
+                {
+                  "d": "M948,16 l5,-5 0,46 -5,4 0,-45z",
+                  "fill": {
+                    "paint": "#e5b200"
+                  },
+                  "name": "path",
+                  "style": {},
+                  "type": "path"
+                },
+                {
+                  "d": "M832,122 l0,61 151,-96 0,-46 -151,81z",
+                  "fill": {
+                    "paint": "#4c4c4c"
+                  },
+                  "name": "path",
+                  "stroke": {
+                    "paint": "#4c4c4c",
+                    "width": "2"
+                  },
+                  "style": {},
+                  "type": "path"
+                },
+                {
+                  "d": "M35,137 l777,0 0,30 -777,0 0,-30z",
+                  "fill": {
+                    "paint": "#333"
+                  },
+                  "name": "path",
+                  "style": {},
+                  "type": "path"
+                },
+                {
+                  "d": "M847,127 l0,36 126,-81 0,-25 -126,70z",
+                  "fill": {
+                    "paint": "#000"
+                  },
+                  "name": "path",
+                  "style": {},
+                  "type": "path"
+                }
+              ],
+              "viewBox": "0 0 999 445"
+            },
+            "type": "ia.shapes.svg"
+          },
+          {
+            "meta": {
+              "name": "Horizontal conveyor with perspective"
+            },
+            "position": {
+              "height": 34,
+              "width": 392,
+              "x": 12.07,
+              "y": 0.07390000000000008
+            },
+            "props": {
+              "elements": [
+                {
+                  "elements": [
+                    {
+                      "d": "M91.32,13.961l1.802-0.563l0.563-1.802l-0.563-1.688L91.32,9.345   H2.265L0.576,9.908l-0.563,1.688l0.563,1.802l1.689,0.563H91.32z",
+                      "fill": {
+                        "paint": "#4C4C4C"
+                      },
+                      "name": "path",
+                      "stroke": {
+                        "paint": "#4C4C4C",
+                        "width": "0.25"
+                      },
+                      "type": "path"
+                    }
+                  ],
+                  "name": "Group_Inner_Area",
+                  "type": "group"
+                },
+                {
+                  "elements": [
+                    {
+                      "d": "M0.576,13.285l-0.563-1.576l0.563-1.688l1.801-0.676   l1.576,0.676l0.676,1.688l-0.676,1.576l-1.576,0.676L0.576,13.285z",
+                      "fill": {
+                        "paint": {
+                          "cx": "2.3208",
+                          "cy": "11.6523",
+                          "gradientUnits": "userSpaceOnUse",
+                          "r": "2.3083",
+                          "stops": [
+                            {
+                              "offset": "0",
+                              "style": {
+                                "stopColor": "#E0E0E0"
+                              }
+                            },
+                            {
+                              "offset": "0.5",
+                              "style": {
+                                "stopColor": "#E0E0E0"
+                              }
+                            },
+                            {
+                              "offset": "1",
+                              "style": {
+                                "stopColor": "#808080"
+                              }
+                            }
+                          ],
+                          "type": "radial"
+                        }
+                      },
+                      "name": "path",
+                      "stroke": {
+                        "paint": "#4C4C4C",
+                        "width": "0.25"
+                      },
+                      "type": "path"
+                    },
+                    {
+                      "d": "M5.304,13.285l-0.675-1.576l0.675-1.688l1.689-0.676   l1.689,0.676l0.675,1.688l-0.675,1.576l-1.689,0.676L5.304,13.285z",
+                      "fill": {
+                        "paint": {
+                          "cx": "6.9932",
+                          "cy": "11.6523",
+                          "gradientUnits": "userSpaceOnUse",
+                          "r": "2.3366",
+                          "stops": [
+                            {
+                              "offset": "0",
+                              "style": {
+                                "stopColor": "#E0E0E0"
+                              }
+                            },
+                            {
+                              "offset": "0.5",
+                              "style": {
+                                "stopColor": "#E0E0E0"
+                              }
+                            },
+                            {
+                              "offset": "1",
+                              "style": {
+                                "stopColor": "#808080"
+                              }
+                            }
+                          ],
+                          "type": "radial"
+                        }
+                      },
+                      "name": "path",
+                      "stroke": {
+                        "paint": "#4C4C4C",
+                        "width": "0.25"
+                      },
+                      "type": "path"
+                    },
+                    {
+                      "d": "M10.033,13.285l-0.676-1.576l0.676-1.688l1.688-0.676   l1.576,0.676l0.676,1.688l-0.676,1.576l-1.576,0.676L10.033,13.285z",
+                      "fill": {
+                        "paint": {
+                          "cx": "11.6655",
+                          "cy": "11.6523",
+                          "gradientUnits": "userSpaceOnUse",
+                          "r": "2.3083",
+                          "stops": [
+                            {
+                              "offset": "0",
+                              "style": {
+                                "stopColor": "#E0E0E0"
+                              }
+                            },
+                            {
+                              "offset": "0.5",
+                              "style": {
+                                "stopColor": "#E0E0E0"
+                              }
+                            },
+                            {
+                              "offset": "1",
+                              "style": {
+                                "stopColor": "#808080"
+                              }
+                            }
+                          ],
+                          "type": "radial"
+                        }
+                      },
+                      "name": "path",
+                      "stroke": {
+                        "paint": "#4C4C4C",
+                        "width": "0.25"
+                      },
+                      "type": "path"
+                    },
+                    {
+                      "d": "M14.649,13.285l-0.675-1.576l0.675-1.688l1.689-0.676   l1.689,0.676l0.675,1.688l-0.675,1.576l-1.689,0.676L14.649,13.285z",
+                      "fill": {
+                        "paint": {
+                          "cx": "16.3379",
+                          "cy": "11.6523",
+                          "gradientUnits": "userSpaceOnUse",
+                          "r": "2.3366",
+                          "stops": [
+                            {
+                              "offset": "0",
+                              "style": {
+                                "stopColor": "#E0E0E0"
+                              }
+                            },
+                            {
+                              "offset": "0.5",
+                              "style": {
+                                "stopColor": "#E0E0E0"
+                              }
+                            },
+                            {
+                              "offset": "1",
+                              "style": {
+                                "stopColor": "#808080"
+                              }
+                            }
+                          ],
+                          "type": "radial"
+                        }
+                      },
+                      "name": "path",
+                      "stroke": {
+                        "paint": "#4C4C4C",
+                        "width": "0.25"
+                      },
+                      "type": "path"
+                    },
+                    {
+                      "d": "M19.378,13.285l-0.676-1.576l0.676-1.688l1.688-0.676   l1.689,0.676l0.675,1.688l-0.675,1.576l-1.689,0.676L19.378,13.285z",
+                      "fill": {
+                        "paint": {
+                          "cx": "21.0664",
+                          "cy": "11.6523",
+                          "gradientUnits": "userSpaceOnUse",
+                          "r": "2.3366",
+                          "stops": [
+                            {
+                              "offset": "0",
+                              "style": {
+                                "stopColor": "#E0E0E0"
+                              }
+                            },
+                            {
+                              "offset": "0.5",
+                              "style": {
+                                "stopColor": "#E0E0E0"
+                              }
+                            },
+                            {
+                              "offset": "1",
+                              "style": {
+                                "stopColor": "#808080"
+                              }
+                            }
+                          ],
+                          "type": "radial"
+                        }
+                      },
+                      "name": "path",
+                      "stroke": {
+                        "paint": "#4C4C4C",
+                        "width": "0.25"
+                      },
+                      "type": "path"
+                    },
+                    {
+                      "d": "M24.106,13.285l-0.676-1.576l0.676-1.688l1.689-0.676   l1.576,0.676l0.675,1.688l-0.675,1.576l-1.576,0.676L24.106,13.285z",
+                      "fill": {
+                        "paint": {
+                          "cx": "25.7388",
+                          "cy": "11.6523",
+                          "gradientUnits": "userSpaceOnUse",
+                          "r": "2.3083",
+                          "stops": [
+                            {
+                              "offset": "0",
+                              "style": {
+                                "stopColor": "#E0E0E0"
+                              }
+                            },
+                            {
+                              "offset": "0.5",
+                              "style": {
+                                "stopColor": "#E0E0E0"
+                              }
+                            },
+                            {
+                              "offset": "1",
+                              "style": {
+                                "stopColor": "#808080"
+                              }
+                            }
+                          ],
+                          "type": "radial"
+                        }
+                      },
+                      "name": "path",
+                      "stroke": {
+                        "paint": "#4C4C4C",
+                        "width": "0.25"
+                      },
+                      "type": "path"
+                    },
+                    {
+                      "d": "M28.723,13.285l-0.676-1.576l0.676-1.688l1.688-0.676   l1.689,0.676l0.675,1.688L32.1,13.285l-1.689,0.676L28.723,13.285z",
+                      "fill": {
+                        "paint": {
+                          "cx": "30.4111",
+                          "cy": "11.6523",
+                          "gradientUnits": "userSpaceOnUse",
+                          "r": "2.3366",
+                          "stops": [
+                            {
+                              "offset": "0",
+                              "style": {
+                                "stopColor": "#E0E0E0"
+                              }
+                            },
+                            {
+                              "offset": "0.5",
+                              "style": {
+                                "stopColor": "#E0E0E0"
+                              }
+                            },
+                            {
+                              "offset": "1",
+                              "style": {
+                                "stopColor": "#808080"
+                              }
+                            }
+                          ],
+                          "type": "radial"
+                        }
+                      },
+                      "name": "path",
+                      "stroke": {
+                        "paint": "#4C4C4C",
+                        "width": "0.25"
+                      },
+                      "type": "path"
+                    },
+                    {
+                      "d": "M33.451,13.285l-0.676-1.576l0.676-1.688l1.689-0.676   l1.688,0.676l0.676,1.688l-0.676,1.576l-1.688,0.676L33.451,13.285z",
+                      "fill": {
+                        "paint": {
+                          "cx": "35.1396",
+                          "cy": "11.6523",
+                          "gradientUnits": "userSpaceOnUse",
+                          "r": "2.3368",
+                          "stops": [
+                            {
+                              "offset": "0",
+                              "style": {
+                                "stopColor": "#E0E0E0"
+                              }
+                            },
+                            {
+                              "offset": "0.5",
+                              "style": {
+                                "stopColor": "#E0E0E0"
+                              }
+                            },
+                            {
+                              "offset": "1",
+                              "style": {
+                                "stopColor": "#808080"
+                              }
+                            }
+                          ],
+                          "type": "radial"
+                        }
+                      },
+                      "name": "path",
+                      "stroke": {
+                        "paint": "#4C4C4C",
+                        "width": "0.25"
+                      },
+                      "type": "path"
+                    },
+                    {
+                      "d": "M38.067,13.285l-0.563-1.576l0.563-1.688l1.688-0.676   l1.689,0.676l0.675,1.688l-0.675,1.576l-1.689,0.676L38.067,13.285z",
+                      "fill": {
+                        "paint": {
+                          "cx": "39.8125",
+                          "cy": "11.6523",
+                          "gradientUnits": "userSpaceOnUse",
+                          "r": "2.3081",
+                          "stops": [
+                            {
+                              "offset": "0",
+                              "style": {
+                                "stopColor": "#E0E0E0"
+                              }
+                            },
+                            {
+                              "offset": "0.5",
+                              "style": {
+                                "stopColor": "#E0E0E0"
+                              }
+                            },
+                            {
+                              "offset": "1",
+                              "style": {
+                                "stopColor": "#808080"
+                              }
+                            }
+                          ],
+                          "type": "radial"
+                        }
+                      },
+                      "name": "path",
+                      "stroke": {
+                        "paint": "#4C4C4C",
+                        "width": "0.25"
+                      },
+                      "type": "path"
+                    },
+                    {
+                      "d": "M42.796,13.285l-0.676-1.576l0.676-1.688l1.689-0.676   l1.688,0.676l0.676,1.688l-0.676,1.576l-1.688,0.676L42.796,13.285z",
+                      "fill": {
+                        "paint": {
+                          "cx": "44.4844",
+                          "cy": "11.6523",
+                          "gradientUnits": "userSpaceOnUse",
+                          "r": "2.3368",
+                          "stops": [
+                            {
+                              "offset": "0",
+                              "style": {
+                                "stopColor": "#E0E0E0"
+                              }
+                            },
+                            {
+                              "offset": "0.5",
+                              "style": {
+                                "stopColor": "#E0E0E0"
+                              }
+                            },
+                            {
+                              "offset": "1",
+                              "style": {
+                                "stopColor": "#808080"
+                              }
+                            }
+                          ],
+                          "type": "radial"
+                        }
+                      },
+                      "name": "path",
+                      "stroke": {
+                        "paint": "#4C4C4C",
+                        "width": "0.25"
+                      },
+                      "type": "path"
+                    },
+                    {
+                      "d": "M47.524,13.285l-0.675-1.576l0.675-1.688l1.689-0.676   l1.576,0.676l0.675,1.688l-0.675,1.576l-1.576,0.676L47.524,13.285z",
+                      "fill": {
+                        "paint": {
+                          "cx": "49.1572",
+                          "cy": "11.6523",
+                          "gradientUnits": "userSpaceOnUse",
+                          "r": "2.3081",
+                          "stops": [
+                            {
+                              "offset": "0",
+                              "style": {
+                                "stopColor": "#E0E0E0"
+                              }
+                            },
+                            {
+                              "offset": "0.5",
+                              "style": {
+                                "stopColor": "#E0E0E0"
+                              }
+                            },
+                            {
+                              "offset": "1",
+                              "style": {
+                                "stopColor": "#808080"
+                              }
+                            }
+                          ],
+                          "type": "radial"
+                        }
+                      },
+                      "name": "path",
+                      "stroke": {
+                        "paint": "#4C4C4C",
+                        "width": "0.25"
+                      },
+                      "type": "path"
+                    },
+                    {
+                      "d": "M52.141,13.285l-0.676-1.576l0.676-1.688l1.689-0.676   l1.688,0.676l0.676,1.688l-0.676,1.576l-1.688,0.676L52.141,13.285z",
+                      "fill": {
+                        "paint": {
+                          "cx": "53.8291",
+                          "cy": "11.6523",
+                          "gradientUnits": "userSpaceOnUse",
+                          "r": "2.3368",
+                          "stops": [
+                            {
+                              "offset": "0",
+                              "style": {
+                                "stopColor": "#E0E0E0"
+                              }
+                            },
+                            {
+                              "offset": "0.5",
+                              "style": {
+                                "stopColor": "#E0E0E0"
+                              }
+                            },
+                            {
+                              "offset": "1",
+                              "style": {
+                                "stopColor": "#808080"
+                              }
+                            }
+                          ],
+                          "type": "radial"
+                        }
+                      },
+                      "name": "path",
+                      "stroke": {
+                        "paint": "#4C4C4C",
+                        "width": "0.25"
+                      },
+                      "type": "path"
+                    },
+                    {
+                      "d": "M56.869,13.285l-0.675-1.576l0.675-1.688l1.689-0.676   l1.688,0.676l0.675,1.688l-0.675,1.576l-1.688,0.676L56.869,13.285z",
+                      "fill": {
+                        "paint": {
+                          "cx": "58.5576",
+                          "cy": "11.6523",
+                          "gradientUnits": "userSpaceOnUse",
+                          "r": "2.3366",
+                          "stops": [
+                            {
+                              "offset": "0",
+                              "style": {
+                                "stopColor": "#E0E0E0"
+                              }
+                            },
+                            {
+                              "offset": "0.5",
+                              "style": {
+                                "stopColor": "#E0E0E0"
+                              }
+                            },
+                            {
+                              "offset": "1",
+                              "style": {
+                                "stopColor": "#808080"
+                              }
+                            }
+                          ],
+                          "type": "radial"
+                        }
+                      },
+                      "name": "path",
+                      "stroke": {
+                        "paint": "#4C4C4C",
+                        "width": "0.25"
+                      },
+                      "type": "path"
+                    },
+                    {
+                      "d": "M61.598,13.285l-0.676-1.576l0.676-1.688l1.689-0.676   l1.576,0.676l0.676,1.688l-0.676,1.576l-1.576,0.676L61.598,13.285z",
+                      "fill": {
+                        "paint": {
+                          "cx": "63.2305",
+                          "cy": "11.6523",
+                          "gradientUnits": "userSpaceOnUse",
+                          "r": "2.3086",
+                          "stops": [
+                            {
+                              "offset": "0",
+                              "style": {
+                                "stopColor": "#E0E0E0"
+                              }
+                            },
+                            {
+                              "offset": "0.5",
+                              "style": {
+                                "stopColor": "#E0E0E0"
+                              }
+                            },
+                            {
+                              "offset": "1",
+                              "style": {
+                                "stopColor": "#808080"
+                              }
+                            }
+                          ],
+                          "type": "radial"
+                        }
+                      },
+                      "name": "path",
+                      "stroke": {
+                        "paint": "#4C4C4C",
+                        "width": "0.25"
+                      },
+                      "type": "path"
+                    },
+                    {
+                      "d": "M66.214,13.285l-0.675-1.576l0.675-1.688l1.688-0.676   l1.689,0.676l0.676,1.688l-0.676,1.576l-1.689,0.676L66.214,13.285z",
+                      "fill": {
+                        "paint": {
+                          "cx": "67.9033",
+                          "cy": "11.6523",
+                          "gradientUnits": "userSpaceOnUse",
+                          "r": "2.3366",
+                          "stops": [
+                            {
+                              "offset": "0",
+                              "style": {
+                                "stopColor": "#E0E0E0"
+                              }
+                            },
+                            {
+                              "offset": "0.5",
+                              "style": {
+                                "stopColor": "#E0E0E0"
+                              }
+                            },
+                            {
+                              "offset": "1",
+                              "style": {
+                                "stopColor": "#808080"
+                              }
+                            }
+                          ],
+                          "type": "radial"
+                        }
+                      },
+                      "name": "path",
+                      "stroke": {
+                        "paint": "#4C4C4C",
+                        "width": "0.25"
+                      },
+                      "type": "path"
+                    },
+                    {
+                      "d": "M70.942,13.285l-0.675-1.576l0.675-1.688l1.688-0.676   l1.689,0.676l0.676,1.688l-0.676,1.576l-1.689,0.676L70.942,13.285z",
+                      "fill": {
+                        "paint": {
+                          "cx": "72.6318",
+                          "cy": "11.6523",
+                          "gradientUnits": "userSpaceOnUse",
+                          "r": "2.3366",
+                          "stops": [
+                            {
+                              "offset": "0",
+                              "style": {
+                                "stopColor": "#E0E0E0"
+                              }
+                            },
+                            {
+                              "offset": "0.5",
+                              "style": {
+                                "stopColor": "#E0E0E0"
+                              }
+                            },
+                            {
+                              "offset": "1",
+                              "style": {
+                                "stopColor": "#808080"
+                              }
+                            }
+                          ],
+                          "type": "radial"
+                        }
+                      },
+                      "name": "path",
+                      "stroke": {
+                        "paint": "#4C4C4C",
+                        "width": "0.25"
+                      },
+                      "type": "path"
+                    },
+                    {
+                      "d": "M75.559,13.285l-0.563-1.576l0.563-1.688l1.689-0.676   l1.688,0.676l0.675,1.688l-0.675,1.576l-1.688,0.676L75.559,13.285z",
+                      "fill": {
+                        "paint": {
+                          "cx": "77.3037",
+                          "cy": "11.6523",
+                          "gradientUnits": "userSpaceOnUse",
+                          "r": "2.3081",
+                          "stops": [
+                            {
+                              "offset": "0",
+                              "style": {
+                                "stopColor": "#E0E0E0"
+                              }
+                            },
+                            {
+                              "offset": "0.5",
+                              "style": {
+                                "stopColor": "#E0E0E0"
+                              }
+                            },
+                            {
+                              "offset": "1",
+                              "style": {
+                                "stopColor": "#808080"
+                              }
+                            }
+                          ],
+                          "type": "radial"
+                        }
+                      },
+                      "name": "path",
+                      "stroke": {
+                        "paint": "#4C4C4C",
+                        "width": "0.25"
+                      },
+                      "type": "path"
+                    },
+                    {
+                      "d": "M80.287,13.285l-0.676-1.576l0.676-1.688l1.689-0.676   l1.688,0.676l0.675,1.688l-0.675,1.576l-1.688,0.676L80.287,13.285z",
+                      "fill": {
+                        "paint": {
+                          "cx": "81.9756",
+                          "cy": "11.6523",
+                          "gradientUnits": "userSpaceOnUse",
+                          "r": "2.3366",
+                          "stops": [
+                            {
+                              "offset": "0",
+                              "style": {
+                                "stopColor": "#E0E0E0"
+                              }
+                            },
+                            {
+                              "offset": "0.5",
+                              "style": {
+                                "stopColor": "#E0E0E0"
+                              }
+                            },
+                            {
+                              "offset": "1",
+                              "style": {
+                                "stopColor": "#808080"
+                              }
+                            }
+                          ],
+                          "type": "radial"
+                        }
+                      },
+                      "name": "path",
+                      "stroke": {
+                        "paint": "#4C4C4C",
+                        "width": "0.25"
+                      },
+                      "type": "path"
+                    },
+                    {
+                      "d": "M85.016,13.285l-0.676-1.576l0.676-1.688l1.689-0.676   l1.576,0.676l0.676,1.688l-0.676,1.576l-1.576,0.676L85.016,13.285z",
+                      "fill": {
+                        "paint": {
+                          "cx": "86.6484",
+                          "cy": "11.6523",
+                          "gradientUnits": "userSpaceOnUse",
+                          "r": "2.3086",
+                          "stops": [
+                            {
+                              "offset": "0",
+                              "style": {
+                                "stopColor": "#E0E0E0"
+                              }
+                            },
+                            {
+                              "offset": "0.5",
+                              "style": {
+                                "stopColor": "#E0E0E0"
+                              }
+                            },
+                            {
+                              "offset": "1",
+                              "style": {
+                                "stopColor": "#808080"
+                              }
+                            }
+                          ],
+                          "type": "radial"
+                        }
+                      },
+                      "name": "path",
+                      "stroke": {
+                        "paint": "#4C4C4C",
+                        "width": "0.25"
+                      },
+                      "type": "path"
+                    },
+                    {
+                      "d": "M89.632,13.285l-0.675-1.576l0.675-1.688l1.688-0.676   l1.689,0.676l0.676,1.576l-0.676,1.688l-1.689,0.676L89.632,13.285z",
+                      "fill": {
+                        "paint": {
+                          "cx": "91.3213",
+                          "cy": "11.6523",
+                          "gradientUnits": "userSpaceOnUse",
+                          "r": "2.3366",
+                          "stops": [
+                            {
+                              "offset": "0",
+                              "style": {
+                                "stopColor": "#E0E0E0"
+                              }
+                            },
+                            {
+                              "offset": "0.5",
+                              "style": {
+                                "stopColor": "#E0E0E0"
+                              }
+                            },
+                            {
+                              "offset": "1",
+                              "style": {
+                                "stopColor": "#808080"
+                              }
+                            }
+                          ],
+                          "type": "radial"
+                        }
+                      },
+                      "name": "path",
+                      "stroke": {
+                        "paint": "#4C4C4C",
+                        "width": "0.25"
+                      },
+                      "type": "path"
+                    }
+                  ],
+                  "name": "Group_Wheel",
+                  "type": "group"
+                },
+                {
+                  "elements": [
+                    {
+                      "d": "M1.477,12.497l-0.338-0.788l0.338-0.9l0.788-0.338l0.9,0.338l0.338,0.9l-0.338,0.788l-0.9,0.338   L1.477,12.497z",
+                      "fill": {
+                        "paint": {
+                          "cx": "2.3208",
+                          "cy": "11.6523",
+                          "gradientUnits": "userSpaceOnUse",
+                          "r": "1.1824",
+                          "stops": [
+                            {
+                              "offset": "0",
+                              "style": {
+                                "stopColor": "#E0E0E0"
+                              }
+                            },
+                            {
+                              "offset": "0.42",
+                              "style": {
+                                "stopColor": "#9E9E9E"
+                              }
+                            },
+                            {
+                              "offset": "1",
+                              "style": {
+                                "stopColor": "#595959"
+                              }
+                            }
+                          ],
+                          "type": "radial"
+                        }
+                      },
+                      "name": "path",
+                      "type": "path"
+                    },
+                    {
+                      "d": "M6.092,12.497l-0.337-0.788l0.337-0.9l0.901-0.338l0.788,0.338l0.338,0.9l-0.338,0.788   l-0.788,0.338L6.092,12.497z",
+                      "fill": {
+                        "paint": {
+                          "cx": "6.937",
+                          "cy": "11.6523",
+                          "gradientUnits": "userSpaceOnUse",
+                          "r": "1.1824",
+                          "stops": [
+                            {
+                              "offset": "0",
+                              "style": {
+                                "stopColor": "#E0E0E0"
+                              }
+                            },
+                            {
+                              "offset": "0.42",
+                              "style": {
+                                "stopColor": "#9E9E9E"
+                              }
+                            },
+                            {
+                              "offset": "1",
+                              "style": {
+                                "stopColor": "#595959"
+                              }
+                            }
+                          ],
+                          "type": "radial"
+                        }
+                      },
+                      "name": "path",
+                      "type": "path"
+                    },
+                    {
+                      "d": "M10.821,12.497l-0.338-0.788l0.338-0.9l0.9-0.338l0.788,0.338l0.338,0.9l-0.338,0.788l-0.788,0.338   L10.821,12.497z",
+                      "fill": {
+                        "paint": {
+                          "cx": "11.6655",
+                          "cy": "11.6523",
+                          "gradientUnits": "userSpaceOnUse",
+                          "r": "1.1824",
+                          "stops": [
+                            {
+                              "offset": "0",
+                              "style": {
+                                "stopColor": "#E0E0E0"
+                              }
+                            },
+                            {
+                              "offset": "0.42",
+                              "style": {
+                                "stopColor": "#9E9E9E"
+                              }
+                            },
+                            {
+                              "offset": "1",
+                              "style": {
+                                "stopColor": "#595959"
+                              }
+                            }
+                          ],
+                          "type": "radial"
+                        }
+                      },
+                      "name": "path",
+                      "type": "path"
+                    },
+                    {
+                      "d": "M15.55,12.497l-0.338-0.788l0.338-0.9l0.788-0.338l0.901,0.338l0.337,0.9l-0.337,0.788   l-0.901,0.338L15.55,12.497z",
+                      "fill": {
+                        "paint": {
+                          "cx": "16.394",
+                          "cy": "11.6523",
+                          "gradientUnits": "userSpaceOnUse",
+                          "r": "1.1824",
+                          "stops": [
+                            {
+                              "offset": "0",
+                              "style": {
+                                "stopColor": "#E0E0E0"
+                              }
+                            },
+                            {
+                              "offset": "0.42",
+                              "style": {
+                                "stopColor": "#9E9E9E"
+                              }
+                            },
+                            {
+                              "offset": "1",
+                              "style": {
+                                "stopColor": "#595959"
+                              }
+                            }
+                          ],
+                          "type": "radial"
+                        }
+                      },
+                      "name": "path",
+                      "type": "path"
+                    },
+                    {
+                      "d": "M20.166,12.497l-0.338-0.788l0.338-0.9l0.9-0.338l0.788,0.338l0.338,0.9l-0.338,0.788l-0.788,0.338   L20.166,12.497z",
+                      "fill": {
+                        "paint": {
+                          "cx": "21.0103",
+                          "cy": "11.6523",
+                          "gradientUnits": "userSpaceOnUse",
+                          "r": "1.1824",
+                          "stops": [
+                            {
+                              "offset": "0",
+                              "style": {
+                                "stopColor": "#E0E0E0"
+                              }
+                            },
+                            {
+                              "offset": "0.42",
+                              "style": {
+                                "stopColor": "#9E9E9E"
+                              }
+                            },
+                            {
+                              "offset": "1",
+                              "style": {
+                                "stopColor": "#595959"
+                              }
+                            }
+                          ],
+                          "type": "radial"
+                        }
+                      },
+                      "name": "path",
+                      "type": "path"
+                    },
+                    {
+                      "d": "M24.895,12.497l-0.338-0.788l0.338-0.9l0.901-0.338l0.788,0.338l0.337,0.9l-0.337,0.788   l-0.788,0.338L24.895,12.497z",
+                      "fill": {
+                        "paint": {
+                          "cx": "25.7388",
+                          "cy": "11.6523",
+                          "gradientUnits": "userSpaceOnUse",
+                          "r": "1.1824",
+                          "stops": [
+                            {
+                              "offset": "0",
+                              "style": {
+                                "stopColor": "#E0E0E0"
+                              }
+                            },
+                            {
+                              "offset": "0.42",
+                              "style": {
+                                "stopColor": "#9E9E9E"
+                              }
+                            },
+                            {
+                              "offset": "1",
+                              "style": {
+                                "stopColor": "#595959"
+                              }
+                            }
+                          ],
+                          "type": "radial"
+                        }
+                      },
+                      "name": "path",
+                      "type": "path"
+                    },
+                    {
+                      "d": "M29.623,12.497l-0.338-0.788l0.338-0.9l0.788-0.338l0.901,0.338l0.338,0.9l-0.338,0.788   l-0.901,0.338L29.623,12.497z",
+                      "fill": {
+                        "paint": {
+                          "cx": "30.4678",
+                          "cy": "11.6523",
+                          "gradientUnits": "userSpaceOnUse",
+                          "r": "1.1824",
+                          "stops": [
+                            {
+                              "offset": "0",
+                              "style": {
+                                "stopColor": "#E0E0E0"
+                              }
+                            },
+                            {
+                              "offset": "0.42",
+                              "style": {
+                                "stopColor": "#9E9E9E"
+                              }
+                            },
+                            {
+                              "offset": "1",
+                              "style": {
+                                "stopColor": "#595959"
+                              }
+                            }
+                          ],
+                          "type": "radial"
+                        }
+                      },
+                      "name": "path",
+                      "type": "path"
+                    },
+                    {
+                      "d": "M34.239,12.497l-0.338-0.788l0.338-0.9l0.901-0.338l0.788,0.338l0.337,0.9l-0.337,0.788   l-0.788,0.338L34.239,12.497z",
+                      "fill": {
+                        "paint": {
+                          "cx": "35.0835",
+                          "cy": "11.6523",
+                          "gradientUnits": "userSpaceOnUse",
+                          "r": "1.1824",
+                          "stops": [
+                            {
+                              "offset": "0",
+                              "style": {
+                                "stopColor": "#E0E0E0"
+                              }
+                            },
+                            {
+                              "offset": "0.42",
+                              "style": {
+                                "stopColor": "#9E9E9E"
+                              }
+                            },
+                            {
+                              "offset": "1",
+                              "style": {
+                                "stopColor": "#595959"
+                              }
+                            }
+                          ],
+                          "type": "radial"
+                        }
+                      },
+                      "name": "path",
+                      "type": "path"
+                    },
+                    {
+                      "d": "M38.968,12.497l-0.338-0.788l0.338-0.9l0.788-0.338l0.901,0.338l0.338,0.9l-0.338,0.788   l-0.901,0.338L38.968,12.497z",
+                      "fill": {
+                        "paint": {
+                          "cx": "39.8125",
+                          "cy": "11.6523",
+                          "gradientUnits": "userSpaceOnUse",
+                          "r": "1.1824",
+                          "stops": [
+                            {
+                              "offset": "0",
+                              "style": {
+                                "stopColor": "#E0E0E0"
+                              }
+                            },
+                            {
+                              "offset": "0.42",
+                              "style": {
+                                "stopColor": "#9E9E9E"
+                              }
+                            },
+                            {
+                              "offset": "1",
+                              "style": {
+                                "stopColor": "#595959"
+                              }
+                            }
+                          ],
+                          "type": "radial"
+                        }
+                      },
+                      "name": "path",
+                      "type": "path"
+                    },
+                    {
+                      "d": "M43.584,12.497l-0.338-0.788l0.338-0.9l0.901-0.338l0.788,0.338l0.337,0.9l-0.337,0.788   l-0.788,0.338L43.584,12.497z",
+                      "fill": {
+                        "paint": {
+                          "cx": "44.4282",
+                          "cy": "11.6523",
+                          "gradientUnits": "userSpaceOnUse",
+                          "r": "1.1824",
+                          "stops": [
+                            {
+                              "offset": "0",
+                              "style": {
+                                "stopColor": "#E0E0E0"
+                              }
+                            },
+                            {
+                              "offset": "0.42",
+                              "style": {
+                                "stopColor": "#9E9E9E"
+                              }
+                            },
+                            {
+                              "offset": "1",
+                              "style": {
+                                "stopColor": "#595959"
+                              }
+                            }
+                          ],
+                          "type": "radial"
+                        }
+                      },
+                      "name": "path",
+                      "type": "path"
+                    },
+                    {
+                      "d": "M48.313,12.497l-0.338-0.788l0.338-0.9l0.901-0.338l0.788,0.338l0.338,0.9l-0.338,0.788   l-0.788,0.338L48.313,12.497z",
+                      "fill": {
+                        "paint": {
+                          "cx": "49.1572",
+                          "cy": "11.6523",
+                          "gradientUnits": "userSpaceOnUse",
+                          "r": "1.1824",
+                          "stops": [
+                            {
+                              "offset": "0",
+                              "style": {
+                                "stopColor": "#E0E0E0"
+                              }
+                            },
+                            {
+                              "offset": "0.42",
+                              "style": {
+                                "stopColor": "#9E9E9E"
+                              }
+                            },
+                            {
+                              "offset": "1",
+                              "style": {
+                                "stopColor": "#595959"
+                              }
+                            }
+                          ],
+                          "type": "radial"
+                        }
+                      },
+                      "name": "path",
+                      "type": "path"
+                    },
+                    {
+                      "d": "M53.042,12.497l-0.338-0.788l0.338-0.9l0.788-0.338l0.9,0.338l0.338,0.9l-0.338,0.788l-0.9,0.338   L53.042,12.497z",
+                      "fill": {
+                        "paint": {
+                          "cx": "53.8857",
+                          "cy": "11.6523",
+                          "gradientUnits": "userSpaceOnUse",
+                          "r": "1.1824",
+                          "stops": [
+                            {
+                              "offset": "0",
+                              "style": {
+                                "stopColor": "#E0E0E0"
+                              }
+                            },
+                            {
+                              "offset": "0.42",
+                              "style": {
+                                "stopColor": "#9E9E9E"
+                              }
+                            },
+                            {
+                              "offset": "1",
+                              "style": {
+                                "stopColor": "#595959"
+                              }
+                            }
+                          ],
+                          "type": "radial"
+                        }
+                      },
+                      "name": "path",
+                      "type": "path"
+                    },
+                    {
+                      "d": "M57.657,12.497l-0.338-0.788l0.338-0.9l0.901-0.338l0.787,0.338l0.338,0.9l-0.338,0.788   l-0.787,0.338L57.657,12.497z",
+                      "fill": {
+                        "paint": {
+                          "cx": "58.502",
+                          "cy": "11.6523",
+                          "gradientUnits": "userSpaceOnUse",
+                          "r": "1.1821",
+                          "stops": [
+                            {
+                              "offset": "0",
+                              "style": {
+                                "stopColor": "#E0E0E0"
+                              }
+                            },
+                            {
+                              "offset": "0.42",
+                              "style": {
+                                "stopColor": "#9E9E9E"
+                              }
+                            },
+                            {
+                              "offset": "1",
+                              "style": {
+                                "stopColor": "#595959"
+                              }
+                            }
+                          ],
+                          "type": "radial"
+                        }
+                      },
+                      "name": "path",
+                      "type": "path"
+                    },
+                    {
+                      "d": "M62.387,12.497l-0.338-0.788l0.338-0.9l0.9-0.338l0.787,0.338l0.338,0.9l-0.338,0.788l-0.787,0.338   L62.387,12.497z",
+                      "fill": {
+                        "paint": {
+                          "cx": "63.2305",
+                          "cy": "11.6523",
+                          "gradientUnits": "userSpaceOnUse",
+                          "r": "1.1821",
+                          "stops": [
+                            {
+                              "offset": "0",
+                              "style": {
+                                "stopColor": "#E0E0E0"
+                              }
+                            },
+                            {
+                              "offset": "0.42",
+                              "style": {
+                                "stopColor": "#9E9E9E"
+                              }
+                            },
+                            {
+                              "offset": "1",
+                              "style": {
+                                "stopColor": "#595959"
+                              }
+                            }
+                          ],
+                          "type": "radial"
+                        }
+                      },
+                      "name": "path",
+                      "type": "path"
+                    },
+                    {
+                      "d": "M67.115,12.497l-0.338-0.788l0.338-0.9l0.787-0.338l0.9,0.338l0.338,0.9l-0.338,0.788l-0.9,0.338   L67.115,12.497z",
+                      "fill": {
+                        "paint": {
+                          "cx": "67.959",
+                          "cy": "11.6523",
+                          "gradientUnits": "userSpaceOnUse",
+                          "r": "1.1821",
+                          "stops": [
+                            {
+                              "offset": "0",
+                              "style": {
+                                "stopColor": "#E0E0E0"
+                              }
+                            },
+                            {
+                              "offset": "0.42",
+                              "style": {
+                                "stopColor": "#9E9E9E"
+                              }
+                            },
+                            {
+                              "offset": "1",
+                              "style": {
+                                "stopColor": "#595959"
+                              }
+                            }
+                          ],
+                          "type": "radial"
+                        }
+                      },
+                      "name": "path",
+                      "type": "path"
+                    },
+                    {
+                      "d": "M71.73,12.497l-0.338-0.788l0.338-0.9l0.9-0.338l0.789,0.338l0.338,0.9l-0.338,0.788l-0.789,0.338   L71.73,12.497z",
+                      "fill": {
+                        "paint": {
+                          "cx": "72.5752",
+                          "cy": "11.6523",
+                          "gradientUnits": "userSpaceOnUse",
+                          "r": "1.1826",
+                          "stops": [
+                            {
+                              "offset": "0",
+                              "style": {
+                                "stopColor": "#E0E0E0"
+                              }
+                            },
+                            {
+                              "offset": "0.42",
+                              "style": {
+                                "stopColor": "#9E9E9E"
+                              }
+                            },
+                            {
+                              "offset": "1",
+                              "style": {
+                                "stopColor": "#595959"
+                              }
+                            }
+                          ],
+                          "type": "radial"
+                        }
+                      },
+                      "name": "path",
+                      "type": "path"
+                    },
+                    {
+                      "d": "M76.459,12.497l-0.338-0.788l0.338-0.9l0.789-0.338l0.9,0.338l0.338,0.9l-0.338,0.788l-0.9,0.338   L76.459,12.497z",
+                      "fill": {
+                        "paint": {
+                          "cx": "77.3037",
+                          "cy": "11.6523",
+                          "gradientUnits": "userSpaceOnUse",
+                          "r": "1.1826",
+                          "stops": [
+                            {
+                              "offset": "0",
+                              "style": {
+                                "stopColor": "#E0E0E0"
+                              }
+                            },
+                            {
+                              "offset": "0.42",
+                              "style": {
+                                "stopColor": "#9E9E9E"
+                              }
+                            },
+                            {
+                              "offset": "1",
+                              "style": {
+                                "stopColor": "#595959"
+                              }
+                            }
+                          ],
+                          "type": "radial"
+                        }
+                      },
+                      "name": "path",
+                      "type": "path"
+                    },
+                    {
+                      "d": "M81.076,12.497l-0.338-0.788l0.338-0.9l0.9-0.338l0.787,0.338l0.338,0.9l-0.338,0.788l-0.787,0.338   L81.076,12.497z",
+                      "fill": {
+                        "paint": {
+                          "cx": "81.9199",
+                          "cy": "11.6523",
+                          "gradientUnits": "userSpaceOnUse",
+                          "r": "1.1821",
+                          "stops": [
+                            {
+                              "offset": "0",
+                              "style": {
+                                "stopColor": "#E0E0E0"
+                              }
+                            },
+                            {
+                              "offset": "0.42",
+                              "style": {
+                                "stopColor": "#9E9E9E"
+                              }
+                            },
+                            {
+                              "offset": "1",
+                              "style": {
+                                "stopColor": "#595959"
+                              }
+                            }
+                          ],
+                          "type": "radial"
+                        }
+                      },
+                      "name": "path",
+                      "type": "path"
+                    },
+                    {
+                      "d": "M85.805,12.497l-0.338-0.788l0.338-0.9l0.9-0.338l0.788,0.338l0.337,0.9l-0.337,0.788l-0.788,0.338   L85.805,12.497z",
+                      "fill": {
+                        "paint": {
+                          "cx": "86.6484",
+                          "cy": "11.6523",
+                          "gradientUnits": "userSpaceOnUse",
+                          "r": "1.1821",
+                          "stops": [
+                            {
+                              "offset": "0",
+                              "style": {
+                                "stopColor": "#E0E0E0"
+                              }
+                            },
+                            {
+                              "offset": "0.42",
+                              "style": {
+                                "stopColor": "#9E9E9E"
+                              }
+                            },
+                            {
+                              "offset": "1",
+                              "style": {
+                                "stopColor": "#595959"
+                              }
+                            }
+                          ],
+                          "type": "radial"
+                        }
+                      },
+                      "name": "path",
+                      "type": "path"
+                    },
+                    {
+                      "d": "M90.533,12.497l-0.338-0.788l0.338-0.9l0.787-0.338l0.901,0.338l0.338,0.9l-0.338,0.788   l-0.901,0.338L90.533,12.497z",
+                      "fill": {
+                        "paint": {
+                          "cx": "91.377",
+                          "cy": "11.6523",
+                          "gradientUnits": "userSpaceOnUse",
+                          "r": "1.1826",
+                          "stops": [
+                            {
+                              "offset": "0",
+                              "style": {
+                                "stopColor": "#E0E0E0"
+                              }
+                            },
+                            {
+                              "offset": "0.42",
+                              "style": {
+                                "stopColor": "#9E9E9E"
+                              }
+                            },
+                            {
+                              "offset": "1",
+                              "style": {
+                                "stopColor": "#595959"
+                              }
+                            }
+                          ],
+                          "type": "radial"
+                        }
+                      },
+                      "name": "path",
+                      "type": "path"
+                    }
+                  ],
+                  "name": "Group_Axial",
+                  "type": "group"
+                },
+                {
+                  "elements": [
+                    {
+                      "d": "M2.265,9.345L21.066,0h89.057l1.688,0.563L93.122,9.908L91.32,9.345H2.265z",
+                      "fill": {
+                        "paint": "#B2B2B2"
+                      },
+                      "name": "path",
+                      "type": "path"
+                    },
+                    {
+                      "d": "M93.686,11.597l-0.563,1.802l18.689-9.345l0.676-1.801L93.686,11.597z",
+                      "fill": {
+                        "paint": "#666666"
+                      },
+                      "name": "path",
+                      "type": "path"
+                    },
+                    {
+                      "d": "M93.686,11.597l-0.563-1.688l18.689-9.345l0.676,1.689L93.686,11.597z",
+                      "fill": {
+                        "paint": "#8C8C8C"
+                      },
+                      "name": "path",
+                      "type": "path"
+                    },
+                    {
+                      "d": "M2.265,9.345L0.576,9.908l18.689-9.345L21.066,0L2.265,9.345z",
+                      "fill": {
+                        "paint": "#999999"
+                      },
+                      "name": "path",
+                      "type": "path"
+                    },
+                    {
+                      "d": "M63.85,9.345L82.539,0h9.345L73.194,9.345H63.85z",
+                      "fill": {
+                        "paint": "#A6A6A6"
+                      },
+                      "name": "path",
+                      "stroke": {
+                        "paint": "#7F7F7F",
+                        "width": "0.25"
+                      },
+                      "type": "path"
+                    },
+                    {
+                      "d": "M22.192,9.345L40.995,0h9.345L31.65,9.345H22.192z",
+                      "fill": {
+                        "paint": "#A6A6A6"
+                      },
+                      "name": "path",
+                      "stroke": {
+                        "paint": "#7F7F7F",
+                        "width": "0.25"
+                      },
+                      "type": "path"
+                    },
+                    {
+                      "d": "M93.122,13.398l0.563-1.802l-0.563-1.688L91.32,9.345H2.265L0.576,9.908   l18.689-9.345L21.066,0h89.057l1.688,0.563l0.676,1.689l-0.676,1.801L93.122,13.398",
+                      "fill": {
+                        "paint": "none"
+                      },
+                      "name": "path",
+                      "stroke": {
+                        "paint": "#4C4C4C",
+                        "width": "0.25"
+                      },
+                      "type": "path"
+                    }
+                  ],
+                  "name": "Group_Conveyor_Belt",
+                  "type": "group"
+                }
+              ],
+              "preserveAspectRatio": "none",
+              "viewBox": "0 0 112.5 13.961"
+            },
+            "type": "ia.shapes.svg"
+          }
+        ],
+        "meta": {
+          "name": "CoordinateContainer"
+        },
+        "position": {
+          "basis": "200px"
+        },
+        "type": "ia.container.coord"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "props": {
+      "direction": "column"
+    },
+    "type": "ia.container.flex"
+  }
+}

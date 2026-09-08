@@ -1,0 +1,87 @@
+{
+  "custom": {},
+  "params": {},
+  "props": {
+    "defaultSize": {
+      "height": 49,
+      "width": 1300
+    }
+  },
+  "root": {
+    "children": [
+      {
+        "children": [
+          {
+            "meta": {
+              "name": "Label"
+            },
+            "position": {
+              "height": 0.4571,
+              "width": 0.1569,
+              "x": 0.8431,
+              "y": 0.5429
+            },
+            "propConfig": {
+              "props.text": {
+                "binding": {
+                  "config": {
+                    "expression": "dateFormat(now(1000), \"MMM d, yyyy hh:mm:ss a\")"
+                  },
+                  "type": "expr"
+                }
+              }
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "meta": {
+              "name": "Image_2"
+            },
+            "position": {
+              "height": 0.8393,
+              "rotate": {
+                "anchor": "21% 50%"
+              },
+              "width": 0.1954,
+              "x": 0.0268,
+              "y": 0.0941
+            },
+            "props": {
+              "fit": {
+                "mode": "cover"
+              },
+              "source": "/system/images/RYAN/carter-holt-harvey-logo-png-transparent.png",
+              "style": {
+                "color": ""
+              },
+              "tint": {
+                "color": "#004B3A"
+              }
+            },
+            "type": "ia.display.image"
+          }
+        ],
+        "meta": {
+          "name": "CoordinateContainer"
+        },
+        "position": {
+          "basis": "1300px",
+          "grow": 1
+        },
+        "props": {
+          "mode": "percent"
+        },
+        "type": "ia.container.coord"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "props": {
+      "style": {
+        "backgroundColor": "#004B3A"
+      }
+    },
+    "type": "ia.container.flex"
+  }
+}

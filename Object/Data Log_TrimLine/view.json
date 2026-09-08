@@ -1,0 +1,414 @@
+{
+  "custom": {},
+  "params": {},
+  "props": {
+    "defaultSize": {
+      "height": 386,
+      "width": 900
+    }
+  },
+  "root": {
+    "children": [
+      {
+        "children": [
+          {
+            "meta": {
+              "name": "Label"
+            },
+            "position": {
+              "basis": "800px"
+            },
+            "props": {
+              "style": {
+                "fontSize": 20,
+                "textAlign": "center"
+              },
+              "text": "PRODUCTION LINE: TRIM LINE"
+            },
+            "type": "ia.display.label"
+          }
+        ],
+        "meta": {
+          "name": "TITLE"
+        },
+        "position": {
+          "basis": "48px"
+        },
+        "props": {
+          "style": {
+            "backgroundColor": "#004B3A"
+          }
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "children": [
+          {
+            "meta": {
+              "name": "Label"
+            },
+            "position": {
+              "basis": "127px",
+              "grow": 1
+            },
+            "props": {
+              "style": {
+                "textAlign": "center"
+              },
+              "text": "SUB AREA :",
+              "textStyle": {
+                "fontSize": 30
+              }
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "custom": {
+              "displayvalue": ""
+            },
+            "meta": {
+              "name": "sub_area"
+            },
+            "position": {
+              "basis": "462px",
+              "grow": 1
+            },
+            "props": {
+              "dropdownOptionStyle": {
+                "fontSize": 30
+              },
+              "options": [
+                {
+                  "label": "CHIPPER",
+                  "value": "CHIPPER"
+                },
+                {
+                  "label": "CONVEYOR",
+                  "value": "CONVEYOR"
+                },
+                {
+                  "label": "CROSS-CUT SAWS",
+                  "value": "CROSS-CUT SAWS"
+                },
+                {
+                  "label": "PRINTER",
+                  "value": "PRINTER"
+                },
+                {
+                  "label": "STACKERS",
+                  "value": "STACKERS"
+                },
+                {
+                  "label": "STRESS GRADER",
+                  "value": "STRESS GRADER"
+                },
+                {
+                  "label": "TRIMLINE",
+                  "value": "TRIMLINE"
+                },
+                {
+                  "label": "TRIMLINE INFEED",
+                  "value": "TRIMLINE INFEED"
+                },
+                {
+                  "label": "TRIMLINE OUTFEED",
+                  "value": "TRIMLINE OUTFEED"
+                },
+                {
+                  "label": "TRIMSAWS",
+                  "value": "TRIMSAWS"
+                },
+                {
+                  "label": "90 DEG CORNER",
+                  "value": "90 DEG CORNER"
+                }
+              ],
+              "style": {
+                "classes": "dropdown",
+                "fontSize": 30
+              }
+            },
+            "type": "ia.input.dropdown"
+          }
+        ],
+        "meta": {
+          "name": "FlexContainer"
+        },
+        "position": {
+          "basis": "44px"
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "meta": {
+          "name": "FlexContainer_3"
+        },
+        "position": {
+          "basis": "37px"
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "children": [
+          {
+            "meta": {
+              "name": "Label"
+            },
+            "position": {
+              "basis": "127px",
+              "grow": 1
+            },
+            "props": {
+              "style": {
+                "fontSize": 30,
+                "textAlign": "center"
+              },
+              "text": "FAULT :"
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "children": [
+              {
+                "meta": {
+                  "name": "fault"
+                },
+                "position": {
+                  "height": 43,
+                  "width": 610,
+                  "x": 3
+                },
+                "props": {
+                  "dropdownOptionStyle": {
+                    "fontSize": 30
+                  },
+                  "options": [
+                    {
+                      "label": "ADJUSTMENT",
+                      "value": "ADJUSTMENT"
+                    },
+                    {
+                      "label": "BLOCKAGE",
+                      "value": "BLOCKAGE"
+                    },
+                    {
+                      "label": "BOWED BOARD",
+                      "value": "BOWED BOARD"
+                    },
+                    {
+                      "label": "CLEANING",
+                      "value": "CLEANING"
+                    },
+                    {
+                      "label": "CONVEYOR/TRANSFER CHAIN",
+                      "value": "CONVEYOR/TRANSFER CHAIN"
+                    },
+                    {
+                      "label": "ELECTRICAL FAILURE",
+                      "value": "ELECTRICAL FAILURE"
+                    },
+                    {
+                      "label": "FORKLIFT DELAY",
+                      "value": "FORKLIFT DELAY"
+                    },
+                    {
+                      "label": "FOUL UP/JAM",
+                      "value": "FOUL UP/JAM"
+                    },
+                    {
+                      "label": "LUNCH",
+                      "value": "LUNCH"
+                    },
+                    {
+                      "label": "MECHANICAL",
+                      "value": "MECHANICAL"
+                    },
+                    {
+                      "label": "MEETINGS",
+                      "value": "MEETINGS"
+                    },
+                    {
+                      "label": "NO PRODUCT",
+                      "value": "NO PRODUCT"
+                    },
+                    {
+                      "label": "OTHER",
+                      "value": "OTHER"
+                    },
+                    {
+                      "label": "OVERLOAD",
+                      "value": "OVERLOAD"
+                    },
+                    {
+                      "label": "OVERNIGHT SHUT",
+                      "value": "OVERNIGHT SHUT"
+                    },
+                    {
+                      "label": "PACK CHANGE",
+                      "value": "PACK CHANGE"
+                    },
+                    {
+                      "label": "PANEL LIFTER",
+                      "value": "PANEL LIFTER"
+                    },
+                    {
+                      "label": "PRODUCT CHANGE",
+                      "value": "PRODUCT CHANGE"
+                    },
+                    {
+                      "label": "PHOTO EYE/SENSOR/LIMIT SW",
+                      "value": "PHOTO EYE/SENSOR/LIMIT SW"
+                    },
+                    {
+                      "label": "PLANNED DOWNTIME",
+                      "value": "PLANNED DOWNTIME"
+                    },
+                    {
+                      "label": "QC-TESTING",
+                      "value": "QC-TESTING"
+                    },
+                    {
+                      "label": "SAWS/KNIVES",
+                      "value": "SAWS/KNIVES"
+                    },
+                    {
+                      "label": "SIZE/SORT CHANGES",
+                      "value": "SIZE/SORT CHANGES"
+                    },
+                    {
+                      "label": "SMOKO",
+                      "value": "SMOKO"
+                    },
+                    {
+                      "label": "START UP CHECKS",
+                      "value": "START UP CHECKS"
+                    },
+                    {
+                      "label": "SHORT STOP",
+                      "value": "SHORT STOP"
+                    },
+                    {
+                      "label": "REMOVE SHEET",
+                      "value": "REMOVE SHEET"
+                    },
+                    {
+                      "label": "RUN HOTPRESS",
+                      "value": "RUN HOTPRESS"
+                    },
+                    {
+                      "label": "PUSH SHEET",
+                      "value": "PUSH SHEET"
+                    },
+                    {
+                      "label": "REMOVE OFF-CUT",
+                      "value": "REMOVE OFF-CUT"
+                    },
+                    {
+                      "label": "REMOVE BEARERS",
+                      "value": "REMOVE BEARERS"
+                    },
+                    {
+                      "label": "RELIEVE HOTPRESS",
+                      "value": "RELIEVE HOTPRESS"
+                    }
+                  ],
+                  "style": {
+                    "classes": "dropdown",
+                    "fontSize": 30
+                  }
+                },
+                "type": "ia.input.dropdown"
+              }
+            ],
+            "meta": {
+              "name": "CoordinateContainer"
+            },
+            "position": {
+              "basis": "462px",
+              "grow": 1
+            },
+            "type": "ia.container.coord"
+          }
+        ],
+        "meta": {
+          "name": "FlexContainer_1"
+        },
+        "position": {
+          "basis": "43px"
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "meta": {
+          "name": "FlexContainer_5"
+        },
+        "position": {
+          "basis": "17px"
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "children": [
+          {
+            "children": [
+              {
+                "events": {
+                  "dom": {
+                    "onClick": {
+                      "config": {
+                        "script": "\n\t\tsub_area \u003d self.parent.parent.parent.getChild(\"FlexContainer\").getChild(\"sub_area\").props.value\n\t\tfault \u003d self.parent.parent.parent.getChild(\"FlexContainer_1\").getChild(\"CoordinateContainer\").getChild(\"fault\").props.value\t\t\t\t\t\n\t\tquery \u003d (\u0027UPDATE downtime_formply_trimline \u0027 \n\t\t\t\t\t+ \u0027SET sub_area\u003d?,fault\u003d? \u0027\n\t\t\t\t\t+ \u0027WHERE start_time \u003d (select max(start_time) from downtime_formply_trimline) \u0027 )\n\t\targs \u003d [sub_area,fault]\n\t\tsystem.db.runPrepUpdate(query, args,\"downtime_data\")\n\t\tself.parent.parent.parent.getChild(\"FlexContainer\").getChild(\"sub_area\").props.value\u003d None\n\t\tself.parent.parent.parent.getChild(\"FlexContainer_1\").getChild(\"CoordinateContainer\").getChild(\"fault\").props.value \u003d None\n\t\tsystem.perspective.closePopup(\u0027dH1WpjFX\u0027)"
+                      },
+                      "scope": "G",
+                      "type": "script"
+                    }
+                  }
+                },
+                "meta": {
+                  "name": "Button"
+                },
+                "position": {
+                  "height": 116,
+                  "width": 340.00000000000006,
+                  "x": 269.95,
+                  "y": 55
+                },
+                "props": {
+                  "style": {
+                    "backgroundColor": "#004B3A",
+                    "fontSize": 40
+                  },
+                  "text": "ENTER",
+                  "textStyle": {
+                    "color": "#FFFFFF"
+                  }
+                },
+                "type": "ia.input.button"
+              }
+            ],
+            "meta": {
+              "name": "CoordinateContainer"
+            },
+            "position": {
+              "basis": "812px"
+            },
+            "type": "ia.container.coord"
+          }
+        ],
+        "meta": {
+          "name": "button"
+        },
+        "position": {
+          "basis": "184px"
+        },
+        "type": "ia.container.flex"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "props": {
+      "direction": "column"
+    },
+    "type": "ia.container.flex"
+  }
+}

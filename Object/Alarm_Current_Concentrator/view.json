@@ -1,0 +1,104 @@
+{
+  "custom": {},
+  "params": {},
+  "props": {
+    "defaultSize": {
+      "height": 316,
+      "width": 686
+    }
+  },
+  "root": {
+    "children": [
+      {
+        "meta": {
+          "name": "AlarmStatusTable"
+        },
+        "position": {
+          "basis": "324px",
+          "grow": 1,
+          "shrink": 2
+        },
+        "props": {
+          "columns": {
+            "active": {
+              "Group": {
+                "enabled": false,
+                "order": 21,
+                "sort": "none",
+                "strictWidth": false,
+                "width": ""
+              },
+              "displayPath": {
+                "enabled": false
+              },
+              "name": {
+                "order": 3
+              },
+              "notes": {
+                "enabled": true,
+                "order": 22
+              },
+              "priority": {
+                "enabled": false
+              },
+              "source": {
+                "enabled": false
+              },
+              "state": {
+                "order": 6
+              }
+            }
+          },
+          "enableAcknowledge": false,
+          "enableDetails": false,
+          "enableHeader": false,
+          "enableShelve": false,
+          "enableUnshelve": false,
+          "filters": {
+            "active": {
+              "conditions": {
+                "source": "*Concentrator*"
+              },
+              "states": {
+                "clearUnacked": false
+              }
+            }
+          },
+          "pager": {
+            "hide": true
+          },
+          "responsive": {
+            "enabled": true
+          },
+          "rowStyles": {
+            "activeAcked": {
+              "base": {
+                "backgroundColor": "#FF0700"
+              }
+            },
+            "activeUnacked": {
+              "base": {
+                "backgroundColor": "#FF0000"
+              }
+            }
+          },
+          "toolbar": {
+            "enableConfiguration": false,
+            "enableFilter": false,
+            "enableFilterResults": false,
+            "enablePreFilters": false,
+            "enableShelvedTab": false
+          }
+        },
+        "type": "ia.display.alarmstatustable"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "props": {
+      "direction": "column"
+    },
+    "type": "ia.container.flex"
+  }
+}
